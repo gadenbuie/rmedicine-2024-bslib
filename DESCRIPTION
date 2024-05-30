@@ -14,7 +14,9 @@ Imports:
     bslib (>= 0.7.0.9000),
     shiny (>= 1.8.1.9001),
     shinylive (>= 0.1.1.9000)
-Remotes:  
+Remotes: 
     rstudio/bslib,
     rstudio/shiny,
     posit-dev/r-shinylive
+URL: https://github.com/gadenbuie/rmedicine-2024-bslib
+BugReports: https://github.com/gadenbuie/rmedicine-2024-bslib/issues
