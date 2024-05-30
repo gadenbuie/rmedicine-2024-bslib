@@ -1,0 +1,30 @@
+project:
+  type: website
+  preview: 
+    port: 7567
+  post-render:
+    - cp -r data _site/data
+
+website:
+  title: "Next Generation Shiny Apps with {bslib}" 
+  description: "A tutorial on how to create modern Shiny apps with {bslib} and {shiny}"
+  page-footer: |
+    R/Medicine 2024
+  navbar:
+    title: "Next-Gen Shiny Apps"
+    foreground: dark
+    background: light
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Workshop
+        menu:
+          - href: 01-intro.qmd
+            text: 1 - Introduction
+      - about.qmd
+
+format:
+  html:
+    theme: [zephyr, styles.scss]
+    toc: true
+

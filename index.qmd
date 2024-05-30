@@ -1,0 +1,62 @@
+---
+title: Next Generation Shiny Apps with {bslib}
+subtitle: R/Medicine 2024
+
+image: assets/neom-nMzbnMzMjYU-unsplash.jpg
+
+title-block-banner: true
+title-block-style: default
+
+editor: { render-on-save: true }
+---
+
+```{=html}
+<style>
+.quarto-title-banner {
+    color: var(--bs-body-color);
+    background-image: url({{< meta image >}});
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    transition: filter 45s;
+}
+.quarto-title-banner h1 {
+    color: var(--bs-body-color);
+    font-weight: 300 !important;
+    font-size: max(min(4vw, 2.5em), 2em);
+    text-wrap: pretty;
+}
+@media (max-width: 575.98px) {
+    .quarto-title-banner {
+        height: 300px;
+    }
+}
+</style>
+<script>
+function setHue() {
+    const randomHue = Math.random() * 360
+    document.querySelector('.quarto-title-banner').style.filter = `hue-rotate(${randomHue}deg)`
+}
+setHue()
+document.addEventListener("DOMContentLoaded", setHue)
+</script>
+```
+
+::: {.lead .mb-4}
+**Online workshop at [R/Medicine 2024](https://rconsortium.github.io/RMedicine_website/)** <br>
+Tuesday, June 11, 2024<br>
+[11:00am to 2:00pm](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Next+Generation+Shiny+Apps+with+%7Bbslib%7D&iso=20240611T11&p1=25&ah=3)
+:::
+
+## Introduction
+
+Learn to build Shiny apps using modern user interfaces (UI) and layouts with bslib, the next generation of Shiny UI.
+We’ll cover stylish and convenient dashboard layouts and components as we showcase the ways in which bslib can replace shinydashboard.
+We’ll also learn about exciting new ways to deploy Shiny apps with shinylive as static sites that run entirely in the user’s browser and don’t require setting up or maintaining a Shiny server.
+
+## Schedule
+
+
+
+## Setup
+

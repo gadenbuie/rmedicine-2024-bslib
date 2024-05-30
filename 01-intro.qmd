@@ -1,0 +1,30 @@
+---
+title: 1 - Introduction
+subtitle: R/Medicine 2024
+
+filters:
+  - shinylive
+
+editor: { render-on-save: true }
+---
+
+::: column-screen-inset
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+library(shiny)
+
+ui <- fluidPage(
+  h2("Hello world"),
+  # this should cause a client-side error...
+  textInput("foo", "Foo"),
+  textInput("foo", "Foo")
+)
+
+server <- function(input, output, session) {
+
+}
+
+shinyApp(ui, server)
+```
+:::

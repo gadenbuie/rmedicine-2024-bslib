@@ -1,0 +1,13 @@
+^renv$
+^renv\.lock$
+^\.github$
+^rmedicine-2024-bslib\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+^*\.qmd$
+^assets$
+^\.quarto$
+^data$
+^examples*$
+^styles\.scss$
+^_extensions$
