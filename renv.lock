@@ -3,6 +3,18 @@
     "Version": "4.4.0",
     "Repositories": [
       {
+        "Name": "rstudio",
+        "URL": "https://rstudio.r-universe.dev"
+      },
+      {
+        "Name": "posit-dev",
+        "URL": "https://posit-dev.r-universe.dev"
+      },
+      {
+        "Name": "PPM",
+        "URL": "https://packagemanager.posit.co/cran/latest"
+      },
+      {
         "Name": "CRAN",
         "URL": "https://cran.rstudio.com"
       }
@@ -77,14 +89,8 @@
     "bslib": {
       "Package": "bslib",
       "Version": "0.7.0.9000",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "rstudio",
-      "RemoteRepo": "bslib",
-      "RemoteRef": "main",
-      "RemoteSha": "55b90f8d335388f24bf9db2cf63236d4b67e693c",
-      "Remotes": "rstudio/shiny",
+      "Source": "Repository",
+      "Repository": "rstudio",
       "Requirements": [
         "R",
         "base64enc",
@@ -100,7 +106,7 @@
         "rlang",
         "sass"
       ],
-      "Hash": "f8736089022fd8b390195ef078cc4115"
+      "Hash": "9614ad89327bd67fb7f998deeadc50ff"
     },
     "cachem": {
       "Package": "cachem",
@@ -644,13 +650,8 @@
     "shiny": {
       "Package": "shiny",
       "Version": "1.8.1.9001",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "rstudio",
-      "RemoteRepo": "shiny",
-      "RemoteRef": "main",
-      "RemoteSha": "e689cdc522c65da37342d9348266f50c8d4b3949",
+      "Source": "Repository",
+      "Repository": "rstudio",
       "Requirements": [
         "R",
         "R6",
@@ -677,18 +678,13 @@
         "withr",
         "xtable"
       ],
-      "Hash": "d7da125a4d3a80ca8a9ef5b9ddd0839c"
+      "Hash": "e0143d84334ef8adf408f2ebb746f35c"
     },
     "shinylive": {
       "Package": "shinylive",
       "Version": "0.1.1.9000",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "posit-dev",
-      "RemoteRepo": "r-shinylive",
-      "RemoteRef": "main",
-      "RemoteSha": "097a7b8826499d953caf1228d29f2bbf83571667",
+      "Source": "Repository",
+      "Repository": "posit-dev",
       "Requirements": [
         "archive",
         "brio",
@@ -704,7 +700,7 @@
         "rlang",
         "tools"
       ],
-      "Hash": "26f9c7fc9d475611ee38d61b3eb7d741"
+      "Hash": "6251157a511981e9cae1673657effdd1"
     },
     "sourcetools": {
       "Package": "sourcetools",
