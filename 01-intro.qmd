@@ -11,7 +11,7 @@ editor: { render-on-save: true }
 ::: column-screen-inset
 ```{shinylive-r}
 #| standalone: true
-#| components: [editor, viewer]
+#| components: [editor, viewer, terminal]
 library(shiny)
 
 ui <- fluidPage(

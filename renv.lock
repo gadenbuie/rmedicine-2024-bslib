@@ -683,8 +683,13 @@
     "shinylive": {
       "Package": "shinylive",
       "Version": "0.1.1.9000",
-      "Source": "Repository",
-      "Repository": "posit-dev",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "posit-dev",
+      "RemoteRepo": "r-shinylive",
+      "RemoteRef": "feat/export-choose-asset-version",
+      "RemoteSha": "772e6c27f1f9c8ad3aee83387b27ed35c4869c86",
       "Requirements": [
         "archive",
         "brio",
@@ -700,7 +705,7 @@
         "rlang",
         "tools"
       ],
-      "Hash": "6251157a511981e9cae1673657effdd1"
+      "Hash": "df11081ec125e882cd969a47ba7e379d"
     },
     "sourcetools": {
       "Package": "sourcetools",
