@@ -15,6 +15,10 @@
         "URL": "https://packagemanager.posit.co/cran/latest"
       },
       {
+        "Name": "gadenbuie",
+        "URL": "https://gadenbuie.r-universe.dev"
+      },
+      {
         "Name": "CRAN",
         "URL": "https://cran.rstudio.com"
       }
@@ -142,6 +146,16 @@
         "utils"
       ],
       "Hash": "1216ac65ac55ec0058a6f75d7ca0fd52"
+    },
+    "collegeScorecard": {
+      "Package": "collegeScorecard",
+      "Version": "0.0.2",
+      "Source": "Repository",
+      "Repository": "gadenbuie",
+      "Requirements": [
+        "zeallot"
+      ],
+      "Hash": "8fa0b8fe9210985a89e8b1ad67caa4b1"
     },
     "commonmark": {
       "Package": "commonmark",
@@ -614,13 +628,13 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "1.0.7",
+      "Version": "1.0.7.9000",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "https://rstudio.r-universe.dev",
       "Requirements": [
         "utils"
       ],
-      "Hash": "397b7b2a265bc5a7a06852524dabae20"
+      "Hash": "af10c44294e0e4d220a695c689ecdc9b"
     },
     "rlang": {
       "Package": "rlang",
@@ -689,7 +703,7 @@
       "RemoteUsername": "posit-dev",
       "RemoteRepo": "r-shinylive",
       "RemoteRef": "feat/export-choose-asset-version",
-      "RemoteSha": "772e6c27f1f9c8ad3aee83387b27ed35c4869c86",
+      "RemoteSha": "2835f2fa5573ce579b70f639b6d24d7c2435e46c",
       "Requirements": [
         "archive",
         "brio",
@@ -705,7 +719,7 @@
         "rlang",
         "tools"
       ],
-      "Hash": "df11081ec125e882cd969a47ba7e379d"
+      "Hash": "f1534f5456e80d52952f4ae07ae6c29a"
     },
     "sourcetools": {
       "Package": "sourcetools",
@@ -790,6 +804,13 @@
         "utils"
       ],
       "Hash": "b8acdf8af494d9ec19ccb2481a9b11c2"
+    },
+    "zeallot": {
+      "Package": "zeallot",
+      "Version": "0.1.0",
+      "Source": "Repository",
+      "Repository": "PPM",
+      "Hash": "ee9b643aa8331c45d8d82eb3a137c9bc"
     },
     "zip": {
       "Package": "zip",

@@ -13,6 +13,7 @@ editor: { render-on-save: true }
 #| standalone: true
 #| components: [editor, viewer, terminal]
 library(shiny)
+library(collegeScorecard)
 
 ui <- fluidPage(
   h2("Hello world"),
