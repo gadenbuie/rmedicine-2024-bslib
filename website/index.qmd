@@ -7,6 +7,8 @@ image: assets/neom-nMzbnMzMjYU-unsplash.jpg
 title-block-banner: true
 title-block-style: default
 
+sidebar: false
+
 editor: { render-on-save: true }
 ---
 

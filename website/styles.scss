@@ -80,6 +80,29 @@ h1, .h1, h2, .h2 {
   padding-bottom: 0.25rem;
 }
 
+#quarto-header .navbar {
+  border-bottom: 1px solid rgba(var(--bs-body-color-rgb), 0.1);
+}
+#quarto-content + footer {
+  border-top: 1px solid rgba(var(--bs-body-color-rgb), 0.1);
+}
+
+.breadcrumb {
+  border: none;
+  box-shadow: none;
+  padding-left: 0;
+  .breadcrumb-item+.breadcrumb-item::before {
+    padding-right: 0.5rem;
+  }
+}
+
+.nav-footer-center {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  margin-top: 0 !important;
+}
+
 // Posit features ----
 .eyebrow {
   dl { padding-top: 1rem; }

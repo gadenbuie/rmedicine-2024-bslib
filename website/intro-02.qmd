@@ -1,0 +1,20 @@
+---
+title: New layouts
+subtitle: R/Medicine 2024
+
+editor: { render-on-save: true }
+---
+
+- Inroducing
+    - `page_sidebar()`
+    - `card()`
+        - with card parts
+    - `layout_columns()`
+    - full screen cards
+
+- Breakout activity
+    - Starting with a basic shiny app with 2 inputs and 2-3 plots 
+        - (1 input is more local)
+    - Organize into a new layout
+    - Bonus: `layout_sidebar()`
+

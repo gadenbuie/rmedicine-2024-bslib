@@ -9,22 +9,34 @@ website:
   title: "Next Generation Shiny Apps with {bslib}" 
   description: "A tutorial on how to create modern Shiny apps with {bslib} and {shiny}"
   page-footer: |
-    R/Medicine 2024
+    <a href="https://rconsortium.github.io/RMedicine_website/">R/Medicine 2024</a>
   navbar:
     title: "Next-Gen Shiny Apps"
-    foreground: dark
-    background: light
+    foreground: black
+    background: white
     left:
       - href: index.qmd
         text: Home
-      - text: Workshop
-        menu:
-          - href: 01-intro.qmd
-            text: 1 - Introduction
+      - href: intro-01.qmd
+        text: Workshop
       - about.qmd
+  sidebar:
+    - id: workshop
+      style: docked
+      type: light
+      background: light
+      foreground: dark
+      contents:
+        - section: "Introduction"
+          contents:
+            - auto: "intro*.qmd"
 
 format:
   html:
     theme: [zephyr, styles.scss]
     toc: true
+    include-before-body: 
+      - text: <script>document.querySelector('.navbar').dataset.bsTheme = 'light';</script>
 
+filters:
+  - shinylive
