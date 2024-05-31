@@ -3,7 +3,7 @@ project:
   preview: 
     port: 7567
   post-render:
-    - cp -r data _site/data
+    - cp -r ../data _site/data
 
 website:
   title: "Next Generation Shiny Apps with {bslib}" 
