@@ -43,4073 +43,4073 @@
     {
       "filename": "/Meta/package.rds",
       "start": 14680,
-      "end": 17170
+      "end": 17169
     },
     {
       "filename": "/NAMESPACE",
-      "start": 17170,
-      "end": 21549
+      "start": 17169,
+      "end": 21548
     },
     {
       "filename": "/NEWS.md",
-      "start": 21549,
-      "end": 52506
+      "start": 21548,
+      "end": 52505
     },
     {
       "filename": "/R/bslib",
-      "start": 52506,
-      "end": 53564
+      "start": 52505,
+      "end": 53563
     },
     {
       "filename": "/R/bslib.rdb",
-      "start": 53564,
-      "end": 173527
+      "start": 53563,
+      "end": 173670
     },
     {
       "filename": "/R/bslib.rdx",
-      "start": 173527,
-      "end": 178445
+      "start": 173670,
+      "end": 178616
     },
     {
       "filename": "/R/sysdata.rdb",
-      "start": 178445,
-      "end": 535023
+      "start": 178616,
+      "end": 535927
     },
     {
       "filename": "/R/sysdata.rdx",
-      "start": 535023,
-      "end": 535184
+      "start": 535927,
+      "end": 536088
     },
     {
       "filename": "/bs3compat/_declarations.scss",
-      "start": 535184,
-      "end": 536939
+      "start": 536088,
+      "end": 537843
     },
     {
       "filename": "/bs3compat/_defaults.scss",
-      "start": 536939,
-      "end": 537089
+      "start": 537843,
+      "end": 537993
     },
     {
       "filename": "/bs3compat/_dropdown_compat.scss",
-      "start": 537089,
-      "end": 537861
+      "start": 537993,
+      "end": 538765
     },
     {
       "filename": "/bs3compat/_dt_compat.scss",
-      "start": 537861,
-      "end": 538312
+      "start": 538765,
+      "end": 539216
     },
     {
       "filename": "/bs3compat/_glyphicons.scss",
-      "start": 538312,
-      "end": 559039
+      "start": 539216,
+      "end": 559943
     },
     {
       "filename": "/bs3compat/_headers.scss",
-      "start": 559039,
-      "end": 560435
+      "start": 559943,
+      "end": 561339
     },
     {
       "filename": "/bs3compat/_help_text.scss",
-      "start": 560435,
-      "end": 560506
+      "start": 561339,
+      "end": 561410
     },
     {
       "filename": "/bs3compat/_nav_compat.scss",
-      "start": 560506,
-      "end": 561395
+      "start": 561410,
+      "end": 562299
     },
     {
       "filename": "/bs3compat/_navbar_compat.scss",
-      "start": 561395,
-      "end": 565593
+      "start": 562299,
+      "end": 566497
     },
     {
       "filename": "/bs3compat/_progress_compat.scss",
-      "start": 565593,
-      "end": 565732
+      "start": 566497,
+      "end": 566636
     },
     {
       "filename": "/bs3compat/_rules.scss",
-      "start": 565732,
-      "end": 565981
+      "start": 566636,
+      "end": 566885
     },
     {
       "filename": "/bs3compat/_shiny_input.scss",
-      "start": 565981,
-      "end": 567994
+      "start": 566885,
+      "end": 568898
     },
     {
       "filename": "/bs3compat/_shiny_misc.scss",
-      "start": 567994,
-      "end": 568345
+      "start": 568898,
+      "end": 569249
     },
     {
       "filename": "/bs3compat/_wells.scss",
-      "start": 568345,
-      "end": 569028
+      "start": 569249,
+      "end": 569932
     },
     {
       "filename": "/bs3compat/fonts/glyphicons-halflings-regular.eot",
-      "start": 569028,
-      "end": 589155
+      "start": 569932,
+      "end": 590059
     },
     {
       "filename": "/bs3compat/fonts/glyphicons-halflings-regular.svg",
-      "start": 589155,
-      "end": 697893
+      "start": 590059,
+      "end": 698797
     },
     {
       "filename": "/bs3compat/fonts/glyphicons-halflings-regular.ttf",
-      "start": 697893,
-      "end": 743297
+      "start": 698797,
+      "end": 744201
     },
     {
       "filename": "/bs3compat/fonts/glyphicons-halflings-regular.woff",
-      "start": 743297,
-      "end": 766721
+      "start": 744201,
+      "end": 767625
     },
     {
       "filename": "/bs3compat/fonts/glyphicons-halflings-regular.woff2",
-      "start": 766721,
-      "end": 784749
+      "start": 767625,
+      "end": 785653
     },
     {
       "filename": "/bs3compat/js/bs3compat.js",
-      "start": 784749,
-      "end": 786661
+      "start": 785653,
+      "end": 787565
     },
     {
       "filename": "/bs3compat/js/tabs.js",
-      "start": 786661,
-      "end": 790727
+      "start": 787565,
+      "end": 791631
     },
     {
       "filename": "/bs3compat/js/transition.js",
-      "start": 790727,
-      "end": 792566
+      "start": 791631,
+      "end": 793470
     },
     {
       "filename": "/bslib-scss/bslib.scss",
-      "start": 792566,
-      "end": 792631
+      "start": 793470,
+      "end": 793535
     },
     {
       "filename": "/bslib-scss/color-utilities.scss",
-      "start": 792631,
-      "end": 794903
+      "start": 793535,
+      "end": 795807
     },
     {
       "filename": "/bslib-scss/functions.scss",
-      "start": 794903,
-      "end": 795538
+      "start": 795807,
+      "end": 796442
     },
     {
       "filename": "/bslib-scss/spacer.scss",
-      "start": 795538,
-      "end": 796707
+      "start": 796442,
+      "end": 797611
     },
     {
       "filename": "/bslib-scss/tab-fill.scss",
-      "start": 796707,
-      "end": 797273
+      "start": 797611,
+      "end": 798177
     },
     {
       "filename": "/builtin/bs5/shiny/_mixins.scss",
-      "start": 797273,
-      "end": 797765
+      "start": 798177,
+      "end": 798669
     },
     {
       "filename": "/builtin/bs5/shiny/_rules.scss",
-      "start": 797765,
-      "end": 808287
+      "start": 798669,
+      "end": 809191
     },
     {
       "filename": "/builtin/bs5/shiny/_variables.scss",
-      "start": 808287,
-      "end": 812861
+      "start": 809191,
+      "end": 813765
     },
     {
       "filename": "/builtin/bs5/shiny/font.css",
-      "start": 812861,
-      "end": 887609
+      "start": 813765,
+      "end": 888513
     },
     {
       "filename": "/builtin/bs5/shiny/ionrangeslider/_rules.scss",
-      "start": 887609,
-      "end": 889069
+      "start": 888513,
+      "end": 889973
     },
     {
       "filename": "/builtin/bs5/shiny/ionrangeslider/_variables.scss",
-      "start": 889069,
-      "end": 889946
+      "start": 889973,
+      "end": 890850
     },
     {
       "filename": "/builtin/bs5/shiny/tables/_rules.scss",
-      "start": 889946,
-      "end": 892360
+      "start": 890850,
+      "end": 893264
     },
     {
       "filename": "/components/dist/components.css",
-      "start": 892360,
-      "end": 916614
+      "start": 893264,
+      "end": 917518
     },
     {
       "filename": "/components/dist/components.js",
-      "start": 916614,
-      "end": 968306
+      "start": 917518,
+      "end": 969210
     },
     {
       "filename": "/components/dist/components.js.map",
-      "start": 968306,
-      "end": 1048203
+      "start": 969210,
+      "end": 1049107
     },
     {
       "filename": "/components/dist/components.min.js",
-      "start": 1048203,
-      "end": 1066568
+      "start": 1049107,
+      "end": 1067472
     },
     {
       "filename": "/components/dist/components.min.js.map",
-      "start": 1066568,
-      "end": 1144886
+      "start": 1067472,
+      "end": 1145790
     },
     {
       "filename": "/components/dist/web-components.js",
-      "start": 1144886,
-      "end": 1222541
+      "start": 1145790,
+      "end": 1223445
     },
     {
       "filename": "/components/dist/web-components.js.map",
-      "start": 1222541,
-      "end": 1510572
+      "start": 1223445,
+      "end": 1511476
     },
     {
       "filename": "/components/dist/web-components.min.js",
-      "start": 1510572,
-      "end": 1554779
+      "start": 1511476,
+      "end": 1555683
     },
     {
       "filename": "/components/dist/web-components.min.js.map",
-      "start": 1554779,
-      "end": 1840624
+      "start": 1555683,
+      "end": 1841528
     },
     {
       "filename": "/components/dist/webComponents/webComponents.min.js",
-      "start": 1840624,
-      "end": 1872054
+      "start": 1841528,
+      "end": 1872958
     },
     {
       "filename": "/components/scss/accordion.scss",
-      "start": 1872054,
-      "end": 1872720
+      "start": 1872958,
+      "end": 1873624
     },
     {
       "filename": "/components/scss/card.scss",
-      "start": 1872720,
-      "end": 1876438
+      "start": 1873624,
+      "end": 1877342
     },
     {
       "filename": "/components/scss/grid.scss",
-      "start": 1876438,
-      "end": 1878210
+      "start": 1877342,
+      "end": 1879114
     },
     {
       "filename": "/components/scss/mixins/_mixins.scss",
-      "start": 1878210,
-      "end": 1879209
+      "start": 1879114,
+      "end": 1880113
     },
     {
       "filename": "/components/scss/nav_spacer.scss",
-      "start": 1879209,
-      "end": 1880305
+      "start": 1880113,
+      "end": 1881209
     },
     {
       "filename": "/components/scss/page_fillable.scss",
-      "start": 1880305,
-      "end": 1881582
+      "start": 1881209,
+      "end": 1882486
     },
     {
       "filename": "/components/scss/page_navbar.scss",
-      "start": 1881582,
-      "end": 1882789
+      "start": 1882486,
+      "end": 1883693
     },
     {
       "filename": "/components/scss/page_sidebar.scss",
-      "start": 1882789,
-      "end": 1883939
+      "start": 1883693,
+      "end": 1884843
     },
     {
       "filename": "/components/scss/sidebar.scss",
-      "start": 1883939,
-      "end": 1897334
+      "start": 1884843,
+      "end": 1898238
     },
     {
       "filename": "/components/scss/value_box.scss",
-      "start": 1897334,
-      "end": 1902928
+      "start": 1898238,
+      "end": 1903832
     },
     {
       "filename": "/components/tag-require.js",
-      "start": 1902928,
-      "end": 1903509
+      "start": 1903832,
+      "end": 1904413
     },
     {
       "filename": "/css-precompiled/3/bootstrap.min.css",
-      "start": 1903509,
-      "end": 2028219
+      "start": 1904413,
+      "end": 2029123
     },
     {
       "filename": "/css-precompiled/4/bootstrap.min.css",
-      "start": 2028219,
-      "end": 2248654
+      "start": 2029123,
+      "end": 2249558
     },
     {
       "filename": "/css-precompiled/5/bootstrap.min.css",
-      "start": 2248654,
-      "end": 2563679
+      "start": 2249558,
+      "end": 2564583
     },
     {
       "filename": "/css-precompiled/5/bootstrap.scss",
-      "start": 2563679,
-      "end": 2566299
+      "start": 2564583,
+      "end": 2567203
     },
     {
       "filename": "/custom/person.scss",
-      "start": 2566299,
-      "end": 2566830
+      "start": 2567203,
+      "end": 2567734
     },
     {
       "filename": "/examples/build-a-box/R/code_modal.R",
-      "start": 2566830,
-      "end": 2567702
+      "start": 2567734,
+      "end": 2568606
     },
     {
       "filename": "/examples/build-a-box/R/colors.R",
-      "start": 2567702,
-      "end": 2568257
+      "start": 2568606,
+      "end": 2569161
     },
     {
       "filename": "/examples/build-a-box/R/mod-global-controls.R",
-      "start": 2568257,
-      "end": 2571724
+      "start": 2569161,
+      "end": 2572628
     },
     {
       "filename": "/examples/build-a-box/R/mod-selextra.R",
-      "start": 2571724,
-      "end": 2574415
+      "start": 2572628,
+      "end": 2575319
     },
     {
       "filename": "/examples/build-a-box/R/mod-value-box-ui.R",
-      "start": 2574415,
-      "end": 2581386
+      "start": 2575319,
+      "end": 2582290
     },
     {
       "filename": "/examples/build-a-box/R/random_plot.R",
-      "start": 2581386,
-      "end": 2583431
+      "start": 2582290,
+      "end": 2584335
     },
     {
       "filename": "/examples/build-a-box/R/random_values.R",
-      "start": 2583431,
-      "end": 2585862
+      "start": 2584335,
+      "end": 2586766
     },
     {
       "filename": "/examples/build-a-box/R/shuffleButton.R",
-      "start": 2585862,
-      "end": 2586247
+      "start": 2586766,
+      "end": 2587151
     },
     {
       "filename": "/examples/build-a-box/about-value-boxes.md",
-      "start": 2586247,
-      "end": 2586664
+      "start": 2587151,
+      "end": 2587568
     },
     {
       "filename": "/examples/build-a-box/app.R",
-      "start": 2586664,
-      "end": 2593377
+      "start": 2587568,
+      "end": 2594281
     },
     {
       "filename": "/examples/build-a-box/deploy.R",
-      "start": 2593377,
-      "end": 2593592
+      "start": 2594281,
+      "end": 2594496
     },
     {
       "filename": "/examples/build-a-box/www/build-a-box.js",
-      "start": 2593592,
-      "end": 2596146
+      "start": 2594496,
+      "end": 2597050
     },
     {
       "filename": "/examples/build-a-box/www/build-a-box.scss",
-      "start": 2596146,
-      "end": 2597648
+      "start": 2597050,
+      "end": 2598552
     },
     {
       "filename": "/examples/build-a-box/www/code-modal.js",
-      "start": 2597648,
-      "end": 2599663
+      "start": 2598552,
+      "end": 2600567
     },
     {
       "filename": "/examples/build-a-box/www/shiny.png",
-      "start": 2599663,
-      "end": 2612905
+      "start": 2600567,
+      "end": 2613809
     },
     {
       "filename": "/examples/card/app.R",
-      "start": 2612905,
-      "end": 2617185
+      "start": 2613809,
+      "end": 2618089
     },
     {
       "filename": "/examples/card/deploy.R",
-      "start": 2617185,
-      "end": 2617330
+      "start": 2618089,
+      "end": 2618234
     },
     {
       "filename": "/examples/card/www/shiny-hex.svg",
-      "start": 2617330,
-      "end": 2625083
+      "start": 2618234,
+      "end": 2625987
     },
     {
       "filename": "/examples/flights/app.R",
-      "start": 2625083,
-      "end": 2641019
+      "start": 2625987,
+      "end": 2641923
     },
     {
       "filename": "/examples/flights/deploy.R",
-      "start": 2641019,
-      "end": 2641170
+      "start": 2641923,
+      "end": 2642074
     },
     {
       "filename": "/examples/flights/www/logo.png",
-      "start": 2641170,
-      "end": 2710243
+      "start": 2642074,
+      "end": 2711147
     },
     {
       "filename": "/examples/value_box/app.R",
-      "start": 2710243,
-      "end": 2712511
+      "start": 2711147,
+      "end": 2713415
     },
     {
       "filename": "/examples/value_box/deploy.R",
-      "start": 2712511,
-      "end": 2712666
+      "start": 2713415,
+      "end": 2713570
     },
     {
       "filename": "/fonts/07d40e985ad7c747025dabb9f22142c4.woff2",
-      "start": 2712666,
-      "end": 2729122
+      "start": 2713570,
+      "end": 2730026
     },
     {
       "filename": "/fonts/1Ptug8zYS_SKggPNyC0ITw.woff2",
-      "start": 2729122,
-      "end": 2777458
+      "start": 2730026,
+      "end": 2778362
     },
     {
       "filename": "/fonts/1Ptug8zYS_SKggPNyCAIT5lu.woff2",
-      "start": 2777458,
-      "end": 2804446
+      "start": 2778362,
+      "end": 2805350
     },
     {
       "filename": "/fonts/1Ptug8zYS_SKggPNyCIIT5lu.woff2",
-      "start": 2804446,
-      "end": 2815830
+      "start": 2805350,
+      "end": 2816734
     },
     {
       "filename": "/fonts/1Ptug8zYS_SKggPNyCMIT5lu.woff2",
-      "start": 2815830,
-      "end": 2846690
+      "start": 2816734,
+      "end": 2847594
     },
     {
       "filename": "/fonts/1Ptug8zYS_SKggPNyCkIT5lu.woff2",
-      "start": 2846690,
-      "end": 2872486
+      "start": 2847594,
+      "end": 2873390
     },
     {
       "filename": "/fonts/1f5e011d6aae0d98fc0518e1a303e99a.woff2",
-      "start": 2872486,
-      "end": 2882818
+      "start": 2873390,
+      "end": 2883722
     },
     {
       "filename": "/fonts/4iCs6KVjbNBYlgoKcQ72j00.woff2",
-      "start": 2882818,
-      "end": 2929614
+      "start": 2883722,
+      "end": 2930518
     },
     {
       "filename": "/fonts/4iCs6KVjbNBYlgoKcg72j00.woff2",
-      "start": 2929614,
-      "end": 2954062
+      "start": 2930518,
+      "end": 2954966
     },
     {
       "filename": "/fonts/4iCs6KVjbNBYlgoKcw72j00.woff2",
-      "start": 2954062,
-      "end": 2968650
+      "start": 2954966,
+      "end": 2969554
     },
     {
       "filename": "/fonts/4iCs6KVjbNBYlgoKew72j00.woff2",
-      "start": 2968650,
-      "end": 2989510
+      "start": 2969554,
+      "end": 2990414
     },
     {
       "filename": "/fonts/4iCs6KVjbNBYlgoKfA72j00.woff2",
-      "start": 2989510,
-      "end": 3004626
+      "start": 2990414,
+      "end": 3005530
     },
     {
       "filename": "/fonts/4iCs6KVjbNBYlgoKfw72.woff2",
-      "start": 3004626,
-      "end": 3039478
+      "start": 3005530,
+      "end": 3040382
     },
     {
       "filename": "/fonts/4iCv6KVjbNBYlgoCxCvjs2yNL4U.woff2",
-      "start": 3039478,
-      "end": 3052414
+      "start": 3040382,
+      "end": 3053318
     },
     {
       "filename": "/fonts/4iCv6KVjbNBYlgoCxCvjsGyN.woff2",
-      "start": 3052414,
-      "end": 3082166
+      "start": 3053318,
+      "end": 3083070
     },
     {
       "filename": "/fonts/4iCv6KVjbNBYlgoCxCvjtGyNL4U.woff2",
-      "start": 3082166,
-      "end": 3100366
+      "start": 3083070,
+      "end": 3101270
     },
     {
       "filename": "/fonts/4iCv6KVjbNBYlgoCxCvjvGyNL4U.woff2",
-      "start": 3100366,
-      "end": 3113650
+      "start": 3101270,
+      "end": 3114554
     },
     {
       "filename": "/fonts/4iCv6KVjbNBYlgoCxCvjvWyNL4U.woff2",
-      "start": 3113650,
-      "end": 3134526
+      "start": 3114554,
+      "end": 3135430
     },
     {
       "filename": "/fonts/4iCv6KVjbNBYlgoCxCvjvmyNL4U.woff2",
-      "start": 3134526,
-      "end": 3172366
+      "start": 3135430,
+      "end": 3173270
     },
     {
       "filename": "/fonts/626330658504e338ee86aec8e957426b.woff2",
-      "start": 3172366,
-      "end": 3193982
+      "start": 3173270,
+      "end": 3194886
     },
     {
       "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7jsDJT9g.woff2",
-      "start": 3193982,
-      "end": 3195018
+      "start": 3194886,
+      "end": 3195922
     },
     {
       "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7ksDJT9g.woff2",
-      "start": 3195018,
-      "end": 3196230
+      "start": 3195922,
+      "end": 3197134
     },
     {
       "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDI.woff2",
-      "start": 3196230,
-      "end": 3210390
+      "start": 3197134,
+      "end": 3211294
     },
     {
       "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7osDJT9g.woff2",
-      "start": 3210390,
-      "end": 3216126
+      "start": 3211294,
+      "end": 3217030
     },
     {
       "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7psDJT9g.woff2",
-      "start": 3216126,
-      "end": 3235738
+      "start": 3217030,
+      "end": 3236642
     },
     {
       "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7qsDJT9g.woff2",
-      "start": 3235738,
-      "end": 3236766
+      "start": 3236642,
+      "end": 3237670
     },
     {
       "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7rsDJT9g.woff2",
-      "start": 3236766,
-      "end": 3237674
+      "start": 3237670,
+      "end": 3238578
     },
     {
       "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2",
-      "start": 3237674,
-      "end": 3243510
+      "start": 3238578,
+      "end": 3244414
     },
     {
       "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2",
-      "start": 3243510,
-      "end": 3249514
+      "start": 3244414,
+      "end": 3250418
     },
     {
       "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2",
-      "start": 3249514,
-      "end": 3254538
+      "start": 3250418,
+      "end": 3255442
     },
     {
       "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2",
-      "start": 3254538,
-      "end": 3275154
+      "start": 3255442,
+      "end": 3276058
     },
     {
       "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2",
-      "start": 3275154,
-      "end": 3282190
+      "start": 3276058,
+      "end": 3283094
     },
     {
       "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2",
-      "start": 3282190,
-      "end": 3297082
+      "start": 3283094,
+      "end": 3297986
     },
     {
       "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2",
-      "start": 3297082,
-      "end": 3305054
+      "start": 3297986,
+      "end": 3305958
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxduz8A.woff2",
-      "start": 3305054,
-      "end": 3313022
+      "start": 3305958,
+      "end": 3313926
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlBduz8A.woff2",
-      "start": 3313022,
-      "end": 3319934
+      "start": 3313926,
+      "end": 3320838
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2",
-      "start": 3319934,
-      "end": 3334758
+      "start": 3320838,
+      "end": 3335662
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmBduz8A.woff2",
-      "start": 3334758,
-      "end": 3340586
+      "start": 3335662,
+      "end": 3341490
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmRduz8A.woff2",
-      "start": 3340586,
-      "end": 3361014
+      "start": 3341490,
+      "end": 3361918
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmhduz8A.woff2",
-      "start": 3361014,
-      "end": 3366030
+      "start": 3361918,
+      "end": 3366934
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmxduz8A.woff2",
-      "start": 3366030,
-      "end": 3371974
+      "start": 3366934,
+      "end": 3372878
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2",
-      "start": 3371974,
-      "end": 3379834
+      "start": 3372878,
+      "end": 3380738
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2",
-      "start": 3379834,
-      "end": 3386738
+      "start": 3380738,
+      "end": 3387642
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2",
-      "start": 3386738,
-      "end": 3401450
+      "start": 3387642,
+      "end": 3402354
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2",
-      "start": 3401450,
-      "end": 3407178
+      "start": 3402354,
+      "end": 3408082
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2",
-      "start": 3407178,
-      "end": 3427570
+      "start": 3408082,
+      "end": 3428474
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2",
-      "start": 3427570,
-      "end": 3432542
+      "start": 3428474,
+      "end": 3433446
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2",
-      "start": 3432542,
-      "end": 3438490
+      "start": 3433446,
+      "end": 3439394
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxduz8A.woff2",
-      "start": 3438490,
-      "end": 3446402
+      "start": 3439394,
+      "end": 3447306
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlBduz8A.woff2",
-      "start": 3446402,
-      "end": 3453370
+      "start": 3447306,
+      "end": 3454274
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2",
-      "start": 3453370,
-      "end": 3468150
+      "start": 3454274,
+      "end": 3469054
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmBduz8A.woff2",
-      "start": 3468150,
-      "end": 3473966
+      "start": 3469054,
+      "end": 3474870
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmRduz8A.woff2",
-      "start": 3473966,
-      "end": 3494354
+      "start": 3474870,
+      "end": 3495258
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhduz8A.woff2",
-      "start": 3494354,
-      "end": 3499282
+      "start": 3495258,
+      "end": 3500186
     },
     {
       "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmxduz8A.woff2",
-      "start": 3499282,
-      "end": 3505278
+      "start": 3500186,
+      "end": 3506182
     },
     {
       "filename": "/fonts/CSR54z1Qlv-GDxkbKVQ_dFsvWNReuQ.woff2",
-      "start": 3505278,
-      "end": 3518714
+      "start": 3506182,
+      "end": 3519618
     },
     {
       "filename": "/fonts/CSR54z1Qlv-GDxkbKVQ_dFsvWNpeudwk.woff2",
-      "start": 3518714,
-      "end": 3530942
+      "start": 3519618,
+      "end": 3531846
     },
     {
       "filename": "/fonts/CSR64z1Qlv-GDxkbKVQ_fO4KTet_.woff2",
-      "start": 3530942,
-      "end": 3550922
+      "start": 3531846,
+      "end": 3551826
     },
     {
       "filename": "/fonts/CSR64z1Qlv-GDxkbKVQ_fOAKTQ.woff2",
-      "start": 3550922,
-      "end": 3564282
+      "start": 3551826,
+      "end": 3565186
     },
     {
       "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvQlMIXxw.woff2",
-      "start": 3564282,
-      "end": 3566594
+      "start": 3565186,
+      "end": 3567498
     },
     {
       "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvUlMI.woff2",
-      "start": 3566594,
-      "end": 3588386
+      "start": 3567498,
+      "end": 3589290
     },
     {
       "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvXlMIXxw.woff2",
-      "start": 3588386,
-      "end": 3590218
+      "start": 3589290,
+      "end": 3591122
     },
     {
       "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvYlMIXxw.woff2",
-      "start": 3590218,
-      "end": 3591854
+      "start": 3591122,
+      "end": 3592758
     },
     {
       "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvZlMIXxw.woff2",
-      "start": 3591854,
-      "end": 3593718
+      "start": 3592758,
+      "end": 3594622
     },
     {
       "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvalMIXxw.woff2",
-      "start": 3593718,
-      "end": 3622998
+      "start": 3594622,
+      "end": 3623902
     },
     {
       "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvblMIXxw.woff2",
-      "start": 3622998,
-      "end": 3630698
+      "start": 3623902,
+      "end": 3631602
     },
     {
       "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlM-vWjMY.woff2",
-      "start": 3630698,
-      "end": 3659606
+      "start": 3631602,
+      "end": 3660510
     },
     {
       "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMOvWjMY.woff2",
-      "start": 3659606,
-      "end": 3668094
+      "start": 3660510,
+      "end": 3668998
     },
     {
       "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMevWjMY.woff2",
-      "start": 3668094,
-      "end": 3671026
+      "start": 3668998,
+      "end": 3671930
     },
     {
       "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMuvWjMY.woff2",
-      "start": 3671026,
-      "end": 3678718
+      "start": 3671930,
+      "end": 3679622
     },
     {
       "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlOevWjMY.woff2",
-      "start": 3678718,
-      "end": 3692590
+      "start": 3679622,
+      "end": 3693494
     },
     {
       "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2",
-      "start": 3692590,
-      "end": 3714118
+      "start": 3693494,
+      "end": 3715022
     },
     {
       "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPuvWjMY.woff2",
-      "start": 3714118,
-      "end": 3724430
+      "start": 3715022,
+      "end": 3725334
     },
     {
       "filename": "/fonts/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2",
-      "start": 3724430,
-      "end": 3745718
+      "start": 3725334,
+      "end": 3746622
     },
     {
       "filename": "/fonts/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2",
-      "start": 3745718,
-      "end": 3769234
+      "start": 3746622,
+      "end": 3770138
     },
     {
       "filename": "/fonts/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2",
-      "start": 3769234,
-      "end": 3778746
+      "start": 3770138,
+      "end": 3779650
     },
     {
       "filename": "/fonts/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
-      "start": 3778746,
-      "end": 3806558
+      "start": 3779650,
+      "end": 3807462
     },
     {
       "filename": "/fonts/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2",
-      "start": 3806558,
-      "end": 3839650
+      "start": 3807462,
+      "end": 3840554
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2",
-      "start": 3839650,
-      "end": 3849490
+      "start": 3840554,
+      "end": 3850394
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fBBc4.woff2",
-      "start": 3849490,
-      "end": 3865410
+      "start": 3850394,
+      "end": 3866314
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2",
-      "start": 3865410,
-      "end": 3872426
+      "start": 3866314,
+      "end": 3873330
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2",
-      "start": 3872426,
-      "end": 3873926
+      "start": 3873330,
+      "end": 3874830
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2",
-      "start": 3873926,
-      "end": 3888894
+      "start": 3874830,
+      "end": 3889798
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2",
-      "start": 3888894,
-      "end": 3900694
+      "start": 3889798,
+      "end": 3901598
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2",
-      "start": 3900694,
-      "end": 3906298
+      "start": 3901598,
+      "end": 3907202
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2",
-      "start": 3906298,
-      "end": 3915874
+      "start": 3907202,
+      "end": 3916778
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fBBc4.woff2",
-      "start": 3915874,
-      "end": 3931614
+      "start": 3916778,
+      "end": 3932518
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2",
-      "start": 3931614,
-      "end": 3938734
+      "start": 3932518,
+      "end": 3939638
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2",
-      "start": 3938734,
-      "end": 3940214
+      "start": 3939638,
+      "end": 3941118
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2",
-      "start": 3940214,
-      "end": 3955214
+      "start": 3941118,
+      "end": 3956118
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2",
-      "start": 3955214,
-      "end": 3967010
+      "start": 3956118,
+      "end": 3967914
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2",
-      "start": 3967010,
-      "end": 3972478
+      "start": 3967914,
+      "end": 3973382
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2",
-      "start": 3972478,
-      "end": 3982122
+      "start": 3973382,
+      "end": 3983026
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfBBc4.woff2",
-      "start": 3982122,
-      "end": 3997982
+      "start": 3983026,
+      "end": 3998886
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2",
-      "start": 3997982,
-      "end": 4004918
+      "start": 3998886,
+      "end": 4005822
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2",
-      "start": 4004918,
-      "end": 4006350
+      "start": 4005822,
+      "end": 4007254
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2",
-      "start": 4006350,
-      "end": 4021034
+      "start": 4007254,
+      "end": 4021938
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2",
-      "start": 4021034,
-      "end": 4032858
+      "start": 4021938,
+      "end": 4033762
     },
     {
       "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2",
-      "start": 4032858,
-      "end": 4038406
+      "start": 4033762,
+      "end": 4039310
     },
     {
       "filename": "/fonts/KFOmCnqEu92Fr1Mu4WxKOzY.woff2",
-      "start": 4038406,
-      "end": 4045518
+      "start": 4039310,
+      "end": 4046422
     },
     {
       "filename": "/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2",
-      "start": 4045518,
-      "end": 4061262
+      "start": 4046422,
+      "end": 4062166
     },
     {
       "filename": "/fonts/KFOmCnqEu92Fr1Mu5mxKOzY.woff2",
-      "start": 4061262,
-      "end": 4070890
+      "start": 4062166,
+      "end": 4071794
     },
     {
       "filename": "/fonts/KFOmCnqEu92Fr1Mu72xKOzY.woff2",
-      "start": 4070890,
-      "end": 4086234
+      "start": 4071794,
+      "end": 4087138
     },
     {
       "filename": "/fonts/KFOmCnqEu92Fr1Mu7GxKOzY.woff2",
-      "start": 4086234,
-      "end": 4098106
+      "start": 4087138,
+      "end": 4099010
     },
     {
       "filename": "/fonts/KFOmCnqEu92Fr1Mu7WxKOzY.woff2",
-      "start": 4098106,
-      "end": 4103666
+      "start": 4099010,
+      "end": 4104570
     },
     {
       "filename": "/fonts/KFOmCnqEu92Fr1Mu7mxKOzY.woff2",
-      "start": 4103666,
-      "end": 4105150
+      "start": 4104570,
+      "end": 4106054
     },
     {
       "filename": "/fonts/QGYpz_kZZAGCONcK2A4bGOj8mNhN.woff2",
-      "start": 4105150,
-      "end": 4184058
+      "start": 4106054,
+      "end": 4184962
     },
     {
       "filename": "/fonts/S6u8w4BMUTPHjxsAUi-qJCY.woff2",
-      "start": 4184058,
-      "end": 4189658
+      "start": 4184962,
+      "end": 4190562
     },
     {
       "filename": "/fonts/S6u8w4BMUTPHjxsAXC-q.woff2",
-      "start": 4189658,
-      "end": 4214066
+      "start": 4190562,
+      "end": 4214970
     },
     {
       "filename": "/fonts/S6u9w4BMUTPHh6UVSwaPGR_p.woff2",
-      "start": 4214066,
-      "end": 4219434
+      "start": 4214970,
+      "end": 4220338
     },
     {
       "filename": "/fonts/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
-      "start": 4219434,
-      "end": 4242474
+      "start": 4220338,
+      "end": 4243378
     },
     {
       "filename": "/fonts/S6u9w4BMUTPHh7USSwaPGR_p.woff2",
-      "start": 4242474,
-      "end": 4248098
+      "start": 4243378,
+      "end": 4249002
     },
     {
       "filename": "/fonts/S6u9w4BMUTPHh7USSwiPGQ.woff2",
-      "start": 4248098,
-      "end": 4271334
+      "start": 4249002,
+      "end": 4272238
     },
     {
       "filename": "/fonts/S6uyw4BMUTPHjx4wXg.woff2",
-      "start": 4271334,
-      "end": 4294914
+      "start": 4272238,
+      "end": 4295818
     },
     {
       "filename": "/fonts/S6uyw4BMUTPHjxAwXjeu.woff2",
-      "start": 4294914,
-      "end": 4300386
+      "start": 4295818,
+      "end": 4301290
     },
     {
       "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7SUc.woff2",
-      "start": 4300386,
-      "end": 4317986
+      "start": 4301290,
+      "end": 4318890
     },
     {
       "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2",
-      "start": 4317986,
-      "end": 4364690
+      "start": 4318890,
+      "end": 4365594
     },
     {
       "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7SUc.woff2",
-      "start": 4364690,
-      "end": 4387170
+      "start": 4365594,
+      "end": 4388074
     },
     {
       "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2",
-      "start": 4387170,
-      "end": 4467110
+      "start": 4388074,
+      "end": 4468014
     },
     {
       "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7SUc.woff2",
-      "start": 4467110,
-      "end": 4494394
+      "start": 4468014,
+      "end": 4495298
     },
     {
       "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7SUc.woff2",
-      "start": 4494394,
-      "end": 4507126
+      "start": 4495298,
+      "end": 4508030
     },
     {
       "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7SUc.woff2",
-      "start": 4507126,
-      "end": 4517666
+      "start": 4508030,
+      "end": 4518570
     },
     {
       "filename": "/fonts/XRXV3I6Li01BKofIMeaBXso.woff2",
-      "start": 4517666,
-      "end": 4538374
+      "start": 4518570,
+      "end": 4539278
     },
     {
       "filename": "/fonts/XRXV3I6Li01BKofINeaB.woff2",
-      "start": 4538374,
-      "end": 4577498
+      "start": 4539278,
+      "end": 4578402
     },
     {
       "filename": "/fonts/XRXV3I6Li01BKofIO-aBXso.woff2",
-      "start": 4577498,
-      "end": 4612106
+      "start": 4578402,
+      "end": 4613010
     },
     {
       "filename": "/fonts/XRXV3I6Li01BKofIOOaBXso.woff2",
-      "start": 4612106,
-      "end": 4640974
+      "start": 4613010,
+      "end": 4641878
     },
     {
       "filename": "/fonts/XRXV3I6Li01BKofIOuaBXso.woff2",
-      "start": 4640974,
-      "end": 4653934
+      "start": 4641878,
+      "end": 4654838
     },
     {
       "filename": "/fonts/c2f002b3a87d3f9bfeebb23d32cfd9f8.woff2",
-      "start": 4653934,
-      "end": 4681150
+      "start": 4654838,
+      "end": 4682054
     },
     {
       "filename": "/fonts/ee91700cdbf7ce16c054c2bb8946c736.woff2",
-      "start": 4681150,
-      "end": 4712202
+      "start": 4682054,
+      "end": 4713106
     },
     {
       "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqW106F15M.woff2",
-      "start": 4712202,
-      "end": 4738170
+      "start": 4713106,
+      "end": 4739074
     },
     {
       "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06F15M.woff2",
-      "start": 4738170,
-      "end": 4775866
+      "start": 4739074,
+      "end": 4776770
     },
     {
       "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2",
-      "start": 4775866,
-      "end": 4830754
+      "start": 4776770,
+      "end": 4831658
     },
     {
       "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2",
-      "start": 4830754,
-      "end": 4835634
+      "start": 4831658,
+      "end": 4836538
     },
     {
       "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6F15M.woff2",
-      "start": 4835634,
-      "end": 4852770
+      "start": 4836538,
+      "end": 4853674
     },
     {
       "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06F15M.woff2",
-      "start": 4852770,
-      "end": 4869834
+      "start": 4853674,
+      "end": 4870738
     },
     {
       "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2",
-      "start": 4869834,
-      "end": 4920130
+      "start": 4870738,
+      "end": 4921034
     },
     {
       "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2",
-      "start": 4920130,
-      "end": 4942910
+      "start": 4921034,
+      "end": 4943814
     },
     {
       "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2",
-      "start": 4942910,
-      "end": 4975114
+      "start": 4943814,
+      "end": 4976018
     },
     {
       "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWxU6F15M.woff2",
-      "start": 4975114,
-      "end": 5025598
+      "start": 4976018,
+      "end": 5026502
     },
     {
       "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
-      "start": 5025598,
-      "end": 5073834
+      "start": 5026502,
+      "end": 5074738
     },
     {
       "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2",
-      "start": 5073834,
-      "end": 5090350
+      "start": 5074738,
+      "end": 5091254
     },
     {
       "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2",
-      "start": 5090350,
-      "end": 5106902
+      "start": 5091254,
+      "end": 5107806
     },
     {
       "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2",
-      "start": 5106902,
-      "end": 5142230
+      "start": 5107806,
+      "end": 5143134
     },
     {
       "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2",
-      "start": 5142230,
-      "end": 5191666
+      "start": 5143134,
+      "end": 5192570
     },
     {
       "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2",
-      "start": 5191666,
-      "end": 5196190
+      "start": 5192570,
+      "end": 5197094
     },
     {
       "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2",
-      "start": 5196190,
-      "end": 5222926
+      "start": 5197094,
+      "end": 5223830
     },
     {
       "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2",
-      "start": 5222926,
-      "end": 5244198
+      "start": 5223830,
+      "end": 5245102
     },
     {
       "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2",
-      "start": 5244198,
-      "end": 5269182
+      "start": 5245102,
+      "end": 5270086
     },
     {
       "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2",
-      "start": 5269182,
-      "end": 5316318
+      "start": 5270086,
+      "end": 5317222
     },
     {
       "filename": "/fonts/q5uGsou0JOdh94bfuQltOxU.woff2",
-      "start": 5316318,
-      "end": 5335566
+      "start": 5317222,
+      "end": 5336470
     },
     {
       "filename": "/fonts/q5uGsou0JOdh94bfvQlt.woff2",
-      "start": 5335566,
-      "end": 5360942
+      "start": 5336470,
+      "end": 5361846
     },
     {
       "filename": "/help/AnIndex",
-      "start": 5360942,
-      "end": 5364966
+      "start": 5361846,
+      "end": 5365870
     },
     {
       "filename": "/help/aliases.rds",
-      "start": 5364966,
-      "end": 5366289
+      "start": 5365870,
+      "end": 5367193
     },
     {
       "filename": "/help/bslib.rdb",
-      "start": 5366289,
-      "end": 5584266
+      "start": 5367193,
+      "end": 5585094
     },
     {
       "filename": "/help/bslib.rdx",
-      "start": 5584266,
-      "end": 5585523
+      "start": 5585094,
+      "end": 5586347
     },
     {
       "filename": "/help/figures/lifecycle-archived.svg",
-      "start": 5585523,
-      "end": 5586827
+      "start": 5586347,
+      "end": 5587651
     },
     {
       "filename": "/help/figures/lifecycle-defunct.svg",
-      "start": 5586827,
-      "end": 5588127
+      "start": 5587651,
+      "end": 5588951
     },
     {
       "filename": "/help/figures/lifecycle-deprecated.svg",
-      "start": 5588127,
-      "end": 5589439
+      "start": 5588951,
+      "end": 5590263
     },
     {
       "filename": "/help/figures/lifecycle-experimental.svg",
-      "start": 5589439,
-      "end": 5590759
+      "start": 5590263,
+      "end": 5591583
     },
     {
       "filename": "/help/figures/lifecycle-maturing.svg",
-      "start": 5590759,
-      "end": 5592063
+      "start": 5591583,
+      "end": 5592887
     },
     {
       "filename": "/help/figures/lifecycle-questioning.svg",
-      "start": 5592063,
-      "end": 5593379
+      "start": 5592887,
+      "end": 5594203
     },
     {
       "filename": "/help/figures/lifecycle-soft-deprecated.svg",
-      "start": 5593379,
-      "end": 5594713
+      "start": 5594203,
+      "end": 5595537
     },
     {
       "filename": "/help/figures/lifecycle-stable.svg",
-      "start": 5594713,
-      "end": 5596051
+      "start": 5595537,
+      "end": 5596875
     },
     {
       "filename": "/help/figures/lifecycle-superseded.svg",
-      "start": 5596051,
-      "end": 5597363
+      "start": 5596875,
+      "end": 5598187
     },
     {
       "filename": "/help/figures/navset-card-pill.png",
-      "start": 5597363,
-      "end": 5607286
+      "start": 5598187,
+      "end": 5608110
     },
     {
       "filename": "/help/figures/navset-card-underline.png",
-      "start": 5607286,
-      "end": 5616798
+      "start": 5608110,
+      "end": 5617622
     },
     {
       "filename": "/help/figures/navset-pill-list.png",
-      "start": 5616798,
-      "end": 5626543
+      "start": 5617622,
+      "end": 5627367
     },
     {
       "filename": "/help/figures/navset-pill.png",
-      "start": 5626543,
-      "end": 5635818
+      "start": 5627367,
+      "end": 5636642
     },
     {
       "filename": "/help/figures/navset-tab-basic.png",
-      "start": 5635818,
-      "end": 5640663
+      "start": 5636642,
+      "end": 5641487
     },
     {
       "filename": "/help/figures/navset-tab-card.png",
-      "start": 5640663,
-      "end": 5650429
+      "start": 5641487,
+      "end": 5651253
     },
     {
       "filename": "/help/figures/navset-tab.png",
-      "start": 5650429,
-      "end": 5659570
+      "start": 5651253,
+      "end": 5660394
     },
     {
       "filename": "/help/figures/navset-underline.png",
-      "start": 5659570,
-      "end": 5668055
+      "start": 5660394,
+      "end": 5668879
     },
     {
       "filename": "/help/figures/navset_card_pill.png",
-      "start": 5668055,
-      "end": 5680982
+      "start": 5668879,
+      "end": 5681806
     },
     {
       "filename": "/help/figures/page-navbar.png",
-      "start": 5680982,
-      "end": 5691052
+      "start": 5681806,
+      "end": 5691876
     },
     {
       "filename": "/help/figures/value-box-background-color.png",
-      "start": 5691052,
-      "end": 5697458
+      "start": 5691876,
+      "end": 5698282
     },
     {
       "filename": "/help/figures/value-box-background-theme.png",
-      "start": 5697458,
-      "end": 5703910
+      "start": 5698282,
+      "end": 5704734
     },
     {
       "filename": "/help/figures/value-box-custom.png",
-      "start": 5703910,
-      "end": 5710374
+      "start": 5704734,
+      "end": 5711198
     },
     {
       "filename": "/help/figures/value-box-gradient-1.png",
-      "start": 5710374,
-      "end": 5740209
+      "start": 5711198,
+      "end": 5741033
     },
     {
       "filename": "/help/figures/value-box-named-color.png",
-      "start": 5740209,
-      "end": 5745888
+      "start": 5741033,
+      "end": 5746712
     },
     {
       "filename": "/help/figures/value-box-named-theme.png",
-      "start": 5745888,
-      "end": 5752244
+      "start": 5746712,
+      "end": 5753068
     },
     {
       "filename": "/help/figures/value-box-showcase-bottom.png",
-      "start": 5752244,
-      "end": 5769959
+      "start": 5753068,
+      "end": 5770783
     },
     {
       "filename": "/help/figures/value-box-showcase-left-center.png",
-      "start": 5769959,
-      "end": 5781239
+      "start": 5770783,
+      "end": 5782063
     },
     {
       "filename": "/help/figures/value-box-showcase-top-right.png",
-      "start": 5781239,
-      "end": 5792413
+      "start": 5782063,
+      "end": 5793237
     },
     {
       "filename": "/help/figures/value-box-text-color.png",
-      "start": 5792413,
-      "end": 5798730
+      "start": 5793237,
+      "end": 5799554
     },
     {
       "filename": "/help/figures/value-box-text-theme.png",
-      "start": 5798730,
-      "end": 5805098
+      "start": 5799554,
+      "end": 5805922
     },
     {
       "filename": "/help/figures/value-box-theme-class.png",
-      "start": 5805098,
-      "end": 5811490
+      "start": 5805922,
+      "end": 5812314
     },
     {
       "filename": "/help/paths.rds",
-      "start": 5811490,
-      "end": 5812084
+      "start": 5812314,
+      "end": 5812907
     },
     {
       "filename": "/html/00Index.html",
-      "start": 5812084,
-      "end": 5828131
+      "start": 5812907,
+      "end": 5828954
     },
     {
       "filename": "/html/R.css",
-      "start": 5828131,
-      "end": 5829975
+      "start": 5828954,
+      "end": 5830798
     },
     {
       "filename": "/lib/bs-a11y-p/LICENSE.md",
-      "start": 5829975,
-      "end": 5831449
+      "start": 5830798,
+      "end": 5832272
     },
     {
       "filename": "/lib/bs-a11y-p/package.json",
-      "start": 5831449,
-      "end": 5832221
+      "start": 5832272,
+      "end": 5833044
     },
     {
       "filename": "/lib/bs-a11y-p/plugins/css/bootstrap-accessibility.css",
-      "start": 5832221,
-      "end": 5833547
+      "start": 5833044,
+      "end": 5834370
     },
     {
       "filename": "/lib/bs-a11y-p/plugins/js/bootstrap-accessibility.js",
-      "start": 5833547,
-      "end": 5860678
+      "start": 5834370,
+      "end": 5861501
     },
     {
       "filename": "/lib/bs-a11y-p/plugins/js/bootstrap-accessibility.min.js",
-      "start": 5860678,
-      "end": 5873465
+      "start": 5861501,
+      "end": 5874288
     },
     {
       "filename": "/lib/bs-a11y-p/src/js/carousel.js",
-      "start": 5873465,
-      "end": 5884988
+      "start": 5874288,
+      "end": 5885811
     },
     {
       "filename": "/lib/bs-a11y-p/src/js/collapse.js",
-      "start": 5884988,
-      "end": 5889162
+      "start": 5885811,
+      "end": 5889985
     },
     {
       "filename": "/lib/bs-a11y-p/src/js/dropdown.js",
-      "start": 5889162,
-      "end": 5891062
+      "start": 5889985,
+      "end": 5891885
     },
     {
       "filename": "/lib/bs-a11y-p/src/js/functions.js",
-      "start": 5891062,
-      "end": 5894926
+      "start": 5891885,
+      "end": 5895749
     },
     {
       "filename": "/lib/bs-a11y-p/src/js/modal.js",
-      "start": 5894926,
-      "end": 5896070
+      "start": 5895749,
+      "end": 5896893
     },
     {
       "filename": "/lib/bs-a11y-p/src/js/tab.js",
-      "start": 5896070,
-      "end": 5898870
+      "start": 5896893,
+      "end": 5899693
     },
     {
       "filename": "/lib/bs-a11y-p/src/less/bootstrap-accessibility.less",
-      "start": 5898870,
-      "end": 5899183
+      "start": 5899693,
+      "end": 5900006
     },
     {
       "filename": "/lib/bs-a11y-p/src/less/partials/alerts.less",
-      "start": 5899183,
-      "end": 5899477
+      "start": 5900006,
+      "end": 5900300
     },
     {
       "filename": "/lib/bs-a11y-p/src/less/partials/buttons.less",
-      "start": 5899477,
-      "end": 5899506
+      "start": 5900300,
+      "end": 5900329
     },
     {
       "filename": "/lib/bs-a11y-p/src/less/partials/carousel.less",
-      "start": 5899506,
-      "end": 5900604
+      "start": 5900329,
+      "end": 5901427
     },
     {
       "filename": "/lib/bs-a11y-p/src/less/partials/close.less",
-      "start": 5900604,
-      "end": 5900660
+      "start": 5901427,
+      "end": 5901483
     },
     {
       "filename": "/lib/bs-a11y-p/src/less/partials/divs.less",
-      "start": 5900660,
-      "end": 5900695
+      "start": 5901483,
+      "end": 5901518
     },
     {
       "filename": "/lib/bs-a11y-p/src/less/partials/links.less",
-      "start": 5900695,
-      "end": 5900721
+      "start": 5901518,
+      "end": 5901544
     },
     {
       "filename": "/lib/bs-a11y-p/src/less/partials/mixins.less",
-      "start": 5900721,
-      "end": 5900804
+      "start": 5901544,
+      "end": 5901627
     },
     {
       "filename": "/lib/bs-a11y-p/src/less/partials/navigation.less",
-      "start": 5900804,
-      "end": 5900861
+      "start": 5901627,
+      "end": 5901684
     },
     {
       "filename": "/lib/bs-a11y-p/src/less/partials/variables.less",
-      "start": 5900861,
-      "end": 5901367
+      "start": 5901684,
+      "end": 5902190
     },
     {
       "filename": "/lib/bs-a11y-p/src/meteor/package.js",
-      "start": 5901367,
-      "end": 5901819
+      "start": 5902190,
+      "end": 5902642
     },
     {
       "filename": "/lib/bs-a11y-p/src/sass/bootstrap-accessibility.scss",
-      "start": 5901819,
-      "end": 5902133
+      "start": 5902642,
+      "end": 5902956
     },
     {
       "filename": "/lib/bs-a11y-p/src/sass/partials/_alerts.scss",
-      "start": 5902133,
-      "end": 5902428
+      "start": 5902956,
+      "end": 5903251
     },
     {
       "filename": "/lib/bs-a11y-p/src/sass/partials/_buttons.scss",
-      "start": 5902428,
-      "end": 5902542
+      "start": 5903251,
+      "end": 5903365
     },
     {
       "filename": "/lib/bs-a11y-p/src/sass/partials/_carousel.scss",
-      "start": 5902542,
-      "end": 5903645
+      "start": 5903365,
+      "end": 5904468
     },
     {
       "filename": "/lib/bs-a11y-p/src/sass/partials/_close.scss",
-      "start": 5903645,
-      "end": 5903773
+      "start": 5904468,
+      "end": 5904596
     },
     {
       "filename": "/lib/bs-a11y-p/src/sass/partials/_divs.scss",
-      "start": 5903773,
-      "end": 5903889
+      "start": 5904596,
+      "end": 5904712
     },
     {
       "filename": "/lib/bs-a11y-p/src/sass/partials/_links.scss",
-      "start": 5903889,
-      "end": 5904001
+      "start": 5904712,
+      "end": 5904824
     },
     {
       "filename": "/lib/bs-a11y-p/src/sass/partials/_mixins.scss",
-      "start": 5904001,
-      "end": 5904191
+      "start": 5904824,
+      "end": 5905014
     },
     {
       "filename": "/lib/bs-a11y-p/src/sass/partials/_navigation.scss",
-      "start": 5904191,
-      "end": 5904347
+      "start": 5905014,
+      "end": 5905170
     },
     {
       "filename": "/lib/bs-a11y-p/src/sass/partials/_variables.scss",
-      "start": 5904347,
-      "end": 5905102
+      "start": 5905170,
+      "end": 5905925
     },
     {
       "filename": "/lib/bs-colorpicker/LICENSE",
-      "start": 5905102,
-      "end": 5906171
+      "start": 5905925,
+      "end": 5906994
     },
     {
       "filename": "/lib/bs-colorpicker/README.md",
-      "start": 5906171,
-      "end": 5911560
+      "start": 5906994,
+      "end": 5912383
     },
     {
       "filename": "/lib/bs-colorpicker/css/bootstrap-colorpicker.css",
-      "start": 5911560,
-      "end": 5923161
+      "start": 5912383,
+      "end": 5923984
     },
     {
       "filename": "/lib/bs-colorpicker/css/bootstrap-colorpicker.css.map",
-      "start": 5923161,
-      "end": 5942264
+      "start": 5923984,
+      "end": 5943087
     },
     {
       "filename": "/lib/bs-colorpicker/css/bootstrap-colorpicker.min.css",
-      "start": 5942264,
-      "end": 5951759
+      "start": 5943087,
+      "end": 5952582
     },
     {
       "filename": "/lib/bs-colorpicker/css/bootstrap-colorpicker.min.css.map",
-      "start": 5951759,
-      "end": 5978895
+      "start": 5952582,
+      "end": 5979718
     },
     {
       "filename": "/lib/bs-colorpicker/js/bootstrap-colorpicker.js",
-      "start": 5978895,
-      "end": 6144589
+      "start": 5979718,
+      "end": 6145412
     },
     {
       "filename": "/lib/bs-colorpicker/js/bootstrap-colorpicker.js.map",
-      "start": 6144589,
-      "end": 6341895
+      "start": 6145412,
+      "end": 6342718
     },
     {
       "filename": "/lib/bs-colorpicker/js/bootstrap-colorpicker.min.js.map",
-      "start": 6341895,
-      "end": 6548820
+      "start": 6342718,
+      "end": 6549643
     },
     {
       "filename": "/lib/bs-colorpicker/package.json",
-      "start": 6548820,
-      "end": 6550284
+      "start": 6549643,
+      "end": 6551107
     },
     {
       "filename": "/lib/bs3/CHANGELOG.md",
-      "start": 6550284,
-      "end": 6558187
+      "start": 6551107,
+      "end": 6559010
     },
     {
       "filename": "/lib/bs3/LICENSE",
-      "start": 6558187,
-      "end": 6559317
+      "start": 6559010,
+      "end": 6560140
     },
     {
       "filename": "/lib/bs3/README.md",
-      "start": 6559317,
-      "end": 6571663
+      "start": 6560140,
+      "end": 6572486
     },
     {
       "filename": "/lib/bs3/assets/fonts/bootstrap/glyphicons-halflings-regular.eot",
-      "start": 6571663,
-      "end": 6591790
+      "start": 6572486,
+      "end": 6592613
     },
     {
       "filename": "/lib/bs3/assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
-      "start": 6591790,
-      "end": 6700528
+      "start": 6592613,
+      "end": 6701351
     },
     {
       "filename": "/lib/bs3/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
-      "start": 6700528,
-      "end": 6745932
+      "start": 6701351,
+      "end": 6746755
     },
     {
       "filename": "/lib/bs3/assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
-      "start": 6745932,
-      "end": 6769356
+      "start": 6746755,
+      "end": 6770179
     },
     {
       "filename": "/lib/bs3/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2",
-      "start": 6769356,
-      "end": 6787384
+      "start": 6770179,
+      "end": 6788207
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap-sprockets.js",
-      "start": 6787384,
-      "end": 6787765
+      "start": 6788207,
+      "end": 6788588
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap.js",
-      "start": 6787765,
-      "end": 6863249
+      "start": 6788588,
+      "end": 6864072
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap.min.js",
-      "start": 6863249,
-      "end": 6902929
+      "start": 6864072,
+      "end": 6903752
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap/affix.js",
-      "start": 6902929,
-      "end": 6907890
+      "start": 6903752,
+      "end": 6908713
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap/alert.js",
-      "start": 6907890,
-      "end": 6910226
+      "start": 6908713,
+      "end": 6911049
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap/button.js",
-      "start": 6910226,
-      "end": 6914060
+      "start": 6911049,
+      "end": 6914883
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap/carousel.js",
-      "start": 6914060,
-      "end": 6921352
+      "start": 6914883,
+      "end": 6922175
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap/collapse.js",
-      "start": 6921352,
-      "end": 6927383
+      "start": 6922175,
+      "end": 6928206
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap/dropdown.js",
-      "start": 6927383,
-      "end": 6932165
+      "start": 6928206,
+      "end": 6932988
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap/modal.js",
-      "start": 6932165,
-      "end": 6942779
+      "start": 6932988,
+      "end": 6943602
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap/popover.js",
-      "start": 6942779,
-      "end": 6946224
+      "start": 6943602,
+      "end": 6947047
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap/scrollspy.js",
-      "start": 6946224,
-      "end": 6950941
+      "start": 6947047,
+      "end": 6951764
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap/tab.js",
-      "start": 6950941,
-      "end": 6954861
+      "start": 6951764,
+      "end": 6955684
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap/tooltip.js",
-      "start": 6954861,
-      "end": 6975998
+      "start": 6955684,
+      "end": 6976821
     },
     {
       "filename": "/lib/bs3/assets/javascripts/bootstrap/transition.js",
-      "start": 6975998,
-      "end": 6977837
+      "start": 6976821,
+      "end": 6978660
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/_bootstrap-compass.scss",
-      "start": 6977837,
-      "end": 6978015
+      "start": 6978660,
+      "end": 6978838
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/_bootstrap-mincer.scss",
-      "start": 6978015,
-      "end": 6978772
+      "start": 6978838,
+      "end": 6979595
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/_bootstrap-sprockets.scss",
-      "start": 6978772,
-      "end": 6978940
+      "start": 6979595,
+      "end": 6979763
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/_bootstrap.scss",
-      "start": 6978940,
-      "end": 6980428
+      "start": 6979763,
+      "end": 6981251
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_alerts.scss",
-      "start": 6980428,
-      "end": 6981974
+      "start": 6981251,
+      "end": 6982797
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_badges.scss",
-      "start": 6981974,
-      "end": 6983202
+      "start": 6982797,
+      "end": 6984025
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_breadcrumbs.scss",
-      "start": 6983202,
-      "end": 6983902
+      "start": 6984025,
+      "end": 6984725
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_button-groups.scss",
-      "start": 6983902,
-      "end": 6989666
+      "start": 6984725,
+      "end": 6990489
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_buttons.scss",
-      "start": 6989666,
-      "end": 6993485
+      "start": 6990489,
+      "end": 6994308
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_carousel.scss",
-      "start": 6993485,
-      "end": 6999223
+      "start": 6994308,
+      "end": 7000046
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_close.scss",
-      "start": 6999223,
-      "end": 7000058
+      "start": 7000046,
+      "end": 7000881
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_code.scss",
-      "start": 7000058,
-      "end": 7001461
+      "start": 7000881,
+      "end": 7002284
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_component-animations.scss",
-      "start": 7001461,
-      "end": 7002281
+      "start": 7002284,
+      "end": 7003104
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_dropdowns.scss",
-      "start": 7002281,
-      "end": 7007128
+      "start": 7003104,
+      "end": 7007951
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_forms.scss",
-      "start": 7007128,
-      "end": 7023185
+      "start": 7007951,
+      "end": 7024008
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_glyphicons.scss",
-      "start": 7023185,
-      "end": 7043630
+      "start": 7024008,
+      "end": 7044453
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_grid.scss",
-      "start": 7043630,
-      "end": 7045199
+      "start": 7044453,
+      "end": 7046022
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_input-groups.scss",
-      "start": 7045199,
-      "end": 7049509
+      "start": 7046022,
+      "end": 7050332
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_jumbotron.scss",
-      "start": 7049509,
-      "end": 7050653
+      "start": 7050332,
+      "end": 7051476
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_labels.scss",
-      "start": 7050653,
-      "end": 7051808
+      "start": 7051476,
+      "end": 7052631
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_list-group.scss",
-      "start": 7051808,
-      "end": 7054959
+      "start": 7052631,
+      "end": 7055782
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_media.scss",
-      "start": 7054959,
-      "end": 7055859
+      "start": 7055782,
+      "end": 7056682
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_mixins.scss",
-      "start": 7055859,
-      "end": 7056845
+      "start": 7056682,
+      "end": 7057668
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_modals.scss",
-      "start": 7056845,
-      "end": 7060420
+      "start": 7057668,
+      "end": 7061243
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_navbar.scss",
-      "start": 7060420,
-      "end": 7075072
+      "start": 7061243,
+      "end": 7075895
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_navs.scss",
-      "start": 7075072,
-      "end": 7080022
+      "start": 7075895,
+      "end": 7080845
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_normalize.scss",
-      "start": 7080022,
-      "end": 7087729
+      "start": 7080845,
+      "end": 7088552
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_pager.scss",
-      "start": 7087729,
-      "end": 7088584
+      "start": 7088552,
+      "end": 7089407
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_pagination.scss",
-      "start": 7088584,
-      "end": 7090657
+      "start": 7089407,
+      "end": 7091480
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_panels.scss",
-      "start": 7090657,
-      "end": 7097045
+      "start": 7091480,
+      "end": 7097868
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_popovers.scss",
-      "start": 7097045,
-      "end": 7100521
+      "start": 7097868,
+      "end": 7101344
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_print.scss",
-      "start": 7100521,
-      "end": 7102203
+      "start": 7101344,
+      "end": 7103026
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_progress-bars.scss",
-      "start": 7102203,
-      "end": 7104201
+      "start": 7103026,
+      "end": 7105024
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_responsive-embed.scss",
-      "start": 7104201,
-      "end": 7104747
+      "start": 7105024,
+      "end": 7105570
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_responsive-utilities.scss",
-      "start": 7104747,
-      "end": 7109168
+      "start": 7105570,
+      "end": 7109991
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_scaffolding.scss",
-      "start": 7109168,
-      "end": 7112214
+      "start": 7109991,
+      "end": 7113037
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_tables.scss",
-      "start": 7112214,
-      "end": 7116876
+      "start": 7113037,
+      "end": 7117699
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_theme.scss",
-      "start": 7116876,
-      "end": 7125496
+      "start": 7117699,
+      "end": 7126319
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_thumbnails.scss",
-      "start": 7125496,
-      "end": 7126388
+      "start": 7126319,
+      "end": 7127211
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_tooltip.scss",
-      "start": 7126388,
-      "end": 7129411
+      "start": 7127211,
+      "end": 7130234
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_type.scss",
-      "start": 7129411,
-      "end": 7135509
+      "start": 7130234,
+      "end": 7136332
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_utilities.scss",
-      "start": 7135509,
-      "end": 7136274
+      "start": 7136332,
+      "end": 7137097
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_variables.scss",
-      "start": 7136274,
-      "end": 7168558
+      "start": 7137097,
+      "end": 7169381
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/_wells.scss",
-      "start": 7168558,
-      "end": 7169099
+      "start": 7169381,
+      "end": 7169922
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_alerts.scss",
-      "start": 7169099,
-      "end": 7169363
+      "start": 7169922,
+      "end": 7170186
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_background-variant.scss",
-      "start": 7169363,
-      "end": 7169596
+      "start": 7170186,
+      "end": 7170419
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_border-radius.scss",
-      "start": 7169596,
-      "end": 7170080
+      "start": 7170419,
+      "end": 7170903
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_buttons.scss",
-      "start": 7170080,
-      "end": 7171455
+      "start": 7170903,
+      "end": 7172278
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_center-block.scss",
-      "start": 7171455,
-      "end": 7171581
+      "start": 7172278,
+      "end": 7172404
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_clearfix.scss",
-      "start": 7171581,
-      "end": 7172192
+      "start": 7172404,
+      "end": 7173015
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_forms.scss",
-      "start": 7172192,
-      "end": 7174972
+      "start": 7173015,
+      "end": 7175795
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_gradients.scss",
-      "start": 7174972,
-      "end": 7179353
+      "start": 7175795,
+      "end": 7180176
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_grid-framework.scss",
-      "start": 7179353,
-      "end": 7181712
+      "start": 7180176,
+      "end": 7182535
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_grid.scss",
-      "start": 7181712,
-      "end": 7184922
+      "start": 7182535,
+      "end": 7185745
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_hide-text.scss",
-      "start": 7184922,
-      "end": 7185512
+      "start": 7185745,
+      "end": 7186335
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_image.scss",
-      "start": 7185512,
-      "end": 7186619
+      "start": 7186335,
+      "end": 7187442
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_labels.scss",
-      "start": 7186619,
-      "end": 7186786
+      "start": 7187442,
+      "end": 7187609
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_list-group.scss",
-      "start": 7186786,
-      "end": 7187458
+      "start": 7187609,
+      "end": 7188281
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_nav-divider.scss",
-      "start": 7187458,
-      "end": 7187696
+      "start": 7188281,
+      "end": 7188519
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_nav-vertical-align.scss",
-      "start": 7187696,
-      "end": 7188066
+      "start": 7188519,
+      "end": 7188889
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_opacity.scss",
-      "start": 7188066,
-      "end": 7188214
+      "start": 7188889,
+      "end": 7189037
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_pagination.scss",
-      "start": 7188214,
-      "end": 7188721
+      "start": 7189037,
+      "end": 7189544
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_panels.scss",
-      "start": 7188721,
-      "end": 7189264
+      "start": 7189544,
+      "end": 7190087
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_progress-bar.scss",
-      "start": 7189264,
-      "end": 7189464
+      "start": 7190087,
+      "end": 7190287
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_reset-filter.scss",
-      "start": 7189464,
-      "end": 7189710
+      "start": 7190287,
+      "end": 7190533
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_reset-text.scss",
-      "start": 7189710,
-      "end": 7190183
+      "start": 7190533,
+      "end": 7191006
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_resize.scss",
-      "start": 7190183,
-      "end": 7190385
+      "start": 7191006,
+      "end": 7191208
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss",
-      "start": 7190385,
-      "end": 7190802
+      "start": 7191208,
+      "end": 7191625
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_size.scss",
-      "start": 7190802,
-      "end": 7190949
+      "start": 7191625,
+      "end": 7191772
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_tab-focus.scss",
-      "start": 7190949,
-      "end": 7191287
+      "start": 7191772,
+      "end": 7192110
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_table-row.scss",
-      "start": 7191287,
-      "end": 7192002
+      "start": 7192110,
+      "end": 7192825
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss",
-      "start": 7192002,
-      "end": 7192212
+      "start": 7192825,
+      "end": 7193035
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_text-overflow.scss",
-      "start": 7192212,
-      "end": 7192380
+      "start": 7193035,
+      "end": 7193203
     },
     {
       "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss",
-      "start": 7192380,
-      "end": 7199025
+      "start": 7193203,
+      "end": 7199848
     },
     {
       "filename": "/lib/bs3/eyeglass-exports.js",
-      "start": 7199025,
-      "end": 7199172
+      "start": 7199848,
+      "end": 7199995
     },
     {
       "filename": "/lib/bs3/package.json",
-      "start": 7199172,
-      "end": 7200014
+      "start": 7199995,
+      "end": 7200837
     },
     {
       "filename": "/lib/bs4/LICENSE",
-      "start": 7200014,
-      "end": 7201145
+      "start": 7200837,
+      "end": 7201968
     },
     {
       "filename": "/lib/bs4/README.md",
-      "start": 7201145,
-      "end": 7213082
+      "start": 7201968,
+      "end": 7213905
     },
     {
       "filename": "/lib/bs4/dist/js/bootstrap.bundle.min.js",
-      "start": 7213082,
-      "end": 7297496
+      "start": 7213905,
+      "end": 7298319
     },
     {
       "filename": "/lib/bs4/dist/js/bootstrap.bundle.min.js.map",
-      "start": 7297496,
-      "end": 7613840
+      "start": 7298319,
+      "end": 7614663
     },
     {
       "filename": "/lib/bs4/package.json",
-      "start": 7613840,
-      "end": 7620294
+      "start": 7614663,
+      "end": 7621117
     },
     {
       "filename": "/lib/bs4/scss/_alert.scss",
-      "start": 7620294,
-      "end": 7621458
+      "start": 7621117,
+      "end": 7622281
     },
     {
       "filename": "/lib/bs4/scss/_badge.scss",
-      "start": 7621458,
-      "end": 7622579
+      "start": 7622281,
+      "end": 7623402
     },
     {
       "filename": "/lib/bs4/scss/_breadcrumb.scss",
-      "start": 7622579,
-      "end": 7623957
+      "start": 7623402,
+      "end": 7624780
     },
     {
       "filename": "/lib/bs4/scss/_button-group.scss",
-      "start": 7623957,
-      "end": 7627806
+      "start": 7624780,
+      "end": 7628629
     },
     {
       "filename": "/lib/bs4/scss/_buttons.scss",
-      "start": 7627806,
-      "end": 7631427
+      "start": 7628629,
+      "end": 7632250
     },
     {
       "filename": "/lib/bs4/scss/_card.scss",
-      "start": 7631427,
-      "end": 7637707
+      "start": 7632250,
+      "end": 7638530
     },
     {
       "filename": "/lib/bs4/scss/_carousel.scss",
-      "start": 7637707,
-      "end": 7643028
+      "start": 7638530,
+      "end": 7643851
     },
     {
       "filename": "/lib/bs4/scss/_close.scss",
-      "start": 7643028,
-      "end": 7643968
+      "start": 7643851,
+      "end": 7644791
     },
     {
       "filename": "/lib/bs4/scss/_code.scss",
-      "start": 7643968,
-      "end": 7645253
+      "start": 7644791,
+      "end": 7646076
     },
     {
       "filename": "/lib/bs4/scss/_custom-forms.scss",
-      "start": 7645253,
-      "end": 7661538
+      "start": 7646076,
+      "end": 7662361
     },
     {
       "filename": "/lib/bs4/scss/_deprecated.scss",
-      "start": 7661538,
-      "end": 7662542
+      "start": 7662361,
+      "end": 7663365
     },
     {
       "filename": "/lib/bs4/scss/_dropdown.scss",
-      "start": 7662542,
-      "end": 7667242
+      "start": 7663365,
+      "end": 7668065
     },
     {
       "filename": "/lib/bs4/scss/_forms.scss",
-      "start": 7667242,
-      "end": 7677503
+      "start": 7668065,
+      "end": 7678326
     },
     {
       "filename": "/lib/bs4/scss/_functions.scss",
-      "start": 7677503,
-      "end": 7681370
+      "start": 7678326,
+      "end": 7682193
     },
     {
       "filename": "/lib/bs4/scss/_grid.scss",
-      "start": 7681370,
-      "end": 7683115
+      "start": 7682193,
+      "end": 7683938
     },
     {
       "filename": "/lib/bs4/scss/_images.scss",
-      "start": 7683115,
-      "end": 7684272
+      "start": 7683938,
+      "end": 7685095
     },
     {
       "filename": "/lib/bs4/scss/_input-group.scss",
-      "start": 7684272,
-      "end": 7690875
+      "start": 7685095,
+      "end": 7691698
     },
     {
       "filename": "/lib/bs4/scss/_jumbotron.scss",
-      "start": 7690875,
-      "end": 7691280
+      "start": 7691698,
+      "end": 7692103
     },
     {
       "filename": "/lib/bs4/scss/_list-group.scss",
-      "start": 7691280,
-      "end": 7695508
+      "start": 7692103,
+      "end": 7696331
     },
     {
       "filename": "/lib/bs4/scss/_media.scss",
-      "start": 7695508,
-      "end": 7695670
+      "start": 7696331,
+      "end": 7696493
     },
     {
       "filename": "/lib/bs4/scss/_mixins.scss",
-      "start": 7695670,
-      "end": 7696720
+      "start": 7696493,
+      "end": 7697543
     },
     {
       "filename": "/lib/bs4/scss/_modal.scss",
-      "start": 7696720,
-      "end": 7704146
+      "start": 7697543,
+      "end": 7704969
     },
     {
       "filename": "/lib/bs4/scss/_nav.scss",
-      "start": 7704146,
-      "end": 7706697
+      "start": 7704969,
+      "end": 7707520
     },
     {
       "filename": "/lib/bs4/scss/_navbar.scss",
-      "start": 7706697,
-      "end": 7715241
+      "start": 7707520,
+      "end": 7716064
     },
     {
       "filename": "/lib/bs4/scss/_pagination.scss",
-      "start": 7715241,
-      "end": 7717353
+      "start": 7716064,
+      "end": 7718176
     },
     {
       "filename": "/lib/bs4/scss/_popover.scss",
-      "start": 7717353,
-      "end": 7722058
+      "start": 7718176,
+      "end": 7722881
     },
     {
       "filename": "/lib/bs4/scss/_print.scss",
-      "start": 7722058,
-      "end": 7725091
+      "start": 7722881,
+      "end": 7725914
     },
     {
       "filename": "/lib/bs4/scss/_progress.scss",
-      "start": 7725091,
-      "end": 7726381
+      "start": 7725914,
+      "end": 7727204
     },
     {
       "filename": "/lib/bs4/scss/_reboot.scss",
-      "start": 7726381,
-      "end": 7738677
+      "start": 7727204,
+      "end": 7739500
     },
     {
       "filename": "/lib/bs4/scss/_root.scss",
-      "start": 7738677,
-      "end": 7739249
+      "start": 7739500,
+      "end": 7740072
     },
     {
       "filename": "/lib/bs4/scss/_spinners.scss",
-      "start": 7739249,
-      "end": 7740660
+      "start": 7740072,
+      "end": 7741483
     },
     {
       "filename": "/lib/bs4/scss/_tables.scss",
-      "start": 7740660,
-      "end": 7744204
+      "start": 7741483,
+      "end": 7745027
     },
     {
       "filename": "/lib/bs4/scss/_toasts.scss",
-      "start": 7744204,
-      "end": 7745432
+      "start": 7745027,
+      "end": 7746255
     },
     {
       "filename": "/lib/bs4/scss/_tooltip.scss",
-      "start": 7745432,
-      "end": 7747944
+      "start": 7746255,
+      "end": 7748767
     },
     {
       "filename": "/lib/bs4/scss/_transitions.scss",
-      "start": 7747944,
-      "end": 7748205
+      "start": 7748767,
+      "end": 7749028
     },
     {
       "filename": "/lib/bs4/scss/_type.scss",
-      "start": 7748205,
-      "end": 7750427
+      "start": 7749028,
+      "end": 7751250
     },
     {
       "filename": "/lib/bs4/scss/_utilities.scss",
-      "start": 7750427,
-      "end": 7750963
+      "start": 7751250,
+      "end": 7751786
     },
     {
       "filename": "/lib/bs4/scss/_variables.scss",
-      "start": 7750963,
-      "end": 7802946
+      "start": 7751786,
+      "end": 7803769
     },
     {
       "filename": "/lib/bs4/scss/bootstrap-grid.scss",
-      "start": 7802946,
-      "end": 7803544
+      "start": 7803769,
+      "end": 7804367
     },
     {
       "filename": "/lib/bs4/scss/bootstrap-reboot.scss",
-      "start": 7803544,
-      "end": 7803953
+      "start": 7804367,
+      "end": 7804776
     },
     {
       "filename": "/lib/bs4/scss/bootstrap.scss",
-      "start": 7803953,
-      "end": 7804871
+      "start": 7804776,
+      "end": 7805694
     },
     {
       "filename": "/lib/bs4/scss/mixins/_alert.scss",
-      "start": 7804871,
-      "end": 7805113
+      "start": 7805694,
+      "end": 7805936
     },
     {
       "filename": "/lib/bs4/scss/mixins/_background-variant.scss",
-      "start": 7805113,
-      "end": 7805878
+      "start": 7805936,
+      "end": 7806701
     },
     {
       "filename": "/lib/bs4/scss/mixins/_badge.scss",
-      "start": 7805878,
-      "end": 7806208
+      "start": 7806701,
+      "end": 7807031
     },
     {
       "filename": "/lib/bs4/scss/mixins/_border-radius.scss",
-      "start": 7806208,
-      "end": 7808036
+      "start": 7807031,
+      "end": 7808859
     },
     {
       "filename": "/lib/bs4/scss/mixins/_box-shadow.scss",
-      "start": 7808036,
-      "end": 7808568
+      "start": 7808859,
+      "end": 7809391
     },
     {
       "filename": "/lib/bs4/scss/mixins/_breakpoints.scss",
-      "start": 7808568,
-      "end": 7813050
+      "start": 7809391,
+      "end": 7813873
     },
     {
       "filename": "/lib/bs4/scss/mixins/_buttons.scss",
-      "start": 7813050,
-      "end": 7816663
+      "start": 7813873,
+      "end": 7817486
     },
     {
       "filename": "/lib/bs4/scss/mixins/_caret.scss",
-      "start": 7816663,
-      "end": 7818085
+      "start": 7817486,
+      "end": 7818908
     },
     {
       "filename": "/lib/bs4/scss/mixins/_clearfix.scss",
-      "start": 7818085,
-      "end": 7818178
+      "start": 7818908,
+      "end": 7819001
     },
     {
       "filename": "/lib/bs4/scss/mixins/_deprecate.scss",
-      "start": 7818178,
-      "end": 7818791
+      "start": 7819001,
+      "end": 7819614
     },
     {
       "filename": "/lib/bs4/scss/mixins/_float.scss",
-      "start": 7818791,
-      "end": 7819183
+      "start": 7819614,
+      "end": 7820006
     },
     {
       "filename": "/lib/bs4/scss/mixins/_forms.scss",
-      "start": 7819183,
-      "end": 7824512
+      "start": 7820006,
+      "end": 7825335
     },
     {
       "filename": "/lib/bs4/scss/mixins/_gradients.scss",
-      "start": 7824512,
-      "end": 7826562
+      "start": 7825335,
+      "end": 7827385
     },
     {
       "filename": "/lib/bs4/scss/mixins/_grid-framework.scss",
-      "start": 7826562,
-      "end": 7828710
+      "start": 7827385,
+      "end": 7829533
     },
     {
       "filename": "/lib/bs4/scss/mixins/_grid.scss",
-      "start": 7828710,
-      "end": 7830920
+      "start": 7829533,
+      "end": 7831743
     },
     {
       "filename": "/lib/bs4/scss/mixins/_hover.scss",
-      "start": 7830920,
-      "end": 7831677
+      "start": 7831743,
+      "end": 7832500
     },
     {
       "filename": "/lib/bs4/scss/mixins/_image.scss",
-      "start": 7831677,
-      "end": 7832832
+      "start": 7832500,
+      "end": 7833655
     },
     {
       "filename": "/lib/bs4/scss/mixins/_list-group.scss",
-      "start": 7832832,
-      "end": 7833265
+      "start": 7833655,
+      "end": 7834088
     },
     {
       "filename": "/lib/bs4/scss/mixins/_lists.scss",
-      "start": 7833265,
-      "end": 7833435
+      "start": 7834088,
+      "end": 7834258
     },
     {
       "filename": "/lib/bs4/scss/mixins/_nav-divider.scss",
-      "start": 7833435,
-      "end": 7833804
+      "start": 7834258,
+      "end": 7834627
     },
     {
       "filename": "/lib/bs4/scss/mixins/_pagination.scss",
-      "start": 7833804,
-      "end": 7834266
+      "start": 7834627,
+      "end": 7835089
     },
     {
       "filename": "/lib/bs4/scss/mixins/_reset-text.scss",
-      "start": 7834266,
-      "end": 7834747
+      "start": 7835089,
+      "end": 7835570
     },
     {
       "filename": "/lib/bs4/scss/mixins/_resize.scss",
-      "start": 7834747,
-      "end": 7834949
+      "start": 7835570,
+      "end": 7835772
     },
     {
       "filename": "/lib/bs4/scss/mixins/_screen-reader.scss",
-      "start": 7834949,
-      "end": 7835775
+      "start": 7835772,
+      "end": 7836598
     },
     {
       "filename": "/lib/bs4/scss/mixins/_size.scss",
-      "start": 7835775,
-      "end": 7835923
+      "start": 7836598,
+      "end": 7836746
     },
     {
       "filename": "/lib/bs4/scss/mixins/_table-row.scss",
-      "start": 7835923,
-      "end": 7836717
+      "start": 7836746,
+      "end": 7837540
     },
     {
       "filename": "/lib/bs4/scss/mixins/_text-emphasis.scss",
-      "start": 7836717,
-      "end": 7837191
+      "start": 7837540,
+      "end": 7838014
     },
     {
       "filename": "/lib/bs4/scss/mixins/_text-hide.scss",
-      "start": 7837191,
-      "end": 7837517
+      "start": 7838014,
+      "end": 7838340
     },
     {
       "filename": "/lib/bs4/scss/mixins/_text-truncate.scss",
-      "start": 7837517,
-      "end": 7837685
+      "start": 7838340,
+      "end": 7838508
     },
     {
       "filename": "/lib/bs4/scss/mixins/_transition.scss",
-      "start": 7837685,
-      "end": 7838366
+      "start": 7838508,
+      "end": 7839189
     },
     {
       "filename": "/lib/bs4/scss/mixins/_visibility.scss",
-      "start": 7838366,
-      "end": 7838555
+      "start": 7839189,
+      "end": 7839378
     },
     {
       "filename": "/lib/bs4/scss/utilities/_align.scss",
-      "start": 7838555,
-      "end": 7838975
+      "start": 7839378,
+      "end": 7839798
     },
     {
       "filename": "/lib/bs4/scss/utilities/_background.scss",
-      "start": 7838975,
-      "end": 7839417
+      "start": 7839798,
+      "end": 7840240
     },
     {
       "filename": "/lib/bs4/scss/utilities/_borders.scss",
-      "start": 7839417,
-      "end": 7841188
+      "start": 7840240,
+      "end": 7842011
     },
     {
       "filename": "/lib/bs4/scss/utilities/_clearfix.scss",
-      "start": 7841188,
-      "end": 7841225
+      "start": 7842011,
+      "end": 7842048
     },
     {
       "filename": "/lib/bs4/scss/utilities/_display.scss",
-      "start": 7841225,
-      "end": 7841744
+      "start": 7842048,
+      "end": 7842567
     },
     {
       "filename": "/lib/bs4/scss/utilities/_embed.scss",
-      "start": 7841744,
-      "end": 7842590
+      "start": 7842567,
+      "end": 7843413
     },
     {
       "filename": "/lib/bs4/scss/utilities/_flex.scss",
-      "start": 7842590,
-      "end": 7845359
+      "start": 7843413,
+      "end": 7846182
     },
     {
       "filename": "/lib/bs4/scss/utilities/_float.scss",
-      "start": 7845359,
-      "end": 7845735
+      "start": 7846182,
+      "end": 7846558
     },
     {
       "filename": "/lib/bs4/scss/utilities/_interactions.scss",
-      "start": 7845735,
-      "end": 7845877
+      "start": 7846558,
+      "end": 7846700
     },
     {
       "filename": "/lib/bs4/scss/utilities/_overflow.scss",
-      "start": 7845877,
-      "end": 7846010
+      "start": 7846700,
+      "end": 7846833
     },
     {
       "filename": "/lib/bs4/scss/utilities/_position.scss",
-      "start": 7846010,
-      "end": 7846494
+      "start": 7846833,
+      "end": 7847317
     },
     {
       "filename": "/lib/bs4/scss/utilities/_screenreaders.scss",
-      "start": 7846494,
-      "end": 7846609
+      "start": 7847317,
+      "end": 7847432
     },
     {
       "filename": "/lib/bs4/scss/utilities/_shadows.scss",
-      "start": 7846609,
-      "end": 7846858
+      "start": 7847432,
+      "end": 7847681
     },
     {
       "filename": "/lib/bs4/scss/utilities/_sizing.scss",
-      "start": 7846858,
-      "end": 7847356
+      "start": 7847681,
+      "end": 7848179
     },
     {
       "filename": "/lib/bs4/scss/utilities/_spacing.scss",
-      "start": 7847356,
-      "end": 7849457
+      "start": 7848179,
+      "end": 7850280
     },
     {
       "filename": "/lib/bs4/scss/utilities/_stretched-link.scss",
-      "start": 7849457,
-      "end": 7849888
+      "start": 7850280,
+      "end": 7850711
     },
     {
       "filename": "/lib/bs4/scss/utilities/_text.scss",
-      "start": 7849888,
-      "end": 7851994
+      "start": 7850711,
+      "end": 7852817
     },
     {
       "filename": "/lib/bs4/scss/utilities/_visibility.scss",
-      "start": 7851994,
-      "end": 7852168
+      "start": 7852817,
+      "end": 7852991
     },
     {
       "filename": "/lib/bs4/scss/vendor/_rfs.scss",
-      "start": 7852168,
-      "end": 7858641
+      "start": 7852991,
+      "end": 7859464
     },
     {
       "filename": "/lib/bs5/LICENSE",
-      "start": 7858641,
-      "end": 7859734
+      "start": 7859464,
+      "end": 7860557
     },
     {
       "filename": "/lib/bs5/README.md",
-      "start": 7859734,
-      "end": 7873520
+      "start": 7860557,
+      "end": 7874343
     },
     {
       "filename": "/lib/bs5/dist/js/bootstrap.bundle.min.js",
-      "start": 7873520,
-      "end": 7954188
+      "start": 7874343,
+      "end": 7955011
     },
     {
       "filename": "/lib/bs5/dist/js/bootstrap.bundle.min.js.map",
-      "start": 7954188,
-      "end": 8286015
+      "start": 7955011,
+      "end": 8286838
     },
     {
       "filename": "/lib/bs5/package.json",
-      "start": 8286015,
-      "end": 8293925
+      "start": 8286838,
+      "end": 8294748
     },
     {
       "filename": "/lib/bs5/scss/_accordion.scss",
-      "start": 8293925,
-      "end": 8299075
+      "start": 8294748,
+      "end": 8299898
     },
     {
       "filename": "/lib/bs5/scss/_alert.scss",
-      "start": 8299075,
-      "end": 8301148
+      "start": 8299898,
+      "end": 8301971
     },
     {
       "filename": "/lib/bs5/scss/_badge.scss",
-      "start": 8301148,
-      "end": 8302266
+      "start": 8301971,
+      "end": 8303089
     },
     {
       "filename": "/lib/bs5/scss/_breadcrumb.scss",
-      "start": 8302266,
-      "end": 8304069
+      "start": 8303089,
+      "end": 8304892
     },
     {
       "filename": "/lib/bs5/scss/_button-group.scss",
-      "start": 8304069,
-      "end": 8307493
+      "start": 8304892,
+      "end": 8308316
     },
     {
       "filename": "/lib/bs5/scss/_buttons.scss",
-      "start": 8307493,
-      "end": 8315323
+      "start": 8308316,
+      "end": 8316146
     },
     {
       "filename": "/lib/bs5/scss/_card.scss",
-      "start": 8315323,
-      "end": 8322791
+      "start": 8316146,
+      "end": 8323614
     },
     {
       "filename": "/lib/bs5/scss/_carousel.scss",
-      "start": 8322791,
-      "end": 8329197
+      "start": 8323614,
+      "end": 8330020
     },
     {
       "filename": "/lib/bs5/scss/_close.scss",
-      "start": 8329197,
-      "end": 8331327
+      "start": 8330020,
+      "end": 8332150
     },
     {
       "filename": "/lib/bs5/scss/_containers.scss",
-      "start": 8331327,
-      "end": 8332528
+      "start": 8332150,
+      "end": 8333351
     },
     {
       "filename": "/lib/bs5/scss/_dropdown.scss",
-      "start": 8332528,
-      "end": 8341201
+      "start": 8333351,
+      "end": 8342024
     },
     {
       "filename": "/lib/bs5/scss/_forms.scss",
-      "start": 8341201,
-      "end": 8342011
+      "start": 8342024,
+      "end": 8342834
     },
     {
       "filename": "/lib/bs5/scss/_functions.scss",
-      "start": 8342011,
-      "end": 8352565
+      "start": 8342834,
+      "end": 8353388
     },
     {
       "filename": "/lib/bs5/scss/_grid.scss",
-      "start": 8352565,
-      "end": 8353248
+      "start": 8353388,
+      "end": 8354071
     },
     {
       "filename": "/lib/bs5/scss/_helpers.scss",
-      "start": 8353248,
-      "end": 8353601
+      "start": 8354071,
+      "end": 8354424
     },
     {
       "filename": "/lib/bs5/scss/_images.scss",
-      "start": 8353601,
-      "end": 8354759
+      "start": 8354424,
+      "end": 8355582
     },
     {
       "filename": "/lib/bs5/scss/_list-group.scss",
-      "start": 8354759,
-      "end": 8361969
+      "start": 8355582,
+      "end": 8362792
     },
     {
       "filename": "/lib/bs5/scss/_maps.scss",
-      "start": 8361969,
-      "end": 8367974
+      "start": 8362792,
+      "end": 8368797
     },
     {
       "filename": "/lib/bs5/scss/_mixins.scss",
-      "start": 8367974,
-      "end": 8368849
+      "start": 8368797,
+      "end": 8369672
     },
     {
       "filename": "/lib/bs5/scss/_modal.scss",
-      "start": 8368849,
-      "end": 8377197
+      "start": 8369672,
+      "end": 8378020
     },
     {
       "filename": "/lib/bs5/scss/_nav.scss",
-      "start": 8377197,
-      "end": 8383121
+      "start": 8378020,
+      "end": 8383944
     },
     {
       "filename": "/lib/bs5/scss/_navbar.scss",
-      "start": 8383121,
-      "end": 8393747
+      "start": 8383944,
+      "end": 8394570
     },
     {
       "filename": "/lib/bs5/scss/_offcanvas.scss",
-      "start": 8393747,
-      "end": 8398726
+      "start": 8394570,
+      "end": 8399549
     },
     {
       "filename": "/lib/bs5/scss/_pagination.scss",
-      "start": 8398726,
-      "end": 8403278
+      "start": 8399549,
+      "end": 8404101
     },
     {
       "filename": "/lib/bs5/scss/_placeholders.scss",
-      "start": 8403278,
-      "end": 8404328
+      "start": 8404101,
+      "end": 8405151
     },
     {
       "filename": "/lib/bs5/scss/_popover.scss",
-      "start": 8404328,
-      "end": 8411235
+      "start": 8405151,
+      "end": 8412058
     },
     {
       "filename": "/lib/bs5/scss/_progress.scss",
-      "start": 8411235,
-      "end": 8413370
+      "start": 8412058,
+      "end": 8414193
     },
     {
       "filename": "/lib/bs5/scss/_reboot.scss",
-      "start": 8413370,
-      "end": 8426832
+      "start": 8414193,
+      "end": 8427655
     },
     {
       "filename": "/lib/bs5/scss/_root.scss",
-      "start": 8426832,
-      "end": 8433607
+      "start": 8427655,
+      "end": 8434430
     },
     {
       "filename": "/lib/bs5/scss/_spinners.scss",
-      "start": 8433607,
-      "end": 8436036
+      "start": 8434430,
+      "end": 8436859
     },
     {
       "filename": "/lib/bs5/scss/_tables.scss",
-      "start": 8436036,
-      "end": 8440981
+      "start": 8436859,
+      "end": 8441804
     },
     {
       "filename": "/lib/bs5/scss/_toasts.scss",
-      "start": 8440981,
-      "end": 8443635
+      "start": 8441804,
+      "end": 8444458
     },
     {
       "filename": "/lib/bs5/scss/_tooltip.scss",
-      "start": 8443635,
-      "end": 8447916
+      "start": 8444458,
+      "end": 8448739
     },
     {
       "filename": "/lib/bs5/scss/_transitions.scss",
-      "start": 8447916,
-      "end": 8448341
+      "start": 8448739,
+      "end": 8449164
     },
     {
       "filename": "/lib/bs5/scss/_type.scss",
-      "start": 8448341,
-      "end": 8449761
+      "start": 8449164,
+      "end": 8450584
     },
     {
       "filename": "/lib/bs5/scss/_utilities.scss",
-      "start": 8449761,
-      "end": 8468948
+      "start": 8450584,
+      "end": 8469771
     },
     {
       "filename": "/lib/bs5/scss/_variables-dark.scss",
-      "start": 8468948,
-      "end": 8473884
+      "start": 8469771,
+      "end": 8474707
     },
     {
       "filename": "/lib/bs5/scss/_variables.scss",
-      "start": 8473884,
-      "end": 8551778
+      "start": 8474707,
+      "end": 8552601
     },
     {
       "filename": "/lib/bs5/scss/bootstrap-grid.scss",
-      "start": 8551778,
-      "end": 8552961
+      "start": 8552601,
+      "end": 8553784
     },
     {
       "filename": "/lib/bs5/scss/bootstrap-reboot.scss",
-      "start": 8552961,
-      "end": 8553150
+      "start": 8553784,
+      "end": 8553973
     },
     {
       "filename": "/lib/bs5/scss/bootstrap-utilities.scss",
-      "start": 8553150,
-      "end": 8553456
+      "start": 8553973,
+      "end": 8554279
     },
     {
       "filename": "/lib/bs5/scss/bootstrap.scss",
-      "start": 8553456,
-      "end": 8554394
+      "start": 8554279,
+      "end": 8555217
     },
     {
       "filename": "/lib/bs5/scss/forms/_floating-labels.scss",
-      "start": 8554394,
-      "end": 8557082
+      "start": 8555217,
+      "end": 8557905
     },
     {
       "filename": "/lib/bs5/scss/forms/_form-check.scss",
-      "start": 8557082,
-      "end": 8562127
+      "start": 8557905,
+      "end": 8562950
     },
     {
       "filename": "/lib/bs5/scss/forms/_form-control.scss",
-      "start": 8562127,
-      "end": 8568993
+      "start": 8562950,
+      "end": 8569816
     },
     {
       "filename": "/lib/bs5/scss/forms/_form-range.scss",
-      "start": 8568993,
-      "end": 8572105
+      "start": 8569816,
+      "end": 8572928
     },
     {
       "filename": "/lib/bs5/scss/forms/_form-select.scss",
-      "start": 8572105,
-      "end": 8574693
+      "start": 8572928,
+      "end": 8575516
     },
     {
       "filename": "/lib/bs5/scss/forms/_form-text.scss",
-      "start": 8574693,
-      "end": 8574912
+      "start": 8575516,
+      "end": 8575735
     },
     {
       "filename": "/lib/bs5/scss/forms/_input-group.scss",
-      "start": 8574912,
-      "end": 8579011
+      "start": 8575735,
+      "end": 8579834
     },
     {
       "filename": "/lib/bs5/scss/forms/_labels.scss",
-      "start": 8579011,
-      "end": 8580192
+      "start": 8579834,
+      "end": 8581015
     },
     {
       "filename": "/lib/bs5/scss/forms/_validation.scss",
-      "start": 8580192,
-      "end": 8580670
+      "start": 8581015,
+      "end": 8581493
     },
     {
       "filename": "/lib/bs5/scss/helpers/_clearfix.scss",
-      "start": 8580670,
-      "end": 8580707
+      "start": 8581493,
+      "end": 8581530
     },
     {
       "filename": "/lib/bs5/scss/helpers/_color-bg.scss",
-      "start": 8580707,
-      "end": 8581110
+      "start": 8581530,
+      "end": 8581933
     },
     {
       "filename": "/lib/bs5/scss/helpers/_colored-links.scss",
-      "start": 8581110,
-      "end": 8582865
+      "start": 8581933,
+      "end": 8583688
     },
     {
       "filename": "/lib/bs5/scss/helpers/_focus-ring.scss",
-      "start": 8582865,
-      "end": 8583250
+      "start": 8583688,
+      "end": 8584073
     },
     {
       "filename": "/lib/bs5/scss/helpers/_icon-link.scss",
-      "start": 8583250,
-      "end": 8584058
+      "start": 8584073,
+      "end": 8584881
     },
     {
       "filename": "/lib/bs5/scss/helpers/_position.scss",
-      "start": 8584058,
-      "end": 8584679
+      "start": 8584881,
+      "end": 8585502
     },
     {
       "filename": "/lib/bs5/scss/helpers/_ratio.scss",
-      "start": 8584679,
-      "end": 8585078
+      "start": 8585502,
+      "end": 8585901
     },
     {
       "filename": "/lib/bs5/scss/helpers/_stacks.scss",
-      "start": 8585078,
-      "end": 8585557
+      "start": 8585901,
+      "end": 8586380
     },
     {
       "filename": "/lib/bs5/scss/helpers/_stretched-link.scss",
-      "start": 8585557,
-      "end": 8585780
+      "start": 8586380,
+      "end": 8586603
     },
     {
       "filename": "/lib/bs5/scss/helpers/_text-truncation.scss",
-      "start": 8585780,
-      "end": 8585853
+      "start": 8586603,
+      "end": 8586676
     },
     {
       "filename": "/lib/bs5/scss/helpers/_visually-hidden.scss",
-      "start": 8585853,
-      "end": 8585989
+      "start": 8586676,
+      "end": 8586812
     },
     {
       "filename": "/lib/bs5/scss/helpers/_vr.scss",
-      "start": 8585989,
-      "end": 8586180
+      "start": 8586812,
+      "end": 8587003
     },
     {
       "filename": "/lib/bs5/scss/mixins/_alert.scss",
-      "start": 8586180,
-      "end": 8586705
+      "start": 8587003,
+      "end": 8587528
     },
     {
       "filename": "/lib/bs5/scss/mixins/_backdrop.scss",
-      "start": 8586705,
-      "end": 8587033
+      "start": 8587528,
+      "end": 8587856
     },
     {
       "filename": "/lib/bs5/scss/mixins/_banner.scss",
-      "start": 8587033,
-      "end": 8587256
+      "start": 8587856,
+      "end": 8588079
     },
     {
       "filename": "/lib/bs5/scss/mixins/_border-radius.scss",
-      "start": 8587256,
-      "end": 8589287
+      "start": 8588079,
+      "end": 8590110
     },
     {
       "filename": "/lib/bs5/scss/mixins/_box-shadow.scss",
-      "start": 8589287,
-      "end": 8589685
+      "start": 8590110,
+      "end": 8590508
     },
     {
       "filename": "/lib/bs5/scss/mixins/_breakpoints.scss",
-      "start": 8589685,
-      "end": 8594265
+      "start": 8590508,
+      "end": 8595088
     },
     {
       "filename": "/lib/bs5/scss/mixins/_buttons.scss",
-      "start": 8594265,
-      "end": 8597520
+      "start": 8595088,
+      "end": 8598343
     },
     {
       "filename": "/lib/bs5/scss/mixins/_caret.scss",
-      "start": 8597520,
-      "end": 8599107
+      "start": 8598343,
+      "end": 8599930
     },
     {
       "filename": "/lib/bs5/scss/mixins/_clearfix.scss",
-      "start": 8599107,
-      "end": 8599254
+      "start": 8599930,
+      "end": 8600077
     },
     {
       "filename": "/lib/bs5/scss/mixins/_color-mode.scss",
-      "start": 8599254,
-      "end": 8599701
+      "start": 8600077,
+      "end": 8600524
     },
     {
       "filename": "/lib/bs5/scss/mixins/_color-scheme.scss",
-      "start": 8599701,
-      "end": 8599868
+      "start": 8600524,
+      "end": 8600691
     },
     {
       "filename": "/lib/bs5/scss/mixins/_container.scss",
-      "start": 8599868,
-      "end": 8600278
+      "start": 8600691,
+      "end": 8601101
     },
     {
       "filename": "/lib/bs5/scss/mixins/_deprecate.scss",
-      "start": 8600278,
-      "end": 8600891
+      "start": 8601101,
+      "end": 8601714
     },
     {
       "filename": "/lib/bs5/scss/mixins/_forms.scss",
-      "start": 8600891,
-      "end": 8605055
+      "start": 8601714,
+      "end": 8605878
     },
     {
       "filename": "/lib/bs5/scss/mixins/_gradients.scss",
-      "start": 8605055,
-      "end": 8607011
+      "start": 8605878,
+      "end": 8607834
     },
     {
       "filename": "/lib/bs5/scss/mixins/_grid.scss",
-      "start": 8607011,
-      "end": 8612019
+      "start": 8607834,
+      "end": 8612842
     },
     {
       "filename": "/lib/bs5/scss/mixins/_image.scss",
-      "start": 8612019,
-      "end": 8612414
+      "start": 8612842,
+      "end": 8613237
     },
     {
       "filename": "/lib/bs5/scss/mixins/_list-group.scss",
-      "start": 8612414,
-      "end": 8612995
+      "start": 8613237,
+      "end": 8613818
     },
     {
       "filename": "/lib/bs5/scss/mixins/_lists.scss",
-      "start": 8612995,
-      "end": 8613163
+      "start": 8613818,
+      "end": 8613986
     },
     {
       "filename": "/lib/bs5/scss/mixins/_pagination.scss",
-      "start": 8613163,
-      "end": 8613550
+      "start": 8613986,
+      "end": 8614373
     },
     {
       "filename": "/lib/bs5/scss/mixins/_reset-text.scss",
-      "start": 8613550,
-      "end": 8614045
+      "start": 8614373,
+      "end": 8614868
     },
     {
       "filename": "/lib/bs5/scss/mixins/_resize.scss",
-      "start": 8614045,
-      "end": 8614247
+      "start": 8614868,
+      "end": 8615070
     },
     {
       "filename": "/lib/bs5/scss/mixins/_table-variants.scss",
-      "start": 8614247,
-      "end": 8615348
+      "start": 8615070,
+      "end": 8616171
     },
     {
       "filename": "/lib/bs5/scss/mixins/_text-truncate.scss",
-      "start": 8615348,
-      "end": 8615516
+      "start": 8616171,
+      "end": 8616339
     },
     {
       "filename": "/lib/bs5/scss/mixins/_transition.scss",
-      "start": 8615516,
-      "end": 8616177
+      "start": 8616339,
+      "end": 8617000
     },
     {
       "filename": "/lib/bs5/scss/mixins/_utilities.scss",
-      "start": 8616177,
-      "end": 8619561
+      "start": 8617000,
+      "end": 8620384
     },
     {
       "filename": "/lib/bs5/scss/mixins/_visually-hidden.scss",
-      "start": 8619561,
-      "end": 8620671
+      "start": 8620384,
+      "end": 8621494
     },
     {
       "filename": "/lib/bs5/scss/utilities/_api.scss",
-      "start": 8620671,
-      "end": 8622591
+      "start": 8621494,
+      "end": 8623414
     },
     {
       "filename": "/lib/bs5/scss/vendor/_rfs.scss",
-      "start": 8622591,
-      "end": 8632603
+      "start": 8623414,
+      "end": 8633426
     },
     {
       "filename": "/lib/bsw3/LICENSE",
-      "start": 8632603,
-      "end": 8633681
+      "start": 8633426,
+      "end": 8634504
     },
     {
       "filename": "/lib/bsw3/README.md",
-      "start": 8633681,
-      "end": 8636714
+      "start": 8634504,
+      "end": 8637537
     },
     {
       "filename": "/lib/bsw3/cerulean/_bootswatch.scss",
-      "start": 8636714,
-      "end": 8639287
+      "start": 8637537,
+      "end": 8640110
     },
     {
       "filename": "/lib/bsw3/cerulean/_variables.scss",
-      "start": 8639287,
-      "end": 8670341
+      "start": 8640110,
+      "end": 8671164
     },
     {
       "filename": "/lib/bsw3/cosmo/_bootswatch.scss",
-      "start": 8670341,
-      "end": 8674432
+      "start": 8671164,
+      "end": 8675255
     },
     {
       "filename": "/lib/bsw3/cosmo/_variables.scss",
-      "start": 8674432,
-      "end": 8705573
+      "start": 8675255,
+      "end": 8706396
     },
     {
       "filename": "/lib/bsw3/cosmo/font.css",
-      "start": 8705573,
-      "end": 8711863
+      "start": 8706396,
+      "end": 8712686
     },
     {
       "filename": "/lib/bsw3/cyborg/_bootswatch.scss",
-      "start": 8711863,
-      "end": 8715788
+      "start": 8712686,
+      "end": 8716611
     },
     {
       "filename": "/lib/bsw3/cyborg/_variables.scss",
-      "start": 8715788,
-      "end": 8746751
+      "start": 8716611,
+      "end": 8747574
     },
     {
       "filename": "/lib/bsw3/cyborg/font.css",
-      "start": 8746751,
-      "end": 8750641
+      "start": 8747574,
+      "end": 8751464
     },
     {
       "filename": "/lib/bsw3/darkly/_bootswatch.scss",
-      "start": 8750641,
-      "end": 8756100
+      "start": 8751464,
+      "end": 8756923
     },
     {
       "filename": "/lib/bsw3/darkly/_variables.scss",
-      "start": 8756100,
-      "end": 8787213
+      "start": 8756923,
+      "end": 8788036
     },
     {
       "filename": "/lib/bsw3/darkly/font.css",
-      "start": 8787213,
-      "end": 8789191
+      "start": 8788036,
+      "end": 8790014
     },
     {
       "filename": "/lib/bsw3/flatly/_bootswatch.scss",
-      "start": 8789191,
-      "end": 8794323
+      "start": 8790014,
+      "end": 8795146
     },
     {
       "filename": "/lib/bsw3/flatly/_variables.scss",
-      "start": 8794323,
-      "end": 8825434
+      "start": 8795146,
+      "end": 8826257
     },
     {
       "filename": "/lib/bsw3/flatly/font.css",
-      "start": 8825434,
-      "end": 8827412
+      "start": 8826257,
+      "end": 8828235
     },
     {
       "filename": "/lib/bsw3/journal/_bootswatch.scss",
-      "start": 8827412,
-      "end": 8830110
+      "start": 8828235,
+      "end": 8830933
     },
     {
       "filename": "/lib/bsw3/journal/_variables.scss",
-      "start": 8830110,
-      "end": 8861176
+      "start": 8830933,
+      "end": 8861999
     },
     {
       "filename": "/lib/bsw3/journal/font.css",
-      "start": 8861176,
-      "end": 8862550
+      "start": 8861999,
+      "end": 8863373
     },
     {
       "filename": "/lib/bsw3/lumen/_bootswatch.scss",
-      "start": 8862550,
-      "end": 8871467
+      "start": 8863373,
+      "end": 8872290
     },
     {
       "filename": "/lib/bsw3/lumen/_variables.scss",
-      "start": 8871467,
-      "end": 8902738
+      "start": 8872290,
+      "end": 8903561
     },
     {
       "filename": "/lib/bsw3/lumen/font.css",
-      "start": 8902738,
-      "end": 8911127
+      "start": 8903561,
+      "end": 8911950
     },
     {
       "filename": "/lib/bsw3/package.json",
-      "start": 8911127,
-      "end": 8911478
+      "start": 8911950,
+      "end": 8912301
     },
     {
       "filename": "/lib/bsw3/paper/_bootswatch.scss",
-      "start": 8911478,
-      "end": 8923549
+      "start": 8912301,
+      "end": 8924372
     },
     {
       "filename": "/lib/bsw3/paper/_variables.scss",
-      "start": 8923549,
-      "end": 8954303
+      "start": 8924372,
+      "end": 8955126
     },
     {
       "filename": "/lib/bsw3/paper/font.css",
-      "start": 8954303,
-      "end": 8962111
+      "start": 8955126,
+      "end": 8962934
     },
     {
       "filename": "/lib/bsw3/readable/_bootswatch.scss",
-      "start": 8962111,
-      "end": 8965485
+      "start": 8962934,
+      "end": 8966308
     },
     {
       "filename": "/lib/bsw3/readable/_variables.scss",
-      "start": 8965485,
-      "end": 8996254
+      "start": 8966308,
+      "end": 8997077
     },
     {
       "filename": "/lib/bsw3/readable/font.css",
-      "start": 8996254,
-      "end": 8999254
+      "start": 8997077,
+      "end": 9000077
     },
     {
       "filename": "/lib/bsw3/sandstone/_bootswatch.scss",
-      "start": 8999254,
-      "end": 9002202
+      "start": 9000077,
+      "end": 9003025
     },
     {
       "filename": "/lib/bsw3/sandstone/_variables.scss",
-      "start": 9002202,
-      "end": 9033153
+      "start": 9003025,
+      "end": 9033976
     },
     {
       "filename": "/lib/bsw3/sandstone/font.css",
-      "start": 9033153,
-      "end": 9039002
+      "start": 9033976,
+      "end": 9039825
     },
     {
       "filename": "/lib/bsw3/simplex/_bootswatch.scss",
-      "start": 9039002,
-      "end": 9042066
+      "start": 9039825,
+      "end": 9042889
     },
     {
       "filename": "/lib/bsw3/simplex/_variables.scss",
-      "start": 9042066,
-      "end": 9073016
+      "start": 9042889,
+      "end": 9073839
     },
     {
       "filename": "/lib/bsw3/simplex/font.css",
-      "start": 9073016,
-      "end": 9083510
+      "start": 9073839,
+      "end": 9084333
     },
     {
       "filename": "/lib/bsw3/slate/_bootswatch.scss",
-      "start": 9083510,
-      "end": 9091413
+      "start": 9084333,
+      "end": 9092236
     },
     {
       "filename": "/lib/bsw3/slate/_variables.scss",
-      "start": 9091413,
-      "end": 9122975
+      "start": 9092236,
+      "end": 9123798
     },
     {
       "filename": "/lib/bsw3/spacelab/_bootswatch.scss",
-      "start": 9122975,
-      "end": 9125972
+      "start": 9123798,
+      "end": 9126795
     },
     {
       "filename": "/lib/bsw3/spacelab/_variables.scss",
-      "start": 9125972,
-      "end": 9157056
+      "start": 9126795,
+      "end": 9157879
     },
     {
       "filename": "/lib/bsw3/spacelab/font.css",
-      "start": 9157056,
-      "end": 9178102
+      "start": 9157879,
+      "end": 9178925
     },
     {
       "filename": "/lib/bsw3/superhero/_bootswatch.scss",
-      "start": 9178102,
-      "end": 9183465
+      "start": 9178925,
+      "end": 9184288
     },
     {
       "filename": "/lib/bsw3/superhero/_variables.scss",
-      "start": 9183465,
-      "end": 9214569
+      "start": 9184288,
+      "end": 9215392
     },
     {
       "filename": "/lib/bsw3/superhero/font.css",
-      "start": 9214569,
-      "end": 9216550
+      "start": 9215392,
+      "end": 9217373
     },
     {
       "filename": "/lib/bsw3/united/_bootswatch.scss",
-      "start": 9216550,
-      "end": 9217833
+      "start": 9217373,
+      "end": 9218656
     },
     {
       "filename": "/lib/bsw3/united/_variables.scss",
-      "start": 9217833,
-      "end": 9248930
+      "start": 9218656,
+      "end": 9249753
     },
     {
       "filename": "/lib/bsw3/united/font.css",
-      "start": 9248930,
-      "end": 9252146
+      "start": 9249753,
+      "end": 9252969
     },
     {
       "filename": "/lib/bsw3/yeti/_bootswatch.scss",
-      "start": 9252146,
-      "end": 9259492
+      "start": 9252969,
+      "end": 9260315
     },
     {
       "filename": "/lib/bsw3/yeti/_variables.scss",
-      "start": 9259492,
-      "end": 9290426
+      "start": 9260315,
+      "end": 9291249
     },
     {
       "filename": "/lib/bsw3/yeti/font.css",
-      "start": 9290426,
-      "end": 9321995
+      "start": 9291249,
+      "end": 9322818
     },
     {
       "filename": "/lib/bsw4/LICENSE",
-      "start": 9321995,
-      "end": 9323073
+      "start": 9322818,
+      "end": 9323896
     },
     {
       "filename": "/lib/bsw4/README.md",
-      "start": 9323073,
-      "end": 9328562
+      "start": 9323896,
+      "end": 9329385
     },
     {
       "filename": "/lib/bsw4/dist/cerulean/_bootswatch.scss",
-      "start": 9328562,
-      "end": 9330430
+      "start": 9329385,
+      "end": 9331253
     },
     {
       "filename": "/lib/bsw4/dist/cerulean/_variables.scss",
-      "start": 9330430,
-      "end": 9331738
+      "start": 9331253,
+      "end": 9332561
     },
     {
       "filename": "/lib/bsw4/dist/cosmo/_bootswatch.scss",
-      "start": 9331738,
-      "end": 9332317
+      "start": 9332561,
+      "end": 9333140
     },
     {
       "filename": "/lib/bsw4/dist/cosmo/_variables.scss",
-      "start": 9332317,
-      "end": 9333995
+      "start": 9333140,
+      "end": 9334818
     },
     {
       "filename": "/lib/bsw4/dist/cosmo/font.css",
-      "start": 9333995,
-      "end": 9340747
+      "start": 9334818,
+      "end": 9341570
     },
     {
       "filename": "/lib/bsw4/dist/cyborg/_bootswatch.scss",
-      "start": 9340747,
-      "end": 9345860
+      "start": 9341570,
+      "end": 9346683
     },
     {
       "filename": "/lib/bsw4/dist/cyborg/_variables.scss",
-      "start": 9345860,
-      "end": 9351264
+      "start": 9346683,
+      "end": 9352087
     },
     {
       "filename": "/lib/bsw4/dist/cyborg/font.css",
-      "start": 9351264,
-      "end": 9355462
+      "start": 9352087,
+      "end": 9356285
     },
     {
       "filename": "/lib/bsw4/dist/darkly/_bootswatch.scss",
-      "start": 9355462,
-      "end": 9359471
+      "start": 9356285,
+      "end": 9360294
     },
     {
       "filename": "/lib/bsw4/dist/darkly/_variables.scss",
-      "start": 9359471,
-      "end": 9364777
+      "start": 9360294,
+      "end": 9365600
     },
     {
       "filename": "/lib/bsw4/dist/darkly/font.css",
-      "start": 9364777,
-      "end": 9366887
+      "start": 9365600,
+      "end": 9367710
     },
     {
       "filename": "/lib/bsw4/dist/flatly/_bootswatch.scss",
-      "start": 9366887,
-      "end": 9370845
+      "start": 9367710,
+      "end": 9371668
     },
     {
       "filename": "/lib/bsw4/dist/flatly/_variables.scss",
-      "start": 9370845,
-      "end": 9374274
+      "start": 9371668,
+      "end": 9375097
     },
     {
       "filename": "/lib/bsw4/dist/flatly/font.css",
-      "start": 9374274,
-      "end": 9376384
+      "start": 9375097,
+      "end": 9377207
     },
     {
       "filename": "/lib/bsw4/dist/journal/_bootswatch.scss",
-      "start": 9376384,
-      "end": 9377585
+      "start": 9377207,
+      "end": 9378408
     },
     {
       "filename": "/lib/bsw4/dist/journal/_variables.scss",
-      "start": 9377585,
-      "end": 9379077
+      "start": 9378408,
+      "end": 9379900
     },
     {
       "filename": "/lib/bsw4/dist/journal/font.css",
-      "start": 9379077,
-      "end": 9380539
+      "start": 9379900,
+      "end": 9381362
     },
     {
       "filename": "/lib/bsw4/dist/litera/_bootswatch.scss",
-      "start": 9380539,
-      "end": 9384369
+      "start": 9381362,
+      "end": 9385192
     },
     {
       "filename": "/lib/bsw4/dist/litera/_variables.scss",
-      "start": 9384369,
-      "end": 9386983
+      "start": 9385192,
+      "end": 9387806
     },
     {
       "filename": "/lib/bsw4/dist/lumen/_bootswatch.scss",
-      "start": 9386983,
-      "end": 9395225
+      "start": 9387806,
+      "end": 9396048
     },
     {
       "filename": "/lib/bsw4/dist/lumen/_variables.scss",
-      "start": 9395225,
-      "end": 9397579
+      "start": 9396048,
+      "end": 9398402
     },
     {
       "filename": "/lib/bsw4/dist/lumen/font.css",
-      "start": 9397579,
-      "end": 9406584
+      "start": 9398402,
+      "end": 9407407
     },
     {
       "filename": "/lib/bsw4/dist/lux/_bootswatch.scss",
-      "start": 9406584,
-      "end": 9409615
+      "start": 9407407,
+      "end": 9410438
     },
     {
       "filename": "/lib/bsw4/dist/lux/_variables.scss",
-      "start": 9409615,
-      "end": 9412612
+      "start": 9410438,
+      "end": 9413435
     },
     {
       "filename": "/lib/bsw4/dist/lux/font.css",
-      "start": 9412612,
-      "end": 9416176
+      "start": 9413435,
+      "end": 9416999
     },
     {
       "filename": "/lib/bsw4/dist/materia/_bootswatch.scss",
-      "start": 9416176,
-      "end": 9431266
+      "start": 9416999,
+      "end": 9432089
     },
     {
       "filename": "/lib/bsw4/dist/materia/_variables.scss",
-      "start": 9431266,
-      "end": 9435205
+      "start": 9432089,
+      "end": 9436028
     },
     {
       "filename": "/lib/bsw4/dist/materia/font.css",
-      "start": 9435205,
-      "end": 9443629
+      "start": 9436028,
+      "end": 9444452
     },
     {
       "filename": "/lib/bsw4/dist/minty/_bootswatch.scss",
-      "start": 9443629,
-      "end": 9448086
+      "start": 9444452,
+      "end": 9448909
     },
     {
       "filename": "/lib/bsw4/dist/minty/_variables.scss",
-      "start": 9448086,
-      "end": 9451000
+      "start": 9448909,
+      "end": 9451823
     },
     {
       "filename": "/lib/bsw4/dist/minty/font.css",
-      "start": 9451000,
-      "end": 9455935
+      "start": 9451823,
+      "end": 9456758
     },
     {
       "filename": "/lib/bsw4/dist/pulse/_bootswatch.scss",
-      "start": 9455935,
-      "end": 9458418
+      "start": 9456758,
+      "end": 9459241
     },
     {
       "filename": "/lib/bsw4/dist/pulse/_variables.scss",
-      "start": 9458418,
-      "end": 9460899
+      "start": 9459241,
+      "end": 9461722
     },
     {
       "filename": "/lib/bsw4/dist/sandstone/_bootswatch.scss",
-      "start": 9460899,
-      "end": 9464380
+      "start": 9461722,
+      "end": 9465203
     },
     {
       "filename": "/lib/bsw4/dist/sandstone/_variables.scss",
-      "start": 9464380,
-      "end": 9468300
+      "start": 9465203,
+      "end": 9469123
     },
     {
       "filename": "/lib/bsw4/dist/sandstone/font.css",
-      "start": 9468300,
-      "end": 9474611
+      "start": 9469123,
+      "end": 9475434
     },
     {
       "filename": "/lib/bsw4/dist/simplex/_bootswatch.scss",
-      "start": 9474611,
-      "end": 9477036
+      "start": 9475434,
+      "end": 9477859
     },
     {
       "filename": "/lib/bsw4/dist/simplex/_variables.scss",
-      "start": 9477036,
-      "end": 9479868
+      "start": 9477859,
+      "end": 9480691
     },
     {
       "filename": "/lib/bsw4/dist/simplex/font.css",
-      "start": 9479868,
-      "end": 9490802
+      "start": 9480691,
+      "end": 9491625
     },
     {
       "filename": "/lib/bsw4/dist/sketchy/_bootswatch.scss",
-      "start": 9490802,
-      "end": 9499430
+      "start": 9491625,
+      "end": 9500253
     },
     {
       "filename": "/lib/bsw4/dist/sketchy/_variables.scss",
-      "start": 9499430,
-      "end": 9503963
+      "start": 9500253,
+      "end": 9504786
     },
     {
       "filename": "/lib/bsw4/dist/sketchy/font.css",
-      "start": 9503963,
-      "end": 9504983
+      "start": 9504786,
+      "end": 9505806
     },
     {
       "filename": "/lib/bsw4/dist/slate/_bootswatch.scss",
-      "start": 9504983,
-      "end": 9515165
+      "start": 9505806,
+      "end": 9515988
     },
     {
       "filename": "/lib/bsw4/dist/slate/_variables.scss",
-      "start": 9515165,
-      "end": 9520852
+      "start": 9515988,
+      "end": 9521675
     },
     {
       "filename": "/lib/bsw4/dist/solar/_bootswatch.scss",
-      "start": 9520852,
-      "end": 9520996
+      "start": 9521675,
+      "end": 9521819
     },
     {
       "filename": "/lib/bsw4/dist/solar/_variables.scss",
-      "start": 9520996,
-      "end": 9521714
+      "start": 9521819,
+      "end": 9522537
     },
     {
       "filename": "/lib/bsw4/dist/solar/font.css",
-      "start": 9521714,
-      "end": 9528466
+      "start": 9522537,
+      "end": 9529289
     },
     {
       "filename": "/lib/bsw4/dist/spacelab/_bootswatch.scss",
-      "start": 9528466,
-      "end": 9530407
+      "start": 9529289,
+      "end": 9531230
     },
     {
       "filename": "/lib/bsw4/dist/spacelab/_variables.scss",
-      "start": 9530407,
-      "end": 9532039
+      "start": 9531230,
+      "end": 9532862
     },
     {
       "filename": "/lib/bsw4/dist/spacelab/font.css",
-      "start": 9532039,
-      "end": 9553965
+      "start": 9532862,
+      "end": 9554788
     },
     {
       "filename": "/lib/bsw4/dist/superhero/_bootswatch.scss",
-      "start": 9553965,
-      "end": 9558586
+      "start": 9554788,
+      "end": 9559409
     },
     {
       "filename": "/lib/bsw4/dist/superhero/_variables.scss",
-      "start": 9558586,
-      "end": 9563731
+      "start": 9559409,
+      "end": 9564554
     },
     {
       "filename": "/lib/bsw4/dist/superhero/font.css",
-      "start": 9563731,
-      "end": 9565844
+      "start": 9564554,
+      "end": 9566667
     },
     {
       "filename": "/lib/bsw4/dist/united/_bootswatch.scss",
-      "start": 9565844,
-      "end": 9566089
+      "start": 9566667,
+      "end": 9566912
     },
     {
       "filename": "/lib/bsw4/dist/united/_variables.scss",
-      "start": 9566089,
-      "end": 9567438
+      "start": 9566912,
+      "end": 9568261
     },
     {
       "filename": "/lib/bsw4/dist/united/font.css",
-      "start": 9567438,
-      "end": 9570918
+      "start": 9568261,
+      "end": 9571741
     },
     {
       "filename": "/lib/bsw4/dist/yeti/_bootswatch.scss",
-      "start": 9570918,
-      "end": 9580146
+      "start": 9571741,
+      "end": 9580969
     },
     {
       "filename": "/lib/bsw4/dist/yeti/_variables.scss",
-      "start": 9580146,
-      "end": 9583074
+      "start": 9580969,
+      "end": 9583897
     },
     {
       "filename": "/lib/bsw4/dist/yeti/font.css",
-      "start": 9583074,
-      "end": 9615963
+      "start": 9583897,
+      "end": 9616786
     },
     {
       "filename": "/lib/bsw4/package.json",
-      "start": 9615963,
-      "end": 9616574
+      "start": 9616786,
+      "end": 9617397
     },
     {
       "filename": "/lib/bsw5/LICENSE",
-      "start": 9616574,
-      "end": 9617652
+      "start": 9617397,
+      "end": 9618475
     },
     {
       "filename": "/lib/bsw5/README.md",
-      "start": 9617652,
-      "end": 9623234
+      "start": 9618475,
+      "end": 9624057
     },
     {
       "filename": "/lib/bsw5/dist/cerulean/_bootswatch.scss",
-      "start": 9623234,
-      "end": 9624238
+      "start": 9624057,
+      "end": 9625061
     },
     {
       "filename": "/lib/bsw5/dist/cerulean/_variables.scss",
-      "start": 9624238,
-      "end": 9625615
+      "start": 9625061,
+      "end": 9626438
     },
     {
       "filename": "/lib/bsw5/dist/cosmo/_bootswatch.scss",
-      "start": 9625615,
-      "end": 9626084
+      "start": 9626438,
+      "end": 9626907
     },
     {
       "filename": "/lib/bsw5/dist/cosmo/_variables.scss",
-      "start": 9626084,
-      "end": 9627720
+      "start": 9626907,
+      "end": 9628543
     },
     {
       "filename": "/lib/bsw5/dist/cosmo/font.css",
-      "start": 9627720,
-      "end": 9634472
+      "start": 9628543,
+      "end": 9635295
     },
     {
       "filename": "/lib/bsw5/dist/cyborg/_bootswatch.scss",
-      "start": 9634472,
-      "end": 9636605
+      "start": 9635295,
+      "end": 9637428
     },
     {
       "filename": "/lib/bsw5/dist/cyborg/_variables.scss",
-      "start": 9636605,
-      "end": 9642895
+      "start": 9637428,
+      "end": 9643718
     },
     {
       "filename": "/lib/bsw5/dist/cyborg/font.css",
-      "start": 9642895,
-      "end": 9647093
+      "start": 9643718,
+      "end": 9647916
     },
     {
       "filename": "/lib/bsw5/dist/darkly/_bootswatch.scss",
-      "start": 9647093,
-      "end": 9648526
+      "start": 9647916,
+      "end": 9649349
     },
     {
       "filename": "/lib/bsw5/dist/darkly/_variables.scss",
-      "start": 9648526,
-      "end": 9654987
+      "start": 9649349,
+      "end": 9655810
     },
     {
       "filename": "/lib/bsw5/dist/darkly/font.css",
-      "start": 9654987,
-      "end": 9657097
+      "start": 9655810,
+      "end": 9657920
     },
     {
       "filename": "/lib/bsw5/dist/flatly/_bootswatch.scss",
-      "start": 9657097,
-      "end": 9658719
+      "start": 9657920,
+      "end": 9659542
     },
     {
       "filename": "/lib/bsw5/dist/flatly/_variables.scss",
-      "start": 9658719,
-      "end": 9662485
+      "start": 9659542,
+      "end": 9663308
     },
     {
       "filename": "/lib/bsw5/dist/flatly/font.css",
-      "start": 9662485,
-      "end": 9664595
+      "start": 9663308,
+      "end": 9665418
     },
     {
       "filename": "/lib/bsw5/dist/journal/_bootswatch.scss",
-      "start": 9664595,
-      "end": 9665271
+      "start": 9665418,
+      "end": 9666094
     },
     {
       "filename": "/lib/bsw5/dist/journal/_variables.scss",
-      "start": 9665271,
-      "end": 9666661
+      "start": 9666094,
+      "end": 9667484
     },
     {
       "filename": "/lib/bsw5/dist/journal/font.css",
-      "start": 9666661,
-      "end": 9668123
+      "start": 9667484,
+      "end": 9668946
     },
     {
       "filename": "/lib/bsw5/dist/litera/_bootswatch.scss",
-      "start": 9668123,
-      "end": 9669272
+      "start": 9668946,
+      "end": 9670095
     },
     {
       "filename": "/lib/bsw5/dist/litera/_variables.scss",
-      "start": 9669272,
-      "end": 9671752
+      "start": 9670095,
+      "end": 9672575
     },
     {
       "filename": "/lib/bsw5/dist/lumen/_bootswatch.scss",
-      "start": 9671752,
-      "end": 9677164
+      "start": 9672575,
+      "end": 9677987
     },
     {
       "filename": "/lib/bsw5/dist/lumen/_variables.scss",
-      "start": 9677164,
-      "end": 9679860
+      "start": 9677987,
+      "end": 9680683
     },
     {
       "filename": "/lib/bsw5/dist/lumen/font.css",
-      "start": 9679860,
-      "end": 9688865
+      "start": 9680683,
+      "end": 9689688
     },
     {
       "filename": "/lib/bsw5/dist/lux/_bootswatch.scss",
-      "start": 9688865,
-      "end": 9691013
+      "start": 9689688,
+      "end": 9691836
     },
     {
       "filename": "/lib/bsw5/dist/lux/_variables.scss",
-      "start": 9691013,
-      "end": 9694070
+      "start": 9691836,
+      "end": 9694893
     },
     {
       "filename": "/lib/bsw5/dist/lux/font.css",
-      "start": 9694070,
-      "end": 9697634
+      "start": 9694893,
+      "end": 9698457
     },
     {
       "filename": "/lib/bsw5/dist/materia/_bootswatch.scss",
-      "start": 9697634,
-      "end": 9709930
+      "start": 9698457,
+      "end": 9710753
     },
     {
       "filename": "/lib/bsw5/dist/materia/_variables.scss",
-      "start": 9709930,
-      "end": 9713363
+      "start": 9710753,
+      "end": 9714186
     },
     {
       "filename": "/lib/bsw5/dist/materia/font.css",
-      "start": 9713363,
-      "end": 9721787
+      "start": 9714186,
+      "end": 9722610
     },
     {
       "filename": "/lib/bsw5/dist/minty/_bootswatch.scss",
-      "start": 9721787,
-      "end": 9722707
+      "start": 9722610,
+      "end": 9723530
     },
     {
       "filename": "/lib/bsw5/dist/minty/_variables.scss",
-      "start": 9722707,
-      "end": 9725646
+      "start": 9723530,
+      "end": 9726469
     },
     {
       "filename": "/lib/bsw5/dist/minty/font.css",
-      "start": 9725646,
-      "end": 9730581
+      "start": 9726469,
+      "end": 9731404
     },
     {
       "filename": "/lib/bsw5/dist/morph/_bootswatch.scss",
-      "start": 9730581,
-      "end": 9740378
+      "start": 9731404,
+      "end": 9741201
     },
     {
       "filename": "/lib/bsw5/dist/morph/_variables.scss",
-      "start": 9740378,
-      "end": 9747604
+      "start": 9741201,
+      "end": 9748427
     },
     {
       "filename": "/lib/bsw5/dist/morph/font.css",
-      "start": 9747604,
-      "end": 9752401
+      "start": 9748427,
+      "end": 9753224
     },
     {
       "filename": "/lib/bsw5/dist/pulse/_bootswatch.scss",
-      "start": 9752401,
-      "end": 9754396
+      "start": 9753224,
+      "end": 9755219
     },
     {
       "filename": "/lib/bsw5/dist/pulse/_variables.scss",
-      "start": 9754396,
-      "end": 9756568
+      "start": 9755219,
+      "end": 9757391
     },
     {
       "filename": "/lib/bsw5/dist/quartz/_bootswatch.scss",
-      "start": 9756568,
-      "end": 9761931
+      "start": 9757391,
+      "end": 9762754
     },
     {
       "filename": "/lib/bsw5/dist/quartz/_variables.scss",
-      "start": 9761931,
-      "end": 9768302
+      "start": 9762754,
+      "end": 9769125
     },
     {
       "filename": "/lib/bsw5/dist/sandstone/_bootswatch.scss",
-      "start": 9768302,
-      "end": 9771453
+      "start": 9769125,
+      "end": 9772276
     },
     {
       "filename": "/lib/bsw5/dist/sandstone/_variables.scss",
-      "start": 9771453,
-      "end": 9775717
+      "start": 9772276,
+      "end": 9776540
     },
     {
       "filename": "/lib/bsw5/dist/sandstone/font.css",
-      "start": 9775717,
-      "end": 9782028
+      "start": 9776540,
+      "end": 9782851
     },
     {
       "filename": "/lib/bsw5/dist/simplex/_bootswatch.scss",
-      "start": 9782028,
-      "end": 9784077
+      "start": 9782851,
+      "end": 9784900
     },
     {
       "filename": "/lib/bsw5/dist/simplex/_variables.scss",
-      "start": 9784077,
-      "end": 9786832
+      "start": 9784900,
+      "end": 9787655
     },
     {
       "filename": "/lib/bsw5/dist/simplex/font.css",
-      "start": 9786832,
-      "end": 9797766
+      "start": 9787655,
+      "end": 9798589
     },
     {
       "filename": "/lib/bsw5/dist/sketchy/_bootswatch.scss",
-      "start": 9797766,
-      "end": 9805937
+      "start": 9798589,
+      "end": 9806760
     },
     {
       "filename": "/lib/bsw5/dist/sketchy/_variables.scss",
-      "start": 9805937,
-      "end": 9810393
+      "start": 9806760,
+      "end": 9811216
     },
     {
       "filename": "/lib/bsw5/dist/sketchy/font.css",
-      "start": 9810393,
-      "end": 9811413
+      "start": 9811216,
+      "end": 9812236
     },
     {
       "filename": "/lib/bsw5/dist/slate/_bootswatch.scss",
-      "start": 9811413,
-      "end": 9817256
+      "start": 9812236,
+      "end": 9818079
     },
     {
       "filename": "/lib/bsw5/dist/slate/_variables.scss",
-      "start": 9817256,
-      "end": 9824103
+      "start": 9818079,
+      "end": 9824926
     },
     {
       "filename": "/lib/bsw5/dist/solar/_bootswatch.scss",
-      "start": 9824103,
-      "end": 9825263
+      "start": 9824926,
+      "end": 9826086
     },
     {
       "filename": "/lib/bsw5/dist/solar/_variables.scss",
-      "start": 9825263,
-      "end": 9831857
+      "start": 9826086,
+      "end": 9832680
     },
     {
       "filename": "/lib/bsw5/dist/solar/font.css",
-      "start": 9831857,
-      "end": 9838609
+      "start": 9832680,
+      "end": 9839432
     },
     {
       "filename": "/lib/bsw5/dist/spacelab/_bootswatch.scss",
-      "start": 9838609,
-      "end": 9840055
+      "start": 9839432,
+      "end": 9840878
     },
     {
       "filename": "/lib/bsw5/dist/spacelab/_variables.scss",
-      "start": 9840055,
-      "end": 9841575
+      "start": 9840878,
+      "end": 9842398
     },
     {
       "filename": "/lib/bsw5/dist/spacelab/font.css",
-      "start": 9841575,
-      "end": 9863501
+      "start": 9842398,
+      "end": 9864324
     },
     {
       "filename": "/lib/bsw5/dist/superhero/_bootswatch.scss",
-      "start": 9863501,
-      "end": 9865677
+      "start": 9864324,
+      "end": 9866500
     },
     {
       "filename": "/lib/bsw5/dist/superhero/_variables.scss",
-      "start": 9865677,
-      "end": 9872500
+      "start": 9866500,
+      "end": 9873323
     },
     {
       "filename": "/lib/bsw5/dist/superhero/font.css",
-      "start": 9872500,
-      "end": 9874613
+      "start": 9873323,
+      "end": 9875436
     },
     {
       "filename": "/lib/bsw5/dist/united/_bootswatch.scss",
-      "start": 9874613,
-      "end": 9874885
+      "start": 9875436,
+      "end": 9875708
     },
     {
       "filename": "/lib/bsw5/dist/united/_variables.scss",
-      "start": 9874885,
-      "end": 9876299
+      "start": 9875708,
+      "end": 9877122
     },
     {
       "filename": "/lib/bsw5/dist/united/font.css",
-      "start": 9876299,
-      "end": 9879779
+      "start": 9877122,
+      "end": 9880602
     },
     {
       "filename": "/lib/bsw5/dist/vapor/_bootswatch.scss",
-      "start": 9879779,
-      "end": 9885297
+      "start": 9880602,
+      "end": 9886120
     },
     {
       "filename": "/lib/bsw5/dist/vapor/_variables.scss",
-      "start": 9885297,
-      "end": 9890061
+      "start": 9886120,
+      "end": 9890884
     },
     {
       "filename": "/lib/bsw5/dist/vapor/font.css",
-      "start": 9890061,
-      "end": 9891467
+      "start": 9890884,
+      "end": 9892290
     },
     {
       "filename": "/lib/bsw5/dist/yeti/_bootswatch.scss",
-      "start": 9891467,
-      "end": 9897172
+      "start": 9892290,
+      "end": 9897995
     },
     {
       "filename": "/lib/bsw5/dist/yeti/_variables.scss",
-      "start": 9897172,
-      "end": 9899890
+      "start": 9897995,
+      "end": 9900713
     },
     {
       "filename": "/lib/bsw5/dist/yeti/font.css",
-      "start": 9899890,
-      "end": 9932779
+      "start": 9900713,
+      "end": 9933602
     },
     {
       "filename": "/lib/bsw5/dist/zephyr/_bootswatch.scss",
-      "start": 9932779,
-      "end": 9935620
+      "start": 9933602,
+      "end": 9936443
     },
     {
       "filename": "/lib/bsw5/dist/zephyr/_variables.scss",
-      "start": 9935620,
-      "end": 9939879
+      "start": 9936443,
+      "end": 9940702
     },
     {
       "filename": "/lib/bsw5/dist/zephyr/font.css",
-      "start": 9939879,
-      "end": 9946449
+      "start": 9940702,
+      "end": 9947272
     },
     {
       "filename": "/lib/bsw5/package.json",
-      "start": 9946449,
-      "end": 9947100
+      "start": 9947272,
+      "end": 9947923
     },
     {
       "filename": "/package.json",
-      "start": 9947100,
-      "end": 9947584
+      "start": 9947923,
+      "end": 9948407
     },
     {
       "filename": "/rmarkdown/templates/legacy/skeleton/skeleton.Rmd",
-      "start": 9947584,
-      "end": 9949321
+      "start": 9948407,
+      "end": 9950144
     },
     {
       "filename": "/rmarkdown/templates/legacy/template.yaml",
-      "start": 9949321,
-      "end": 9949420
+      "start": 9950144,
+      "end": 9950243
     },
     {
       "filename": "/rmarkdown/templates/new/skeleton/skeleton.Rmd",
-      "start": 9949420,
-      "end": 9951561
+      "start": 9950243,
+      "end": 9952384
     },
     {
       "filename": "/rmarkdown/templates/new/template.yaml",
-      "start": 9951561,
-      "end": 9951649
+      "start": 9952384,
+      "end": 9952472
     },
     {
       "filename": "/rmarkdown/templates/real-time/skeleton/skeleton.Rmd",
-      "start": 9951649,
-      "end": 9953915
+      "start": 9952472,
+      "end": 9954738
     },
     {
       "filename": "/rmarkdown/templates/real-time/template.yaml",
-      "start": 9953915,
-      "end": 9954016
+      "start": 9954738,
+      "end": 9954839
     },
     {
       "filename": "/sass-utils/color-contrast.scss",
-      "start": 9954016,
-      "end": 9959422
+      "start": 9954839,
+      "end": 9960245
     },
     {
       "filename": "/themer-demo/R/tips.R",
-      "start": 9959422,
-      "end": 9964396
+      "start": 9960245,
+      "end": 9965219
     },
     {
       "filename": "/themer-demo/app.R",
-      "start": 9964396,
-      "end": 9978296
+      "start": 9965219,
+      "end": 9979119
     },
     {
       "filename": "/themer-demo/deploy.R",
-      "start": 9978296,
-      "end": 9978453
+      "start": 9979119,
+      "end": 9979276
     },
     {
       "filename": "/themer-demo/deploy/app.R",
-      "start": 9978453,
-      "end": 9978869
+      "start": 9979276,
+      "end": 9979692
     },
     {
       "filename": "/themer-demo/global.R",
-      "start": 9978869,
-      "end": 9984590
+      "start": 9979692,
+      "end": 9985413
     },
     {
       "filename": "/themer/options.json",
-      "start": 9984590,
-      "end": 9988344
+      "start": 9985413,
+      "end": 9989167
     },
     {
       "filename": "/themer/themer.js",
-      "start": 9988344,
-      "end": 10004110
+      "start": 9989167,
+      "end": 10004933
     },
     {
       "filename": "/themer/themer.scss",
-      "start": 10004110,
-      "end": 10004494
+      "start": 10004933,
+      "end": 10005317
     }
   ],
-  "remote_package_size": 10004494
+  "remote_package_size": 10005317
 }
