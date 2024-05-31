@@ -1,5 +1,4 @@
 .Rproj.user
 
 /.quarto/
-/_site/
-examples*
+/website/_site/
