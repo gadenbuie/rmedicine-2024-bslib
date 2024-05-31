@@ -1,10 +1,27 @@
 [
   {
-    "objectID": "01-intro.html",
-    "href": "01-intro.html",
-    "title": "1 - Introduction",
+    "objectID": "intro-02.html",
+    "href": "intro-02.html",
+    "title": "New layouts",
     "section": "",
-    "text": "#| standalone: true\n#| components: [editor, viewer, terminal]\nlibrary(shiny)\nlibrary(collegeScorecard)\n\nui &lt;- fluidPage(\n  h2(\"Hello world\"),\n  # this should cause a client-side error...\n  textInput(\"foo\", \"Foo\"),\n  textInput(\"foo\", \"Foo\")\n)\n\nserver &lt;- function(input, output, session) {\n\n}\n\nshinyApp(ui, server)"
+    "text": "Inroducing\n\npage_sidebar()\ncard()\n\nwith card parts\n\nlayout_columns()\nfull screen cards\n\nBreakout activity\n\nStarting with a basic shiny app with 2 inputs and 2-3 plots\n\n(1 input is more local)\n\nOrganize into a new layout\nBonus: layout_sidebar()",
+    "crumbs": [
+      "Workshop",
+      "Introduction",
+      "New layouts"
+    ]
+  },
+  {
+    "objectID": "intro-01.html",
+    "href": "intro-01.html",
+    "title": "Welcome and Getting Started",
+    "section": "",
+    "text": "Welcome to R/Medicine 2024!\n\nWho am I\nWhere to find things\nHow to ask questions\nHow we’ll do this thing\n\nA bit of teaching\nwith break-out pairing sessions\n\n\nWhat is bslib?\n\nStarted as a way to style your Shiny apps\nAnd bringing Bootstrap 5 to Shiny\nNow a whole lot more\n\nBreakout activity: Are we all set up?\n\nTake a Shiny app and make it bslib-ier\n\nFrom {type}Page() to page_{type}()\nTry out Bootsrap/Bootswatch themes\nExtra points: try a Sass variable\n\nHelp each other make sure you’re set up\n\nFollow up\n\nCheck in\nIntroduce the College Scorecard dataset\nBonus: new shinyapp snippet",
+    "crumbs": [
+      "Workshop",
+      "Introduction",
+      "Welcome and Getting Started"
+    ]
   },
   {
     "objectID": "about.html",

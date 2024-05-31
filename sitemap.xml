@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gadenbuie.github.io/rmedicine-2024-bslib/01-intro.html</loc>
-    <lastmod>2024-05-31T16:37:50.186Z</lastmod>
+    <loc>https://gadenbuie.github.io/rmedicine-2024-bslib/intro-02.html</loc>
+    <lastmod>2024-05-31T19:10:46.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gadenbuie.github.io/rmedicine-2024-bslib/intro-01.html</loc>
+    <lastmod>2024-05-31T19:10:46.003Z</lastmod>
   </url>
   <url>
     <loc>https://gadenbuie.github.io/rmedicine-2024-bslib/about.html</loc>
-    <lastmod>2024-05-31T16:37:50.186Z</lastmod>
+    <lastmod>2024-05-31T19:10:45.995Z</lastmod>
   </url>
   <url>
     <loc>https://gadenbuie.github.io/rmedicine-2024-bslib/index.html</loc>
-    <lastmod>2024-05-31T16:37:50.190Z</lastmod>
+    <lastmod>2024-05-31T19:10:46.003Z</lastmod>
   </url>
 </urlset>
