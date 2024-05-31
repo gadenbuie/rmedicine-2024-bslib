@@ -628,13 +628,13 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "1.0.7.9000",
+      "Version": "1.0.7",
       "Source": "Repository",
-      "Repository": "https://rstudio.r-universe.dev",
+      "Repository": "CRAN",
       "Requirements": [
         "utils"
       ],
-      "Hash": "af10c44294e0e4d220a695c689ecdc9b"
+      "Hash": "397b7b2a265bc5a7a06852524dabae20"
     },
     "rlang": {
       "Package": "rlang",
