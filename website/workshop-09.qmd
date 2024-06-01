@@ -1,0 +1,8 @@
+---
+title: New inputs
+description: Two new bslib inputs
+duration: 15min
+---
+
+- `input_switch()`
+- `input_task_button()`

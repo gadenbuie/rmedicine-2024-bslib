@@ -1,0 +1,10 @@
+---
+title: Wrap up
+description: Wrap up, resources, questions.
+duration: 15min
+---
+
+Thanks for attending!
+Here are some great follow up resources!
+
+Any questions?

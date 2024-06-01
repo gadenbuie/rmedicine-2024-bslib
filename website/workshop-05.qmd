@@ -1,0 +1,19 @@
+---
+title: Filling Layouts
+description: Fillabilly who?
+duration: 25min
+---
+
+- (10) About fillability
+    - fillable containers
+    - fill items
+    - card with plot, card in page
+    - filling layouts are an agreement between a container and an item
+    - most things in bslib are fillable, so you'll mostly think about it in terms of breaking the fillability chain at the right place
+
+- (5) Page-level fillability
+    - `page_fillable()`
+    - Fill in `page_sidebar()` and `page_navbar()`
+
+- (10) Breakout exercise
+

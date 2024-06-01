@@ -1,0 +1,15 @@
+---
+title: Advanced Carding
+description: It's cards all the way down.
+duration: 10min
+---
+
+- (8) Advanced card features
+    - navset cards
+    - navset cards with sidebars
+    - cards with a sidebar
+        - requires `padding=0`
+    - utility classes
+
+- (2) Short Activity leading into break
+    - an example with a variable in the navs to lead in to next section

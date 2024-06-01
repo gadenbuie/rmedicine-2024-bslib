@@ -17,9 +17,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: intro-01.qmd
+      - href: workshop.qmd
         text: Workshop
       - about.qmd
+  page-navigation: true
   sidebar:
     - id: workshop
       style: docked
@@ -27,9 +28,19 @@ website:
       background: light
       foreground: dark
       contents:
-        - section: "Introduction"
-          contents:
-            - auto: "intro*.qmd"
+        - workshop.qmd
+        - text: '<div class="sidebar-divider">Hour 1</div>'
+        - workshop-01.qmd
+        - workshop-02.qmd
+        - text: '<div class="sidebar-divider">Hour 2</div>'
+        - workshop-04.qmd
+        - workshop-05.qmd
+        - workshop-06.qmd
+        - workshop-07-break.qmd
+        - text: '<div class="sidebar-divider">Hour 3</div>'
+        - workshop-08.qmd
+        - workshop-09.qmd
+        - workshop-10.qmd
 
 format:
   html:
@@ -40,3 +51,6 @@ format:
 
 filters:
   - shinylive
+
+editor:
+  render-on-save: true

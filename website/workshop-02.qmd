@@ -1,20 +1,28 @@
 ---
 title: New layouts
-subtitle: R/Medicine 2024
+description: |
+  Learn how to lay out UI elements with bslib.
+duration: 30min
 
 editor: { render-on-save: true }
 ---
 
-- Inroducing
+- (10) Inroducing
     - `page_sidebar()`
     - `card()`
         - with card parts
     - `layout_columns()`
     - full screen cards
 
-- Breakout activity
+- (10) Breakout activity
     - Starting with a basic shiny app with 2 inputs and 2-3 plots 
         - (1 input is more local)
     - Organize into a new layout
     - Bonus: `layout_sidebar()`
 
+- (10) Value Boxes
+    - Quick code intro
+    - Short on-your-own
+        - Use buid-a-box app to explore options
+        - Create one target value box
+        - Make your own for another

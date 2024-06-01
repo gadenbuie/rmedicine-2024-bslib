@@ -1,0 +1,23 @@
+---
+title: Advanced layouts
+description: Flexible and responsive column-first layouts
+duration: 20min
+---
+
+- (5) Recap: value boxes
+    - show-and-tell
+    - sparklines
+
+- (10) `layout_columns()` vs `layout_column_wrap()`
+    - live code: many cards in both layouts
+    - start with 3 items, move between two layout functions
+    - show `!!!`
+    - `layout_column_wrap()` equally sized things
+        - `widths`
+        - `heights_equal`
+    - `layout_columns() = row() + column()`
+
+- (5) Breakout activity
+    - recreate a layout
+    - hint: `max_height`
+    - one of each

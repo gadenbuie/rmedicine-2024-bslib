@@ -1,0 +1,58 @@
+---
+title: Overview
+
+listing:
+  - id: schedule
+    type: table
+    sort:
+      - file
+    sort-ui: false
+    filter-ui: false
+    fields: 
+      - title
+      - description
+      - duration
+    contents:
+      - "workshop-*.qmd"
+---
+
+```{mermaid}
+mindmap
+  root((bslib))
+    shiny + bslib
+        page functions
+        BS 5+
+        theme
+        new snippet
+    page layouts
+        page_sidebar
+        page_navbar
+        page_navbar with a sidebar
+    cards
+        card, card_header, card_body, card_footer
+        navset_card
+        value_box
+        full_screen
+        sparkline
+    layout
+        layout_column_width
+        layout_columns
+        layout_sidebar
+        accordions
+        tooltips & popovers
+    fillability
+        fillable containers
+        fill items
+        page_fillable
+    dark mode
+		    input_dark_mode
+		    theming with dark mode in mind
+    extra inputs
+		    input_task_button
+		    input_switch
+```
+
+## Schedule
+
+::: {#schedule}
+:::

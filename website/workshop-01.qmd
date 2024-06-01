@@ -1,6 +1,8 @@
 ---
 title: Welcome and Getting Started
-subtitle: R/Medicine 2024
+description: |
+  Welcome to the workshop and hello, bslib!
+duration: 25min
 
 editor: { render-on-save: true }
 ---

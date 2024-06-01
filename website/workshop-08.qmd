@@ -1,0 +1,10 @@
+---
+title: Details on demand
+description: UI that's out of sight but within reach
+duration: 15min
+---
+
+- popover
+    - lead in from navset card --> popover
+- tool tip
+- accordion
