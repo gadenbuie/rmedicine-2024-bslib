@@ -13,6 +13,7 @@ Imports:
     bsicons,
     bslib (>= 0.7.0.9000),
     collegeScorecard,
+    colourpicker,
     countdown,
     fontawesome,
     here,
