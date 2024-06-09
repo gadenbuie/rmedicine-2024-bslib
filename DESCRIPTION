@@ -10,9 +10,11 @@ License: MIT + file LICENSE
 URL: https://github.com/gadenbuie/rmedicine-2024-bslib
 BugReports: https://github.com/gadenbuie/rmedicine-2024-bslib/issues
 Imports: 
+    bsicons,
     bslib (>= 0.7.0.9000),
     collegeScorecard,
     countdown,
+    fontawesome,
     here,
     plotly,
     rmarkdown,

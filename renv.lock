@@ -209,6 +209,20 @@
       ],
       "Hash": "a4652c36d1f8abfc3ddf4774f768c934"
     },
+    "bsicons": {
+      "Package": "bsicons",
+      "Version": "0.1.2.9000",
+      "Source": "Repository",
+      "Repository": "https://rstudio.r-universe.dev",
+      "Requirements": [
+        "R",
+        "cli",
+        "htmltools",
+        "rlang",
+        "utils"
+      ],
+      "Hash": "5a63678244a3414810f636335207127d"
+    },
     "bslib": {
       "Package": "bslib",
       "Version": "0.7.0.9000",
@@ -290,13 +304,13 @@
     },
     "collegeScorecard": {
       "Package": "collegeScorecard",
-      "Version": "0.0.2",
+      "Version": "0.0.4",
       "Source": "Repository",
-      "Repository": "https://gadenbuie.r-universe.dev",
+      "Repository": "gadenbuie",
       "Requirements": [
-        "zeallot"
+        "R"
       ],
-      "Hash": "8fa0b8fe9210985a89e8b1ad67caa4b1"
+      "Hash": "39ac49d07d0b8871377cf62c1aa3735f"
     },
     "colorspace": {
       "Package": "colorspace",
@@ -365,6 +379,19 @@
         "utils"
       ],
       "Hash": "e8a1e41acf02548751f45c718d55aa6a"
+    },
+    "crosstalk": {
+      "Package": "crosstalk",
+      "Version": "1.2.1.9000",
+      "Source": "Repository",
+      "Repository": "https://rstudio.r-universe.dev",
+      "Requirements": [
+        "R6",
+        "htmltools",
+        "jsonlite",
+        "lazyeval"
+      ],
+      "Hash": "c136d7496eaf6f4f36709f2c1d11e6eb"
     },
     "curl": {
       "Package": "curl",
@@ -804,6 +831,21 @@
       ],
       "Hash": "81d371a9cc60640e74e4ab6ac46dcedc"
     },
+    "htmlwidgets": {
+      "Package": "htmlwidgets",
+      "Version": "1.6.4",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "grDevices",
+        "htmltools",
+        "jsonlite",
+        "knitr",
+        "rmarkdown",
+        "yaml"
+      ],
+      "Hash": "04291cc45198225444a397606810ac37"
+    },
     "httpuv": {
       "Package": "httpuv",
       "Version": "1.6.15",
@@ -956,6 +998,16 @@
         "utils"
       ],
       "Hash": "cc5ac1ba4c238c7ca9fa6a87ca11a7e2"
+    },
+    "lazyeval": {
+      "Package": "lazyeval",
+      "Version": "0.2.2",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "d908914ae53b04d4c0c0fd72ecc35370"
     },
     "lifecycle": {
       "Package": "lifecycle",
@@ -1176,6 +1228,38 @@
         "zip"
       ],
       "Hash": "015473b3c114c47a50282be0dbe80ad4"
+    },
+    "plotly": {
+      "Package": "plotly",
+      "Version": "4.10.4",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "RColorBrewer",
+        "base64enc",
+        "crosstalk",
+        "data.table",
+        "digest",
+        "dplyr",
+        "ggplot2",
+        "htmltools",
+        "htmlwidgets",
+        "httr",
+        "jsonlite",
+        "lazyeval",
+        "magrittr",
+        "promises",
+        "purrr",
+        "rlang",
+        "scales",
+        "tibble",
+        "tidyr",
+        "tools",
+        "vctrs",
+        "viridisLite"
+      ],
+      "Hash": "a1ac5c03ad5ad12b9d1597e00e23c3dd"
     },
     "prettyunits": {
       "Package": "prettyunits",
@@ -1901,13 +1985,6 @@
       "Source": "Repository",
       "Repository": "RSPM",
       "Hash": "29240487a071f535f5e5d5a323b7afbd"
-    },
-    "zeallot": {
-      "Package": "zeallot",
-      "Version": "0.1.0",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Hash": "ee9b643aa8331c45d8d82eb3a137c9bc"
     },
     "zip": {
       "Package": "zip",

@@ -10,7 +10,7 @@ school_degrees <- levels(school$deg_predominant) |> setdiff("Graduate")
 school_locales <- levels(school$locale_type)
 
 # Inputs ------------------------------------------------------------------
-input_school_type <- 
+input_school_type <-
   checkboxGroupInput(
     "school_type",
     "Type of School",
@@ -19,7 +19,7 @@ input_school_type <-
     inline = FALSE
   )
 
-input_deg_predmoninant <- 
+input_deg_predmoninant <-
   selectInput(
     "deg_predominant",
     "Predominant Degree Type",
@@ -63,7 +63,8 @@ ui <- page_sidebar(
         input_group_by
       ),
       plotlyOutput("plot_cost_size")
-    )
+    ),
+    full_screen = TRUE
   )
 )
 
@@ -71,19 +72,19 @@ ui <- page_sidebar(
 # Server ------------------------------------------------------------------
 
 server <- function(input, output, session) {
-  rv_scorecard <- reactive({
+  r_scorecard <- reactive({
     school_filter <- school
     if (length(input$school_type)) {
-      school_filter <- 
-        school_filter |> 
+      school_filter <-
+        school_filter |>
         filter(control %in% input$school_type)
     }
-    
-    school_filter <- 
-      school_filter |> 
+
+    school_filter <-
+      school_filter |>
       filter(deg_predominant == input$deg_predominant)
-                          
-    scorecard |> 
+
+    scorecard |>
       semi_join(school_filter, by = "id") |>
       filter(academic_year == max(academic_year))
   })
@@ -93,25 +94,25 @@ server <- function(input, output, session) {
       config(displayModeBar = FALSE) |>
       layout(margin = list(l = 0, r = 0, b = 0))
   }
-                                             
+
   output$plot_rate_admissions <- renderPlotly({
-    rv_scorecard() |>
+    r_scorecard() |>
       filter(!is.na(rate_admissions)) |>
       plot_ly(x = ~rate_admissions, type = "histogram") |>
       layout(xaxis = list(title = "Rate")) |>
       plotly_cleaner()
   })
-                                             
+
   output$plot_rate_completion <- renderPlotly({
-    rv_scorecard() |> 
+    r_scorecard() |>
       filter(rate_completion > 0) |>
       plot_ly(x = ~rate_completion, type = "histogram") |>
       layout(xaxis = list(title = "Rate")) |>
       plotly_cleaner()
   })
-                                             
+
   output$plot_cost_size <- renderPlotly({
-    rv_scorecard() |>
+    r_scorecard() |>
       left_join(school, by = "id") |>
       plot_ly(
         x = ~cost_avg,
