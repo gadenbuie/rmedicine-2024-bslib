@@ -7,6 +7,9 @@ duration: 25min
 editor: { render-on-save: true }
 ---
 
+{{< revealjs "slides/slides-01.html" >}}
+
+
 - Welcome to R/Medicine 2024!
   - Who am I
   - Where to find things

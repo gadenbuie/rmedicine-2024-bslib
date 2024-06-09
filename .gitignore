@@ -1,4 +1,9 @@
 .Rproj.user
+.Rdata
+.Rhistory
+.httr-oauth
+.DS_Store
 
 /.quarto/
 /website/_site/
+/_dev

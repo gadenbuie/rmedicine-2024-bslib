@@ -1,9 +1,14 @@
 ---
 title: Break
-description: Get up and move around!
+description: >
+  Get up and move around!
+  We'll be right back.
 duration: 5min
 ---
 
-```{.r}
-countdown::countdown(5)
+::: {.column-screen .position-relative style="height: 80vh"}
+```{r}
+#| echo: false
+countdown::countdown_fullscreen(5)
 ```
+:::
