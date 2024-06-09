@@ -7,7 +7,7 @@ duration: 30min
 editor: { render-on-save: true }
 ---
 
-- (10) Inroducing
+- (10) Introducing
     - `page_sidebar()`
     - `card()`
         - with card parts

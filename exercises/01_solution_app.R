@@ -3,7 +3,8 @@ library(bslib)
 library(tidyverse)
 
 # Data --------------------------------------------------------------------
-source("00_read-data.R")
+school <- collegeScorecard::college_load_tidy_school()
+scorecard <- collegeScorecard::college_load_tidy_scorecard()
 
 scorecard_recent <-
   scorecard |>
@@ -28,6 +29,30 @@ range_slider <- function(data, column, label, by = 15000, step = by) {
   )
 }
 
+# Inputs ------------------------------------------------------------------
+input_var <-
+  varSelectInput(
+    inputId = "var",
+    label = "School Variable",
+    school |> select(where(\(x) length(unique(x)) < 60))
+  )
+
+input_n_undergrads <-
+  range_slider(
+    school,
+    "n_undergrads",
+    "Number of Undergrad Students",
+    by = 15000,
+    step = 5000
+  )
+
+input_cost_avg <-
+  range_slider(
+    school,
+    "cost_avg",
+    "Average Yearly Cost",
+    by = 2500
+  )
 
 # UI ----------------------------------------------------------------------
 
@@ -36,24 +61,9 @@ ui <- page_fluid(
   titlePanel("01 - Hello bslib!"),
   sidebarLayout(
     sidebarPanel(
-      varSelectInput(
-        inputId = "var",
-        label = "School Variable",
-        school |> select(where(\(x) length(unique(x)) < 60))
-      ),
-      range_slider(
-        school,
-        "n_undergrads",
-        "Number of Undergrad Students",
-        by = 15000,
-        step = 5000
-      ),
-      range_slider(
-        school,
-        "cost_avg",
-        "Average Yearly Cost",
-        by = 2500
-      )
+      input_var,
+      input_n_undergrads,
+      input_cost_avg
     ),
     mainPanel(
       plotOutput("plot", height = 700)
