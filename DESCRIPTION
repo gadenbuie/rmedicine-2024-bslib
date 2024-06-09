@@ -12,7 +12,9 @@ BugReports: https://github.com/gadenbuie/rmedicine-2024-bslib/issues
 Imports: 
     bslib (>= 0.7.0.9000),
     collegeScorecard (>= 0.0.1),
+    countdown,
     here,
+    rmarkdown,
     shiny (>= 1.8.1.9001),
     shinylive (>= 0.1.1.9000),
     thematic,
@@ -20,6 +22,3 @@ Imports:
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
-Suggests: 
-    countdown,
-    rmarkdown
