@@ -1,26 +1,90 @@
 [
   {
-    "objectID": "intro-02.html",
-    "href": "intro-02.html",
-    "title": "New layouts",
+    "objectID": "workshop-07-break.html",
+    "href": "workshop-07-break.html",
+    "title": "Break",
     "section": "",
-    "text": "Inroducing\n\npage_sidebar()\ncard()\n\nwith card parts\n\nlayout_columns()\nfull screen cards\n\nBreakout activity\n\nStarting with a basic shiny app with 2 inputs and 2-3 plots\n\n(1 input is more local)\n\nOrganize into a new layout\nBonus: layout_sidebar()",
+    "text": "−+\n05:00",
     "crumbs": [
       "Workshop",
-      "Introduction",
-      "New layouts"
+      "Break"
     ]
   },
   {
-    "objectID": "intro-01.html",
-    "href": "intro-01.html",
-    "title": "Welcome and Getting Started",
+    "objectID": "workshop.html",
+    "href": "workshop.html",
+    "title": "Overview",
     "section": "",
-    "text": "Welcome to R/Medicine 2024!\n\nWho am I\nWhere to find things\nHow to ask questions\nHow we’ll do this thing\n\nA bit of teaching\nwith break-out pairing sessions\n\n\nWhat is bslib?\n\nStarted as a way to style your Shiny apps\nAnd bringing Bootstrap 5 to Shiny\nNow a whole lot more\n\nBreakout activity: Are we all set up?\n\nTake a Shiny app and make it bslib-ier\n\nFrom {type}Page() to page_{type}()\nTry out Bootsrap/Bootswatch themes\nExtra points: try a Sass variable\n\nHelp each other make sure you’re set up\n\nFollow up\n\nCheck in\nIntroduce the College Scorecard dataset\nBonus: new shinyapp snippet",
+    "text": "mindmap\n  root((bslib))\n    shiny + bslib\n        page functions\n        BS 5+\n        theme\n        new snippet\n    page layouts\n        page_sidebar\n        page_navbar\n        page_navbar with a sidebar\n    cards\n        card, card_header, card_body, card_footer\n        navset_card\n        value_box\n        full_screen\n        sparkline\n    layout\n        layout_column_width\n        layout_columns\n        layout_sidebar\n        accordions\n        tooltips & popovers\n    fillability\n        fillable containers\n        fill items\n        page_fillable\n    dark mode\n            input_dark_mode\n            theming with dark mode in mind\n    extra inputs\n            input_task_button\n            input_switch",
     "crumbs": [
       "Workshop",
-      "Introduction",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "workshop.html#schedule",
+    "href": "workshop.html#schedule",
+    "title": "Overview",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nduration\n\n\n\n\n\n\nWelcome and Getting Started\n\n\nWelcome to the workshop and hello, bslib! \n\n\n25min\n\n\n\n\nNew layouts\n\n\nLearn how to lay out UI elements with bslib. \n\n\n30min\n\n\n\n\nBreak\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nAdvanced layouts\n\n\nFlexible and responsive column-first layouts\n\n\n20min\n\n\n\n\nFilling Layouts\n\n\nFillabilly who?\n\n\n25min\n\n\n\n\nAdvanced Carding\n\n\nIt’s cards all the way down.\n\n\n10min\n\n\n\n\nBreak\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nDetails on demand\n\n\nUI that’s out of sight but within reach\n\n\n15min\n\n\n\n\nNew inputs\n\n\nTwo new bslib inputs\n\n\n15min\n\n\n\n\nDark mode\n\n\nPeople use your apps at night, too.\n\n\n15min\n\n\n\n\nWrap up\n\n\nWrap up, resources, questions.\n\n\n15min\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Workshop",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "workshop-01.html",
+    "href": "workshop-01.html",
+    "title": "Welcome and Getting Started",
+    "section": "",
+    "text": "View slides in full screen\n       \n      \n    \n  \n\nWelcome to R/Medicine 2024!\n\nWho am I\nWhere to find things\nHow to ask questions\nHow we’ll do this thing\n\nA bit of teaching\nwith break-out pairing sessions\n\n\nWhat is bslib?\n\nStarted as a way to style your Shiny apps\nAnd bringing Bootstrap 5 to Shiny\nNow a whole lot more\n\nBreakout activity: Are we all set up?\n\nTake a Shiny app and make it bslib-ier\n\nFrom {type}Page() to page_{type}()\nTry out Bootsrap/Bootswatch themes\nExtra points: try a Sass variable\n\nHelp each other make sure you’re set up\n\nFollow up\n\nCheck in\nIntroduce the College Scorecard dataset\nBonus: new shinyapp snippet",
+    "crumbs": [
+      "Workshop",
       "Welcome and Getting Started"
+    ]
+  },
+  {
+    "objectID": "workshop-10.html",
+    "href": "workshop-10.html",
+    "title": "Dark mode",
+    "section": "",
+    "text": "input_dark_mode()\nStyling for dark mode\n\nwhat are css variables?\nBootstrap CSS vars\nYour own CSS variables",
+    "crumbs": [
+      "Workshop",
+      "Dark mode"
+    ]
+  },
+  {
+    "objectID": "workshop-08.html",
+    "href": "workshop-08.html",
+    "title": "Details on demand",
+    "section": "",
+    "text": "popover\n\nlead in from navset card –&gt; popover\n\ntool tip\naccordion",
+    "crumbs": [
+      "Workshop",
+      "Details on demand"
+    ]
+  },
+  {
+    "objectID": "workshop-05.html",
+    "href": "workshop-05.html",
+    "title": "Filling Layouts",
+    "section": "",
+    "text": "About fillability\n\n\nfillable containers\nfill items\ncard with plot, card in page\nfilling layouts are an agreement between a container and an item\nmost things in bslib are fillable, so you’ll mostly think about it in terms of breaking the fillability chain at the right place\n\n\nPage-level fillability\n\n\npage_fillable()\nFill in page_sidebar() and page_navbar()\n\n\nBreakout exercise",
+    "crumbs": [
+      "Workshop",
+      "Filling Layouts"
+    ]
+  },
+  {
+    "objectID": "workshop-02.html",
+    "href": "workshop-02.html",
+    "title": "New layouts",
+    "section": "",
+    "text": "Inroducing\n\n\npage_sidebar()\ncard()\n\nwith card parts\n\nlayout_columns()\nfull screen cards\n\n\nBreakout activity\n\n\nStarting with a basic shiny app with 2 inputs and 2-3 plots\n\n(1 input is more local)\n\nOrganize into a new layout\nBonus: layout_sidebar()\n\n\nValue Boxes\n\n\nQuick code intro\nShort on-your-own\n\nUse buid-a-box app to explore options\nCreate one target value box\nMake your own for another",
+    "crumbs": [
+      "Workshop",
+      "New layouts"
     ]
   },
   {
@@ -29,6 +93,46 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "workshop-04.html",
+    "href": "workshop-04.html",
+    "title": "Advanced layouts",
+    "section": "",
+    "text": "Recap: value boxes\n\n\nshow-and-tell\nsparklines\n\n\nlayout_columns() vs layout_column_wrap()\n\n\nlive code: many cards in both layouts\nstart with 3 items, move between two layout functions\nshow !!!\nlayout_column_wrap() equally sized things\n\nwidths\nheights_equal\n\nlayout_columns() = row() + column()\n\n\nBreakout activity\n\n\nrecreate a layout\nhint: max_height\none of each",
+    "crumbs": [
+      "Workshop",
+      "Advanced layouts"
+    ]
+  },
+  {
+    "objectID": "workshop-06.html",
+    "href": "workshop-06.html",
+    "title": "Advanced Carding",
+    "section": "",
+    "text": "Advanced card features\n\n\nnavset cards\nnavset cards with sidebars\ncards with a sidebar\n\nrequires padding=0\n\nutility classes\n\n\nShort Activity leading into break\n\n\nan example with a variable in the navs to lead in to next section",
+    "crumbs": [
+      "Workshop",
+      "Advanced Carding"
+    ]
+  },
+  {
+    "objectID": "workshop-09.html",
+    "href": "workshop-09.html",
+    "title": "New inputs",
+    "section": "",
+    "text": "input_switch()\ninput_task_button()",
+    "crumbs": [
+      "Workshop",
+      "New inputs"
+    ]
+  },
+  {
+    "objectID": "workshop-11.html",
+    "href": "workshop-11.html",
+    "title": "Wrap up",
+    "section": "",
+    "text": "Thanks for attending! Here are some great follow up resources!\nAny questions?"
   },
   {
     "objectID": "index.html",
@@ -57,5 +161,12 @@
     "title": "Next Generation Shiny Apps with {bslib}",
     "section": "Setup",
     "text": "Setup"
+  },
+  {
+    "objectID": "workshop-03-break.html",
+    "href": "workshop-03-break.html",
+    "title": "Break",
+    "section": "",
+    "text": "−+\n05:00"
   }
 ]
