@@ -31,6 +31,8 @@ jobs:
       
       - name: 📦 Install dependencies with renv
         uses: r-lib/actions/setup-renv@v2
+        env:
+          RENV_CONFIG_PAK_ENABLED: true
 
       - name: 📰 Render and Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
