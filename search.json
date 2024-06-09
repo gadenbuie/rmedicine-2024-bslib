@@ -81,7 +81,7 @@
     "href": "workshop-02.html",
     "title": "New layouts",
     "section": "",
-    "text": "Inroducing\n\n\npage_sidebar()\ncard()\n\nwith card parts\n\nlayout_columns()\nfull screen cards\n\n\nBreakout activity\n\n\nStarting with a basic shiny app with 2 inputs and 2-3 plots\n\n(1 input is more local)\n\nOrganize into a new layout\nBonus: layout_sidebar()\n\n\nValue Boxes\n\n\nQuick code intro\nShort on-your-own\n\nUse buid-a-box app to explore options\nCreate one target value box\nMake your own for another",
+    "text": "Introducing\n\n\npage_sidebar()\ncard()\n\nwith card parts\n\nlayout_columns()\nfull screen cards\n\n\nBreakout activity\n\n\nStarting with a basic shiny app with 2 inputs and 2-3 plots\n\n(1 input is more local)\n\nOrganize into a new layout\nBonus: layout_sidebar()\n\n\nValue Boxes\n\n\nQuick code intro\nShort on-your-own\n\nUse buid-a-box app to explore options\nCreate one target value box\nMake your own for another",
     "crumbs": [
       "Workshop",
       "New layouts"
