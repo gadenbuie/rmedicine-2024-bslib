@@ -215,16 +215,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#heights-in-nested-containers" id="toc-heights-in-nested-containers" class="nav-link active" data-scroll-target="#heights-in-nested-containers">Heights in nested containers</a></li>
-  <li><a href="#filling-layouts" id="toc-filling-layouts" class="nav-link" data-scroll-target="#filling-layouts">Filling layouts</a></li>
+  <li><a href="#outline" id="toc-outline" class="nav-link active" data-scroll-target="#outline">Outline</a></li>
+  <li><a href="#filling-layouts" id="toc-filling-layouts" class="nav-link" data-scroll-target="#filling-layouts">Filling Layouts</a>
+  <ul class="collapse">
+  <li><a href="#heights-in-nested-containers" id="toc-heights-in-nested-containers" class="nav-link" data-scroll-target="#heights-in-nested-containers">Heights in nested containers</a></li>
+  <li><a href="#filling-layouts-1" id="toc-filling-layouts-1" class="nav-link" data-scroll-target="#filling-layouts-1">Filling layouts</a></li>
   <li><a href="#breaking-fillability" id="toc-breaking-fillability" class="nav-link" data-scroll-target="#breaking-fillability">Breaking fillability</a></li>
+  </ul></li>
   <li><a href="#fillable-pages" id="toc-fillable-pages" class="nav-link" data-scroll-target="#fillable-pages">Fillable Pages</a>
   <ul class="collapse">
   <li><a href="#page_fillable" id="toc-page_fillable" class="nav-link" data-scroll-target="#page_fillable"><code>page_fillable()</code></a></li>
   <li><a href="#page_sidebar" id="toc-page_sidebar" class="nav-link" data-scroll-target="#page_sidebar"><code>page_sidebar()</code></a></li>
   <li><a href="#page_navbar" id="toc-page_navbar" class="nav-link" data-scroll-target="#page_navbar"><code>page_navbar()</code></a></li>
   </ul></li>
-  <li><a href="#outline" id="toc-outline" class="nav-link" data-scroll-target="#outline">Outline</a></li>
+  <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">🧑‍💻 Your Turn</a></li>
   </ul>
 </nav>
     </div>
@@ -256,8 +260,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="heights-in-nested-containers" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="heights-in-nested-containers">Heights in nested containers</h2>
+<section id="outline" class="level2">
+<h2 class="anchored" data-anchor-id="outline">Outline</h2>
+<ul>
+<li><p><a href="#filling-layouts">About filling layouts</a> (10)</p></li>
+<li><p><a href="#fillable-pages">Page-level fillability</a> (5)</p></li>
+<li><p><a href="#your-turn">Your turn: breakout exercise</a> (10)</p></li>
+</ul>
+</section>
+<section id="filling-layouts" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="filling-layouts">Filling Layouts</h2>
+<section id="heights-in-nested-containers" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="heights-in-nested-containers">Heights in nested containers</h3>
 <p>Block elements, at least by default on the web, take up full width but are <strong>lazy about their height</strong>. In general, a block element’s height is driven by the height of its contents.</p>
 <p>The example below uses <a href="https://getbootstrap.com/docs/5.3/components/card/">basic Boostrap markup for a card</a>. What happens when you…</p>
 <ul>
@@ -308,8 +322,8 @@ shinyApp(ui, server)
 </code></pre>
 </div>
 </section>
-<section id="filling-layouts" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="filling-layouts">Filling layouts</h2>
+<section id="filling-layouts-1" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="filling-layouts-1">Filling layouts</h3>
 <p>bslib introduced the concept of filling layouts to solve a common problem in Shiny apps, especially dashboards.</p>
 <div class="lead fst-italic">
 <p>How can an output or layout take up all of the space available to it?</p>
@@ -365,8 +379,8 @@ shinyApp(ui, server)
 </code></pre>
 </div>
 </section>
-<section id="breaking-fillability" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="breaking-fillability">Breaking fillability</h2>
+<section id="breaking-fillability" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="breaking-fillability">Breaking fillability</h3>
 <p>Fillable layouts are really two elements working together:</p>
 <ol type="1">
 <li><p>A <strong>fillable</strong> container creates a space for filling.</p></li>
@@ -441,6 +455,7 @@ p_lehigh_3 &lt;- p(
 )
 </code></pre>
 </div>
+</section>
 </section>
 <section id="fillable-pages" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="fillable-pages">Fillable Pages</h2>
@@ -537,29 +552,15 @@ shinyApp(ui, \(...) { })
 </div>
 </section>
 </section>
-<section id="outline" class="level2">
-<h2 class="anchored" data-anchor-id="outline">Outline</h2>
+<section id="your-turn" class="level2">
+<h2 class="anchored" data-anchor-id="your-turn">🧑‍💻 Your Turn</h2>
+<p>The app in <code>exercises/05_app.R</code> uses a lot of plots and components, some of which are familiar but none of which have enough space in the current layout.</p>
+<p>Your task for this exercise is to make sure the plots are readable and usable at all screen sizes. Consider the following options:</p>
 <ul>
-<li><ol start="10" type="1">
-<li>About fillability</li>
-</ol>
-<ul>
-<li>fillable containers</li>
-<li>fill items</li>
-<li>card with plot, card in page</li>
-<li>filling layouts are an agreement between a container and an item</li>
-<li>most things in bslib are fillable, so you’ll mostly think about it in terms of breaking the fillability chain at the right place</li>
-</ul></li>
-<li><ol start="5" type="1">
-<li>Page-level fillability</li>
-</ol>
-<ul>
-<li><code>page_fillable()</code></li>
-<li>Fill in <code>page_sidebar()</code> and <code>page_navbar()</code></li>
-</ul></li>
-<li><ol start="10" type="1">
-<li>Breakout exercise</li>
-</ol></li>
+<li>Setting a minimum height via <code>min_height</code></li>
+<li>Using <code>layout_columns()</code> or <code>layout_column_wrap()</code></li>
+<li>Using <code>page_navbar()</code> or another page layout</li>
+<li>Breaking fillability as needed</li>
 </ul>
 
 
