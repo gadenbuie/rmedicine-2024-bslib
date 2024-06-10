@@ -2,19 +2,18 @@ Type: Project
 Package: rmedicine-2024-bslib
 Title: Next Generation Shiny Apps with bslib
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R:
     person("Garrick", "Aden-Buie", , "garrick@adenbuie.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7111-0077"))
 Description: R/Medicine 2024.
 License: MIT + file LICENSE
 URL: https://github.com/gadenbuie/rmedicine-2024-bslib
 BugReports: https://github.com/gadenbuie/rmedicine-2024-bslib/issues
-Imports: 
+Imports:
     bsicons,
     bslib (>= 0.7.0.9000),
     collegeScorecard,
     colourpicker,
-    countdown,
     fontawesome,
     here,
     leaflet,

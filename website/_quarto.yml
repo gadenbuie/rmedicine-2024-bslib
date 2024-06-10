@@ -1,16 +1,16 @@
 project:
   type: website
-  preview: 
+  preview:
     port: 7567
   render:
     - "./*.qmd"
   post-render:
     - cp -r ../data _site/data
-  resources: 
+  resources:
     - slides
 
 website:
-  title: "Next Generation Shiny Apps with {bslib}" 
+  title: "Next Generation Shiny Apps with {bslib}"
   description: "A tutorial on how to create modern Shiny apps with {bslib} and {shiny}"
   page-footer: |
     <a href="https://rconsortium.github.io/RMedicine_website/">R/Medicine 2024</a>
@@ -33,15 +33,16 @@ website:
       foreground: dark
       contents:
         - workshop.qmd
-        - text: '<div class="sidebar-divider">Hour 1</div>'
+        - text: '<div class="sidebar-divider font-monospace">Hour 1</div>'
         - workshop-01.qmd
         - workshop-02.qmd
-        - text: '<div class="sidebar-divider">Hour 2</div>'
+        - workshop-03-break.qmd
+        - text: '<div class="sidebar-divider font-monospace">Hour 2</div>'
         - workshop-04.qmd
         - workshop-05.qmd
         - workshop-06.qmd
         - workshop-07-break.qmd
-        - text: '<div class="sidebar-divider">Hour 3</div>'
+        - text: '<div class="sidebar-divider font-monospace">Hour 3</div>'
         - workshop-08.qmd
         - workshop-09.qmd
         - workshop-10.qmd
@@ -50,7 +51,7 @@ format:
   html:
     theme: [zephyr, styles.scss]
     toc: true
-    include-before-body: 
+    include-before-body:
       - text: <script>document.querySelector('.navbar').dataset.bsTheme = 'light';</script>
 
 filters:
