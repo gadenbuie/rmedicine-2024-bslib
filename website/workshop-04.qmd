@@ -19,6 +19,7 @@ duration: 20min
     - `layout_columns() = row() + column()`
 
 - (5) Breakout activity
+    - `exercises/04_app.R`
     - recreate a layout
     - hint: `max_height`
     - one of each

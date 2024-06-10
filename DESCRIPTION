@@ -17,6 +17,7 @@ Imports:
     countdown,
     fontawesome,
     here,
+    leaflet,
     lorem,
     plotly,
     rmarkdown,
