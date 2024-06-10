@@ -99,7 +99,7 @@
     "href": "workshop-04.html",
     "title": "Advanced layouts",
     "section": "",
-    "text": "Recap: value boxes\n\n\nshow-and-tell\nsparklines\n\n\nlayout_columns() vs layout_column_wrap()\n\n\nlive code: many cards in both layouts\nstart with 3 items, move between two layout functions\nshow !!!\nlayout_column_wrap() equally sized things\n\nwidths\nheights_equal\n\nlayout_columns() = row() + column()\n\n\nBreakout activity\n\n\nrecreate a layout\nhint: max_height\none of each",
+    "text": "Recap: value boxes\n\n\nshow-and-tell\nsparklines examples/app-sparkline.R\n\n\nlayout_columns() vs layout_column_wrap()\n\n\nexamples/app-layout-columns.R\nlive code: many cards in both layouts\nstart with 3 items, move between two layout functions\nshow !!!\nlayout_column_wrap() equally sized things\n\nwidths\nheights_equal\n\nlayout_columns() = row() + column()\n\n\nBreakout activity\n\n\nrecreate a layout\nhint: max_height\none of each",
     "crumbs": [
       "Workshop",
       "Advanced layouts"
