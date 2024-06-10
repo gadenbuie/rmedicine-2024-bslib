@@ -4,7 +4,17 @@ description: Fillabilly who?
 duration: 25min
 ---
 
-## Heights in nested containers
+## Outline
+
+- [About filling layouts](#filling-layouts) (10)
+
+- [Page-level fillability](#fillable-pages) (5)
+
+- [Your turn: breakout exercise](#your-turn) (10)
+
+## Filling Layouts
+
+### Heights in nested containers
 
 Block elements, at least by default on the web, take up full width but are **lazy about their height**.
 In general, a block element's height is driven by the height of its contents.
@@ -26,7 +36,7 @@ What happens when you...
 ```
 :::
 
-## Filling layouts
+### Filling layouts
 
 bslib introduced the concept of filling layouts to solve a common problem in Shiny apps, especially dashboards.
 
@@ -54,7 +64,7 @@ What happens when you...
 ```
 :::
 
-## Breaking fillability
+### Breaking fillability
 
 Fillable layouts are really two elements working together:
 
@@ -156,18 +166,14 @@ Also add a `nav_spacer()` and a `nav_item()`.
 ```
 :::
 
-## Outline
+## 🧑‍💻 Your Turn {#your-turn}
 
-- (10) About fillability
-    - fillable containers
-    - fill items
-    - card with plot, card in page
-    - filling layouts are an agreement between a container and an item
-    - most things in bslib are fillable, so you'll mostly think about it in terms of breaking the fillability chain at the right place
+The app in `exercises/05_app.R` uses a lot of plots and components, some of which are familiar but none of which have enough space in the current layout.
 
-- (5) Page-level fillability
-    - `page_fillable()`
-    - Fill in `page_sidebar()` and `page_navbar()`
+Your task for this exercise is to make sure the plots are readable and usable at all screen sizes.
+Consider the following options:
 
-- (10) Breakout exercise
-
+* Setting a minimum height via `min_height`
+* Using `layout_columns()` or `layout_column_wrap()`
+* Using `page_navbar()` or another page layout
+* Breaking fillability as needed
