@@ -42,6 +42,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<meta name="shinylive:serviceworker_dir" content=".">
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/load-shinylive-sw.js" type="module"></script>
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/run-python-blocks.js" type="module"></script>
+<link href="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/shinylive.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -205,11 +210,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#outline" id="toc-outline" class="nav-link active" data-scroll-target="#outline">Outline</a></li>
+  <li><a href="#advanced-card-features" id="toc-advanced-card-features" class="nav-link" data-scroll-target="#advanced-card-features">Advanced card features</a>
+  <ul class="collapse">
+  <li><a href="#card-with-a-sidebar-layout" id="toc-card-with-a-sidebar-layout" class="nav-link" data-scroll-target="#card-with-a-sidebar-layout">Card with a sidebar layout</a></li>
+  <li><a href="#navset-cards" id="toc-navset-cards" class="nav-link" data-scroll-target="#navset-cards">Navset cards</a></li>
+  <li><a href="#navset-cards-with-sidebars" id="toc-navset-cards-with-sidebars" class="nav-link" data-scroll-target="#navset-cards-with-sidebars">Navset cards with sidebars</a></li>
+  </ul></li>
+  <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">🧑‍💻 Your Turn</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 <script>document.querySelector('.navbar').dataset.bsTheme = 'light';</script>
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -236,28 +254,143 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="outline" class="level2">
+<h2 class="anchored" data-anchor-id="outline">Outline</h2>
 <ul>
-<li><ol start="8" type="1">
-<li>Advanced card features</li>
-</ol>
-<ul>
-<li>navset cards</li>
-<li>navset cards with sidebars</li>
-<li>cards with a sidebar
-<ul>
-<li>requires <code>padding=0</code></li>
-</ul></li>
-<li>utility classes</li>
-</ul></li>
-<li><ol start="2" type="1">
-<li>Short Activity leading into break</li>
-</ol>
-<ul>
-<li>an example with a variable in the navs to lead in to next section</li>
-</ul></li>
+<li><a href="#advanced-card-features">Advanced carding</a> (6)</li>
+<li><a href="#your-turn">Your turn: breakout exercise</a> (4)</li>
 </ul>
+</section>
+<section id="advanced-card-features" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="advanced-card-features">Advanced card features</h2>
+<section id="card-with-a-sidebar-layout" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="card-with-a-sidebar-layout">Card with a sidebar layout</h3>
+<p>For a card with a sidebar, you can nest a <code>layout_sidebar()</code> directly inside a <code>card()</code>. bslib does the rest of the work for you.</p>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+#| viewerHeight: 500px
+## file: ui.R
+library(shiny)
+library(bslib)
+library(plotly)
+library(collegeScorecard)
+
+school_degrees &lt;- levels(school$deg_predominant)
+school_degrees &lt;- setdiff(school_degrees, "Graduate")
+
+input_deg_predmoninant &lt;-
+  selectInput(
+    "deg_predominant",
+    "Predominant Degree Type",
+    choices = school_degrees,
+    selected = "Bachelor"
+  )
 
 
+page_fillable(
+  input_deg_predmoninant,
+  plotlyOutput("plot_rate_admissions")
+)
+
+
+## file: server.R
+function(input, output, session) {
+  r_scorecard &lt;- reactive({
+    school_filter &lt;- school
+
+    school_filter &lt;- school_filter[
+      school_filter$deg_predominant == input$deg_predominant,
+    ]
+
+    scorecard[scorecard$id %in% school_filter$id, ]
+  })
+
+  plotly_cleaner &lt;- function(x) {
+    x |&gt;
+      config(displayModeBar = FALSE) |&gt;
+      layout(margin = list(l = 0, r = 0, b = 0))
+  }
+
+  filter_recent_complete_year &lt;- function(scorecard, column) {
+    academic_year &lt;- scorecard[!is.na(scorecard[[column]]), ]$academic_year
+    scorecard[scorecard$academic_year == max(academic_year), ]
+  }
+
+  output$plot_rate_admissions &lt;- renderPlotly({
+    r_scorecard() |&gt;
+      filter_recent_complete_year("rate_admissions") |&gt;
+      (\(x) x[!is.na(x$rate_admissions), ])() |&gt;
+      plot_ly(x = ~rate_admissions, type = "histogram") |&gt;
+      layout(xaxis = list(title = "Rate")) |&gt;
+      plotly_cleaner()
+  })
+}
+</code></pre>
+</div>
+</section>
+<section id="navset-cards" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="navset-cards">Navset cards</h3>
+<p>Navset cards are similar to <code>page_navbar()</code> or the <code>navset_*()</code> function variants. They all follow the same pattern of <code>navset_card_{type}</code>:</p>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+library(shiny)
+library(bslib)
+
+ui &lt;- page_fillable(
+  navset_card_tab(
+    nav_panel(
+        "First tab name",
+        "... first tab content"
+    ),
+    nav_panel(
+        "Second tab name",
+        "... second tab content"
+    )
+  )
+)
+
+shinyApp(ui, \(...) { })</code></pre>
+</div>
+</section>
+<section id="navset-cards-with-sidebars" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="navset-cards-with-sidebars">Navset cards with sidebars</h3>
+<p>With navset cards, you have two sidebar choices:</p>
+<ul>
+<li>For local sidebars in one of the nav panels, nest <code>layout_sidebar()</code> inside the <code>nav_panel()</code>.</li>
+<li>For global sidebars, use the <code>sidebar</code> argument.</li>
+</ul>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+library(shiny)
+library(bslib)
+
+ui &lt;- page_fillable(
+  navset_card_tab(
+    nav_panel(
+        "First tab name",
+        "... first tab content"
+    ),
+    nav_panel(
+        "Second tab name",
+        "... second tab content"
+    )
+  )
+)
+
+shinyApp(ui, \(...) { })</code></pre>
+</div>
+</section>
+</section>
+<section id="your-turn" class="level2">
+<h2 class="anchored" data-anchor-id="your-turn">🧑‍💻 Your Turn</h2>
+<p>The app in <code>exercises/06_app.R</code> contains three variations of the same plot of yearly costs vs median earnings. (You might recognize this plot from the second exercise.)</p>
+<p>Use a navset card to improve the organization and usability of the plots.</p>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -55,8 +55,8 @@
     ]
   },
   {
-    "objectID": "workshop-03-break.html",
-    "href": "workshop-03-break.html",
+    "objectID": "workshop-07-break.html",
+    "href": "workshop-07-break.html",
     "title": "☕ Break",
     "section": "",
     "text": "−\n    +\n \n 05:00",
@@ -66,60 +66,58 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Next Generation Shiny Apps with {bslib}",
+    "objectID": "workshop.html",
+    "href": "workshop.html",
+    "title": "Overview",
     "section": "",
-    "text": "Online workshop at R/Medicine 2024  Tuesday, June 11, 2024 11:00am to 2:00pm"
-  },
-  {
-    "objectID": "index.html#introduction",
-    "href": "index.html#introduction",
-    "title": "Next Generation Shiny Apps with {bslib}",
-    "section": "Introduction",
-    "text": "Introduction\nLearn to build Shiny apps using modern user interfaces (UI) and layouts with bslib, the next generation of Shiny UI. We’ll cover stylish and convenient dashboard layouts and components as we showcase the ways in which bslib can replace shinydashboard. We’ll also learn about exciting new ways to deploy Shiny apps with shinylive as static sites that run entirely in the user’s browser and don’t require setting up or maintaining a Shiny server."
-  },
-  {
-    "objectID": "index.html#schedule",
-    "href": "index.html#schedule",
-    "title": "Next Generation Shiny Apps with {bslib}",
-    "section": "Schedule",
-    "text": "Schedule"
-  },
-  {
-    "objectID": "index.html#setup",
-    "href": "index.html#setup",
-    "title": "Next Generation Shiny Apps with {bslib}",
-    "section": "Setup",
-    "text": "Setup"
-  },
-  {
-    "objectID": "workshop-11.html",
-    "href": "workshop-11.html",
-    "title": "Wrap up",
-    "section": "",
-    "text": "Thanks for attending! Here are some great follow up resources!\nAny questions?"
-  },
-  {
-    "objectID": "workshop-09.html",
-    "href": "workshop-09.html",
-    "title": "New inputs",
-    "section": "",
-    "text": "input_switch()\ninput_task_button()",
+    "text": "mindmap\n  root((bslib))\n    shiny + bslib\n        page functions\n        BS 5+\n        theme\n        new snippet\n    page layouts\n        page_sidebar\n        page_navbar\n        page_navbar with a sidebar\n    cards\n        card, card_header, card_body, card_footer\n        navset_card\n        value_box\n        full_screen\n        sparkline\n    layout\n        layout_column_width\n        layout_columns\n        layout_sidebar\n        accordions\n        tooltips & popovers\n    fillability\n        fillable containers\n        fill items\n        page_fillable\n    dark mode\n            input_dark_mode\n            theming with dark mode in mind\n    extra inputs\n            input_task_button\n            input_switch",
     "crumbs": [
       "Workshop",
-      "New inputs"
+      "Overview"
     ]
   },
   {
-    "objectID": "workshop-06.html",
-    "href": "workshop-06.html",
-    "title": "Advanced Carding",
-    "section": "",
-    "text": "Advanced card features\n\n\nnavset cards\nnavset cards with sidebars\ncards with a sidebar\n\nrequires padding=0\n\nutility classes\n\n\nShort Activity leading into break\n\n\nan example with a variable in the navs to lead in to next section",
+    "objectID": "workshop.html#schedule",
+    "href": "workshop.html#schedule",
+    "title": "Overview",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nduration\n\n\n\n\n\n\nWelcome and Getting Started\n\n\nWelcome to the workshop and hello, bslib! \n\n\n25min\n\n\n\n\nNew layouts\n\n\nLearn how to lay out UI elements with bslib. \n\n\n30min\n\n\n\n\n☕ Break\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nAdvanced layouts\n\n\nFlexible and responsive column-first layouts\n\n\n20min\n\n\n\n\nFilling Layouts\n\n\nFillabilly who?\n\n\n25min\n\n\n\n\nAdvanced Carding\n\n\nIt’s cards all the way down.\n\n\n10min\n\n\n\n\n☕ Break\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nDetails on demand\n\n\nUI that’s out of sight but within reach\n\n\n15min\n\n\n\n\nNew inputs\n\n\nTwo new bslib inputs\n\n\n15min\n\n\n\n\nDark mode\n\n\nPeople use your apps at night, too.\n\n\n15min\n\n\n\n\nWrap up\n\n\nWrap up, resources, questions.\n\n\n15min\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Workshop",
-      "Advanced Carding"
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "workshop-01.html",
+    "href": "workshop-01.html",
+    "title": "Welcome and Getting Started",
+    "section": "",
+    "text": "View slides in full screen\n       \n      \n    \n  \n\nWelcome to R/Medicine 2024!\n\nWho am I\nWhere to find things\nHow to ask questions\nHow we’ll do this thing\n\nA bit of teaching\nwith break-out pairing sessions\n\n\nWhat is bslib?\n\nStarted as a way to style your Shiny apps\nAnd bringing Bootstrap 5 to Shiny\nNow a whole lot more\n\nBreakout activity: Are we all set up?\n\nTake a Shiny app and make it bslib-ier\n\nFrom {type}Page() to page_{type}()\nTry out Bootsrap/Bootswatch themes\nExtra points: try a Sass variable\n\nHelp each other make sure you’re set up\n\nFollow up\n\nCheck in\nIntroduce the College Scorecard dataset\nBonus: new shinyapp snippet",
+    "crumbs": [
+      "Workshop",
+      "Welcome and Getting Started"
+    ]
+  },
+  {
+    "objectID": "workshop-10.html",
+    "href": "workshop-10.html",
+    "title": "Dark mode",
+    "section": "",
+    "text": "input_dark_mode()\nStyling for dark mode\n\nwhat are css variables?\nBootstrap CSS vars\nYour own CSS variables",
+    "crumbs": [
+      "Workshop",
+      "Dark mode"
+    ]
+  },
+  {
+    "objectID": "workshop-08.html",
+    "href": "workshop-08.html",
+    "title": "Details on demand",
+    "section": "",
+    "text": "popover\n\nlead in from navset card –&gt; popover\n\ntool tip\naccordion",
+    "crumbs": [
+      "Workshop",
+      "Details on demand"
     ]
   },
   {
@@ -152,69 +150,104 @@
     ]
   },
   {
-    "objectID": "workshop-08.html",
-    "href": "workshop-08.html",
-    "title": "Details on demand",
+    "objectID": "workshop-09.html",
+    "href": "workshop-09.html",
+    "title": "New inputs",
     "section": "",
-    "text": "popover\n\nlead in from navset card –&gt; popover\n\ntool tip\naccordion",
+    "text": "input_switch()\ninput_task_button()",
     "crumbs": [
       "Workshop",
-      "Details on demand"
+      "New inputs"
     ]
   },
   {
-    "objectID": "workshop-10.html",
-    "href": "workshop-10.html",
-    "title": "Dark mode",
+    "objectID": "workshop-11.html",
+    "href": "workshop-11.html",
+    "title": "Wrap up",
     "section": "",
-    "text": "input_dark_mode()\nStyling for dark mode\n\nwhat are css variables?\nBootstrap CSS vars\nYour own CSS variables",
-    "crumbs": [
-      "Workshop",
-      "Dark mode"
-    ]
+    "text": "Thanks for attending! Here are some great follow up resources!\nAny questions?"
   },
   {
-    "objectID": "workshop-01.html",
-    "href": "workshop-01.html",
-    "title": "Welcome and Getting Started",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Next Generation Shiny Apps with {bslib}",
     "section": "",
-    "text": "View slides in full screen\n       \n      \n    \n  \n\nWelcome to R/Medicine 2024!\n\nWho am I\nWhere to find things\nHow to ask questions\nHow we’ll do this thing\n\nA bit of teaching\nwith break-out pairing sessions\n\n\nWhat is bslib?\n\nStarted as a way to style your Shiny apps\nAnd bringing Bootstrap 5 to Shiny\nNow a whole lot more\n\nBreakout activity: Are we all set up?\n\nTake a Shiny app and make it bslib-ier\n\nFrom {type}Page() to page_{type}()\nTry out Bootsrap/Bootswatch themes\nExtra points: try a Sass variable\n\nHelp each other make sure you’re set up\n\nFollow up\n\nCheck in\nIntroduce the College Scorecard dataset\nBonus: new shinyapp snippet",
-    "crumbs": [
-      "Workshop",
-      "Welcome and Getting Started"
-    ]
+    "text": "Online workshop at R/Medicine 2024  Tuesday, June 11, 2024 11:00am to 2:00pm"
   },
   {
-    "objectID": "workshop.html",
-    "href": "workshop.html",
-    "title": "Overview",
-    "section": "",
-    "text": "mindmap\n  root((bslib))\n    shiny + bslib\n        page functions\n        BS 5+\n        theme\n        new snippet\n    page layouts\n        page_sidebar\n        page_navbar\n        page_navbar with a sidebar\n    cards\n        card, card_header, card_body, card_footer\n        navset_card\n        value_box\n        full_screen\n        sparkline\n    layout\n        layout_column_width\n        layout_columns\n        layout_sidebar\n        accordions\n        tooltips & popovers\n    fillability\n        fillable containers\n        fill items\n        page_fillable\n    dark mode\n            input_dark_mode\n            theming with dark mode in mind\n    extra inputs\n            input_task_button\n            input_switch",
-    "crumbs": [
-      "Workshop",
-      "Overview"
-    ]
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Next Generation Shiny Apps with {bslib}",
+    "section": "Introduction",
+    "text": "Introduction\nLearn to build Shiny apps using modern user interfaces (UI) and layouts with bslib, the next generation of Shiny UI. We’ll cover stylish and convenient dashboard layouts and components as we showcase the ways in which bslib can replace shinydashboard. We’ll also learn about exciting new ways to deploy Shiny apps with shinylive as static sites that run entirely in the user’s browser and don’t require setting up or maintaining a Shiny server."
   },
   {
-    "objectID": "workshop.html#schedule",
-    "href": "workshop.html#schedule",
-    "title": "Overview",
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Next Generation Shiny Apps with {bslib}",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nduration\n\n\n\n\n\n\nWelcome and Getting Started\n\n\nWelcome to the workshop and hello, bslib! \n\n\n25min\n\n\n\n\nNew layouts\n\n\nLearn how to lay out UI elements with bslib. \n\n\n30min\n\n\n\n\n☕ Break\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nAdvanced layouts\n\n\nFlexible and responsive column-first layouts\n\n\n20min\n\n\n\n\nFilling Layouts\n\n\nFillabilly who?\n\n\n25min\n\n\n\n\nAdvanced Carding\n\n\nIt’s cards all the way down.\n\n\n10min\n\n\n\n\n☕ Break\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nDetails on demand\n\n\nUI that’s out of sight but within reach\n\n\n15min\n\n\n\n\nNew inputs\n\n\nTwo new bslib inputs\n\n\n15min\n\n\n\n\nDark mode\n\n\nPeople use your apps at night, too.\n\n\n15min\n\n\n\n\nWrap up\n\n\nWrap up, resources, questions.\n\n\n15min\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Workshop",
-      "Overview"
-    ]
+    "text": "Schedule"
   },
   {
-    "objectID": "workshop-07-break.html",
-    "href": "workshop-07-break.html",
+    "objectID": "index.html#setup",
+    "href": "index.html#setup",
+    "title": "Next Generation Shiny Apps with {bslib}",
+    "section": "Setup",
+    "text": "Setup"
+  },
+  {
+    "objectID": "workshop-03-break.html",
+    "href": "workshop-03-break.html",
     "title": "☕ Break",
     "section": "",
     "text": "−\n    +\n \n 05:00",
     "crumbs": [
       "Workshop",
       "☕ Break"
+    ]
+  },
+  {
+    "objectID": "workshop-06.html",
+    "href": "workshop-06.html",
+    "title": "Advanced Carding",
+    "section": "",
+    "text": "Advanced carding (6)\nYour turn: breakout exercise (4)",
+    "crumbs": [
+      "Workshop",
+      "Advanced Carding"
+    ]
+  },
+  {
+    "objectID": "workshop-06.html#outline",
+    "href": "workshop-06.html#outline",
+    "title": "Advanced Carding",
+    "section": "",
+    "text": "Advanced carding (6)\nYour turn: breakout exercise (4)",
+    "crumbs": [
+      "Workshop",
+      "Advanced Carding"
+    ]
+  },
+  {
+    "objectID": "workshop-06.html#advanced-card-features",
+    "href": "workshop-06.html#advanced-card-features",
+    "title": "Advanced Carding",
+    "section": "Advanced card features",
+    "text": "Advanced card features\n\nCard with a sidebar layout\nFor a card with a sidebar, you can nest a layout_sidebar() directly inside a card(). bslib does the rest of the work for you.\n\n#| standalone: true\n#| components: [editor, viewer]\n#| viewerHeight: 500px\n## file: ui.R\nlibrary(shiny)\nlibrary(bslib)\nlibrary(plotly)\nlibrary(collegeScorecard)\n\nschool_degrees &lt;- levels(school$deg_predominant)\nschool_degrees &lt;- setdiff(school_degrees, \"Graduate\")\n\ninput_deg_predmoninant &lt;-\n  selectInput(\n    \"deg_predominant\",\n    \"Predominant Degree Type\",\n    choices = school_degrees,\n    selected = \"Bachelor\"\n  )\n\n\npage_fillable(\n  input_deg_predmoninant,\n  plotlyOutput(\"plot_rate_admissions\")\n)\n\n\n## file: server.R\nfunction(input, output, session) {\n  r_scorecard &lt;- reactive({\n    school_filter &lt;- school\n\n    school_filter &lt;- school_filter[\n      school_filter$deg_predominant == input$deg_predominant,\n    ]\n\n    scorecard[scorecard$id %in% school_filter$id, ]\n  })\n\n  plotly_cleaner &lt;- function(x) {\n    x |&gt;\n      config(displayModeBar = FALSE) |&gt;\n      layout(margin = list(l = 0, r = 0, b = 0))\n  }\n\n  filter_recent_complete_year &lt;- function(scorecard, column) {\n    academic_year &lt;- scorecard[!is.na(scorecard[[column]]), ]$academic_year\n    scorecard[scorecard$academic_year == max(academic_year), ]\n  }\n\n  output$plot_rate_admissions &lt;- renderPlotly({\n    r_scorecard() |&gt;\n      filter_recent_complete_year(\"rate_admissions\") |&gt;\n      (\\(x) x[!is.na(x$rate_admissions), ])() |&gt;\n      plot_ly(x = ~rate_admissions, type = \"histogram\") |&gt;\n      layout(xaxis = list(title = \"Rate\")) |&gt;\n      plotly_cleaner()\n  })\n}\n\n\n\n\nNavset cards\nNavset cards are similar to page_navbar() or the navset_*() function variants. They all follow the same pattern of navset_card_{type}:\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_fillable(\n  navset_card_tab(\n    nav_panel(\n        \"First tab name\",\n        \"... first tab content\"\n    ),\n    nav_panel(\n        \"Second tab name\",\n        \"... second tab content\"\n    )\n  )\n)\n\nshinyApp(ui, \\(...) { })\n\n\n\nNavset cards with sidebars\nWith navset cards, you have two sidebar choices:\n\nFor local sidebars in one of the nav panels, nest layout_sidebar() inside the nav_panel().\nFor global sidebars, use the sidebar argument.\n\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_fillable(\n  navset_card_tab(\n    nav_panel(\n        \"First tab name\",\n        \"... first tab content\"\n    ),\n    nav_panel(\n        \"Second tab name\",\n        \"... second tab content\"\n    )\n  )\n)\n\nshinyApp(ui, \\(...) { })",
+    "crumbs": [
+      "Workshop",
+      "Advanced Carding"
+    ]
+  },
+  {
+    "objectID": "workshop-06.html#your-turn",
+    "href": "workshop-06.html#your-turn",
+    "title": "Advanced Carding",
+    "section": "🧑‍💻 Your Turn",
+    "text": "🧑‍💻 Your Turn\nThe app in exercises/06_app.R contains three variations of the same plot of yearly costs vs median earnings. (You might recognize this plot from the second exercise.)\nUse a navset card to improve the organization and usability of the plots.",
+    "crumbs": [
+      "Workshop",
+      "Advanced Carding"
     ]
   }
 ]
