@@ -11,11 +11,83 @@ duration: 10min
 
 ## Advanced card features
 
-- cards with a sidebar
-    - requires `padding=0`
-- navset cards with sidebars
-- navset cards
-- utility classes
+### Card with a sidebar layout
+
+For a card with a sidebar, you can nest a `layout_sidebar()` directly inside a `card()`.
+bslib does the rest of the work for you.
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+#| viewerHeight: 500px
+## file: ui.R
+{{< include "../examples/app-card-layout-sidebar_ui.R" >}}
+
+## file: server.R
+{{< include "../examples/app-card-layout-sidebar_server.R" >}}
+```
+:::
+
+### Navset cards
+
+Navset cards are similar to `page_navbar()` or the `navset_*()` function variants.
+They all follow the same pattern of `navset_card_{type}`:
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+library(shiny)
+library(bslib)
+
+ui <- page_fillable(
+  navset_card_tab(
+    nav_panel(
+        "First tab name",
+        "... first tab content"
+    ),
+    nav_panel(
+        "Second tab name",
+        "... second tab content"
+    )
+  )
+)
+
+shinyApp(ui, \(...) { })
+```
+:::
+
+### Navset cards with sidebars
+
+With navset cards, you have two sidebar choices:
+
+* For local sidebars in one of the nav panels, nest `layout_sidebar()` inside the `nav_panel()`.
+* For global sidebars, use the `sidebar` argument.
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+library(shiny)
+library(bslib)
+
+ui <- page_fillable(
+  navset_card_tab(
+    nav_panel(
+        "First tab name",
+        "... first tab content"
+    ),
+    nav_panel(
+        "Second tab name",
+        "... second tab content"
+    )
+  )
+)
+
+shinyApp(ui, \(...) { })
+```
+:::
 
 
 ## 🧑‍💻 Your Turn {#your-turn}
