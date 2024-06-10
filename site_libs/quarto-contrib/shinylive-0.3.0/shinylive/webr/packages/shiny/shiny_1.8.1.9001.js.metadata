@@ -1,0 +1,1555 @@
+{
+  "files": [
+    {
+      "filename": "/DESCRIPTION",
+      "start": 0,
+      "end": 8412
+    },
+    {
+      "filename": "/INDEX",
+      "start": 8412,
+      "end": 17547
+    },
+    {
+      "filename": "/LICENSE",
+      "start": 17547,
+      "end": 71686
+    },
+    {
+      "filename": "/Meta/Rd.rds",
+      "start": 71686,
+      "end": 78035
+    },
+    {
+      "filename": "/Meta/features.rds",
+      "start": 78035,
+      "end": 78167
+    },
+    {
+      "filename": "/Meta/hsearch.rds",
+      "start": 78167,
+      "end": 83939
+    },
+    {
+      "filename": "/Meta/links.rds",
+      "start": 83939,
+      "end": 87256
+    },
+    {
+      "filename": "/Meta/nsInfo.rds",
+      "start": 87256,
+      "end": 90283
+    },
+    {
+      "filename": "/Meta/package.rds",
+      "start": 90283,
+      "end": 93839
+    },
+    {
+      "filename": "/NAMESPACE",
+      "start": 93839,
+      "end": 104059
+    },
+    {
+      "filename": "/NEWS.md",
+      "start": 104059,
+      "end": 234042
+    },
+    {
+      "filename": "/R/shiny",
+      "start": 234042,
+      "end": 235100
+    },
+    {
+      "filename": "/R/shiny.rdb",
+      "start": 235100,
+      "end": 693520
+    },
+    {
+      "filename": "/R/shiny.rdx",
+      "start": 693520,
+      "end": 703019
+    },
+    {
+      "filename": "/app_template/R/example-module.R",
+      "start": 703019,
+      "end": 703642
+    },
+    {
+      "filename": "/app_template/R/example.R",
+      "start": 703642,
+      "end": 703793
+    },
+    {
+      "filename": "/app_template/app.R",
+      "start": 703793,
+      "end": 704982
+    },
+    {
+      "filename": "/app_template/tests/testthat.R",
+      "start": 704982,
+      "end": 705005
+    },
+    {
+      "filename": "/app_template/tests/testthat/setup-shinytest2.R",
+      "start": 705005,
+      "end": 705090
+    },
+    {
+      "filename": "/app_template/tests/testthat/test-examplemodule.R",
+      "start": 705090,
+      "end": 705495
+    },
+    {
+      "filename": "/app_template/tests/testthat/test-server.R",
+      "start": 705495,
+      "end": 705872
+    },
+    {
+      "filename": "/app_template/tests/testthat/test-shinytest2.R",
+      "start": 705872,
+      "end": 706230
+    },
+    {
+      "filename": "/app_template/tests/testthat/test-sort.R",
+      "start": 706230,
+      "end": 706450
+    },
+    {
+      "filename": "/diagrams/outputProgressStateMachine.drawio",
+      "start": 706450,
+      "end": 718969
+    },
+    {
+      "filename": "/diagrams/outputProgressStateMachine.svg",
+      "start": 718969,
+      "end": 1038986
+    },
+    {
+      "filename": "/examples-shiny/01_hello/DESCRIPTION",
+      "start": 1038986,
+      "end": 1039110
+    },
+    {
+      "filename": "/examples-shiny/01_hello/Readme.md",
+      "start": 1039110,
+      "end": 1039395
+    },
+    {
+      "filename": "/examples-shiny/01_hello/app.R",
+      "start": 1039395,
+      "end": 1040657
+    },
+    {
+      "filename": "/examples-shiny/02_text/DESCRIPTION",
+      "start": 1040657,
+      "end": 1040779
+    },
+    {
+      "filename": "/examples-shiny/02_text/Readme.md",
+      "start": 1040779,
+      "end": 1041016
+    },
+    {
+      "filename": "/examples-shiny/02_text/app.R",
+      "start": 1041016,
+      "end": 1042337
+    },
+    {
+      "filename": "/examples-shiny/03_reactivity/DESCRIPTION",
+      "start": 1042337,
+      "end": 1042459
+    },
+    {
+      "filename": "/examples-shiny/03_reactivity/Readme.md",
+      "start": 1042459,
+      "end": 1043227
+    },
+    {
+      "filename": "/examples-shiny/03_reactivity/app.R",
+      "start": 1043227,
+      "end": 1046038
+    },
+    {
+      "filename": "/examples-shiny/04_mpg/DESCRIPTION",
+      "start": 1046038,
+      "end": 1046166
+    },
+    {
+      "filename": "/examples-shiny/04_mpg/Readme.md",
+      "start": 1046166,
+      "end": 1046702
+    },
+    {
+      "filename": "/examples-shiny/04_mpg/app.R",
+      "start": 1046702,
+      "end": 1048508
+    },
+    {
+      "filename": "/examples-shiny/05_sliders/DESCRIPTION",
+      "start": 1048508,
+      "end": 1048627
+    },
+    {
+      "filename": "/examples-shiny/05_sliders/Readme.md",
+      "start": 1048627,
+      "end": 1048820
+    },
+    {
+      "filename": "/examples-shiny/05_sliders/app.R",
+      "start": 1048820,
+      "end": 1050845
+    },
+    {
+      "filename": "/examples-shiny/06_tabsets/DESCRIPTION",
+      "start": 1050845,
+      "end": 1050964
+    },
+    {
+      "filename": "/examples-shiny/06_tabsets/Readme.md",
+      "start": 1050964,
+      "end": 1051596
+    },
+    {
+      "filename": "/examples-shiny/06_tabsets/app.R",
+      "start": 1051596,
+      "end": 1053911
+    },
+    {
+      "filename": "/examples-shiny/07_widgets/DESCRIPTION",
+      "start": 1053911,
+      "end": 1054030
+    },
+    {
+      "filename": "/examples-shiny/07_widgets/Readme.md",
+      "start": 1054030,
+      "end": 1054320
+    },
+    {
+      "filename": "/examples-shiny/07_widgets/app.R",
+      "start": 1054320,
+      "end": 1056521
+    },
+    {
+      "filename": "/examples-shiny/08_html/DESCRIPTION",
+      "start": 1056521,
+      "end": 1056647
+    },
+    {
+      "filename": "/examples-shiny/08_html/Readme.md",
+      "start": 1056647,
+      "end": 1056903
+    },
+    {
+      "filename": "/examples-shiny/08_html/app.R",
+      "start": 1056903,
+      "end": 1058174
+    },
+    {
+      "filename": "/examples-shiny/08_html/www/index.html",
+      "start": 1058174,
+      "end": 1059129
+    },
+    {
+      "filename": "/examples-shiny/09_upload/DESCRIPTION",
+      "start": 1059129,
+      "end": 1059252
+    },
+    {
+      "filename": "/examples-shiny/09_upload/Readme.md",
+      "start": 1059252,
+      "end": 1059429
+    },
+    {
+      "filename": "/examples-shiny/09_upload/app.R",
+      "start": 1059429,
+      "end": 1061307
+    },
+    {
+      "filename": "/examples-shiny/10_download/DESCRIPTION",
+      "start": 1061307,
+      "end": 1061432
+    },
+    {
+      "filename": "/examples-shiny/10_download/Readme.md",
+      "start": 1061432,
+      "end": 1061580
+    },
+    {
+      "filename": "/examples-shiny/10_download/app.R",
+      "start": 1061580,
+      "end": 1062711
+    },
+    {
+      "filename": "/examples-shiny/11_timer/DESCRIPTION",
+      "start": 1062711,
+      "end": 1062828
+    },
+    {
+      "filename": "/examples-shiny/11_timer/Readme.md",
+      "start": 1062828,
+      "end": 1063072
+    },
+    {
+      "filename": "/examples-shiny/11_timer/app.R",
+      "start": 1063072,
+      "end": 1063485
+    },
+    {
+      "filename": "/examples/01_hello/DESCRIPTION",
+      "start": 1063485,
+      "end": 1063631
+    },
+    {
+      "filename": "/examples/01_hello/Readme.md",
+      "start": 1063631,
+      "end": 1063916
+    },
+    {
+      "filename": "/examples/01_hello/app.R",
+      "start": 1063916,
+      "end": 1065346
+    },
+    {
+      "filename": "/examples/02_text/DESCRIPTION",
+      "start": 1065346,
+      "end": 1065491
+    },
+    {
+      "filename": "/examples/02_text/Readme.md",
+      "start": 1065491,
+      "end": 1065728
+    },
+    {
+      "filename": "/examples/02_text/app.R",
+      "start": 1065728,
+      "end": 1067240
+    },
+    {
+      "filename": "/examples/03_reactivity/DESCRIPTION",
+      "start": 1067240,
+      "end": 1067384
+    },
+    {
+      "filename": "/examples/03_reactivity/Readme.md",
+      "start": 1067384,
+      "end": 1068152
+    },
+    {
+      "filename": "/examples/03_reactivity/app.R",
+      "start": 1068152,
+      "end": 1071177
+    },
+    {
+      "filename": "/examples/04_mpg/DESCRIPTION",
+      "start": 1071177,
+      "end": 1071327
+    },
+    {
+      "filename": "/examples/04_mpg/Readme.md",
+      "start": 1071327,
+      "end": 1071863
+    },
+    {
+      "filename": "/examples/04_mpg/app.R",
+      "start": 1071863,
+      "end": 1073832
+    },
+    {
+      "filename": "/examples/05_sliders/DESCRIPTION",
+      "start": 1073832,
+      "end": 1073973
+    },
+    {
+      "filename": "/examples/05_sliders/Readme.md",
+      "start": 1073973,
+      "end": 1074166
+    },
+    {
+      "filename": "/examples/05_sliders/app.R",
+      "start": 1074166,
+      "end": 1076479
+    },
+    {
+      "filename": "/examples/06_tabsets/DESCRIPTION",
+      "start": 1076479,
+      "end": 1076620
+    },
+    {
+      "filename": "/examples/06_tabsets/Readme.md",
+      "start": 1076620,
+      "end": 1077229
+    },
+    {
+      "filename": "/examples/06_tabsets/app.R",
+      "start": 1077229,
+      "end": 1079658
+    },
+    {
+      "filename": "/examples/07_widgets/DESCRIPTION",
+      "start": 1079658,
+      "end": 1079799
+    },
+    {
+      "filename": "/examples/07_widgets/Readme.md",
+      "start": 1079799,
+      "end": 1080089
+    },
+    {
+      "filename": "/examples/07_widgets/app.R",
+      "start": 1080089,
+      "end": 1082451
+    },
+    {
+      "filename": "/examples/09_upload/DESCRIPTION",
+      "start": 1082451,
+      "end": 1082596
+    },
+    {
+      "filename": "/examples/09_upload/Readme.md",
+      "start": 1082596,
+      "end": 1082773
+    },
+    {
+      "filename": "/examples/09_upload/app.R",
+      "start": 1082773,
+      "end": 1084951
+    },
+    {
+      "filename": "/examples/10_download/DESCRIPTION",
+      "start": 1084951,
+      "end": 1085098
+    },
+    {
+      "filename": "/examples/10_download/Readme.md",
+      "start": 1085098,
+      "end": 1085246
+    },
+    {
+      "filename": "/examples/10_download/app.R",
+      "start": 1085246,
+      "end": 1086527
+    },
+    {
+      "filename": "/examples/11_timer/DESCRIPTION",
+      "start": 1086527,
+      "end": 1086666
+    },
+    {
+      "filename": "/examples/11_timer/Readme.md",
+      "start": 1086666,
+      "end": 1086910
+    },
+    {
+      "filename": "/examples/11_timer/app.R",
+      "start": 1086910,
+      "end": 1087311
+    },
+    {
+      "filename": "/help/AnIndex",
+      "start": 1087311,
+      "end": 1095042
+    },
+    {
+      "filename": "/help/aliases.rds",
+      "start": 1095042,
+      "end": 1097607
+    },
+    {
+      "filename": "/help/figures/lifecycle-archived.svg",
+      "start": 1097607,
+      "end": 1098574
+    },
+    {
+      "filename": "/help/figures/lifecycle-defunct.svg",
+      "start": 1098574,
+      "end": 1099538
+    },
+    {
+      "filename": "/help/figures/lifecycle-deprecated.svg",
+      "start": 1099538,
+      "end": 1100508
+    },
+    {
+      "filename": "/help/figures/lifecycle-experimental.svg",
+      "start": 1100508,
+      "end": 1101482
+    },
+    {
+      "filename": "/help/figures/lifecycle-maturing.svg",
+      "start": 1101482,
+      "end": 1102448
+    },
+    {
+      "filename": "/help/figures/lifecycle-questioning.svg",
+      "start": 1102448,
+      "end": 1103420
+    },
+    {
+      "filename": "/help/figures/lifecycle-soft-deprecated.svg",
+      "start": 1103420,
+      "end": 1104402
+    },
+    {
+      "filename": "/help/figures/lifecycle-stable.svg",
+      "start": 1104402,
+      "end": 1105358
+    },
+    {
+      "filename": "/help/figures/lifecycle-superseded.svg",
+      "start": 1105358,
+      "end": 1106329
+    },
+    {
+      "filename": "/help/figures/logo.png",
+      "start": 1106329,
+      "end": 1289344
+    },
+    {
+      "filename": "/help/paths.rds",
+      "start": 1289344,
+      "end": 1290960
+    },
+    {
+      "filename": "/help/shiny.rdb",
+      "start": 1290960,
+      "end": 1936908
+    },
+    {
+      "filename": "/help/shiny.rdx",
+      "start": 1936908,
+      "end": 1940805
+    },
+    {
+      "filename": "/html/00Index.html",
+      "start": 1940805,
+      "end": 1971560
+    },
+    {
+      "filename": "/html/R.css",
+      "start": 1971560,
+      "end": 1973404
+    },
+    {
+      "filename": "/template/default.html",
+      "start": 1973404,
+      "end": 1973543
+    },
+    {
+      "filename": "/template/error.html",
+      "start": 1973543,
+      "end": 1973694
+    },
+    {
+      "filename": "/www-dir/index.html",
+      "start": 1973694,
+      "end": 1973970
+    },
+    {
+      "filename": "/www/shared/bootstrap/accessibility/css/bootstrap-accessibility.min.css",
+      "start": 1973970,
+      "end": 1975501
+    },
+    {
+      "filename": "/www/shared/bootstrap/accessibility/js/bootstrap-accessibility.min.js",
+      "start": 1975501,
+      "end": 1988288
+    },
+    {
+      "filename": "/www/shared/bootstrap/css/bootstrap-theme.css",
+      "start": 1988288,
+      "end": 2013970
+    },
+    {
+      "filename": "/www/shared/bootstrap/css/bootstrap-theme.css.map",
+      "start": 2013970,
+      "end": 2061975
+    },
+    {
+      "filename": "/www/shared/bootstrap/css/bootstrap-theme.min.css",
+      "start": 2061975,
+      "end": 2085386
+    },
+    {
+      "filename": "/www/shared/bootstrap/css/bootstrap-theme.min.css.map",
+      "start": 2085386,
+      "end": 2160986
+    },
+    {
+      "filename": "/www/shared/bootstrap/css/bootstrap.css",
+      "start": 2160986,
+      "end": 2306919
+    },
+    {
+      "filename": "/www/shared/bootstrap/css/bootstrap.css.map",
+      "start": 2306919,
+      "end": 2697806
+    },
+    {
+      "filename": "/www/shared/bootstrap/css/bootstrap.min.css",
+      "start": 2697806,
+      "end": 2819263
+    },
+    {
+      "filename": "/www/shared/bootstrap/css/bootstrap.min.css.map",
+      "start": 2819263,
+      "end": 3359697
+    },
+    {
+      "filename": "/www/shared/bootstrap/fonts/glyphicons-halflings-regular.eot",
+      "start": 3359697,
+      "end": 3379824
+    },
+    {
+      "filename": "/www/shared/bootstrap/fonts/glyphicons-halflings-regular.svg",
+      "start": 3379824,
+      "end": 3488562
+    },
+    {
+      "filename": "/www/shared/bootstrap/fonts/glyphicons-halflings-regular.ttf",
+      "start": 3488562,
+      "end": 3533966
+    },
+    {
+      "filename": "/www/shared/bootstrap/fonts/glyphicons-halflings-regular.woff",
+      "start": 3533966,
+      "end": 3557390
+    },
+    {
+      "filename": "/www/shared/bootstrap/fonts/glyphicons-halflings-regular.woff2",
+      "start": 3557390,
+      "end": 3575418
+    },
+    {
+      "filename": "/www/shared/bootstrap/js/bootstrap.js",
+      "start": 3575418,
+      "end": 3650902
+    },
+    {
+      "filename": "/www/shared/bootstrap/js/bootstrap.min.js",
+      "start": 3650902,
+      "end": 3690582
+    },
+    {
+      "filename": "/www/shared/bootstrap/js/npm.js",
+      "start": 3690582,
+      "end": 3691066
+    },
+    {
+      "filename": "/www/shared/busy-indicators/busy-indicators.css",
+      "start": 3691066,
+      "end": 3694007
+    },
+    {
+      "filename": "/www/shared/busy-indicators/spinners/LICENSE",
+      "start": 3694007,
+      "end": 3695081
+    },
+    {
+      "filename": "/www/shared/busy-indicators/spinners/bars.svg",
+      "start": 3695081,
+      "end": 3695607
+    },
+    {
+      "filename": "/www/shared/busy-indicators/spinners/bars2.svg",
+      "start": 3695607,
+      "end": 3696480
+    },
+    {
+      "filename": "/www/shared/busy-indicators/spinners/bars3.svg",
+      "start": 3696480,
+      "end": 3697608
+    },
+    {
+      "filename": "/www/shared/busy-indicators/spinners/dots.svg",
+      "start": 3697608,
+      "end": 3698057
+    },
+    {
+      "filename": "/www/shared/busy-indicators/spinners/dots2.svg",
+      "start": 3698057,
+      "end": 3698983
+    },
+    {
+      "filename": "/www/shared/busy-indicators/spinners/dots3.svg",
+      "start": 3698983,
+      "end": 3700455
+    },
+    {
+      "filename": "/www/shared/busy-indicators/spinners/pulse.svg",
+      "start": 3700455,
+      "end": 3700833
+    },
+    {
+      "filename": "/www/shared/busy-indicators/spinners/pulse2.svg",
+      "start": 3700833,
+      "end": 3701468
+    },
+    {
+      "filename": "/www/shared/busy-indicators/spinners/pulse3.svg",
+      "start": 3701468,
+      "end": 3702302
+    },
+    {
+      "filename": "/www/shared/busy-indicators/spinners/ring.svg",
+      "start": 3702302,
+      "end": 3702900
+    },
+    {
+      "filename": "/www/shared/busy-indicators/spinners/ring2.svg",
+      "start": 3702900,
+      "end": 3703409
+    },
+    {
+      "filename": "/www/shared/busy-indicators/spinners/ring3.svg",
+      "start": 3703409,
+      "end": 3703821
+    },
+    {
+      "filename": "/www/shared/datatables/css/dataTables.bootstrap.css",
+      "start": 3703821,
+      "end": 3708823
+    },
+    {
+      "filename": "/www/shared/datatables/images/sort_asc.png",
+      "start": 3708823,
+      "end": 3708983
+    },
+    {
+      "filename": "/www/shared/datatables/images/sort_asc_disabled.png",
+      "start": 3708983,
+      "end": 3709131
+    },
+    {
+      "filename": "/www/shared/datatables/images/sort_both.png",
+      "start": 3709131,
+      "end": 3709332
+    },
+    {
+      "filename": "/www/shared/datatables/images/sort_desc.png",
+      "start": 3709332,
+      "end": 3709490
+    },
+    {
+      "filename": "/www/shared/datatables/images/sort_desc_disabled.png",
+      "start": 3709490,
+      "end": 3709636
+    },
+    {
+      "filename": "/www/shared/datatables/js/dataTables.bootstrap.js",
+      "start": 3709636,
+      "end": 3714208
+    },
+    {
+      "filename": "/www/shared/datatables/js/jquery.dataTables.min.js",
+      "start": 3714208,
+      "end": 3800758
+    },
+    {
+      "filename": "/www/shared/datatables/upgrade1.10.txt",
+      "start": 3800758,
+      "end": 3803444
+    },
+    {
+      "filename": "/www/shared/datepicker/css/bootstrap-datepicker3.css",
+      "start": 3803444,
+      "end": 3826173
+    },
+    {
+      "filename": "/www/shared/datepicker/css/bootstrap-datepicker3.min.css",
+      "start": 3826173,
+      "end": 3847186
+    },
+    {
+      "filename": "/www/shared/datepicker/js/bootstrap-datepicker.js",
+      "start": 3847186,
+      "end": 3905102
+    },
+    {
+      "filename": "/www/shared/datepicker/js/bootstrap-datepicker.min.js",
+      "start": 3905102,
+      "end": 4011450
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker-en-CA.min.js",
+      "start": 4011450,
+      "end": 4012086
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.ar-tn.min.js",
+      "start": 4012086,
+      "end": 4012790
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.ar.min.js",
+      "start": 4012790,
+      "end": 4013504
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.az.min.js",
+      "start": 4013504,
+      "end": 4014035
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.bg.min.js",
+      "start": 4014035,
+      "end": 4014650
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.bm.min.js",
+      "start": 4014650,
+      "end": 4015212
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.bn.min.js",
+      "start": 4015212,
+      "end": 4016422
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.br.min.js",
+      "start": 4016422,
+      "end": 4016932
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.bs.min.js",
+      "start": 4016932,
+      "end": 4017407
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.ca.min.js",
+      "start": 4017407,
+      "end": 4017920
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.cs.min.js",
+      "start": 4017920,
+      "end": 4018456
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.cy.min.js",
+      "start": 4018456,
+      "end": 4018889
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.da.min.js",
+      "start": 4018889,
+      "end": 4019403
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.de.min.js",
+      "start": 4019403,
+      "end": 4019920
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.el.min.js",
+      "start": 4019920,
+      "end": 4020684
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.en-AU.min.js",
+      "start": 4020684,
+      "end": 4021201
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.en-CA.min.js",
+      "start": 4021201,
+      "end": 4021719
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.en-GB.min.js",
+      "start": 4021719,
+      "end": 4022237
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.en-IE.min.js",
+      "start": 4022237,
+      "end": 4022755
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.en-NZ.min.js",
+      "start": 4022755,
+      "end": 4023272
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.en-ZA.min.js",
+      "start": 4023272,
+      "end": 4023789
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.eo.min.js",
+      "start": 4023789,
+      "end": 4024304
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.es.min.js",
+      "start": 4024304,
+      "end": 4024817
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.et.min.js",
+      "start": 4024817,
+      "end": 4025354
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.eu.min.js",
+      "start": 4025354,
+      "end": 4025882
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.fa.min.js",
+      "start": 4025882,
+      "end": 4026552
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.fi.min.js",
+      "start": 4026552,
+      "end": 4027080
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.fo.min.js",
+      "start": 4027080,
+      "end": 4027568
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.fr-CH.min.js",
+      "start": 4027568,
+      "end": 4028080
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.fr.min.js",
+      "start": 4028080,
+      "end": 4028616
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.gl.min.js",
+      "start": 4028616,
+      "end": 4029105
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.he.min.js",
+      "start": 4029105,
+      "end": 4029668
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.hi.min.js",
+      "start": 4029668,
+      "end": 4030612
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.hr.min.js",
+      "start": 4030612,
+      "end": 4031074
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.hu.min.js",
+      "start": 4031074,
+      "end": 4031615
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.hy.min.js",
+      "start": 4031615,
+      "end": 4032372
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.id.min.js",
+      "start": 4032372,
+      "end": 4032825
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.is.min.js",
+      "start": 4032825,
+      "end": 4033321
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.it-CH.min.js",
+      "start": 4033321,
+      "end": 4033827
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.it.min.js",
+      "start": 4033827,
+      "end": 4034352
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.ja.min.js",
+      "start": 4034352,
+      "end": 4034854
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.ka.min.js",
+      "start": 4034854,
+      "end": 4035824
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.kh.min.js",
+      "start": 4035824,
+      "end": 4036900
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.kk.min.js",
+      "start": 4036900,
+      "end": 4037549
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.km.min.js",
+      "start": 4037549,
+      "end": 4038494
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.ko.min.js",
+      "start": 4038494,
+      "end": 4039026
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.kr.min.js",
+      "start": 4039026,
+      "end": 4039601
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.lt.min.js",
+      "start": 4039601,
+      "end": 4040166
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.lv.min.js",
+      "start": 4040166,
+      "end": 4040692
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.me.min.js",
+      "start": 4040692,
+      "end": 4041185
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.mk.min.js",
+      "start": 4041185,
+      "end": 4041842
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.mn.min.js",
+      "start": 4041842,
+      "end": 4042480
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.ms.min.js",
+      "start": 4042480,
+      "end": 4042928
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.nl-BE.min.js",
+      "start": 4042928,
+      "end": 4043450
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.nl.min.js",
+      "start": 4043450,
+      "end": 4043963
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.no.min.js",
+      "start": 4043963,
+      "end": 4044478
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.oc.min.js",
+      "start": 4044478,
+      "end": 4044993
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.pl.min.js",
+      "start": 4044993,
+      "end": 4045545
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.pt-BR.min.js",
+      "start": 4045545,
+      "end": 4046049
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.pt.min.js",
+      "start": 4046049,
+      "end": 4046547
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.ro.min.js",
+      "start": 4046547,
+      "end": 4047052
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.rs-latin.min.js",
+      "start": 4047052,
+      "end": 4047714
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.rs.min.js",
+      "start": 4047714,
+      "end": 4048531
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.ru.min.js",
+      "start": 4048531,
+      "end": 4049262
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.si.min.js",
+      "start": 4049262,
+      "end": 4050250
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.sk.min.js",
+      "start": 4050250,
+      "end": 4050747
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.sl.min.js",
+      "start": 4050747,
+      "end": 4051202
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.sq.min.js",
+      "start": 4051202,
+      "end": 4051720
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.sr-latin.min.js",
+      "start": 4051720,
+      "end": 4052198
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.sr.min.js",
+      "start": 4052198,
+      "end": 4052849
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.sv.min.js",
+      "start": 4052849,
+      "end": 4053341
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.sw.min.js",
+      "start": 4053341,
+      "end": 4053772
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.ta.min.js",
+      "start": 4053772,
+      "end": 4054706
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.tg.min.js",
+      "start": 4054706,
+      "end": 4055406
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.th.min.js",
+      "start": 4055406,
+      "end": 4056239
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.tk.min.js",
+      "start": 4056239,
+      "end": 4056769
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.tr.min.js",
+      "start": 4056769,
+      "end": 4057264
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.uk.min.js",
+      "start": 4057264,
+      "end": 4057986
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.uz-cyrl.min.js",
+      "start": 4057986,
+      "end": 4058689
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.uz-latn.min.js",
+      "start": 4058689,
+      "end": 4059205
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.vi.min.js",
+      "start": 4059205,
+      "end": 4059756
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.zh-CN.min.js",
+      "start": 4059756,
+      "end": 4060369
+    },
+    {
+      "filename": "/www/shared/datepicker/js/locales/bootstrap-datepicker.zh-TW.min.js",
+      "start": 4060369,
+      "end": 4060935
+    },
+    {
+      "filename": "/www/shared/datepicker/scss/build3.scss",
+      "start": 4060935,
+      "end": 4063244
+    },
+    {
+      "filename": "/www/shared/datepicker/scss/datepicker3.scss",
+      "start": 4063244,
+      "end": 4069019
+    },
+    {
+      "filename": "/www/shared/highlight/LICENSE",
+      "start": 4069019,
+      "end": 4070517
+    },
+    {
+      "filename": "/www/shared/highlight/classref.txt",
+      "start": 4070517,
+      "end": 4092909
+    },
+    {
+      "filename": "/www/shared/highlight/highlight.pack.js",
+      "start": 4092909,
+      "end": 4104185
+    },
+    {
+      "filename": "/www/shared/highlight/rstudio.css",
+      "start": 4104185,
+      "end": 4105181
+    },
+    {
+      "filename": "/www/shared/ionrangeslider/css/ion.rangeSlider.css",
+      "start": 4105181,
+      "end": 4110125
+    },
+    {
+      "filename": "/www/shared/ionrangeslider/js/ion.rangeSlider.js",
+      "start": 4110125,
+      "end": 4195114
+    },
+    {
+      "filename": "/www/shared/ionrangeslider/js/ion.rangeSlider.min.js",
+      "start": 4195114,
+      "end": 4236745
+    },
+    {
+      "filename": "/www/shared/ionrangeslider/scss/_base.scss",
+      "start": 4236745,
+      "end": 4239571
+    },
+    {
+      "filename": "/www/shared/ionrangeslider/scss/_mixins.scss",
+      "start": 4239571,
+      "end": 4239860
+    },
+    {
+      "filename": "/www/shared/ionrangeslider/scss/shiny.scss",
+      "start": 4239860,
+      "end": 4245051
+    },
+    {
+      "filename": "/www/shared/jquery-AUTHORS.txt",
+      "start": 4245051,
+      "end": 4258420
+    },
+    {
+      "filename": "/www/shared/jquery.js",
+      "start": 4258420,
+      "end": 4547000
+    },
+    {
+      "filename": "/www/shared/jquery.min.js",
+      "start": 4547000,
+      "end": 4636540
+    },
+    {
+      "filename": "/www/shared/jquery.min.js.map",
+      "start": 4636540,
+      "end": 4774501
+    },
+    {
+      "filename": "/www/shared/jqueryui/AUTHORS.txt",
+      "start": 4774501,
+      "end": 4788744
+    },
+    {
+      "filename": "/www/shared/jqueryui/LICENSE.txt",
+      "start": 4788744,
+      "end": 4790561
+    },
+    {
+      "filename": "/www/shared/jqueryui/images/ui-icons_444444_256x240.png",
+      "start": 4790561,
+      "end": 4797703
+    },
+    {
+      "filename": "/www/shared/jqueryui/images/ui-icons_555555_256x240.png",
+      "start": 4797703,
+      "end": 4804829
+    },
+    {
+      "filename": "/www/shared/jqueryui/images/ui-icons_777620_256x240.png",
+      "start": 4804829,
+      "end": 4809499
+    },
+    {
+      "filename": "/www/shared/jqueryui/images/ui-icons_777777_256x240.png",
+      "start": 4809499,
+      "end": 4816662
+    },
+    {
+      "filename": "/www/shared/jqueryui/images/ui-icons_cc0000_256x240.png",
+      "start": 4816662,
+      "end": 4821332
+    },
+    {
+      "filename": "/www/shared/jqueryui/images/ui-icons_ffffff_256x240.png",
+      "start": 4821332,
+      "end": 4827871
+    },
+    {
+      "filename": "/www/shared/jqueryui/index.html",
+      "start": 4827871,
+      "end": 4860403
+    },
+    {
+      "filename": "/www/shared/jqueryui/jquery-ui.css",
+      "start": 4860403,
+      "end": 4897855
+    },
+    {
+      "filename": "/www/shared/jqueryui/jquery-ui.js",
+      "start": 4897855,
+      "end": 5427014
+    },
+    {
+      "filename": "/www/shared/jqueryui/jquery-ui.min.css",
+      "start": 5427014,
+      "end": 5459144
+    },
+    {
+      "filename": "/www/shared/jqueryui/jquery-ui.min.js",
+      "start": 5459144,
+      "end": 5714228
+    },
+    {
+      "filename": "/www/shared/jqueryui/jquery-ui.structure.css",
+      "start": 5714228,
+      "end": 5732946
+    },
+    {
+      "filename": "/www/shared/jqueryui/jquery-ui.structure.min.css",
+      "start": 5732946,
+      "end": 5748506
+    },
+    {
+      "filename": "/www/shared/jqueryui/jquery-ui.theme.css",
+      "start": 5748506,
+      "end": 5767290
+    },
+    {
+      "filename": "/www/shared/jqueryui/jquery-ui.theme.min.css",
+      "start": 5767290,
+      "end": 5781181
+    },
+    {
+      "filename": "/www/shared/legacy/jquery-AUTHORS.txt",
+      "start": 5781181,
+      "end": 5791120
+    },
+    {
+      "filename": "/www/shared/legacy/jquery.js",
+      "start": 5791120,
+      "end": 6084550
+    },
+    {
+      "filename": "/www/shared/legacy/jquery.min.js",
+      "start": 6084550,
+      "end": 6181713
+    },
+    {
+      "filename": "/www/shared/legacy/jquery.min.map",
+      "start": 6181713,
+      "end": 6325660
+    },
+    {
+      "filename": "/www/shared/selectize/accessibility/js/selectize-plugin-a11y.js",
+      "start": 6325660,
+      "end": 6331845
+    },
+    {
+      "filename": "/www/shared/selectize/accessibility/js/selectize-plugin-a11y.min.js",
+      "start": 6331845,
+      "end": 6334357
+    },
+    {
+      "filename": "/www/shared/selectize/css/selectize.bootstrap3.css",
+      "start": 6334357,
+      "end": 6347542
+    },
+    {
+      "filename": "/www/shared/selectize/js/selectize.js",
+      "start": 6347542,
+      "end": 6444797
+    },
+    {
+      "filename": "/www/shared/selectize/js/selectize.min.js",
+      "start": 6444797,
+      "end": 6502006
+    },
+    {
+      "filename": "/www/shared/selectize/scss/plugins/auto_position.scss",
+      "start": 6502006,
+      "end": 6502465
+    },
+    {
+      "filename": "/www/shared/selectize/scss/plugins/clear_button.scss",
+      "start": 6502465,
+      "end": 6503146
+    },
+    {
+      "filename": "/www/shared/selectize/scss/plugins/drag_drop.scss",
+      "start": 6503146,
+      "end": 6503678
+    },
+    {
+      "filename": "/www/shared/selectize/scss/plugins/dropdown_header.scss",
+      "start": 6503678,
+      "end": 6504420
+    },
+    {
+      "filename": "/www/shared/selectize/scss/plugins/optgroup_columns.scss",
+      "start": 6504420,
+      "end": 6504814
+    },
+    {
+      "filename": "/www/shared/selectize/scss/plugins/remove_button.scss",
+      "start": 6504814,
+      "end": 6505680
+    },
+    {
+      "filename": "/www/shared/selectize/scss/selectize.bootstrap3.scss",
+      "start": 6505680,
+      "end": 6509657
+    },
+    {
+      "filename": "/www/shared/selectize/scss/selectize.bootstrap4.scss",
+      "start": 6509657,
+      "end": 6515573
+    },
+    {
+      "filename": "/www/shared/selectize/scss/selectize.bootstrap5.scss",
+      "start": 6515573,
+      "end": 6521727
+    },
+    {
+      "filename": "/www/shared/selectize/scss/selectize.default.scss",
+      "start": 6521727,
+      "end": 6523458
+    },
+    {
+      "filename": "/www/shared/selectize/scss/selectize.scss",
+      "start": 6523458,
+      "end": 6533579
+    },
+    {
+      "filename": "/www/shared/shiny-autoreload.js",
+      "start": 6533579,
+      "end": 6592915
+    },
+    {
+      "filename": "/www/shared/shiny-autoreload.js.map",
+      "start": 6592915,
+      "end": 6907131
+    },
+    {
+      "filename": "/www/shared/shiny-showcase.css",
+      "start": 6907131,
+      "end": 6908175
+    },
+    {
+      "filename": "/www/shared/shiny-showcase.js",
+      "start": 6908175,
+      "end": 6932906
+    },
+    {
+      "filename": "/www/shared/shiny-showcase.js.map",
+      "start": 6932906,
+      "end": 7059551
+    },
+    {
+      "filename": "/www/shared/shiny-testmode.js",
+      "start": 7059551,
+      "end": 7059801
+    },
+    {
+      "filename": "/www/shared/shiny-testmode.js.map",
+      "start": 7059801,
+      "end": 7061299
+    },
+    {
+      "filename": "/www/shared/shiny.js",
+      "start": 7061299,
+      "end": 8106659
+    },
+    {
+      "filename": "/www/shared/shiny.js.map",
+      "start": 8106659,
+      "end": 9895276
+    },
+    {
+      "filename": "/www/shared/shiny.min.css",
+      "start": 9895276,
+      "end": 9901587
+    },
+    {
+      "filename": "/www/shared/shiny.min.js",
+      "start": 9901587,
+      "end": 10339788
+    },
+    {
+      "filename": "/www/shared/shiny.min.js.map",
+      "start": 10339788,
+      "end": 12168277
+    },
+    {
+      "filename": "/www/shared/shiny_scss/shiny.bootstrap3.scss",
+      "start": 12168277,
+      "end": 12170589
+    },
+    {
+      "filename": "/www/shared/shiny_scss/shiny.bootstrap4.scss",
+      "start": 12170589,
+      "end": 12172655
+    },
+    {
+      "filename": "/www/shared/shiny_scss/shiny.bootstrap5.scss",
+      "start": 12172655,
+      "end": 12175470
+    },
+    {
+      "filename": "/www/shared/shiny_scss/shiny.scss",
+      "start": 12175470,
+      "end": 12186326
+    },
+    {
+      "filename": "/www/shared/showdown/compressed/showdown.js",
+      "start": 12186326,
+      "end": 12195719
+    },
+    {
+      "filename": "/www/shared/showdown/license.txt",
+      "start": 12195719,
+      "end": 12197365
+    },
+    {
+      "filename": "/www/shared/showdown/src/showdown.js",
+      "start": 12197365,
+      "end": 12235298
+    },
+    {
+      "filename": "/www/shared/strftime/strftime-min.js",
+      "start": 12235298,
+      "end": 12241018
+    }
+  ],
+  "remote_package_size": 12241018
+}

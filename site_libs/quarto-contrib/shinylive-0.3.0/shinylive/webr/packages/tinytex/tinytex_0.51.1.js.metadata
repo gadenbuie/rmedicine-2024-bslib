@@ -1,0 +1,115 @@
+{
+  "files": [
+    {
+      "filename": "/CITATION",
+      "start": 0,
+      "end": 673
+    },
+    {
+      "filename": "/DESCRIPTION",
+      "start": 673,
+      "end": 2516
+    },
+    {
+      "filename": "/INDEX",
+      "start": 2516,
+      "end": 3321
+    },
+    {
+      "filename": "/LICENSE",
+      "start": 3321,
+      "end": 3389
+    },
+    {
+      "filename": "/Meta/Rd.rds",
+      "start": 3389,
+      "end": 4177
+    },
+    {
+      "filename": "/Meta/features.rds",
+      "start": 4177,
+      "end": 4309
+    },
+    {
+      "filename": "/Meta/hsearch.rds",
+      "start": 4309,
+      "end": 5101
+    },
+    {
+      "filename": "/Meta/links.rds",
+      "start": 5101,
+      "end": 5479
+    },
+    {
+      "filename": "/Meta/nsInfo.rds",
+      "start": 5479,
+      "end": 5970
+    },
+    {
+      "filename": "/Meta/package.rds",
+      "start": 5970,
+      "end": 7258
+    },
+    {
+      "filename": "/NAMESPACE",
+      "start": 7258,
+      "end": 8133
+    },
+    {
+      "filename": "/NEWS.Rd",
+      "start": 8133,
+      "end": 8422
+    },
+    {
+      "filename": "/R/tinytex",
+      "start": 8422,
+      "end": 9480
+    },
+    {
+      "filename": "/R/tinytex.rdb",
+      "start": 9480,
+      "end": 51682
+    },
+    {
+      "filename": "/R/tinytex.rdx",
+      "start": 51682,
+      "end": 53268
+    },
+    {
+      "filename": "/help/AnIndex",
+      "start": 53268,
+      "end": 53892
+    },
+    {
+      "filename": "/help/aliases.rds",
+      "start": 53892,
+      "end": 54199
+    },
+    {
+      "filename": "/help/paths.rds",
+      "start": 54199,
+      "end": 54449
+    },
+    {
+      "filename": "/help/tinytex.rdb",
+      "start": 54449,
+      "end": 87774
+    },
+    {
+      "filename": "/help/tinytex.rdx",
+      "start": 87774,
+      "end": 88213
+    },
+    {
+      "filename": "/html/00Index.html",
+      "start": 88213,
+      "end": 92456
+    },
+    {
+      "filename": "/html/R.css",
+      "start": 92456,
+      "end": 94300
+    }
+  ],
+  "remote_package_size": 94300
+}

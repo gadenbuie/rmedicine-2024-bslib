@@ -1,138 +1,80 @@
 [
   {
-    "objectID": "workshop-07-break.html",
-    "href": "workshop-07-break.html",
-    "title": "Break",
-    "section": "",
-    "text": "−+\n05:00",
-    "crumbs": [
-      "Workshop",
-      "Break"
-    ]
-  },
-  {
-    "objectID": "workshop.html",
-    "href": "workshop.html",
-    "title": "Overview",
-    "section": "",
-    "text": "mindmap\n  root((bslib))\n    shiny + bslib\n        page functions\n        BS 5+\n        theme\n        new snippet\n    page layouts\n        page_sidebar\n        page_navbar\n        page_navbar with a sidebar\n    cards\n        card, card_header, card_body, card_footer\n        navset_card\n        value_box\n        full_screen\n        sparkline\n    layout\n        layout_column_width\n        layout_columns\n        layout_sidebar\n        accordions\n        tooltips & popovers\n    fillability\n        fillable containers\n        fill items\n        page_fillable\n    dark mode\n            input_dark_mode\n            theming with dark mode in mind\n    extra inputs\n            input_task_button\n            input_switch",
-    "crumbs": [
-      "Workshop",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "workshop.html#schedule",
-    "href": "workshop.html#schedule",
-    "title": "Overview",
-    "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nduration\n\n\n\n\n\n\nWelcome and Getting Started\n\n\nWelcome to the workshop and hello, bslib! \n\n\n25min\n\n\n\n\nNew layouts\n\n\nLearn how to lay out UI elements with bslib. \n\n\n30min\n\n\n\n\nBreak\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nAdvanced layouts\n\n\nFlexible and responsive column-first layouts\n\n\n20min\n\n\n\n\nFilling Layouts\n\n\nFillabilly who?\n\n\n25min\n\n\n\n\nAdvanced Carding\n\n\nIt’s cards all the way down.\n\n\n10min\n\n\n\n\nBreak\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nDetails on demand\n\n\nUI that’s out of sight but within reach\n\n\n15min\n\n\n\n\nNew inputs\n\n\nTwo new bslib inputs\n\n\n15min\n\n\n\n\nDark mode\n\n\nPeople use your apps at night, too.\n\n\n15min\n\n\n\n\nWrap up\n\n\nWrap up, resources, questions.\n\n\n15min\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Workshop",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "workshop-01.html",
-    "href": "workshop-01.html",
-    "title": "Welcome and Getting Started",
-    "section": "",
-    "text": "View slides in full screen\n       \n      \n    \n  \n\nWelcome to R/Medicine 2024!\n\nWho am I\nWhere to find things\nHow to ask questions\nHow we’ll do this thing\n\nA bit of teaching\nwith break-out pairing sessions\n\n\nWhat is bslib?\n\nStarted as a way to style your Shiny apps\nAnd bringing Bootstrap 5 to Shiny\nNow a whole lot more\n\nBreakout activity: Are we all set up?\n\nTake a Shiny app and make it bslib-ier\n\nFrom {type}Page() to page_{type}()\nTry out Bootsrap/Bootswatch themes\nExtra points: try a Sass variable\n\nHelp each other make sure you’re set up\n\nFollow up\n\nCheck in\nIntroduce the College Scorecard dataset\nBonus: new shinyapp snippet",
-    "crumbs": [
-      "Workshop",
-      "Welcome and Getting Started"
-    ]
-  },
-  {
-    "objectID": "workshop-10.html",
-    "href": "workshop-10.html",
-    "title": "Dark mode",
-    "section": "",
-    "text": "input_dark_mode()\nStyling for dark mode\n\nwhat are css variables?\nBootstrap CSS vars\nYour own CSS variables",
-    "crumbs": [
-      "Workshop",
-      "Dark mode"
-    ]
-  },
-  {
-    "objectID": "workshop-08.html",
-    "href": "workshop-08.html",
-    "title": "Details on demand",
-    "section": "",
-    "text": "popover\n\nlead in from navset card –&gt; popover\n\ntool tip\naccordion",
-    "crumbs": [
-      "Workshop",
-      "Details on demand"
-    ]
-  },
-  {
     "objectID": "workshop-05.html",
     "href": "workshop-05.html",
     "title": "Filling Layouts",
     "section": "",
-    "text": "About fillability\n\n\nfillable containers\nfill items\ncard with plot, card in page\nfilling layouts are an agreement between a container and an item\nmost things in bslib are fillable, so you’ll mostly think about it in terms of breaking the fillability chain at the right place\n\n\nPage-level fillability\n\n\npage_fillable()\nFill in page_sidebar() and page_navbar()\n\n\nBreakout exercise",
+    "text": "Block elements, at least by default on the web, take up full width but are lazy about their height. In general, a block element’s height is driven by the height of its contents.\nThe example below uses basic Boostrap markup for a card. What happens when you…\n\nResize the width of the page?\nAdjust the height of the leaflet output?\nAdd additional text to the card using lorem::ipsum(2, 1:2)?\nGive the card a fixed height?\n\n\n#| standalone: true\n#| components: [editor, viewer]\n\nlibrary(shiny)\nlibrary(bslib)\nlibrary(leaflet)\nlibrary(collegeScorecard)\n\nlehigh &lt;- school[school$name == \"Lehigh University\", ]\n\ncard_basic &lt;- function(..., class = NULL, height = NULL) {\n  div(\n    class = \"card\", class = class,\n    style = htmltools::css(height = height),\n    div(\n      class = \"card-body\",\n      ...\n    )\n  )\n}\n\nui &lt;- page_fixed(\n  card_basic(\n    class = \"text-bg-dark\",\n    leafletOutput(\"map_lehigh\", height = \"300px\")\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  output$map_lehigh &lt;- renderLeaflet({\n    leaflet() |&gt;\n      addTiles() |&gt;\n      setView(lng = lehigh$longitude, lat = lehigh$latitude, zoom = 13) |&gt;\n      addMarkers(lng = lehigh$longitude, lat = lehigh$latitude, popup = lehigh$name)\n  })\n}\n\nshinyApp(ui, server)",
     "crumbs": [
       "Workshop",
       "Filling Layouts"
     ]
   },
   {
-    "objectID": "workshop-02.html",
-    "href": "workshop-02.html",
-    "title": "New layouts",
+    "objectID": "workshop-05.html#heights-in-nested-containers",
+    "href": "workshop-05.html#heights-in-nested-containers",
+    "title": "Filling Layouts",
     "section": "",
-    "text": "Introducing\n\n\npage_sidebar()\ncard()\n\nwith card parts\n\nlayout_columns()\nfull screen cards\n\n\nBreakout activity\n\n\nStarting with a basic shiny app with 2 inputs and 2-3 plots\n\n(1 input is more local)\n\nOrganize into a new layout\nBonus: layout_sidebar()\n\n\nValue Boxes\n\n\nQuick code intro\nShort on-your-own\n\nUse buid-a-box app to explore options\nCreate one target value box\nMake your own for another",
+    "text": "Block elements, at least by default on the web, take up full width but are lazy about their height. In general, a block element’s height is driven by the height of its contents.\nThe example below uses basic Boostrap markup for a card. What happens when you…\n\nResize the width of the page?\nAdjust the height of the leaflet output?\nAdd additional text to the card using lorem::ipsum(2, 1:2)?\nGive the card a fixed height?\n\n\n#| standalone: true\n#| components: [editor, viewer]\n\nlibrary(shiny)\nlibrary(bslib)\nlibrary(leaflet)\nlibrary(collegeScorecard)\n\nlehigh &lt;- school[school$name == \"Lehigh University\", ]\n\ncard_basic &lt;- function(..., class = NULL, height = NULL) {\n  div(\n    class = \"card\", class = class,\n    style = htmltools::css(height = height),\n    div(\n      class = \"card-body\",\n      ...\n    )\n  )\n}\n\nui &lt;- page_fixed(\n  card_basic(\n    class = \"text-bg-dark\",\n    leafletOutput(\"map_lehigh\", height = \"300px\")\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  output$map_lehigh &lt;- renderLeaflet({\n    leaflet() |&gt;\n      addTiles() |&gt;\n      setView(lng = lehigh$longitude, lat = lehigh$latitude, zoom = 13) |&gt;\n      addMarkers(lng = lehigh$longitude, lat = lehigh$latitude, popup = lehigh$name)\n  })\n}\n\nshinyApp(ui, server)",
     "crumbs": [
       "Workshop",
-      "New layouts"
+      "Filling Layouts"
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "workshop-04.html",
-    "href": "workshop-04.html",
-    "title": "Advanced layouts",
-    "section": "",
-    "text": "Recap: value boxes\n\n\nshow-and-tell\nsparklines examples/app-sparkline.R\n\n\nlayout_columns() vs layout_column_wrap()\n\n\nexamples/app-layout-columns.R\nlive code: many cards in both layouts\nstart with 3 items, move between two layout functions\nshow !!!\nlayout_column_wrap() equally sized things\n\nwidths\nheights_equal\n\nlayout_columns() = row() + column()\n\n\nBreakout activity\n\n\nrecreate a layout\nhint: max_height\none of each",
+    "objectID": "workshop-05.html#filling-layouts",
+    "href": "workshop-05.html#filling-layouts",
+    "title": "Filling Layouts",
+    "section": "Filling layouts",
+    "text": "Filling layouts\nbslib introduced the concept of filling layouts to solve a common problem in Shiny apps, especially dashboards.\n\nHow can an output or layout take up all of the space available to it?\n\nThis flips the arrows of causality. Instead of letting the plot or map drive the height of its containers, we want the map to take up whatever space it can.\nIn the example below, replace card_basic() with bslib::card(). What happens when you…\n\nChange the height of the card?\nAdd text to the card with lorem::ipsum(2, 1:2)?\nMake the card very tall or very short (with and without the extra text)?\nReplace page_fixed() with page_fillable()? (Hint: make sure the viewer is wide enough.)\n\n\n#| standalone: true\n#| components: [editor, viewer]\n\nlibrary(shiny)\nlibrary(bslib)\nlibrary(leaflet)\nlibrary(collegeScorecard)\n\nlehigh &lt;- school[school$name == \"Lehigh University\", ]\n\ncard_basic &lt;- function(..., class = NULL, height = NULL) {\n  div(\n    class = \"card\", class = class,\n    style = htmltools::css(height = height),\n    div(\n      class = \"card-body\",\n      ...\n    )\n  )\n}\n\nui &lt;- page_fixed(\n  card_basic(\n    class = \"text-bg-dark\",\n    height = \"300px\",\n    leafletOutput(\"map_lehigh\")\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  output$map_lehigh &lt;- renderLeaflet({\n    leaflet() |&gt;\n      addTiles() |&gt;\n      setView(lng = lehigh$longitude, lat = lehigh$latitude, zoom = 13) |&gt;\n      addMarkers(lng = lehigh$longitude, lat = lehigh$latitude, popup = lehigh$name)\n  })\n}\n\nshinyApp(ui, server)",
     "crumbs": [
       "Workshop",
-      "Advanced layouts"
+      "Filling Layouts"
     ]
   },
   {
-    "objectID": "workshop-06.html",
-    "href": "workshop-06.html",
-    "title": "Advanced Carding",
-    "section": "",
-    "text": "Advanced card features\n\n\nnavset cards\nnavset cards with sidebars\ncards with a sidebar\n\nrequires padding=0\n\nutility classes\n\n\nShort Activity leading into break\n\n\nan example with a variable in the navs to lead in to next section",
+    "objectID": "workshop-05.html#breaking-fillability",
+    "href": "workshop-05.html#breaking-fillability",
+    "title": "Filling Layouts",
+    "section": "Breaking fillability",
+    "text": "Breaking fillability\nFillable layouts are really two elements working together:\n\nA fillable container creates a space for filling.\nA fill item can fill the container.\n\nThese two elements work together. Filling layouts are only activated when fillable container is the parent ⇆ of a fill item child.\nTo break fillability, you have three options:\n\nSet fill = FALSE on the item.\nSet fillable = FALSE on the parent.\nBreak the parent ⇆ child relationship.\n\nBy default, bslib tends to break fillability on mobile devices to switch to a flow layout. Look for fillable_mobile and set it to TRUE when you want fillable layouts on mobile screens.\nThe example below features a card with text, a button, and a map. Make sure that the viewer pane is wide enough to activate the filling layout.\n\nWhy is the button full width? Do you want that?\nHow can we make the contents of the entire card scrollable?\nHow can we make the map taller?\n\n\n#| standalone: true\n#| components: [editor, viewer]\n#| viewerHeight: 500px\nlibrary(shiny)\nlibrary(bslib)\nlibrary(leaflet)\nlibrary(collegeScorecard)\nsource(\"lehigh.R\")\n\nlehigh &lt;- school[school$name == \"Lehigh University\", ]\n\nui &lt;- page_fillable(\n  card(\n    class = \"text-bg-light\",\n    card_body(\n      h3(\"Lehigh University\"),\n      p_lehigh_1, p_lehigh_2, p_lehigh_3,\n      actionButton(\"visit\", \"Visit School\"),\n      leafletOutput(\"map_lehigh\"),\n    )\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  output$map_lehigh &lt;- renderLeaflet({\n    leaflet() |&gt;\n      addTiles() |&gt;\n      setView(lng = lehigh$longitude, lat = lehigh$latitude, zoom = 13) |&gt;\n      addMarkers(lng = lehigh$longitude, lat = lehigh$latitude, popup = lehigh$name)\n  })\n}\n\nshinyApp(ui, server)\n\n\n\n## file: lehigh.R\np_lehigh_1 &lt;- p(\n  \"Lehigh University, founded in 1865, is a private research institution located in Bethlehem, Pennsylvania.\",\n  \"With around 5,000 undergraduate students and 2,000 graduate students, it offers over 100 majors across its four colleges, with a student-faculty ratio of 9:1.\"\n)\n\np_lehigh_2 &lt;- p(\n  \"Notable academic programs include engineering, business, and the arts and sciences.\",\n  \"Lehigh's engineering programs, particularly in mechanical and electrical engineering, are highly regarded, and the university has a strong reputation for innovation and entrepreneurship.\",\n  \"Additionally, its College of Business offers nationally recognized programs, preparing students for success in various fields of business and management.\"\n)\n\np_lehigh_3 &lt;- p(\n  \"The university emphasizes a hands-on approach to education, with opportunities for experiential learning and research.\",\n  \"Lehigh's strong alumni network and high post-graduation employment rates make it an attractive option for those seeking a diverse and career-oriented academic experience.\"\n)",
     "crumbs": [
       "Workshop",
-      "Advanced Carding"
+      "Filling Layouts"
     ]
   },
   {
-    "objectID": "workshop-09.html",
-    "href": "workshop-09.html",
-    "title": "New inputs",
-    "section": "",
-    "text": "input_switch()\ninput_task_button()",
+    "objectID": "workshop-05.html#fillable-pages",
+    "href": "workshop-05.html#fillable-pages",
+    "title": "Filling Layouts",
+    "section": "Fillable Pages",
+    "text": "Fillable Pages\nThere are three pages that provide page-level filling behavior and are useful for dashboards:\n\npage_fillable()\nA screen-filling page layout. Try settings these arguments:\n\npadding\ngap\nfillable_mobile\ntitle\n\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_fillable(\n  layout_columns(\n    card(class = \"text-bg-primary\", \"A\"),\n    card(class = \"text-bg-secondary\", \"B\"),\n  ),\n  card(class = \"bg-teal\", \"C\"),\n  card(class = \"bg-orange text-light\", \"D\")\n)\n\nshinyApp(ui, \\(...) { })\n\n\n\n\npage_sidebar()\nA dashboard layout with full-screen header and sidebar. In addition to the arguments above, try setting these arguments:\n\nsidebar\nbg\nfg\n\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_sidebar(\n  sidebar = sidebar(title = \"Sidebar\"),\n  layout_columns(\n    card(class = \"text-bg-primary\", \"A\"),\n    card(class = \"text-bg-secondary\", \"B\"),\n  ),\n  card(class = \"bg-teal\", \"C\"),\n  card(class = \"bg-orange text-light\", \"D\")\n)\n\nshinyApp(ui, \\(...) { })\n\n\n\n\npage_navbar()\nAnother dashboard layout with a top-level navigation bar. Pairs with nav_panel() elements. Try setting these arguments:\n\nfillable\nsidebar\nposition\nunderline\n\nAlso add a nav_spacer() and a nav_item().\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_navbar(\n  nav_panel(\n    \"One\",\n    layout_columns(\n      card(class = \"text-bg-primary\", \"A\"),\n      card(class = \"text-bg-secondary\", \"B\"),\n    ),\n    card(class = \"bg-teal\", \"C\")\n  ),\n  nav_panel(\n    \"Two\",\n    card(class = \"bg-orange text-light\", \"D\")\n  )\n)\n\nshinyApp(ui, \\(...) { })",
     "crumbs": [
       "Workshop",
-      "New inputs"
+      "Filling Layouts"
     ]
   },
   {
-    "objectID": "workshop-11.html",
-    "href": "workshop-11.html",
-    "title": "Wrap up",
+    "objectID": "workshop-05.html#outline",
+    "href": "workshop-05.html#outline",
+    "title": "Filling Layouts",
+    "section": "Outline",
+    "text": "Outline\n\n\nAbout fillability\n\n\nfillable containers\nfill items\ncard with plot, card in page\nfilling layouts are an agreement between a container and an item\nmost things in bslib are fillable, so you’ll mostly think about it in terms of breaking the fillability chain at the right place\n\n\nPage-level fillability\n\n\npage_fillable()\nFill in page_sidebar() and page_navbar()\n\n\nBreakout exercise",
+    "crumbs": [
+      "Workshop",
+      "Filling Layouts"
+    ]
+  },
+  {
+    "objectID": "workshop-03-break.html",
+    "href": "workshop-03-break.html",
+    "title": "☕ Break",
     "section": "",
-    "text": "Thanks for attending! Here are some great follow up resources!\nAny questions?"
+    "text": "−\n    +\n \n 05:00",
+    "crumbs": [
+      "Workshop",
+      "☕ Break"
+    ]
   },
   {
     "objectID": "index.html",
@@ -163,10 +105,127 @@
     "text": "Setup"
   },
   {
-    "objectID": "workshop-03-break.html",
-    "href": "workshop-03-break.html",
-    "title": "Break",
+    "objectID": "workshop-11.html",
+    "href": "workshop-11.html",
+    "title": "Wrap up",
     "section": "",
-    "text": "−+\n05:00"
+    "text": "Thanks for attending! Here are some great follow up resources!\nAny questions?"
+  },
+  {
+    "objectID": "workshop-09.html",
+    "href": "workshop-09.html",
+    "title": "New inputs",
+    "section": "",
+    "text": "input_switch()\ninput_task_button()",
+    "crumbs": [
+      "Workshop",
+      "New inputs"
+    ]
+  },
+  {
+    "objectID": "workshop-06.html",
+    "href": "workshop-06.html",
+    "title": "Advanced Carding",
+    "section": "",
+    "text": "Advanced card features\n\n\nnavset cards\nnavset cards with sidebars\ncards with a sidebar\n\nrequires padding=0\n\nutility classes\n\n\nShort Activity leading into break\n\n\nan example with a variable in the navs to lead in to next section",
+    "crumbs": [
+      "Workshop",
+      "Advanced Carding"
+    ]
+  },
+  {
+    "objectID": "workshop-02.html",
+    "href": "workshop-02.html",
+    "title": "New layouts",
+    "section": "",
+    "text": "Introducing\n\n\npage_sidebar()\ncard()\n\nwith card parts\n\nlayout_columns()\nfull screen cards\n\n\nBreakout activity\n\n\nStarting with a basic shiny app with 2 inputs and 2-3 plots\n\n(1 input is more local)\n\nOrganize into a new layout\nBonus: layout_sidebar()\n\n\nValue Boxes\n\n\nQuick code intro\nShort on-your-own\n\nUse buid-a-box app to explore options\nCreate one target value box\nMake your own for another",
+    "crumbs": [
+      "Workshop",
+      "New layouts"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "workshop-04.html",
+    "href": "workshop-04.html",
+    "title": "Advanced layouts",
+    "section": "",
+    "text": "Recap: value boxes\n\n\nshow-and-tell\nsparklines examples/app-sparkline.R\n\n\nlayout_columns() vs layout_column_wrap()\n\n\nexamples/app-layout-columns.R\nlive code: many cards in both layouts\nstart with 3 items, move between two layout functions\nshow !!!\nlayout_column_wrap() equally sized things\n\nwidths\nheights_equal\n\nlayout_columns() = row() + column()\n\n\nBreakout activity\n\n\nexercises/04_app.R\nrecreate a layout\nhint: max_height\none of each",
+    "crumbs": [
+      "Workshop",
+      "Advanced layouts"
+    ]
+  },
+  {
+    "objectID": "workshop-08.html",
+    "href": "workshop-08.html",
+    "title": "Details on demand",
+    "section": "",
+    "text": "popover\n\nlead in from navset card –&gt; popover\n\ntool tip\naccordion",
+    "crumbs": [
+      "Workshop",
+      "Details on demand"
+    ]
+  },
+  {
+    "objectID": "workshop-10.html",
+    "href": "workshop-10.html",
+    "title": "Dark mode",
+    "section": "",
+    "text": "input_dark_mode()\nStyling for dark mode\n\nwhat are css variables?\nBootstrap CSS vars\nYour own CSS variables",
+    "crumbs": [
+      "Workshop",
+      "Dark mode"
+    ]
+  },
+  {
+    "objectID": "workshop-01.html",
+    "href": "workshop-01.html",
+    "title": "Welcome and Getting Started",
+    "section": "",
+    "text": "View slides in full screen\n       \n      \n    \n  \n\nWelcome to R/Medicine 2024!\n\nWho am I\nWhere to find things\nHow to ask questions\nHow we’ll do this thing\n\nA bit of teaching\nwith break-out pairing sessions\n\n\nWhat is bslib?\n\nStarted as a way to style your Shiny apps\nAnd bringing Bootstrap 5 to Shiny\nNow a whole lot more\n\nBreakout activity: Are we all set up?\n\nTake a Shiny app and make it bslib-ier\n\nFrom {type}Page() to page_{type}()\nTry out Bootsrap/Bootswatch themes\nExtra points: try a Sass variable\n\nHelp each other make sure you’re set up\n\nFollow up\n\nCheck in\nIntroduce the College Scorecard dataset\nBonus: new shinyapp snippet",
+    "crumbs": [
+      "Workshop",
+      "Welcome and Getting Started"
+    ]
+  },
+  {
+    "objectID": "workshop.html",
+    "href": "workshop.html",
+    "title": "Overview",
+    "section": "",
+    "text": "mindmap\n  root((bslib))\n    shiny + bslib\n        page functions\n        BS 5+\n        theme\n        new snippet\n    page layouts\n        page_sidebar\n        page_navbar\n        page_navbar with a sidebar\n    cards\n        card, card_header, card_body, card_footer\n        navset_card\n        value_box\n        full_screen\n        sparkline\n    layout\n        layout_column_width\n        layout_columns\n        layout_sidebar\n        accordions\n        tooltips & popovers\n    fillability\n        fillable containers\n        fill items\n        page_fillable\n    dark mode\n            input_dark_mode\n            theming with dark mode in mind\n    extra inputs\n            input_task_button\n            input_switch",
+    "crumbs": [
+      "Workshop",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "workshop.html#schedule",
+    "href": "workshop.html#schedule",
+    "title": "Overview",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nduration\n\n\n\n\n\n\nWelcome and Getting Started\n\n\nWelcome to the workshop and hello, bslib! \n\n\n25min\n\n\n\n\nNew layouts\n\n\nLearn how to lay out UI elements with bslib. \n\n\n30min\n\n\n\n\n☕ Break\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nAdvanced layouts\n\n\nFlexible and responsive column-first layouts\n\n\n20min\n\n\n\n\nFilling Layouts\n\n\nFillabilly who?\n\n\n25min\n\n\n\n\nAdvanced Carding\n\n\nIt’s cards all the way down.\n\n\n10min\n\n\n\n\n☕ Break\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nDetails on demand\n\n\nUI that’s out of sight but within reach\n\n\n15min\n\n\n\n\nNew inputs\n\n\nTwo new bslib inputs\n\n\n15min\n\n\n\n\nDark mode\n\n\nPeople use your apps at night, too.\n\n\n15min\n\n\n\n\nWrap up\n\n\nWrap up, resources, questions.\n\n\n15min\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Workshop",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "workshop-07-break.html",
+    "href": "workshop-07-break.html",
+    "title": "☕ Break",
+    "section": "",
+    "text": "−\n    +\n \n 05:00",
+    "crumbs": [
+      "Workshop",
+      "☕ Break"
+    ]
   }
 ]

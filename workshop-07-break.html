@@ -8,7 +8,7 @@
 
 <meta name="description" content="Get up and move around! We’ll be right back.">
 
-<title>Next Generation Shiny Apps with {bslib} – Break</title>
+<title>Next Generation Shiny Apps with {bslib} – ☕ Break</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,6 +42,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
+<link href="site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,8 +71,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<link href="site_libs/countdown-0.5.0/countdown.css" rel="stylesheet">
-<script src="site_libs/countdown-0.5.0/countdown.js"></script>
+<!-- Countdown Global CSS -->
+<style text="text/css">:root {--countdown-box-shadow: none;}</style>
 
 
 </head>
@@ -115,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./workshop-07-break.html">Break</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./workshop-07-break.html">☕ Break</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -134,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text"><div class="sidebar-divider">Hour 1</div></span>
+ <span class="menu-text"><div class="sidebar-divider font-monospace">Hour 1</div></span>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
@@ -149,7 +151,13 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text"><div class="sidebar-divider">Hour 2</div></span>
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-03-break.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">☕ Break</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+ <span class="menu-text"><div class="sidebar-divider font-monospace">Hour 2</div></span>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
@@ -172,11 +180,11 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./workshop-07-break.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Break</span></a>
+ <span class="menu-text">☕ Break</span></a>
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text"><div class="sidebar-divider">Hour 3</div></span>
+ <span class="menu-text"><div class="sidebar-divider font-monospace">Hour 3</div></span>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
@@ -210,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Break</h1>
+<h1 class="title">☕ Break</h1>
 </div>
 
 <div>
@@ -232,15 +240,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="column-screen position-relative" style="height: 80vh">
-<div class="cell">
-<div class="cell-output-display">
-<div class="countdown countdown-fullscreen" id="timer_7be33874" data-update-every="1" tabindex="0" style="top:0;right:0;bottom:0;left:0;--countdown-margin:0;--countdown-padding:0;--countdown-font-size:30vw;--countdown-border-width:0;--countdown-border-radius:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
-</div>
-</div>
+<style>
+:root {
+  --countdown-color-running-background: var(--bs-white);
+  --countdown-color-running-text: var(--bs-teal);
+}
+</style>
+<div class="column-screen-inset-right position-relative" style="height: 80vh">
+<div id="timer_d540f863c3f85daf942d4c5a0bee822f7f58eb93" class="countdown countdown-fullscreen" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="top: 0;right: 0;bottom: 0;left: 0;--countdown-font-size: 20vw;--countdown-margin: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </div>
 
 

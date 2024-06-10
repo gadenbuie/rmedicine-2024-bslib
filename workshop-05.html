@@ -42,6 +42,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<meta name="shinylive:serviceworker_dir" content=".">
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/load-shinylive-sw.js" type="module"></script>
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/run-python-blocks.js" type="module"></script>
+<link href="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/shinylive.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -132,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text"><div class="sidebar-divider">Hour 1</div></span>
+ <span class="menu-text"><div class="sidebar-divider font-monospace">Hour 1</div></span>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
@@ -147,7 +152,13 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text"><div class="sidebar-divider">Hour 2</div></span>
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-03-break.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">☕ Break</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+ <span class="menu-text"><div class="sidebar-divider font-monospace">Hour 2</div></span>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
@@ -170,11 +181,11 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./workshop-07-break.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Break</span></a>
+ <span class="menu-text">☕ Break</span></a>
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text"><div class="sidebar-divider">Hour 3</div></span>
+ <span class="menu-text"><div class="sidebar-divider font-monospace">Hour 3</div></span>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
@@ -199,11 +210,26 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#heights-in-nested-containers" id="toc-heights-in-nested-containers" class="nav-link active" data-scroll-target="#heights-in-nested-containers">Heights in nested containers</a></li>
+  <li><a href="#filling-layouts" id="toc-filling-layouts" class="nav-link" data-scroll-target="#filling-layouts">Filling layouts</a></li>
+  <li><a href="#breaking-fillability" id="toc-breaking-fillability" class="nav-link" data-scroll-target="#breaking-fillability">Breaking fillability</a></li>
+  <li><a href="#fillable-pages" id="toc-fillable-pages" class="nav-link" data-scroll-target="#fillable-pages">Fillable Pages</a>
+  <ul class="collapse">
+  <li><a href="#page_fillable" id="toc-page_fillable" class="nav-link" data-scroll-target="#page_fillable"><code>page_fillable()</code></a></li>
+  <li><a href="#page_sidebar" id="toc-page_sidebar" class="nav-link" data-scroll-target="#page_sidebar"><code>page_sidebar()</code></a></li>
+  <li><a href="#page_navbar" id="toc-page_navbar" class="nav-link" data-scroll-target="#page_navbar"><code>page_navbar()</code></a></li>
+  </ul></li>
+  <li><a href="#outline" id="toc-outline" class="nav-link" data-scroll-target="#outline">Outline</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 <script>document.querySelector('.navbar').dataset.bsTheme = 'light';</script>
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -230,6 +256,289 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="heights-in-nested-containers" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="heights-in-nested-containers">Heights in nested containers</h2>
+<p>Block elements, at least by default on the web, take up full width but are <strong>lazy about their height</strong>. In general, a block element’s height is driven by the height of its contents.</p>
+<p>The example below uses <a href="https://getbootstrap.com/docs/5.3/components/card/">basic Boostrap markup for a card</a>. What happens when you…</p>
+<ul>
+<li>Resize the width of the page?</li>
+<li>Adjust the height of the leaflet output?</li>
+<li>Add additional text to the card using <code>lorem::ipsum(2, 1:2)</code>?</li>
+<li>Give the card a fixed height?</li>
+</ul>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+
+library(shiny)
+library(bslib)
+library(leaflet)
+library(collegeScorecard)
+
+lehigh &lt;- school[school$name == "Lehigh University", ]
+
+card_basic &lt;- function(..., class = NULL, height = NULL) {
+  div(
+    class = "card", class = class,
+    style = htmltools::css(height = height),
+    div(
+      class = "card-body",
+      ...
+    )
+  )
+}
+
+ui &lt;- page_fixed(
+  card_basic(
+    class = "text-bg-dark",
+    leafletOutput("map_lehigh", height = "300px")
+  )
+)
+
+server &lt;- function(input, output, session) {
+  output$map_lehigh &lt;- renderLeaflet({
+    leaflet() |&gt;
+      addTiles() |&gt;
+      setView(lng = lehigh$longitude, lat = lehigh$latitude, zoom = 13) |&gt;
+      addMarkers(lng = lehigh$longitude, lat = lehigh$latitude, popup = lehigh$name)
+  })
+}
+
+shinyApp(ui, server)
+</code></pre>
+</div>
+</section>
+<section id="filling-layouts" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="filling-layouts">Filling layouts</h2>
+<p>bslib introduced the concept of filling layouts to solve a common problem in Shiny apps, especially dashboards.</p>
+<div class="lead fst-italic">
+<p>How can an output or layout take up all of the space available to it?</p>
+</div>
+<p>This flips the arrows of causality. Instead of letting the plot or map drive the height of its containers, we want the map to take up whatever space it can.</p>
+<p>In the example below, replace <code>card_basic()</code> with <code>bslib::card()</code>. What happens when you…</p>
+<ul>
+<li>Change the height of the card?</li>
+<li>Add text to the card with <code>lorem::ipsum(2, 1:2)</code>?</li>
+<li>Make the card very tall or very short (with and without the extra text)?</li>
+<li>Replace <code>page_fixed()</code> with <code>page_fillable()</code>? (<em>Hint: make sure the viewer is wide enough.</em>)</li>
+</ul>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+
+library(shiny)
+library(bslib)
+library(leaflet)
+library(collegeScorecard)
+
+lehigh &lt;- school[school$name == "Lehigh University", ]
+
+card_basic &lt;- function(..., class = NULL, height = NULL) {
+  div(
+    class = "card", class = class,
+    style = htmltools::css(height = height),
+    div(
+      class = "card-body",
+      ...
+    )
+  )
+}
+
+ui &lt;- page_fixed(
+  card_basic(
+    class = "text-bg-dark",
+    height = "300px",
+    leafletOutput("map_lehigh")
+  )
+)
+
+server &lt;- function(input, output, session) {
+  output$map_lehigh &lt;- renderLeaflet({
+    leaflet() |&gt;
+      addTiles() |&gt;
+      setView(lng = lehigh$longitude, lat = lehigh$latitude, zoom = 13) |&gt;
+      addMarkers(lng = lehigh$longitude, lat = lehigh$latitude, popup = lehigh$name)
+  })
+}
+
+shinyApp(ui, server)
+</code></pre>
+</div>
+</section>
+<section id="breaking-fillability" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="breaking-fillability">Breaking fillability</h2>
+<p>Fillable layouts are really two elements working together:</p>
+<ol type="1">
+<li><p>A <strong>fillable</strong> container creates a space for filling.</p></li>
+<li><p>A <strong>fill</strong> item can fill the container.</p></li>
+</ol>
+<p>These two elements work together. Filling layouts are only activated when fillable container is the <strong>parent</strong> ⇆ of a fill item <strong>child</strong>.</p>
+<p>To break fillability, you have three options:</p>
+<ol type="1">
+<li><p>Set <code>fill = FALSE</code> on the item.</p></li>
+<li><p>Set <code>fillable = FALSE</code> on the parent.</p></li>
+<li><p>Break the parent ⇆ child relationship.</p></li>
+</ol>
+<p>By default, bslib tends to break fillability on mobile devices to switch to a flow layout. Look for <code>fillable_mobile</code> and set it to <code>TRUE</code> when you want fillable layouts on mobile screens.</p>
+<p>The example below features a card with text, a button, and a map. Make sure that the viewer pane is wide enough to activate the filling layout.</p>
+<ul>
+<li>Why is the button full width? Do you want that?</li>
+<li>How can we make the contents of the entire card scrollable?</li>
+<li>How can we make the map taller?</li>
+</ul>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+#| viewerHeight: 500px
+library(shiny)
+library(bslib)
+library(leaflet)
+library(collegeScorecard)
+source("lehigh.R")
+
+lehigh &lt;- school[school$name == "Lehigh University", ]
+
+ui &lt;- page_fillable(
+  card(
+    class = "text-bg-light",
+    card_body(
+      h3("Lehigh University"),
+      p_lehigh_1, p_lehigh_2, p_lehigh_3,
+      actionButton("visit", "Visit School"),
+      leafletOutput("map_lehigh"),
+    )
+  )
+)
+
+server &lt;- function(input, output, session) {
+  output$map_lehigh &lt;- renderLeaflet({
+    leaflet() |&gt;
+      addTiles() |&gt;
+      setView(lng = lehigh$longitude, lat = lehigh$latitude, zoom = 13) |&gt;
+      addMarkers(lng = lehigh$longitude, lat = lehigh$latitude, popup = lehigh$name)
+  })
+}
+
+shinyApp(ui, server)
+
+
+
+## file: lehigh.R
+p_lehigh_1 &lt;- p(
+  "Lehigh University, founded in 1865, is a private research institution located in Bethlehem, Pennsylvania.",
+  "With around 5,000 undergraduate students and 2,000 graduate students, it offers over 100 majors across its four colleges, with a student-faculty ratio of 9:1."
+)
+
+p_lehigh_2 &lt;- p(
+  "Notable academic programs include engineering, business, and the arts and sciences.",
+  "Lehigh's engineering programs, particularly in mechanical and electrical engineering, are highly regarded, and the university has a strong reputation for innovation and entrepreneurship.",
+  "Additionally, its College of Business offers nationally recognized programs, preparing students for success in various fields of business and management."
+)
+
+p_lehigh_3 &lt;- p(
+  "The university emphasizes a hands-on approach to education, with opportunities for experiential learning and research.",
+  "Lehigh's strong alumni network and high post-graduation employment rates make it an attractive option for those seeking a diverse and career-oriented academic experience."
+)
+</code></pre>
+</div>
+</section>
+<section id="fillable-pages" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="fillable-pages">Fillable Pages</h2>
+<p>There are three pages that provide page-level filling behavior and are useful for dashboards:</p>
+<section id="page_fillable" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="page_fillable"><code>page_fillable()</code></h3>
+<p>A screen-filling page layout. Try settings these arguments:</p>
+<ul>
+<li><code>padding</code></li>
+<li><code>gap</code></li>
+<li><code>fillable_mobile</code></li>
+<li><code>title</code></li>
+</ul>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+library(shiny)
+library(bslib)
+
+ui &lt;- page_fillable(
+  layout_columns(
+    card(class = "text-bg-primary", "A"),
+    card(class = "text-bg-secondary", "B"),
+  ),
+  card(class = "bg-teal", "C"),
+  card(class = "bg-orange text-light", "D")
+)
+
+shinyApp(ui, \(...) { })
+</code></pre>
+</div>
+</section>
+<section id="page_sidebar" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="page_sidebar"><code>page_sidebar()</code></h3>
+<p>A dashboard layout with full-screen header and sidebar. In addition to the arguments above, try setting these arguments:</p>
+<ul>
+<li><code>sidebar</code></li>
+<li><code>bg</code></li>
+<li><code>fg</code></li>
+</ul>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+library(shiny)
+library(bslib)
+
+ui &lt;- page_sidebar(
+  sidebar = sidebar(title = "Sidebar"),
+  layout_columns(
+    card(class = "text-bg-primary", "A"),
+    card(class = "text-bg-secondary", "B"),
+  ),
+  card(class = "bg-teal", "C"),
+  card(class = "bg-orange text-light", "D")
+)
+
+shinyApp(ui, \(...) { })
+</code></pre>
+</div>
+</section>
+<section id="page_navbar" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="page_navbar"><code>page_navbar()</code></h3>
+<p>Another dashboard layout with a top-level navigation bar. Pairs with <code>nav_panel()</code> elements. Try setting these arguments:</p>
+<ul>
+<li><code>fillable</code></li>
+<li><code>sidebar</code></li>
+<li><code>position</code></li>
+<li><code>underline</code></li>
+</ul>
+<p>Also add a <code>nav_spacer()</code> and a <code>nav_item()</code>.</p>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+library(shiny)
+library(bslib)
+
+ui &lt;- page_navbar(
+  nav_panel(
+    "One",
+    layout_columns(
+      card(class = "text-bg-primary", "A"),
+      card(class = "text-bg-secondary", "B"),
+    ),
+    card(class = "bg-teal", "C")
+  ),
+  nav_panel(
+    "Two",
+    card(class = "bg-orange text-light", "D")
+  )
+)
+
+shinyApp(ui, \(...) { })
+</code></pre>
+</div>
+</section>
+</section>
+<section id="outline" class="level2">
+<h2 class="anchored" data-anchor-id="outline">Outline</h2>
 <ul>
 <li><ol start="10" type="1">
 <li>About fillability</li>
@@ -254,6 +563,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

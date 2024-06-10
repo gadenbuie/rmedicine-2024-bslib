@@ -1,0 +1,135 @@
+{
+  "files": [
+    {
+      "filename": "/DESCRIPTION",
+      "start": 0,
+      "end": 1044
+    },
+    {
+      "filename": "/INDEX",
+      "start": 1044,
+      "end": 1157
+    },
+    {
+      "filename": "/LICENSE",
+      "start": 1157,
+      "end": 1211
+    },
+    {
+      "filename": "/Meta/Rd.rds",
+      "start": 1211,
+      "end": 1546
+    },
+    {
+      "filename": "/Meta/data.rds",
+      "start": 1546,
+      "end": 1679
+    },
+    {
+      "filename": "/Meta/features.rds",
+      "start": 1679,
+      "end": 1811
+    },
+    {
+      "filename": "/Meta/hsearch.rds",
+      "start": 1811,
+      "end": 2181
+    },
+    {
+      "filename": "/Meta/links.rds",
+      "start": 2181,
+      "end": 2343
+    },
+    {
+      "filename": "/Meta/nsInfo.rds",
+      "start": 2343,
+      "end": 2544
+    },
+    {
+      "filename": "/Meta/package.rds",
+      "start": 2544,
+      "end": 3516
+    },
+    {
+      "filename": "/NAMESPACE",
+      "start": 3516,
+      "end": 3562
+    },
+    {
+      "filename": "/R/collegeScorecard",
+      "start": 3562,
+      "end": 4620
+    },
+    {
+      "filename": "/R/collegeScorecard.rdb",
+      "start": 4620,
+      "end": 5725
+    },
+    {
+      "filename": "/R/collegeScorecard.rdx",
+      "start": 5725,
+      "end": 5986
+    },
+    {
+      "filename": "/data/Rdata.rdb",
+      "start": 5986,
+      "end": 2943345
+    },
+    {
+      "filename": "/data/Rdata.rds",
+      "start": 2943345,
+      "end": 2943453
+    },
+    {
+      "filename": "/data/Rdata.rdx",
+      "start": 2943453,
+      "end": 2943630
+    },
+    {
+      "filename": "/help/AnIndex",
+      "start": 2943630,
+      "end": 2943756
+    },
+    {
+      "filename": "/help/aliases.rds",
+      "start": 2943756,
+      "end": 2943883
+    },
+    {
+      "filename": "/help/collegeScorecard.rdb",
+      "start": 2943883,
+      "end": 2955216
+    },
+    {
+      "filename": "/help/collegeScorecard.rdx",
+      "start": 2955216,
+      "end": 2955452
+    },
+    {
+      "filename": "/help/paths.rds",
+      "start": 2955452,
+      "end": 2955621
+    },
+    {
+      "filename": "/html/00Index.html",
+      "start": 2955621,
+      "end": 2956788
+    },
+    {
+      "filename": "/html/R.css",
+      "start": 2956788,
+      "end": 2958632
+    },
+    {
+      "filename": "/scorecard-tidy/school.rds",
+      "start": 2958632,
+      "end": 5185094
+    },
+    {
+      "filename": "/scorecard-tidy/scorecard.rds",
+      "start": 5185094,
+      "end": 37264641
+    }
+  ],
+  "remote_package_size": 37264641
+}
