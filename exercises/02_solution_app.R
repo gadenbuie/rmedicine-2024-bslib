@@ -56,15 +56,11 @@ ui <- page_sidebar(
       plotlyOutput("plot_rate_completion")
     )
   ),
-  card(
-    card_header("Cost vs Earnings"),
-    layout_sidebar(
-      sidebar = sidebar(
-        input_group_by
-      ),
-      plotlyOutput("plot_cost_earnings")
+  layout_sidebar(
+    sidebar = sidebar(
+      input_group_by
     ),
-    full_screen = TRUE
+    plotlyOutput("plot_cost_earnings")
   )
 )
 
@@ -136,6 +132,7 @@ server <- function(input, output, session) {
         )
       ) |>
       layout(
+        title = "Cost vs Earnings",
         xaxis = list(title = "Average Cost"),
         yaxis = list(title = "Median Earnings")
       )
