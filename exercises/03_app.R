@@ -24,7 +24,10 @@ ui <- page_sidebar(
 
   layout_columns(
     fill = FALSE,
-    # !! Put value boxes here !!
+    # !! Put value boxes here using the following outputs !!
+    # textOutput("text_n_undergrads")
+    # textOutput("text_cost_avg")
+    # textOutput("text_rate_completion")
   ),
 
   # pretend this card is a plot
