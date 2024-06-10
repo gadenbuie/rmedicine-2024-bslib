@@ -4,6 +4,160 @@ description: Fillabilly who?
 duration: 25min
 ---
 
+## Heights in nested containers
+
+Block elements, at least by default on the web, take up full width but are **lazy about their height**.
+In general, a block element's height is driven by the height of its contents.
+
+The example below uses [basic Boostrap markup for a card](https://getbootstrap.com/docs/5.3/components/card/).
+What happens when you...
+
+* Resize the width of the page?
+* Adjust the height of the leaflet output?
+* Add additional text to the card using `lorem::ipsum(2, 1:2)`?
+* Give the card a fixed height?
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+
+{{< include "../examples/app-fillability-height.R" >}}
+```
+:::
+
+## Filling layouts
+
+bslib introduced the concept of filling layouts to solve a common problem in Shiny apps, especially dashboards.
+
+::: {.lead .fst-italic}
+How can an output or layout take up all of the space available to it?
+:::
+
+This flips the arrows of causality.
+Instead of letting the plot or map drive the height of its containers, we want the map to take up whatever space it can.
+
+In the example below, replace `card_basic()` with `bslib::card()`.
+What happens when you...
+
+* Change the height of the card?
+* Add text to the card with `lorem::ipsum(2, 1:2)`?
+* Make the card very tall or very short (with and without the extra text)?
+* Replace `page_fixed()` with `page_fillable()`? (_Hint: make sure the viewer is wide enough._)
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+
+{{< include "../examples/app-fillability-layouts.R" >}}
+```
+:::
+
+## Breaking fillability
+
+Fillable layouts are really two elements working together:
+
+1. A **fillable** container creates a space for filling.
+
+2. A **fill** item can fill the container.
+
+These two elements work together.
+Filling layouts are only activated when fillable container is the **parent** &lrarr; of a fill item **child**.
+
+To break fillability, you have three options:
+
+1. Set `fill = FALSE` on the item.
+
+2. Set `fillable = FALSE` on the parent.
+
+3. Break the parent &lrarr; child relationship.
+
+By default, bslib tends to break fillability on mobile devices to switch to a flow layout.
+Look for `fillable_mobile` and set it to `TRUE` when you want fillable layouts on mobile screens.
+
+The example below features a card with text, a button, and a map.
+Make sure that the viewer pane is wide enough to activate the filling layout.
+
+* Why is the button full width? Do you want that?
+* How can we make the contents of the entire card scrollable?
+* How can we make the map taller?
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+#| viewerHeight: 500px
+{{< include "../examples/app-fillability-break.R" >}}
+
+
+## file: lehigh.R
+{{< include "../examples/lehigh.R" >}}
+```
+:::
+
+## Fillable Pages
+
+There are three pages that provide page-level filling behavior and are useful for dashboards:
+
+### `page_fillable()`
+
+A screen-filling page layout.
+Try settings these arguments:
+
+* `padding`
+* `gap`
+* `fillable_mobile`
+* `title`
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+{{< include "../examples/app-page-fillable.R" >}}
+```
+:::
+
+### `page_sidebar()`
+
+A dashboard layout with full-screen header and sidebar.
+In addition to the arguments above, try setting these arguments:
+
+* `sidebar`
+* `bg`
+* `fg`
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+{{< include "../examples/app-page-sidebar.R" >}}
+```
+:::
+
+### `page_navbar()`
+
+Another dashboard layout with a top-level navigation bar.
+Pairs with `nav_panel()` elements.
+Try setting these arguments:
+
+* `fillable`
+* `sidebar`
+* `position`
+* `underline`
+
+Also add a `nav_spacer()` and a `nav_item()`.
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+{{< include "../examples/app-page-navbar.R" >}}
+```
+:::
+
+## Outline
+
 - (10) About fillability
     - fillable containers
     - fill items
