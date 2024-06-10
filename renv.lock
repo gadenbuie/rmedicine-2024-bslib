@@ -1040,6 +1040,19 @@
       ],
       "Hash": "b8552d117e1b808b09a832f589b79035"
     },
+    "lorem": {
+      "Package": "lorem",
+      "Version": "1.0.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "htmltools",
+        "knitr",
+        "stats"
+      ],
+      "Hash": "7784700efa54d1c2ed98fa6755e8bb32"
+    },
     "lpSolve": {
       "Package": "lpSolve",
       "Version": "5.6.20",

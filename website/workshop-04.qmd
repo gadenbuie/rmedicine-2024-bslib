@@ -6,9 +6,10 @@ duration: 20min
 
 - (5) Recap: value boxes
     - show-and-tell
-    - sparklines
+    - sparklines `examples/app-sparkline.R`
 
 - (10) `layout_columns()` vs `layout_column_wrap()`
+    - `examples/app-layout-columns.R`
     - live code: many cards in both layouts
     - start with 3 items, move between two layout functions
     - show `!!!`

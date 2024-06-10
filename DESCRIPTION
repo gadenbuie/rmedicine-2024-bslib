@@ -17,6 +17,7 @@ Imports:
     countdown,
     fontawesome,
     here,
+    lorem,
     plotly,
     rmarkdown,
     shiny (>= 1.8.1.9001),
