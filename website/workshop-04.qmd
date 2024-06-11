@@ -30,7 +30,7 @@ duration: 20min
 #| standalone: true
 #| components: [editor, viewer]
 ## file: app.R
-{{< include "../examples/app-layout-columns.R" >}}
+{{< include "../examples/app-layout-columns_begin.R" >}}
 ```
 :::
 
