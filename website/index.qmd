@@ -80,7 +80,7 @@ Once you're part of the [rmedicine-2024-bslib space][posit-cloud-join], select t
 ![](assets/posit-cloud-project.png){.shadow-lg .img-fluid alt=""}
 
 [website]: https://pkg.garrickadenbuie.com/rmedicine-2024-bslib
-[repository]: https://github.com/rmedicine-2024-bslib
+[repository]: https://github.com/gadenbuie/rmedicine-2024-bslib
 [posit-cloud-join]: https://posit.cloud/spaces/522996/join?access_code=B1zT1aIAcKTzlSb1ejep9W4gC14a96a29Ie9wx5g
 
 ### Using Your Own Computer
