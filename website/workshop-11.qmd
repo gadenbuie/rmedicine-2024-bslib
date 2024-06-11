@@ -3,7 +3,15 @@ title: Wrap up
 description: Wrap up, resources, questions.
 ---
 
-Thanks for attending!
-Here are some great follow up resources!
+::: lead
+🙏 Thanks for attending!<br>
+🙋 Any questions?
+:::
 
-Any questions?
+## Resources
+
+* [bslib](https://rstudio.github.io/bslib/)
+
+* [Boostrap docs](https://getbootstrap.com/docs/)
+
+* _more to come..._
