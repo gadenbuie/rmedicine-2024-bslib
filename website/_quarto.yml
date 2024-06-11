@@ -46,6 +46,7 @@ website:
         - workshop-08.qmd
         - workshop-09.qmd
         - workshop-10.qmd
+        - workshop-11.qmd
 
 format:
   html:
