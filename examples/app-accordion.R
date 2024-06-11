@@ -6,7 +6,7 @@ source("app-accordion-support.R", local = TRUE)
 # UI ----------------------------------------------------------------------
 
 ui <- page_sidebar(
-  title = "02 - First bslib Layout",
+  title = "Accordion Example",
   sidebar = sidebar(
     input_school_type,
     input_deg_predmoninant,
