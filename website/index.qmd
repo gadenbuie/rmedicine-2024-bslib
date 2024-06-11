@@ -60,7 +60,7 @@ We’ll cover stylish and convenient dashboard layouts and components as we show
 ::: lead
 📘 [Website] (you are here!)
 
-🧑‍💻 [Join Posit Cloud Space][posit-cloud-join]
+🧑‍💻 ~~[Join Posit Cloud Space][posit-cloud-join]~~ (Only for workshop participants)
 
 📦 [Repository]
 :::
