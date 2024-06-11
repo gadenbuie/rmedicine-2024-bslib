@@ -23,7 +23,6 @@ website:
         text: Home
       - href: workshop.qmd
         text: Workshop
-      - about.qmd
   page-navigation: true
   sidebar:
     - id: workshop
