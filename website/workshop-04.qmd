@@ -23,3 +23,12 @@ duration: 20min
     - recreate a layout
     - hint: `max_height`
     - one of each
+
+## 🧑‍💻 Your Turn {#your-turn}
+
+::: lead
+<i class="bi bi-folder-symlink-fill"></i> `exercises/04_app.R`
+:::
+
+The app in `exercises/04_app.R` includes three value boxes, one plot and one map, but they're unorganized.
+Use one `layout_columns()` and one `layout_column_wrap()` to better lay out the dashboard.

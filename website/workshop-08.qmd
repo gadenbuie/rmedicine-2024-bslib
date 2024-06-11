@@ -99,6 +99,10 @@ card(
 
 ## 🧑‍💻 Your Turn
 
+::: lead
+<i class="bi bi-folder-symlink-fill"></i> `exercises/07_app.R`
+:::
+
 Looking back at our use of a navset card in the last exercise, we might be able to improve the design and user experience with a popover.
 
 In `exercises/07_app.R`, I've reset the app to use a single plot output with a radio button input.

@@ -35,3 +35,23 @@ editor: { render-on-save: true }
   - Introduce the College Scorecard dataset
   - Bonus: [new `shinyapp` snippet](https://www.garrickadenbuie.com/blog/shiny-new-bslib-snippet/)
 
+
+## 🧑‍💻 Your Turn {#your-turn}
+
+::: lead
+<i class="bi bi-folder-symlink-fill"></i> `exercises/01_app.R`
+:::
+
+**Are we all set up?**
+Open the app in `exercises/01_app.R`.
+Run the app to make sure it works.
+Can everyone in your breakout session run the app?
+Help each other make sure you're set up.
+
+**Take a Shiny app and make it bslib-ier**
+Replace `fluidPage()` with `page_fluid()`.
+What other page types are available?
+Try out some [Bootswatch themes](https://bootswatch.com).
+For bonus points, try setting [a theme-related Sass variable](https://rstudio.github.io/bslib/articles/bs5-variables/index.html).
+
+**Use the app to learn about the variables in `school`.**

@@ -168,6 +168,10 @@ Also add a `nav_spacer()` and a `nav_item()`.
 
 ## 🧑‍💻 Your Turn {#your-turn}
 
+::: lead
+<i class="bi bi-folder-symlink-fill"></i> `exercises/05_app.R`
+:::
+
 The app in `exercises/05_app.R` uses a lot of plots and components, some of which are familiar but none of which have enough space in the current layout.
 
 Your task for this exercise is to make sure the plots are readable and usable at all screen sizes.
