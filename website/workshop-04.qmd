@@ -4,25 +4,35 @@ description: Flexible and responsive column-first layouts
 duration: 20min
 ---
 
-- (5) Recap: value boxes
-    - show-and-tell
-    - sparklines `examples/app-sparkline.R`
+## Recap: value boxes
 
-- (10) `layout_columns()` vs `layout_column_wrap()`
-    - `examples/app-layout-columns.R`
-    - live code: many cards in both layouts
-    - start with 3 items, move between two layout functions
-    - show `!!!`
-    - `layout_column_wrap()` equally sized things
-        - `widths`
-        - `heights_equal`
-    - `layout_columns() = row() + column()`
+- show-and-tell
+- sparklines `examples/app-sparkline.R`
 
-- (5) Breakout activity
-    - `exercises/04_app.R`
-    - recreate a layout
-    - hint: `max_height`
-    - one of each
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+## file: app.R
+{{< include "../examples/app-sparkline.R" >}}
+```
+:::
+
+## Column layouts
+
+- `layout_column_wrap()` equally sized things
+    - `widths`
+    - `heights_equal`
+- `layout_columns() = row() + column()`
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+## file: app.R
+{{< include "../examples/app-layout-columns.R" >}}
+```
+:::
 
 ## 🧑‍💻 Your Turn {#your-turn}
 

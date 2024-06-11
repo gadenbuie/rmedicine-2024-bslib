@@ -7,25 +7,34 @@ duration: 30min
 editor: { render-on-save: true }
 ---
 
-- (10) Introducing
-    - `page_sidebar()`
-    - `card()`
-        - with card parts
-    - `layout_columns()`
-    - full screen cards
+## bslib layouts
 
-- (10) Breakout activity
-    - Starting with a basic shiny app with 2 inputs and 2-3 plots
-        - (1 input is more local)
-    - Organize into a new layout
-    - Bonus: `layout_sidebar()`
+- `page_sidebar()`
+- `card()`
+    - with card parts
+- `layout_columns()`
+- full screen cards
 
-- (10) Value Boxes
-    - Quick code intro
-    - Short on-your-own
-        - Use buid-a-box app to explore options
-        - Create one target value box
-        - Make your own for another
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+## file: app.R
+library(shiny)
+library(bslib)
+
+ui <- page_fluid(
+
+)
+
+server <- function(input, output, session) {
+
+}
+
+shinyApp(ui, server)
+```
+:::
+
 
 ## 🧑‍💻 Your Turn {#your-turn-layout}
 
@@ -37,6 +46,30 @@ We're in the process of refactoring an older Shiny app to use new features from 
 I've started refactoring `exercises/02_app.R` by pulling out the inputs so it's easier to see the layout.
 
 Your task is to migrate the UI section of the app from `shiny::fluidPage()` and `shiny::sidebarLayout()` to use page and layout functions from `{bslib}`.
+
+## Value Boxes
+
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer, terminal]
+## file: app.R
+library(shiny)
+library(bslib)
+library(collegeScorecard)
+
+ui <- page_fluid(
+
+)
+
+server <- function(input, output, session) {
+
+}
+
+shinyApp(ui, server)
+```
+:::
 
 ## 🧑‍💻 Your Turn {#your-turn-value-box}
 

@@ -9,31 +9,12 @@ editor: { render-on-save: true }
 
 {{< revealjs "slides/slides-01.html" >}}
 
+## Outline
 
 - Welcome to R/Medicine 2024!
-  - Who am I
-  - Where to find things
-  - How to ask questions
-  - How we'll do this thing
-    - A bit of teaching
-    - with break-out pairing sessions
-
 - What is bslib?
-  - Started as a way to style your Shiny apps
-  - And bringing Bootstrap 5 to Shiny
-  - Now a whole lot more
-
-- Breakout activity: Are we all set up?
-  - Take a Shiny app and make it bslib-ier
-    - From `{type}Page()` to `page_{type}()`
-    - Try out Bootsrap/Bootswatch themes
-    - Extra points: try a Sass variable
-  - Help each other make sure you're set up
-
-- Follow up
-  - Check in
-  - Introduce the College Scorecard dataset
-  - Bonus: [new `shinyapp` snippet](https://www.garrickadenbuie.com/blog/shiny-new-bslib-snippet/)
+- [Breakout activity: Are we all set up?](#your-turn)
+- [Follow up](#follow-up)
 
 
 ## 🧑‍💻 Your Turn {#your-turn}
@@ -55,3 +36,24 @@ Try out some [Bootswatch themes](https://bootswatch.com).
 For bonus points, try setting [a theme-related Sass variable](https://rstudio.github.io/bslib/articles/bs5-variables/index.html).
 
 **Use the app to learn about the variables in `school`.**
+
+## Follow up
+
+- Check in
+- Bonus: [new `shinyapp` snippet](https://www.garrickadenbuie.com/blog/shiny-new-bslib-snippet/)
+
+```
+snippet shinyapp
+    library(shiny)
+    library(bslib)
+
+    ui <- page_${1:sidebar}(
+      ${0}
+    )
+
+    server <- function(input, output, session) {
+
+    }
+
+    shinyApp(ui, server)
+```
