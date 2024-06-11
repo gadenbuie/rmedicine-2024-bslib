@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -130,8 +164,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
-  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a>
+  <ul class="collapse">
+  <li><a href="#using-posit-cloud" id="toc-using-posit-cloud" class="nav-link" data-scroll-target="#using-posit-cloud">Using Posit Cloud</a></li>
+  <li><a href="#using-your-own-computer" id="toc-using-your-own-computer" class="nav-link" data-scroll-target="#using-your-own-computer">Using Your Own Computer</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -177,15 +214,39 @@ document.addEventListener("DOMContentLoaded", setHue)
 </div>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Learn to build Shiny apps using modern user interfaces (UI) and layouts with bslib, the next generation of Shiny UI. We’ll cover stylish and convenient dashboard layouts and components as we showcase the ways in which bslib can replace shinydashboard. We’ll also learn about exciting new ways to deploy Shiny apps with shinylive as static sites that run entirely in the user’s browser and don’t require setting up or maintaining a Shiny server.</p>
-</section>
-<section id="schedule" class="level2">
-<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
+<p>Learn to build Shiny apps using modern user interfaces (UI) and layouts with bslib, the next generation of Shiny UI. We’ll cover stylish and convenient dashboard layouts and components as we showcase the ways in which bslib can replace shinydashboard.</p>
 </section>
 <section id="setup" class="level2">
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<div class="lead">
+<p>📘 <a href="https://pkg.garrickadenbuie.com/rmedicine-2024-bslib">Website</a> (you are here!)</p>
+<p>🧑‍💻 <a href="https://posit.cloud/spaces/522996/join?access_code=B1zT1aIAcKTzlSb1ejep9W4gC14a96a29Ie9wx5g">Join Posit Cloud Space</a></p>
+<p>📦 <a href="https://github.com/rmedicine-2024-bslib">Repository</a></p>
+</div>
+<section id="using-posit-cloud" class="level3">
+<h3 class="anchored" data-anchor-id="using-posit-cloud">Using Posit Cloud</h3>
+<p>I’ve prepared a Posit Cloud workspace for workshop participants with a project for you to use during our time together. The project contains all of the files and packages pre-installed and ready to go. All you need to do is log in and start coding!</p>
+<p>If you already have a Posit Cloud account, first <a href="https://posit.cloud/spaces/522996/join?access_code=B1zT1aIAcKTzlSb1ejep9W4gC14a96a29Ie9wx5g">join the rmedicine-2024-bslib space on Posit Cloud</a>. Otherwise <a href="https://cloud.posit.org/signup">sign up for a free account</a> and then join the space. You can create an account with your email or login with Google, GitHub or Clever.</p>
+<p>Once you’re part of the <a href="https://posit.cloud/spaces/522996/join?access_code=B1zT1aIAcKTzlSb1ejep9W4gC14a96a29Ie9wx5g">rmedicine-2024-bslib space</a>, select the <code>rmedicine-2024-bslib</code> assignment to create and launch a new project just for you.</p>
+<p><img src="assets/posit-cloud-project.png" class="shadow-lg img-fluid"></p>
+</section>
+<section id="using-your-own-computer" class="level3">
+<h3 class="anchored" data-anchor-id="using-your-own-computer">Using Your Own Computer</h3>
+<p>If you prefer to use your own computer, you can clone the repository and install the necessary packages. I used <a href="https://r-project.org">R 4.4</a> but any recent version of R (&gt;= 4.1) should work.</p>
+<p>You can use the <a href="https://usethis.r-lib.org">usethis</a> package to quickly clone the repository:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_from_github</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"gadenbuie/rmedicine-2024-bslib"</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Decide where to put the project here:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">destdir =</span> <span class="st">"~/Desktop/rmedicine-2024-bslib"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will download the repository and open the project in RStudio. Inside the project, use the <code>renv</code> package to install the necessary packages:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">restore</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For very speedy installation, I recommend telling renv to use <a href="https://pak.r-lib.org/">pak</a> to install packages:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">RENV_CONFIG_PAK_ENABLED =</span> <span class="st">"true"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">restore</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
