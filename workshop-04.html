@@ -42,6 +42,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<meta name="shinylive:serviceworker_dir" content=".">
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/load-shinylive-sw.js" type="module"></script>
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/run-python-blocks.js" type="module"></script>
+<link href="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/shinylive.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -213,12 +218,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#your-turn" id="toc-your-turn" class="nav-link active" data-scroll-target="#your-turn">🧑‍💻 Your Turn</a></li>
+  <li><a href="#recap-value-boxes" id="toc-recap-value-boxes" class="nav-link active" data-scroll-target="#recap-value-boxes">Recap: value boxes</a></li>
+  <li><a href="#column-layouts" id="toc-column-layouts" class="nav-link" data-scroll-target="#column-layouts">Column layouts</a></li>
+  <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">🧑‍💻 Your Turn</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 <script>document.querySelector('.navbar').dataset.bsTheme = 'light';</script>
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -245,39 +252,226 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<ul>
-<li><ol start="5" type="1">
-<li>Recap: value boxes</li>
-</ol>
+<section id="recap-value-boxes" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="recap-value-boxes">Recap: value boxes</h2>
 <ul>
 <li>show-and-tell</li>
 <li>sparklines <code>examples/app-sparkline.R</code></li>
-</ul></li>
-<li><ol start="10" type="1">
-<li><code>layout_columns()</code> vs <code>layout_column_wrap()</code></li>
-</ol>
+</ul>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+## file: app.R
+library(shiny)
+library(bslib)
+library(plotly)
+library(tidyverse)
+library(collegeScorecard)
+
+# Directly from bslib docs (Components &gt; Value Boxes &gt; Expandable Sparklines)
+# https://rstudio.github.io/bslib/articles/value-boxes/index.html#expandable-sparklines
+plotly_sparkline &lt;- function(data, x, y, ..., color = "white", formatter = identity) {
+  plot_ly(data) %&gt;%
+    add_lines(
+      x = x,
+      y = y,
+      text = as.formula(sprintf("~ formatter(%s)", as.character(y[[2]]))),
+      hoverinfo = "text",
+      color = I(color),
+      span = I(1),
+      fill = "tozeroy",
+      alpha = 0.2
+    ) %&gt;%
+    layout(
+      xaxis = list(visible = FALSE, showgrid = FALSE, title = ""),
+      yaxis = list(visible = FALSE, showgrid = FALSE, title = ""),
+      hovermode = "x",
+      margin = list(t = 0, r = 0, l = 0, b = 0),
+      font = list(color = color),
+      paper_bgcolor = "transparent",
+      plot_bgcolor = "transparent"
+    ) %&gt;%
+    config(displayModeBar = FALSE) %&gt;%
+    htmlwidgets::onRender(
+      "function(el) {
+        el.closest('.bslib-value-box')
+          .addEventListener('bslib.card', function(ev) {
+            Plotly.relayout(el, {'xaxis.visible': ev.detail.fullScreen});
+          })
+      }"
+    )
+}
+
+# Data --------------------------------------------------------------------
+school_1k &lt;-
+  scorecard |&gt;
+  slice_max(academic_year, by = id, n = 1) |&gt;
+  filter(n_undergrads &gt; 1000) |&gt;
+  semi_join(school, y = _, by = "id")
+
+# UI ----------------------------------------------------------------------
+ui &lt;- page_sidebar(
+  title = "Value Boxes with Sparklines",
+  sidebar = sidebar(
+    selectInput("name", "School Name", NULL),
+    actionButton("random_school", "Random School", fontawesome::fa_i("shuffle"))
+  ),
+  layout_columns(
+    fill = FALSE,
+    value_box(
+      title = "Undergrad Students",
+      value = textOutput("text_n_undergrads"),
+      showcase = plotlyOutput("sparkline_n_undergrads"),
+      showcase_layout = "bottom",
+      full_screen = TRUE
+    ),
+    value_box(
+      title = "Average Yearly Cost",
+      value = textOutput("text_cost_avg"),
+      theme = "primary",
+      showcase = plotlyOutput("sparkline_cost_avg"),
+      showcase_layout = "bottom",
+      full_screen = TRUE
+    ),
+    value_box(
+      title = "Completion Rate",
+      value = textOutput("text_rate_completion"),
+      theme = "bg-gradient-orange-red",
+      showcase = plotlyOutput("sparkline_rate_completion"),
+      showcase_layout = "bottom",
+      full_screen = TRUE
+    )
+  ),
+
+  # pretend this card is a plot
+  card(class = "text-bg-light", style = "min-height: 300px")
+)
+
+# Server ------------------------------------------------------------------
+server &lt;- function(input, output, session) {
+  observe({
+    updateSelectizeInput(session, "name", choices = school_1k$name, server = TRUE)
+  })
+
+  observeEvent(input$random_school, {
+    updateSelectizeInput(session, "name", choices = school_1k$name, selected = sample(school_1k$name, 1), server = TRUE)
+  })
+
+  r_scorecard &lt;- eventReactive(input$name, {
+    scorecard |&gt;
+      semi_join(school_1k |&gt; filter(name == input$name), by = "id") |&gt;
+      arrange(academic_year)
+  })
+
+  output$text_n_undergrads &lt;- renderText({
+    n_undergrads &lt;- r_scorecard()$n_undergrads |&gt; tail(1)
+    validate(need(n_undergrads, "No data"))
+    scales::number(n_undergrads, big.mark = ",")
+  })
+
+  output$sparkline_n_undergrads &lt;- renderPlotly({
+    plotly_sparkline(
+      r_scorecard(),
+      x = ~academic_year,
+      y = ~n_undergrads,
+      color = "black",
+      formatter = scales::label_number(big.mark = ",")
+    )
+  })
+
+  output$text_cost_avg &lt;- renderText({
+    cost_avg &lt;- r_scorecard()$cost_avg |&gt; tail(1)
+    validate(need(cost_avg, "No data"))
+    scales::dollar(cost_avg)
+  })
+
+  output$sparkline_cost_avg &lt;- renderPlotly({
+    plotly_sparkline(
+      r_scorecard(),
+      x = ~academic_year,
+      y = ~cost_avg,
+      formatter = scales::label_dollar(accuracy = 10)
+    )
+  })
+
+  output$text_rate_completion &lt;- renderText({
+    rate_completion &lt;- r_scorecard()$rate_completion |&gt; tail(1)
+    validate(need(rate_completion, "No data"))
+    scales::percent(rate_completion)
+  })
+
+  output$sparkline_rate_completion &lt;- renderPlotly({
+    plotly_sparkline(
+      r_scorecard(),
+      x = ~academic_year,
+      y = ~rate_completion,
+      formatter = scales::label_percent(accuracy = 0.1)
+    )
+  })
+}
+
+shinyApp(ui, server)
+</code></pre>
+</div>
+</section>
+<section id="column-layouts" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="column-layouts">Column layouts</h2>
 <ul>
-<li><code>examples/app-layout-columns.R</code></li>
-<li>live code: many cards in both layouts</li>
-<li>start with 3 items, move between two layout functions</li>
-<li>show <code>!!!</code></li>
 <li><code>layout_column_wrap()</code> equally sized things
 <ul>
 <li><code>widths</code></li>
 <li><code>heights_equal</code></li>
 </ul></li>
 <li><code>layout_columns() = row() + column()</code></li>
-</ul></li>
-<li><ol start="5" type="1">
-<li>Breakout activity</li>
-</ol>
-<ul>
-<li><code>exercises/04_app.R</code></li>
-<li>recreate a layout</li>
-<li>hint: <code>max_height</code></li>
-<li>one of each</li>
-</ul></li>
 </ul>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+## file: app.R
+library(shiny)
+library(bslib)
+library(glue)
+library(tidyverse)
+library(collegeScorecard)
+
+ui &lt;- page_fillable(
+  sliderInput("n", "Top N Schools", min = 1, max = 20, value = 9, ticks = FALSE),
+  uiOutput("layout_cards")
+)
+
+server &lt;- function(input, output, session) {
+  output$layout_cards &lt;- renderUI({
+    # layout cards here
+  })
+
+  top_n_schools &lt;- reactive({
+    scorecard |&gt;
+      filter(n_undergrads &gt; 1000) |&gt;
+      slice_max(academic_year, n = 1) |&gt;
+      slice_max(cost_avg, n = input$n) |&gt;
+      arrange(desc(cost_avg)) |&gt;
+      left_join(school, by = "id")
+  })
+
+  colors &lt;- c("blue", "indigo", "purple", "pink", "red", "orange", "yellow", "green", "teal", "cyan")
+
+  cards &lt;- reactive({
+    req(top_n_schools())
+    set.seed(42**3.8)
+
+    ## Create a value box for each of the top-N most costly schools
+    # value_box(
+    #   title = name,
+    #   value = scales::dollar(cost_avg),
+    #   theme = sample(colors, 1)
+    # )
+  })
+}
+
+shinyApp(ui, server)
+</code></pre>
+</div>
+</section>
 <section id="your-turn" class="level2">
 <h2 class="anchored" data-anchor-id="your-turn">🧑‍💻 Your Turn</h2>
 <div class="lead">

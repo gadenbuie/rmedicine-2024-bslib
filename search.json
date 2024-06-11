@@ -143,134 +143,14 @@
     ]
   },
   {
-    "objectID": "workshop-03-break.html",
-    "href": "workshop-03-break.html",
+    "objectID": "workshop-07-break.html",
+    "href": "workshop-07-break.html",
     "title": "☕ Break",
     "section": "",
     "text": "−\n    +\n \n 05:00",
     "crumbs": [
       "Workshop",
       "☕ Break"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Next Generation Shiny Apps with {bslib}",
-    "section": "",
-    "text": "Online workshop at R/Medicine 2024  Tuesday, June 11, 2024 11:00am to 2:00pm"
-  },
-  {
-    "objectID": "index.html#introduction",
-    "href": "index.html#introduction",
-    "title": "Next Generation Shiny Apps with {bslib}",
-    "section": "Introduction",
-    "text": "Introduction\nLearn to build Shiny apps using modern user interfaces (UI) and layouts with bslib, the next generation of Shiny UI. We’ll cover stylish and convenient dashboard layouts and components as we showcase the ways in which bslib can replace shinydashboard."
-  },
-  {
-    "objectID": "index.html#setup",
-    "href": "index.html#setup",
-    "title": "Next Generation Shiny Apps with {bslib}",
-    "section": "Setup",
-    "text": "Setup\n\n📘 Website (you are here!)\n🧑‍💻 Join Posit Cloud Space\n📦 Repository\n\n\nUsing Posit Cloud\nI’ve prepared a Posit Cloud workspace for workshop participants with a project for you to use during our time together. The project contains all of the files and packages pre-installed and ready to go. All you need to do is log in and start coding!\nIf you already have a Posit Cloud account, first join the rmedicine-2024-bslib space on Posit Cloud. Otherwise sign up for a free account and then join the space. You can create an account with your email or login with Google, GitHub or Clever.\nOnce you’re part of the rmedicine-2024-bslib space, select the rmedicine-2024-bslib assignment to create and launch a new project just for you.\n\n\n\nUsing Your Own Computer\nIf you prefer to use your own computer, you can clone the repository and install the necessary packages. I used R 4.4 but any recent version of R (&gt;= 4.1) should work.\nYou can use the usethis package to quickly clone the repository:\nusethis::create_from_github(\n  \"gadenbuie/rmedicine-2024-bslib\",\n  # Decide where to put the project here:\n  destdir = \"~/Desktop/rmedicine-2024-bslib\"\n)\nThis will download the repository and open the project in RStudio. Inside the project, use the renv package to install the necessary packages:\nrenv::restore()\nFor very speedy installation, I recommend telling renv to use pak to install packages:\nSys.setenv(RENV_CONFIG_PAK_ENABLED = \"true\")\nrenv::restore()"
-  },
-  {
-    "objectID": "workshop-11.html",
-    "href": "workshop-11.html",
-    "title": "Wrap up",
-    "section": "",
-    "text": "🙏 Thanks for attending! 🙋 Any questions?",
-    "crumbs": [
-      "Workshop",
-      "Wrap up"
-    ]
-  },
-  {
-    "objectID": "workshop-11.html#resources",
-    "href": "workshop-11.html#resources",
-    "title": "Wrap up",
-    "section": "Resources",
-    "text": "Resources\n\nbslib\nBoostrap docs\nmore to come…",
-    "crumbs": [
-      "Workshop",
-      "Wrap up"
-    ]
-  },
-  {
-    "objectID": "workshop-02.html",
-    "href": "workshop-02.html",
-    "title": "New layouts",
-    "section": "",
-    "text": "Introducing\n\n\npage_sidebar()\ncard()\n\nwith card parts\n\nlayout_columns()\nfull screen cards\n\n\nBreakout activity\n\n\nStarting with a basic shiny app with 2 inputs and 2-3 plots\n\n(1 input is more local)\n\nOrganize into a new layout\nBonus: layout_sidebar()\n\n\nValue Boxes\n\n\nQuick code intro\nShort on-your-own\n\nUse buid-a-box app to explore options\nCreate one target value box\nMake your own for another",
-    "crumbs": [
-      "Workshop",
-      "New layouts"
-    ]
-  },
-  {
-    "objectID": "workshop-02.html#your-turn-layout",
-    "href": "workshop-02.html#your-turn-layout",
-    "title": "New layouts",
-    "section": "🧑‍💻 Your Turn",
-    "text": "🧑‍💻 Your Turn\n\n exercises/02_app.R\n\nWe’re in the process of refactoring an older Shiny app to use new features from bslib. I’ve started refactoring exercises/02_app.R by pulling out the inputs so it’s easier to see the layout.\nYour task is to migrate the UI section of the app from shiny::fluidPage() and shiny::sidebarLayout() to use page and layout functions from {bslib}.",
-    "crumbs": [
-      "Workshop",
-      "New layouts"
-    ]
-  },
-  {
-    "objectID": "workshop-02.html#your-turn-value-box",
-    "href": "workshop-02.html#your-turn-value-box",
-    "title": "New layouts",
-    "section": "🧑‍💻 Your Turn",
-    "text": "🧑‍💻 Your Turn\n\n exercises/03_app.R\n\nThe app in exercises/03_app.R contains the start of a dashboard where the user can pick a specific school and see a quick summary of information about the school.\nI’ve set up all of the reactive server-side logic for you. Your job is to create three visually appealing value boxes to describe:\n\nThe number of undergraduate students at the school.\nThe average yearly cost of the school.\nThe rate of completion at the school.\n\n\n\n\n\n\n\nTip\n\n\n\nUse the Build-A-Box app from the bslib package to explore value box options and to design the three value boxes. The app is available online or locally by running\nshiny::runExample(\"build-a-box\", package = \"bslib\")",
-    "crumbs": [
-      "Workshop",
-      "New layouts"
-    ]
-  },
-  {
-    "objectID": "workshop-04.html",
-    "href": "workshop-04.html",
-    "title": "Advanced layouts",
-    "section": "",
-    "text": "Recap: value boxes\n\n\nshow-and-tell\nsparklines examples/app-sparkline.R\n\n\nlayout_columns() vs layout_column_wrap()\n\n\nexamples/app-layout-columns.R\nlive code: many cards in both layouts\nstart with 3 items, move between two layout functions\nshow !!!\nlayout_column_wrap() equally sized things\n\nwidths\nheights_equal\n\nlayout_columns() = row() + column()\n\n\nBreakout activity\n\n\nexercises/04_app.R\nrecreate a layout\nhint: max_height\none of each",
-    "crumbs": [
-      "Workshop",
-      "Advanced layouts"
-    ]
-  },
-  {
-    "objectID": "workshop-04.html#your-turn",
-    "href": "workshop-04.html#your-turn",
-    "title": "Advanced layouts",
-    "section": "🧑‍💻 Your Turn",
-    "text": "🧑‍💻 Your Turn\n\n exercises/04_app.R\n\nThe app in exercises/04_app.R includes three value boxes, one plot and one map, but they’re unorganized. Use one layout_columns() and one layout_column_wrap() to better lay out the dashboard.",
-    "crumbs": [
-      "Workshop",
-      "Advanced layouts"
-    ]
-  },
-  {
-    "objectID": "workshop-01.html",
-    "href": "workshop-01.html",
-    "title": "Welcome and Getting Started",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Workshop",
-      "Welcome and Getting Started"
-    ]
-  },
-  {
-    "objectID": "workshop-01.html#your-turn",
-    "href": "workshop-01.html#your-turn",
-    "title": "Welcome and Getting Started",
-    "section": "🧑‍💻 Your Turn",
-    "text": "🧑‍💻 Your Turn\n\n exercises/01_app.R\n\nAre we all set up? Open the app in exercises/01_app.R. Run the app to make sure it works. Can everyone in your breakout session run the app? Help each other make sure you’re set up.\nTake a Shiny app and make it bslib-ier Replace fluidPage() with page_fluid(). What other page types are available? Try out some Bootswatch themes. For bonus points, try setting a theme-related Sass variable.\nUse the app to learn about the variables in school.",
-    "crumbs": [
-      "Workshop",
-      "Welcome and Getting Started"
     ]
   },
   {
@@ -296,14 +176,200 @@
     ]
   },
   {
-    "objectID": "workshop-07-break.html",
-    "href": "workshop-07-break.html",
+    "objectID": "workshop-01.html",
+    "href": "workshop-01.html",
+    "title": "Welcome and Getting Started",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Welcome and Getting Started"
+    ]
+  },
+  {
+    "objectID": "workshop-01.html#outline",
+    "href": "workshop-01.html#outline",
+    "title": "Welcome and Getting Started",
+    "section": "Outline",
+    "text": "Outline\n\nWelcome to R/Medicine 2024!\nWhat is bslib?\nBreakout activity: Are we all set up?\nFollow up",
+    "crumbs": [
+      "Workshop",
+      "Welcome and Getting Started"
+    ]
+  },
+  {
+    "objectID": "workshop-01.html#your-turn",
+    "href": "workshop-01.html#your-turn",
+    "title": "Welcome and Getting Started",
+    "section": "🧑‍💻 Your Turn",
+    "text": "🧑‍💻 Your Turn\n\n exercises/01_app.R\n\nAre we all set up? Open the app in exercises/01_app.R. Run the app to make sure it works. Can everyone in your breakout session run the app? Help each other make sure you’re set up.\nTake a Shiny app and make it bslib-ier Replace fluidPage() with page_fluid(). What other page types are available? Try out some Bootswatch themes. For bonus points, try setting a theme-related Sass variable.\nUse the app to learn about the variables in school.",
+    "crumbs": [
+      "Workshop",
+      "Welcome and Getting Started"
+    ]
+  },
+  {
+    "objectID": "workshop-01.html#follow-up",
+    "href": "workshop-01.html#follow-up",
+    "title": "Welcome and Getting Started",
+    "section": "Follow up",
+    "text": "Follow up\n\nCheck in\nBonus: new shinyapp snippet\n\nsnippet shinyapp\n    library(shiny)\n    library(bslib)\n\n    ui &lt;- page_${1:sidebar}(\n      ${0}\n    )\n\n    server &lt;- function(input, output, session) {\n\n    }\n\n    shinyApp(ui, server)",
+    "crumbs": [
+      "Workshop",
+      "Welcome and Getting Started"
+    ]
+  },
+  {
+    "objectID": "workshop-02.html",
+    "href": "workshop-02.html",
+    "title": "New layouts",
+    "section": "",
+    "text": "page_sidebar()\ncard()\n\nwith card parts\n\nlayout_columns()\nfull screen cards\n\n\n#| standalone: true\n#| components: [editor, viewer]\n## file: app.R\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_fluid(\n\n)\n\nserver &lt;- function(input, output, session) {\n\n}\n\nshinyApp(ui, server)",
+    "crumbs": [
+      "Workshop",
+      "New layouts"
+    ]
+  },
+  {
+    "objectID": "workshop-02.html#bslib-layouts",
+    "href": "workshop-02.html#bslib-layouts",
+    "title": "New layouts",
+    "section": "",
+    "text": "page_sidebar()\ncard()\n\nwith card parts\n\nlayout_columns()\nfull screen cards\n\n\n#| standalone: true\n#| components: [editor, viewer]\n## file: app.R\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_fluid(\n\n)\n\nserver &lt;- function(input, output, session) {\n\n}\n\nshinyApp(ui, server)",
+    "crumbs": [
+      "Workshop",
+      "New layouts"
+    ]
+  },
+  {
+    "objectID": "workshop-02.html#your-turn-layout",
+    "href": "workshop-02.html#your-turn-layout",
+    "title": "New layouts",
+    "section": "🧑‍💻 Your Turn",
+    "text": "🧑‍💻 Your Turn\n\n exercises/02_app.R\n\nWe’re in the process of refactoring an older Shiny app to use new features from bslib. I’ve started refactoring exercises/02_app.R by pulling out the inputs so it’s easier to see the layout.\nYour task is to migrate the UI section of the app from shiny::fluidPage() and shiny::sidebarLayout() to use page and layout functions from {bslib}.",
+    "crumbs": [
+      "Workshop",
+      "New layouts"
+    ]
+  },
+  {
+    "objectID": "workshop-02.html#value-boxes",
+    "href": "workshop-02.html#value-boxes",
+    "title": "New layouts",
+    "section": "Value Boxes",
+    "text": "Value Boxes\n\n#| standalone: true\n#| components: [editor, viewer, terminal]\n## file: app.R\nlibrary(shiny)\nlibrary(bslib)\nlibrary(collegeScorecard)\n\nui &lt;- page_fluid(\n\n)\n\nserver &lt;- function(input, output, session) {\n\n}\n\nshinyApp(ui, server)",
+    "crumbs": [
+      "Workshop",
+      "New layouts"
+    ]
+  },
+  {
+    "objectID": "workshop-02.html#your-turn-value-box",
+    "href": "workshop-02.html#your-turn-value-box",
+    "title": "New layouts",
+    "section": "🧑‍💻 Your Turn",
+    "text": "🧑‍💻 Your Turn\n\n exercises/03_app.R\n\nThe app in exercises/03_app.R contains the start of a dashboard where the user can pick a specific school and see a quick summary of information about the school.\nI’ve set up all of the reactive server-side logic for you. Your job is to create three visually appealing value boxes to describe:\n\nThe number of undergraduate students at the school.\nThe average yearly cost of the school.\nThe rate of completion at the school.\n\n\n\n\n\n\n\nTip\n\n\n\nUse the Build-A-Box app from the bslib package to explore value box options and to design the three value boxes. The app is available online or locally by running\nshiny::runExample(\"build-a-box\", package = \"bslib\")",
+    "crumbs": [
+      "Workshop",
+      "New layouts"
+    ]
+  },
+  {
+    "objectID": "workshop-11.html",
+    "href": "workshop-11.html",
+    "title": "Wrap up",
+    "section": "",
+    "text": "🙏 Thanks for attending! 🙋 Any questions?",
+    "crumbs": [
+      "Workshop",
+      "Wrap up"
+    ]
+  },
+  {
+    "objectID": "workshop-11.html#resources",
+    "href": "workshop-11.html#resources",
+    "title": "Wrap up",
+    "section": "Resources",
+    "text": "Resources\n\nbslib\nBoostrap docs\nmore to come…",
+    "crumbs": [
+      "Workshop",
+      "Wrap up"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Next Generation Shiny Apps with {bslib}",
+    "section": "",
+    "text": "Online workshop at R/Medicine 2024  Tuesday, June 11, 2024 11:00am to 2:00pm"
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Next Generation Shiny Apps with {bslib}",
+    "section": "Introduction",
+    "text": "Introduction\nLearn to build Shiny apps using modern user interfaces (UI) and layouts with bslib, the next generation of Shiny UI. We’ll cover stylish and convenient dashboard layouts and components as we showcase the ways in which bslib can replace shinydashboard."
+  },
+  {
+    "objectID": "index.html#setup",
+    "href": "index.html#setup",
+    "title": "Next Generation Shiny Apps with {bslib}",
+    "section": "Setup",
+    "text": "Setup\n\n📘 Website (you are here!)\n🧑‍💻 Join Posit Cloud Space\n📦 Repository\n\n\nUsing Posit Cloud\nI’ve prepared a Posit Cloud workspace for workshop participants with a project for you to use during our time together. The project contains all of the files and packages pre-installed and ready to go. All you need to do is log in and start coding!\nIf you already have a Posit Cloud account, first join the rmedicine-2024-bslib space on Posit Cloud. Otherwise sign up for a free account and then join the space. You can create an account with your email or login with Google, GitHub or Clever.\nOnce you’re part of the rmedicine-2024-bslib space, select the rmedicine-2024-bslib assignment to create and launch a new project just for you.\n\n\n\nUsing Your Own Computer\nIf you prefer to use your own computer, you can clone the repository and install the necessary packages. I used R 4.4 but any recent version of R (&gt;= 4.1) should work.\nYou can use the usethis package to quickly clone the repository:\nusethis::create_from_github(\n  \"gadenbuie/rmedicine-2024-bslib\",\n  # Decide where to put the project here:\n  destdir = \"~/Desktop/rmedicine-2024-bslib\"\n)\nThis will download the repository and open the project in RStudio. Inside the project, use the renv package to install the necessary packages:\nrenv::restore()\nFor very speedy installation, I recommend telling renv to use pak to install packages:\nSys.setenv(RENV_CONFIG_PAK_ENABLED = \"true\")\nrenv::restore()"
+  },
+  {
+    "objectID": "workshop-03-break.html",
+    "href": "workshop-03-break.html",
     "title": "☕ Break",
     "section": "",
     "text": "−\n    +\n \n 05:00",
     "crumbs": [
       "Workshop",
       "☕ Break"
+    ]
+  },
+  {
+    "objectID": "workshop-04.html",
+    "href": "workshop-04.html",
+    "title": "Advanced layouts",
+    "section": "",
+    "text": "show-and-tell\nsparklines examples/app-sparkline.R\n\n\n#| standalone: true\n#| components: [editor, viewer]\n## file: app.R\nlibrary(shiny)\nlibrary(bslib)\nlibrary(plotly)\nlibrary(tidyverse)\nlibrary(collegeScorecard)\n\n# Directly from bslib docs (Components &gt; Value Boxes &gt; Expandable Sparklines)\n# https://rstudio.github.io/bslib/articles/value-boxes/index.html#expandable-sparklines\nplotly_sparkline &lt;- function(data, x, y, ..., color = \"white\", formatter = identity) {\n  plot_ly(data) %&gt;%\n    add_lines(\n      x = x,\n      y = y,\n      text = as.formula(sprintf(\"~ formatter(%s)\", as.character(y[[2]]))),\n      hoverinfo = \"text\",\n      color = I(color),\n      span = I(1),\n      fill = \"tozeroy\",\n      alpha = 0.2\n    ) %&gt;%\n    layout(\n      xaxis = list(visible = FALSE, showgrid = FALSE, title = \"\"),\n      yaxis = list(visible = FALSE, showgrid = FALSE, title = \"\"),\n      hovermode = \"x\",\n      margin = list(t = 0, r = 0, l = 0, b = 0),\n      font = list(color = color),\n      paper_bgcolor = \"transparent\",\n      plot_bgcolor = \"transparent\"\n    ) %&gt;%\n    config(displayModeBar = FALSE) %&gt;%\n    htmlwidgets::onRender(\n      \"function(el) {\n        el.closest('.bslib-value-box')\n          .addEventListener('bslib.card', function(ev) {\n            Plotly.relayout(el, {'xaxis.visible': ev.detail.fullScreen});\n          })\n      }\"\n    )\n}\n\n# Data --------------------------------------------------------------------\nschool_1k &lt;-\n  scorecard |&gt;\n  slice_max(academic_year, by = id, n = 1) |&gt;\n  filter(n_undergrads &gt; 1000) |&gt;\n  semi_join(school, y = _, by = \"id\")\n\n# UI ----------------------------------------------------------------------\nui &lt;- page_sidebar(\n  title = \"Value Boxes with Sparklines\",\n  sidebar = sidebar(\n    selectInput(\"name\", \"School Name\", NULL),\n    actionButton(\"random_school\", \"Random School\", fontawesome::fa_i(\"shuffle\"))\n  ),\n  layout_columns(\n    fill = FALSE,\n    value_box(\n      title = \"Undergrad Students\",\n      value = textOutput(\"text_n_undergrads\"),\n      showcase = plotlyOutput(\"sparkline_n_undergrads\"),\n      showcase_layout = \"bottom\",\n      full_screen = TRUE\n    ),\n    value_box(\n      title = \"Average Yearly Cost\",\n      value = textOutput(\"text_cost_avg\"),\n      theme = \"primary\",\n      showcase = plotlyOutput(\"sparkline_cost_avg\"),\n      showcase_layout = \"bottom\",\n      full_screen = TRUE\n    ),\n    value_box(\n      title = \"Completion Rate\",\n      value = textOutput(\"text_rate_completion\"),\n      theme = \"bg-gradient-orange-red\",\n      showcase = plotlyOutput(\"sparkline_rate_completion\"),\n      showcase_layout = \"bottom\",\n      full_screen = TRUE\n    )\n  ),\n\n  # pretend this card is a plot\n  card(class = \"text-bg-light\", style = \"min-height: 300px\")\n)\n\n# Server ------------------------------------------------------------------\nserver &lt;- function(input, output, session) {\n  observe({\n    updateSelectizeInput(session, \"name\", choices = school_1k$name, server = TRUE)\n  })\n\n  observeEvent(input$random_school, {\n    updateSelectizeInput(session, \"name\", choices = school_1k$name, selected = sample(school_1k$name, 1), server = TRUE)\n  })\n\n  r_scorecard &lt;- eventReactive(input$name, {\n    scorecard |&gt;\n      semi_join(school_1k |&gt; filter(name == input$name), by = \"id\") |&gt;\n      arrange(academic_year)\n  })\n\n  output$text_n_undergrads &lt;- renderText({\n    n_undergrads &lt;- r_scorecard()$n_undergrads |&gt; tail(1)\n    validate(need(n_undergrads, \"No data\"))\n    scales::number(n_undergrads, big.mark = \",\")\n  })\n\n  output$sparkline_n_undergrads &lt;- renderPlotly({\n    plotly_sparkline(\n      r_scorecard(),\n      x = ~academic_year,\n      y = ~n_undergrads,\n      color = \"black\",\n      formatter = scales::label_number(big.mark = \",\")\n    )\n  })\n\n  output$text_cost_avg &lt;- renderText({\n    cost_avg &lt;- r_scorecard()$cost_avg |&gt; tail(1)\n    validate(need(cost_avg, \"No data\"))\n    scales::dollar(cost_avg)\n  })\n\n  output$sparkline_cost_avg &lt;- renderPlotly({\n    plotly_sparkline(\n      r_scorecard(),\n      x = ~academic_year,\n      y = ~cost_avg,\n      formatter = scales::label_dollar(accuracy = 10)\n    )\n  })\n\n  output$text_rate_completion &lt;- renderText({\n    rate_completion &lt;- r_scorecard()$rate_completion |&gt; tail(1)\n    validate(need(rate_completion, \"No data\"))\n    scales::percent(rate_completion)\n  })\n\n  output$sparkline_rate_completion &lt;- renderPlotly({\n    plotly_sparkline(\n      r_scorecard(),\n      x = ~academic_year,\n      y = ~rate_completion,\n      formatter = scales::label_percent(accuracy = 0.1)\n    )\n  })\n}\n\nshinyApp(ui, server)",
+    "crumbs": [
+      "Workshop",
+      "Advanced layouts"
+    ]
+  },
+  {
+    "objectID": "workshop-04.html#recap-value-boxes",
+    "href": "workshop-04.html#recap-value-boxes",
+    "title": "Advanced layouts",
+    "section": "",
+    "text": "show-and-tell\nsparklines examples/app-sparkline.R\n\n\n#| standalone: true\n#| components: [editor, viewer]\n## file: app.R\nlibrary(shiny)\nlibrary(bslib)\nlibrary(plotly)\nlibrary(tidyverse)\nlibrary(collegeScorecard)\n\n# Directly from bslib docs (Components &gt; Value Boxes &gt; Expandable Sparklines)\n# https://rstudio.github.io/bslib/articles/value-boxes/index.html#expandable-sparklines\nplotly_sparkline &lt;- function(data, x, y, ..., color = \"white\", formatter = identity) {\n  plot_ly(data) %&gt;%\n    add_lines(\n      x = x,\n      y = y,\n      text = as.formula(sprintf(\"~ formatter(%s)\", as.character(y[[2]]))),\n      hoverinfo = \"text\",\n      color = I(color),\n      span = I(1),\n      fill = \"tozeroy\",\n      alpha = 0.2\n    ) %&gt;%\n    layout(\n      xaxis = list(visible = FALSE, showgrid = FALSE, title = \"\"),\n      yaxis = list(visible = FALSE, showgrid = FALSE, title = \"\"),\n      hovermode = \"x\",\n      margin = list(t = 0, r = 0, l = 0, b = 0),\n      font = list(color = color),\n      paper_bgcolor = \"transparent\",\n      plot_bgcolor = \"transparent\"\n    ) %&gt;%\n    config(displayModeBar = FALSE) %&gt;%\n    htmlwidgets::onRender(\n      \"function(el) {\n        el.closest('.bslib-value-box')\n          .addEventListener('bslib.card', function(ev) {\n            Plotly.relayout(el, {'xaxis.visible': ev.detail.fullScreen});\n          })\n      }\"\n    )\n}\n\n# Data --------------------------------------------------------------------\nschool_1k &lt;-\n  scorecard |&gt;\n  slice_max(academic_year, by = id, n = 1) |&gt;\n  filter(n_undergrads &gt; 1000) |&gt;\n  semi_join(school, y = _, by = \"id\")\n\n# UI ----------------------------------------------------------------------\nui &lt;- page_sidebar(\n  title = \"Value Boxes with Sparklines\",\n  sidebar = sidebar(\n    selectInput(\"name\", \"School Name\", NULL),\n    actionButton(\"random_school\", \"Random School\", fontawesome::fa_i(\"shuffle\"))\n  ),\n  layout_columns(\n    fill = FALSE,\n    value_box(\n      title = \"Undergrad Students\",\n      value = textOutput(\"text_n_undergrads\"),\n      showcase = plotlyOutput(\"sparkline_n_undergrads\"),\n      showcase_layout = \"bottom\",\n      full_screen = TRUE\n    ),\n    value_box(\n      title = \"Average Yearly Cost\",\n      value = textOutput(\"text_cost_avg\"),\n      theme = \"primary\",\n      showcase = plotlyOutput(\"sparkline_cost_avg\"),\n      showcase_layout = \"bottom\",\n      full_screen = TRUE\n    ),\n    value_box(\n      title = \"Completion Rate\",\n      value = textOutput(\"text_rate_completion\"),\n      theme = \"bg-gradient-orange-red\",\n      showcase = plotlyOutput(\"sparkline_rate_completion\"),\n      showcase_layout = \"bottom\",\n      full_screen = TRUE\n    )\n  ),\n\n  # pretend this card is a plot\n  card(class = \"text-bg-light\", style = \"min-height: 300px\")\n)\n\n# Server ------------------------------------------------------------------\nserver &lt;- function(input, output, session) {\n  observe({\n    updateSelectizeInput(session, \"name\", choices = school_1k$name, server = TRUE)\n  })\n\n  observeEvent(input$random_school, {\n    updateSelectizeInput(session, \"name\", choices = school_1k$name, selected = sample(school_1k$name, 1), server = TRUE)\n  })\n\n  r_scorecard &lt;- eventReactive(input$name, {\n    scorecard |&gt;\n      semi_join(school_1k |&gt; filter(name == input$name), by = \"id\") |&gt;\n      arrange(academic_year)\n  })\n\n  output$text_n_undergrads &lt;- renderText({\n    n_undergrads &lt;- r_scorecard()$n_undergrads |&gt; tail(1)\n    validate(need(n_undergrads, \"No data\"))\n    scales::number(n_undergrads, big.mark = \",\")\n  })\n\n  output$sparkline_n_undergrads &lt;- renderPlotly({\n    plotly_sparkline(\n      r_scorecard(),\n      x = ~academic_year,\n      y = ~n_undergrads,\n      color = \"black\",\n      formatter = scales::label_number(big.mark = \",\")\n    )\n  })\n\n  output$text_cost_avg &lt;- renderText({\n    cost_avg &lt;- r_scorecard()$cost_avg |&gt; tail(1)\n    validate(need(cost_avg, \"No data\"))\n    scales::dollar(cost_avg)\n  })\n\n  output$sparkline_cost_avg &lt;- renderPlotly({\n    plotly_sparkline(\n      r_scorecard(),\n      x = ~academic_year,\n      y = ~cost_avg,\n      formatter = scales::label_dollar(accuracy = 10)\n    )\n  })\n\n  output$text_rate_completion &lt;- renderText({\n    rate_completion &lt;- r_scorecard()$rate_completion |&gt; tail(1)\n    validate(need(rate_completion, \"No data\"))\n    scales::percent(rate_completion)\n  })\n\n  output$sparkline_rate_completion &lt;- renderPlotly({\n    plotly_sparkline(\n      r_scorecard(),\n      x = ~academic_year,\n      y = ~rate_completion,\n      formatter = scales::label_percent(accuracy = 0.1)\n    )\n  })\n}\n\nshinyApp(ui, server)",
+    "crumbs": [
+      "Workshop",
+      "Advanced layouts"
+    ]
+  },
+  {
+    "objectID": "workshop-04.html#column-layouts",
+    "href": "workshop-04.html#column-layouts",
+    "title": "Advanced layouts",
+    "section": "Column layouts",
+    "text": "Column layouts\n\nlayout_column_wrap() equally sized things\n\nwidths\nheights_equal\n\nlayout_columns() = row() + column()\n\n\n#| standalone: true\n#| components: [editor, viewer]\n## file: app.R\nlibrary(shiny)\nlibrary(bslib)\nlibrary(glue)\nlibrary(tidyverse)\nlibrary(collegeScorecard)\n\nui &lt;- page_fillable(\n  sliderInput(\"n\", \"Top N Schools\", min = 1, max = 20, value = 9, ticks = FALSE),\n  uiOutput(\"layout_cards\")\n)\n\nserver &lt;- function(input, output, session) {\n  output$layout_cards &lt;- renderUI({\n    # layout cards here\n  })\n\n  top_n_schools &lt;- reactive({\n    scorecard |&gt;\n      filter(n_undergrads &gt; 1000) |&gt;\n      slice_max(academic_year, n = 1) |&gt;\n      slice_max(cost_avg, n = input$n) |&gt;\n      arrange(desc(cost_avg)) |&gt;\n      left_join(school, by = \"id\")\n  })\n\n  colors &lt;- c(\"blue\", \"indigo\", \"purple\", \"pink\", \"red\", \"orange\", \"yellow\", \"green\", \"teal\", \"cyan\")\n\n  cards &lt;- reactive({\n    req(top_n_schools())\n    set.seed(42**3.8)\n\n    ## Create a value box for each of the top-N most costly schools\n    # value_box(\n    #   title = name,\n    #   value = scales::dollar(cost_avg),\n    #   theme = sample(colors, 1)\n    # )\n  })\n}\n\nshinyApp(ui, server)",
+    "crumbs": [
+      "Workshop",
+      "Advanced layouts"
+    ]
+  },
+  {
+    "objectID": "workshop-04.html#your-turn",
+    "href": "workshop-04.html#your-turn",
+    "title": "Advanced layouts",
+    "section": "🧑‍💻 Your Turn",
+    "text": "🧑‍💻 Your Turn\n\n exercises/04_app.R\n\nThe app in exercises/04_app.R includes three value boxes, one plot and one map, but they’re unorganized. Use one layout_columns() and one layout_column_wrap() to better lay out the dashboard.",
+    "crumbs": [
+      "Workshop",
+      "Advanced layouts"
     ]
   },
   {

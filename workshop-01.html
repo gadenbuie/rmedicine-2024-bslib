@@ -221,7 +221,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#your-turn" id="toc-your-turn" class="nav-link active" data-scroll-target="#your-turn">🧑‍💻 Your Turn</a></li>
+  <li><a href="#outline" id="toc-outline" class="nav-link active" data-scroll-target="#outline">Outline</a></li>
+  <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">🧑‍💻 Your Turn</a></li>
+  <li><a href="#follow-up" id="toc-follow-up" class="nav-link" data-scroll-target="#follow-up">Follow up</a></li>
   </ul>
 </nav>
     </div>
@@ -258,41 +260,15 @@ ul.task-list li input[type="checkbox"] {
       <iframe class="slide-deck" src="slides/slides-01.html" height="475px"></iframe>
     </div>
   
+<section id="outline" class="level2">
+<h2 class="anchored" data-anchor-id="outline">Outline</h2>
 <ul>
-<li>Welcome to R/Medicine 2024!
-<ul>
-<li>Who am I</li>
-<li>Where to find things</li>
-<li>How to ask questions</li>
-<li>How we’ll do this thing
-<ul>
-<li>A bit of teaching</li>
-<li>with break-out pairing sessions</li>
-</ul></li>
-</ul></li>
-<li>What is bslib?
-<ul>
-<li>Started as a way to style your Shiny apps</li>
-<li>And bringing Bootstrap 5 to Shiny</li>
-<li>Now a whole lot more</li>
-</ul></li>
-<li>Breakout activity: Are we all set up?
-<ul>
-<li>Take a Shiny app and make it bslib-ier
-<ul>
-<li>From <code>{type}Page()</code> to <code>page_{type}()</code></li>
-<li>Try out Bootsrap/Bootswatch themes</li>
-<li>Extra points: try a Sass variable</li>
-</ul></li>
-<li>Help each other make sure you’re set up</li>
-</ul></li>
-<li>Follow up
-<ul>
-<li>Check in</li>
-<li>Introduce the College Scorecard dataset</li>
-<li>Bonus: <a href="https://www.garrickadenbuie.com/blog/shiny-new-bslib-snippet/">new <code>shinyapp</code> snippet</a></li>
-</ul></li>
+<li>Welcome to R/Medicine 2024!</li>
+<li>What is bslib?</li>
+<li><a href="#your-turn">Breakout activity: Are we all set up?</a></li>
+<li><a href="#follow-up">Follow up</a></li>
 </ul>
+</section>
 <section id="your-turn" class="level2">
 <h2 class="anchored" data-anchor-id="your-turn">🧑‍💻 Your Turn</h2>
 <div class="lead">
@@ -301,6 +277,26 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Are we all set up?</strong> Open the app in <code>exercises/01_app.R</code>. Run the app to make sure it works. Can everyone in your breakout session run the app? Help each other make sure you’re set up.</p>
 <p><strong>Take a Shiny app and make it bslib-ier</strong> Replace <code>fluidPage()</code> with <code>page_fluid()</code>. What other page types are available? Try out some <a href="https://bootswatch.com">Bootswatch themes</a>. For bonus points, try setting <a href="https://rstudio.github.io/bslib/articles/bs5-variables/index.html">a theme-related Sass variable</a>.</p>
 <p><strong>Use the app to learn about the variables in <code>school</code>.</strong></p>
+</section>
+<section id="follow-up" class="level2">
+<h2 class="anchored" data-anchor-id="follow-up">Follow up</h2>
+<ul>
+<li>Check in</li>
+<li>Bonus: <a href="https://www.garrickadenbuie.com/blog/shiny-new-bslib-snippet/">new <code>shinyapp</code> snippet</a></li>
+</ul>
+<pre><code>snippet shinyapp
+    library(shiny)
+    library(bslib)
+
+    ui &lt;- page_${1:sidebar}(
+      ${0}
+    )
+
+    server &lt;- function(input, output, session) {
+
+    }
+
+    shinyApp(ui, server)</code></pre>
 
 
 </section>

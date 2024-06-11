@@ -76,6 +76,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<meta name="shinylive:serviceworker_dir" content=".">
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/load-shinylive-sw.js" type="module"></script>
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/run-python-blocks.js" type="module"></script>
+<link href="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/shinylive.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -247,13 +252,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#your-turn-layout" id="toc-your-turn-layout" class="nav-link active" data-scroll-target="#your-turn-layout">🧑‍💻 Your Turn</a></li>
+  <li><a href="#bslib-layouts" id="toc-bslib-layouts" class="nav-link active" data-scroll-target="#bslib-layouts">bslib layouts</a></li>
+  <li><a href="#your-turn-layout" id="toc-your-turn-layout" class="nav-link" data-scroll-target="#your-turn-layout">🧑‍💻 Your Turn</a></li>
+  <li><a href="#value-boxes" id="toc-value-boxes" class="nav-link" data-scroll-target="#value-boxes">Value Boxes</a></li>
   <li><a href="#your-turn-value-box" id="toc-your-turn-value-box" class="nav-link" data-scroll-target="#your-turn-value-box">🧑‍💻 Your Turn</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 <script>document.querySelector('.navbar').dataset.bsTheme = 'light';</script>
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -280,10 +287,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<ul>
-<li><ol start="10" type="1">
-<li>Introducing</li>
-</ol>
+<section id="bslib-layouts" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="bslib-layouts">bslib layouts</h2>
 <ul>
 <li><code>page_sidebar()</code></li>
 <li><code>card()</code>
@@ -292,31 +297,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 <li><code>layout_columns()</code></li>
 <li>full screen cards</li>
-</ul></li>
-<li><ol start="10" type="1">
-<li>Breakout activity</li>
-</ol>
-<ul>
-<li>Starting with a basic shiny app with 2 inputs and 2-3 plots
-<ul>
-<li>(1 input is more local)</li>
-</ul></li>
-<li>Organize into a new layout</li>
-<li>Bonus: <code>layout_sidebar()</code></li>
-</ul></li>
-<li><ol start="10" type="1">
-<li>Value Boxes</li>
-</ol>
-<ul>
-<li>Quick code intro</li>
-<li>Short on-your-own
-<ul>
-<li>Use buid-a-box app to explore options</li>
-<li>Create one target value box</li>
-<li>Make your own for another</li>
-</ul></li>
-</ul></li>
 </ul>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+## file: app.R
+library(shiny)
+library(bslib)
+
+ui &lt;- page_fluid(
+
+)
+
+server &lt;- function(input, output, session) {
+
+}
+
+shinyApp(ui, server)</code></pre>
+</div>
+</section>
 <section id="your-turn-layout" class="level2">
 <h2 class="anchored" data-anchor-id="your-turn-layout">🧑‍💻 Your Turn</h2>
 <div class="lead">
@@ -324,6 +323,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>We’re in the process of refactoring an older Shiny app to use new features from bslib. I’ve started refactoring <code>exercises/02_app.R</code> by pulling out the inputs so it’s easier to see the layout.</p>
 <p>Your task is to migrate the UI section of the app from <code>shiny::fluidPage()</code> and <code>shiny::sidebarLayout()</code> to use page and layout functions from <code>{bslib}</code>.</p>
+</section>
+<section id="value-boxes" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="value-boxes">Value Boxes</h2>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer, terminal]
+## file: app.R
+library(shiny)
+library(bslib)
+library(collegeScorecard)
+
+ui &lt;- page_fluid(
+
+)
+
+server &lt;- function(input, output, session) {
+
+}
+
+shinyApp(ui, server)</code></pre>
+</div>
 </section>
 <section id="your-turn-value-box" class="level2">
 <h2 class="anchored" data-anchor-id="your-turn-value-box">🧑‍💻 Your Turn</h2>
@@ -348,7 +368,7 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <p>Use the Build-A-Box app from the bslib package to explore value box options and to design the three value boxes. The <a href="https://bslib.shinyapps.io/build-a-box/">app is available online</a> or locally by running</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>shiny<span class="sc">::</span><span class="fu">runExample</span>(<span class="st">"build-a-box"</span>, <span class="at">package =</span> <span class="st">"bslib"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>shiny<span class="sc">::</span><span class="fu">runExample</span>(<span class="st">"build-a-box"</span>, <span class="at">package =</span> <span class="st">"bslib"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 
