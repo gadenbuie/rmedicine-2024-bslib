@@ -4,6 +4,48 @@ description: People use your apps at night, too.
 duration: 10min
 ---
 
+## Introduction to dark mode
+
+```{r}
+bslib::input_dark_mode()
+```
+
+You can add `input_dark_mode()` anywhere in the app.
+By default it uses the system profile, or you can explicitly choose the `mode`.
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+library(shiny)
+library(bslib)
+
+ui <- page_navbar(
+  nav_spacer(),
+  nav_item(input_dark_mode()), #<<
+  title = "Dark mode switch in navbar"
+)
+
+server <- function(input, output) {
+
+}
+
+shinyApp(ui = ui, server = server)
+```
+:::
+
+## Dark mode in action
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+## file: app.R
+{{< include "../examples/app-input-dark-mode.R" >}}
+```
+:::
+
+
 - `input_dark_mode()`
 - Styling for dark mode
     - what are css variables?
