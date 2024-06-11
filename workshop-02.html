@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -201,13 +235,26 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Dark mode</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wrap up</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#your-turn-layout" id="toc-your-turn-layout" class="nav-link active" data-scroll-target="#your-turn-layout">🧑‍💻 Your Turn</a></li>
+  <li><a href="#your-turn-value-box" id="toc-your-turn-value-box" class="nav-link" data-scroll-target="#your-turn-value-box">🧑‍💻 Your Turn</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -274,8 +321,43 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul></li>
 </ul>
+<section id="your-turn-layout" class="level2">
+<h2 class="anchored" data-anchor-id="your-turn-layout">🧑‍💻 Your Turn</h2>
+<div class="lead">
+<p><i class="bi bi-folder-symlink-fill"></i> <code>exercises/02_app.R</code></p>
+</div>
+<p>We’re in the process of refactoring an older Shiny app to use new features from bslib. I’ve started refactoring <code>exercises/02_app.R</code> by pulling out the inputs so it’s easier to see the layout.</p>
+<p>Your task is to migrate the UI section of the app from <code>shiny::fluidPage()</code> and <code>shiny::sidebarLayout()</code> to use page and layout functions from <code>{bslib}</code>.</p>
+</section>
+<section id="your-turn-value-box" class="level2">
+<h2 class="anchored" data-anchor-id="your-turn-value-box">🧑‍💻 Your Turn</h2>
+<div class="lead">
+<p><i class="bi bi-folder-symlink-fill"></i> <code>exercises/03_app.R</code></p>
+</div>
+<p>The app in <code>exercises/03_app.R</code> contains the start of a dashboard where the user can pick a specific school and see a quick summary of information about the school.</p>
+<p>I’ve set up all of the reactive server-side logic for you. Your job is to create three visually appealing value boxes to describe:</p>
+<ol type="1">
+<li>The number of undergraduate students at the school.</li>
+<li>The average yearly cost of the school.</li>
+<li>The rate of completion at the school.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use the Build-A-Box app from the bslib package to explore value box options and to design the three value boxes. The <a href="https://bslib.shinyapps.io/build-a-box/">app is available online</a> or locally by running</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>shiny<span class="sc">::</span><span class="fu">runExample</span>(<span class="st">"build-a-box"</span>, <span class="at">package =</span> <span class="st">"bslib"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
