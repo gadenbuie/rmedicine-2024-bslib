@@ -12,6 +12,9 @@ website:
   description: "A tutorial on how to create modern Shiny apps with {bslib} and {shiny}"
   page-footer: |
     <a href="https://rconsortium.github.io/RMedicine_website/">R/Medicine 2024</a>
+  repo-url: https://github.com/gadenbuie/rmedicine-2024-bslib
+  repo-subdir: website
+  repo-actions: [edit, issue]
   navbar:
     title: "Next-Gen Shiny Apps"
     foreground: black
@@ -21,6 +24,9 @@ website:
         text: Home
       - href: workshop.qmd
         text: Workshop
+    tools:
+      - icon: github
+        href: https://github.com/gadenbuie/rmedicine-2024-bslib
   page-navigation: true
   sidebar:
     - id: workshop
@@ -30,16 +36,16 @@ website:
       foreground: dark
       contents:
         - workshop.qmd
-        - text: '<div class="sidebar-divider font-monospace">Hour 1</div>'
+        - text: '<div class="sidebar-divider font-monospace">Part 1</div>'
         - workshop-01.qmd
         - workshop-02.qmd
         - workshop-03-break.qmd
-        - text: '<div class="sidebar-divider font-monospace">Hour 2</div>'
+        - text: '<div class="sidebar-divider font-monospace">Part 2</div>'
         - workshop-04.qmd
         - workshop-05.qmd
         - workshop-06.qmd
         - workshop-07-break.qmd
-        - text: '<div class="sidebar-divider font-monospace">Hour 3</div>'
+        - text: '<div class="sidebar-divider font-monospace">Part 3</div>'
         - workshop-08.qmd
         - workshop-09.qmd
         - workshop-10.qmd
