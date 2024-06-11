@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -42,6 +76,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<meta name="shinylive:serviceworker_dir" content=".">
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/load-shinylive-sw.js" type="module"></script>
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/run-python-blocks.js" type="module"></script>
+<link href="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/shinylive.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,6 +108,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/bslib-component-js-0.7.0.9000/components.min.js"></script>
+<script src="site_libs/bslib-component-js-0.7.0.9000/web-components.min.js" type="module"></script>
+<link href="site_libs/bslib-component-css-0.7.0.9000/components.css" rel="stylesheet">
+<script src="site_libs/bslib-tag-require-0.7.0.9000/tag-require.js"></script>
 
 
 <link rel="stylesheet" href="auto-dark-mode.css">
@@ -208,11 +251,18 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-dark-mode" id="toc-introduction-to-dark-mode" class="nav-link active" data-scroll-target="#introduction-to-dark-mode">Introduction to dark mode</a></li>
+  <li><a href="#dark-mode-in-action" id="toc-dark-mode-in-action" class="nav-link" data-scroll-target="#dark-mode-in-action">Dark mode in action</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 <script>document.querySelector('.navbar').dataset.bsTheme = 'light';</script>
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -239,6 +289,87 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="introduction-to-dark-mode" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="introduction-to-dark-mode">Introduction to dark mode</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>bslib<span class="sc">::</span><span class="fu">input_dark_mode</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<bslib-input-dark-mode attribute="data-bs-theme" style="--text-1:var(--bs-emphasis-color);--text-2:var(--bs-tertiary-color);--vertical-correction: ;" data-require-bs-version="5" data-require-bs-caller="input_dark_mode()"></bslib-input-dark-mode>
+</div>
+</div>
+<p>You can add <code>input_dark_mode()</code> anywhere in the app. By default it uses the system profile, or you can explicitly choose the <code>mode</code>.</p>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+library(shiny)
+library(bslib)
+
+ui &lt;- page_navbar(
+  nav_spacer(),
+  nav_item(input_dark_mode()), #&lt;&lt;
+  title = "Dark mode switch in navbar"
+)
+
+server &lt;- function(input, output) {
+
+}
+
+shinyApp(ui = ui, server = server)</code></pre>
+</div>
+</section>
+<section id="dark-mode-in-action" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="dark-mode-in-action">Dark mode in action</h2>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+## file: app.R
+library(shiny)
+library(bslib)
+library(dplyr)
+library(ggplot2)
+library(collegeScorecard)
+
+thematic::thematic_on()
+
+ui &lt;- page_sidebar(
+  title = "Dark mode demo",
+  sidebar = sidebar(
+    checkboxGroupInput("school_type", "School type", levels(school$control)),
+    sliderInput("cost_max", "Max cost", min = 0, max = 70000, value = 70000, step = 500, ticks = FALSE),
+    actionButton("button", "Do Something"),
+    input_dark_mode()
+  ),
+  card(
+    card_header("School Size"),
+    plotOutput("plot_school_size")
+  )
+)
+
+server &lt;- function(input, output, session) {
+  schools &lt;- reactive({
+    schools &lt;- scorecard |&gt;
+      slice_max(academic_year, by = id, n = 1) |&gt;
+      filter(cost_avg &lt;= input$cost_max) |&gt;
+      inner_join(school, y = _, by = "id")
+
+    if (length(input$school_type)) {
+      schools &lt;- schools |&gt; filter(control %in% input$school_type)
+    }
+
+    schools
+  })
+
+  output$plot_school_size &lt;- renderPlot({
+    ggplot(schools()) +
+      aes(x = n_undergrads) +
+      geom_histogram(bins = 10) +
+      theme_minimal(18)
+  })
+}
+
+shinyApp(ui, server)
+</code></pre>
+</div>
 <ul>
 <li><code>input_dark_mode()</code></li>
 <li>Styling for dark mode
@@ -250,6 +381,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

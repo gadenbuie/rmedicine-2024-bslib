@@ -1,0 +1,235 @@
+{
+  "files": [
+    {
+      "filename": "/DESCRIPTION",
+      "start": 0,
+      "end": 1299
+    },
+    {
+      "filename": "/INDEX",
+      "start": 1299,
+      "end": 6429
+    },
+    {
+      "filename": "/LICENSE",
+      "start": 6429,
+      "end": 6466
+    },
+    {
+      "filename": "/Meta/Rd.rds",
+      "start": 6466,
+      "end": 9729
+    },
+    {
+      "filename": "/Meta/features.rds",
+      "start": 9729,
+      "end": 9861
+    },
+    {
+      "filename": "/Meta/hsearch.rds",
+      "start": 9861,
+      "end": 12726
+    },
+    {
+      "filename": "/Meta/links.rds",
+      "start": 12726,
+      "end": 14529
+    },
+    {
+      "filename": "/Meta/nsInfo.rds",
+      "start": 14529,
+      "end": 15844
+    },
+    {
+      "filename": "/Meta/package.rds",
+      "start": 15844,
+      "end": 16893
+    },
+    {
+      "filename": "/Meta/vignette.rds",
+      "start": 16893,
+      "end": 17298
+    },
+    {
+      "filename": "/NAMESPACE",
+      "start": 17298,
+      "end": 20730
+    },
+    {
+      "filename": "/NEWS.md",
+      "start": 20730,
+      "end": 25286
+    },
+    {
+      "filename": "/R/rstudioapi",
+      "start": 25286,
+      "end": 26344
+    },
+    {
+      "filename": "/R/rstudioapi.rdb",
+      "start": 26344,
+      "end": 57838
+    },
+    {
+      "filename": "/R/rstudioapi.rdx",
+      "start": 57838,
+      "end": 60128
+    },
+    {
+      "filename": "/doc/dialogs.R",
+      "start": 60128,
+      "end": 61425
+    },
+    {
+      "filename": "/doc/dialogs.Rmd",
+      "start": 61425,
+      "end": 63079
+    },
+    {
+      "filename": "/doc/dialogs.html",
+      "start": 63079,
+      "end": 68754
+    },
+    {
+      "filename": "/doc/document-manipulation.R",
+      "start": 68754,
+      "end": 70245
+    },
+    {
+      "filename": "/doc/document-manipulation.Rmd",
+      "start": 70245,
+      "end": 72353
+    },
+    {
+      "filename": "/doc/document-manipulation.html",
+      "start": 72353,
+      "end": 79755
+    },
+    {
+      "filename": "/doc/index.html",
+      "start": 79755,
+      "end": 84506
+    },
+    {
+      "filename": "/doc/introduction.Rmd",
+      "start": 84506,
+      "end": 85275
+    },
+    {
+      "filename": "/doc/introduction.html",
+      "start": 85275,
+      "end": 87560
+    },
+    {
+      "filename": "/doc/projects.R",
+      "start": 87560,
+      "end": 88049
+    },
+    {
+      "filename": "/doc/projects.Rmd",
+      "start": 88049,
+      "end": 88691
+    },
+    {
+      "filename": "/doc/projects.html",
+      "start": 88691,
+      "end": 91534
+    },
+    {
+      "filename": "/doc/r-session.R",
+      "start": 91534,
+      "end": 92926
+    },
+    {
+      "filename": "/doc/r-session.Rmd",
+      "start": 92926,
+      "end": 95408
+    },
+    {
+      "filename": "/doc/r-session.html",
+      "start": 95408,
+      "end": 103550
+    },
+    {
+      "filename": "/doc/terminal.R",
+      "start": 103550,
+      "end": 105016
+    },
+    {
+      "filename": "/doc/terminal.Rmd",
+      "start": 105016,
+      "end": 109652
+    },
+    {
+      "filename": "/doc/terminal.html",
+      "start": 109652,
+      "end": 120557
+    },
+    {
+      "filename": "/doc/visual-mode.R",
+      "start": 120557,
+      "end": 121143
+    },
+    {
+      "filename": "/doc/visual-mode.Rmd",
+      "start": 121143,
+      "end": 123677
+    },
+    {
+      "filename": "/doc/visual-mode.html",
+      "start": 123677,
+      "end": 128849
+    },
+    {
+      "filename": "/help/AnIndex",
+      "start": 128849,
+      "end": 132847
+    },
+    {
+      "filename": "/help/aliases.rds",
+      "start": 132847,
+      "end": 134144
+    },
+    {
+      "filename": "/help/figures/logo.png",
+      "start": 134144,
+      "end": 155948
+    },
+    {
+      "filename": "/help/figures/logo.svg",
+      "start": 155948,
+      "end": 194582
+    },
+    {
+      "filename": "/help/paths.rds",
+      "start": 194582,
+      "end": 195633
+    },
+    {
+      "filename": "/help/rstudioapi.rdb",
+      "start": 195633,
+      "end": 368010
+    },
+    {
+      "filename": "/help/rstudioapi.rdx",
+      "start": 368010,
+      "end": 370325
+    },
+    {
+      "filename": "/html/00Index.html",
+      "start": 370325,
+      "end": 389909
+    },
+    {
+      "filename": "/html/R.css",
+      "start": 389909,
+      "end": 391753
+    },
+    {
+      "filename": "/resources/bug-report.md",
+      "start": 391753,
+      "end": 393425
+    }
+  ],
+  "remote_package_size": 393425
+}

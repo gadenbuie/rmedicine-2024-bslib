@@ -66,41 +66,85 @@
     ]
   },
   {
-    "objectID": "workshop-09.html",
-    "href": "workshop-09.html",
-    "title": "New inputs",
+    "objectID": "workshop-10.html",
+    "href": "workshop-10.html",
+    "title": "Dark mode",
     "section": "",
-    "text": "Binary on-off options are common in web apps these days, and input_switch() provides a simple way to add them to your Shiny app. They are more-or-less a drop-in replacement for checkboxInput().\n\nLet’s use input_switch() to recreate the example above from the College Scorecard website.\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\nlibrary(dplyr)\nlibrary(leaflet)\nlibrary(collegeScorecard)\n\nui &lt;- page_fillable(\n  h2(\"Input Switch Example\"),\n  layout_column_wrap(\n    width = 1 / 2,\n    fill = FALSE,\n    div(\n      checkboxInput(\"most_get_in\", \"Most People Get In\", TRUE),\n      checkboxInput(\"most_graduate\", \"Most People Graduate\", TRUE),\n      checkboxInput(\"require_test\", \"Requires Test Scores\", TRUE),\n    ),\n    div(\n      checkboxInput(\"want_certificate\", \"I Want a Certificate\", FALSE),\n      checkboxInput(\"want_associates\", \"I Want an Associate's Degree\", FALSE),\n      checkboxInput(\"want_bachelors\", \"I Want a Bachelor's Degree\", FALSE)\n    )\n  ),\n  card(\n    card_body(\n      padding = 0,\n      leafletOutput(\"map\")\n    )\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  schools &lt;- reactive({\n    sc_filter &lt;-\n      scorecard |&gt;\n      slice_max(academic_year, by = id, n = 1)\n\n    if (input$most_get_in) {\n      sc_filter &lt;- sc_filter |&gt; filter(rate_admissions &gt; 0.5)\n    }\n\n    if (input$most_graduate) {\n      sc_filter &lt;- sc_filter |&gt; filter(rate_completion &gt; 0.5)\n    }\n\n    school_filter &lt;- school |&gt;\n      filter(\n        between(latitude, 24.4, 49.4),\n        between(longitude, -125.0, -67.0),\n      )\n\n    if (input$require_test) {\n      school_filter &lt;- school_filter |&gt; filter(adm_req_test %in% c(\"Required\", \"Recommended\"))\n    }\n    deg_want &lt;- c(\n      if (input$want_certificate) \"Certificate\",\n      if (input$want_associates) \"Associate\",\n      if (input$want_bachelors) \"Bachelor\"\n    )\n    if (length(deg_want)) {\n      school_filter &lt;- school_filter |&gt; filter(deg_predominant %in% deg_want)\n    }\n\n    if (nrow(school_filter) &gt; 500) {\n      school_filter &lt;- school_filter |&gt; slice_sample(n = 500)\n    }\n\n    school_filter\n  })\n\n  output$map &lt;- renderLeaflet({\n    leaflet() |&gt;\n      addTiles() |&gt;\n      addMarkers(\n        data = schools(),\n        lat = ~latitude,\n        lng = ~longitude,\n        popup = ~name\n      )\n  })\n}\n\nshinyApp(ui, server)",
+    "text": "bslib::input_dark_mode()\n\n\n\n\nYou can add input_dark_mode() anywhere in the app. By default it uses the system profile, or you can explicitly choose the mode.\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_navbar(\n  nav_spacer(),\n  nav_item(input_dark_mode()), #&lt;&lt;\n  title = \"Dark mode switch in navbar\"\n)\n\nserver &lt;- function(input, output) {\n\n}\n\nshinyApp(ui = ui, server = server)",
     "crumbs": [
       "Workshop",
-      "New inputs"
+      "Dark mode"
     ]
   },
   {
-    "objectID": "workshop-09.html#switch",
-    "href": "workshop-09.html#switch",
-    "title": "New inputs",
+    "objectID": "workshop-10.html#introduction-to-dark-mode",
+    "href": "workshop-10.html#introduction-to-dark-mode",
+    "title": "Dark mode",
     "section": "",
-    "text": "Binary on-off options are common in web apps these days, and input_switch() provides a simple way to add them to your Shiny app. They are more-or-less a drop-in replacement for checkboxInput().\n\nLet’s use input_switch() to recreate the example above from the College Scorecard website.\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\nlibrary(dplyr)\nlibrary(leaflet)\nlibrary(collegeScorecard)\n\nui &lt;- page_fillable(\n  h2(\"Input Switch Example\"),\n  layout_column_wrap(\n    width = 1 / 2,\n    fill = FALSE,\n    div(\n      checkboxInput(\"most_get_in\", \"Most People Get In\", TRUE),\n      checkboxInput(\"most_graduate\", \"Most People Graduate\", TRUE),\n      checkboxInput(\"require_test\", \"Requires Test Scores\", TRUE),\n    ),\n    div(\n      checkboxInput(\"want_certificate\", \"I Want a Certificate\", FALSE),\n      checkboxInput(\"want_associates\", \"I Want an Associate's Degree\", FALSE),\n      checkboxInput(\"want_bachelors\", \"I Want a Bachelor's Degree\", FALSE)\n    )\n  ),\n  card(\n    card_body(\n      padding = 0,\n      leafletOutput(\"map\")\n    )\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  schools &lt;- reactive({\n    sc_filter &lt;-\n      scorecard |&gt;\n      slice_max(academic_year, by = id, n = 1)\n\n    if (input$most_get_in) {\n      sc_filter &lt;- sc_filter |&gt; filter(rate_admissions &gt; 0.5)\n    }\n\n    if (input$most_graduate) {\n      sc_filter &lt;- sc_filter |&gt; filter(rate_completion &gt; 0.5)\n    }\n\n    school_filter &lt;- school |&gt;\n      filter(\n        between(latitude, 24.4, 49.4),\n        between(longitude, -125.0, -67.0),\n      )\n\n    if (input$require_test) {\n      school_filter &lt;- school_filter |&gt; filter(adm_req_test %in% c(\"Required\", \"Recommended\"))\n    }\n    deg_want &lt;- c(\n      if (input$want_certificate) \"Certificate\",\n      if (input$want_associates) \"Associate\",\n      if (input$want_bachelors) \"Bachelor\"\n    )\n    if (length(deg_want)) {\n      school_filter &lt;- school_filter |&gt; filter(deg_predominant %in% deg_want)\n    }\n\n    if (nrow(school_filter) &gt; 500) {\n      school_filter &lt;- school_filter |&gt; slice_sample(n = 500)\n    }\n\n    school_filter\n  })\n\n  output$map &lt;- renderLeaflet({\n    leaflet() |&gt;\n      addTiles() |&gt;\n      addMarkers(\n        data = schools(),\n        lat = ~latitude,\n        lng = ~longitude,\n        popup = ~name\n      )\n  })\n}\n\nshinyApp(ui, server)",
+    "text": "bslib::input_dark_mode()\n\n\n\n\nYou can add input_dark_mode() anywhere in the app. By default it uses the system profile, or you can explicitly choose the mode.\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_navbar(\n  nav_spacer(),\n  nav_item(input_dark_mode()), #&lt;&lt;\n  title = \"Dark mode switch in navbar\"\n)\n\nserver &lt;- function(input, output) {\n\n}\n\nshinyApp(ui = ui, server = server)",
     "crumbs": [
       "Workshop",
-      "New inputs"
+      "Dark mode"
     ]
   },
   {
-    "objectID": "workshop-09.html#task-button",
-    "href": "workshop-09.html#task-button",
-    "title": "New inputs",
-    "section": "Task Button",
-    "text": "Task Button\nShiny 1.8.1 introduced an exciting new feature: truly non-blocking operations with ExtendedTask. We don’t have time to explore ExtendedTask in detail. If you’re interested, I highly recommend Joe Cheng’s talk Managing long-running operations in Shiny.\nThe idea behind ExtendedTask is to use a limited amount of asynchronous programming to allow one task to extend beyond a single reactive lifecycle.\nExtended tasks pair well with a new function we added to bslib: input_task_button(). This input doesn’t require an extended task, but it does work well with it. You can drop input_task_button() into your app where you previously used actionButton() when you know that the button triggers a long-running operation.\nLet’s update the app from above to use input_task_button().\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\nlibrary(dplyr)\nlibrary(leaflet)\nlibrary(collegeScorecard)\n\nui &lt;- page_fillable(\n  h2(\"Input Task Button Example\"),\n  layout_column_wrap(\n    width = 1 / 2,\n    fill = FALSE,\n    fillable = FALSE,\n    heights_equal = \"row\",\n    div(\n      input_switch(\"most_get_in\", \"Most People Get In\", TRUE),\n      input_switch(\"most_graduate\", \"Most People Graduate\", TRUE),\n      input_switch(\"require_test\", \"Requires Test Scores\", TRUE),\n    ),\n    div(\n      input_switch(\"want_certificate\", \"I Want a Certificate\", FALSE),\n      input_switch(\"want_associates\", \"I Want an Associate's Degree\", FALSE),\n      input_switch(\"want_bachelors\", \"I Want a Bachelor's Degree\", FALSE)\n    ),\n      actionButton(\"search\", \"Search\")\n  ),\n  card(\n    card_body(\n      padding = 0,\n      leafletOutput(\"map\")\n    )\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  schools &lt;- eventReactive(input$search, {\n    sc_filter &lt;-\n      scorecard |&gt;\n      slice_max(academic_year, by = id, n = 1)\n\n    if (input$most_get_in) {\n      sc_filter &lt;- sc_filter |&gt; filter(rate_admissions &gt; 0.5)\n    }\n\n    if (input$most_graduate) {\n      sc_filter &lt;- sc_filter |&gt; filter(rate_completion &gt; 0.5)\n    }\n\n    school_filter &lt;- school |&gt;\n      filter(\n        between(latitude, 24.4, 49.4),\n        between(longitude, -125.0, -67.0),\n      )\n\n    if (input$require_test) {\n      school_filter &lt;- school_filter |&gt; filter(adm_req_test %in% c(\"Required\", \"Recommended\"))\n    }\n    deg_want &lt;- c(\n      if (input$want_certificate) \"Certificate\",\n      if (input$want_associates) \"Associate\",\n      if (input$want_bachelors) \"Bachelor\"\n    )\n    if (length(deg_want)) {\n      school_filter &lt;- school_filter |&gt; filter(deg_predominant %in% deg_want)\n    }\n\n    if (nrow(school_filter) &gt; 500) {\n      school_filter &lt;- school_filter |&gt; slice_sample(n = 500)\n    }\n\n    school_filter\n  })\n\n  output$map &lt;- renderLeaflet({\n    leaflet() |&gt;\n      addTiles() |&gt;\n      addMarkers(\n        data = schools(),\n        lat = ~latitude,\n        lng = ~longitude,\n        popup = ~name\n      )\n  })\n}\n\nshinyApp(ui, server)",
+    "objectID": "workshop-10.html#dark-mode-in-action",
+    "href": "workshop-10.html#dark-mode-in-action",
+    "title": "Dark mode",
+    "section": "Dark mode in action",
+    "text": "Dark mode in action\n\n#| standalone: true\n#| components: [editor, viewer]\n## file: app.R\nlibrary(shiny)\nlibrary(bslib)\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(collegeScorecard)\n\nthematic::thematic_on()\n\nui &lt;- page_sidebar(\n  title = \"Dark mode demo\",\n  sidebar = sidebar(\n    checkboxGroupInput(\"school_type\", \"School type\", levels(school$control)),\n    sliderInput(\"cost_max\", \"Max cost\", min = 0, max = 70000, value = 70000, step = 500, ticks = FALSE),\n    actionButton(\"button\", \"Do Something\"),\n    input_dark_mode()\n  ),\n  card(\n    card_header(\"School Size\"),\n    plotOutput(\"plot_school_size\")\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  schools &lt;- reactive({\n    schools &lt;- scorecard |&gt;\n      slice_max(academic_year, by = id, n = 1) |&gt;\n      filter(cost_avg &lt;= input$cost_max) |&gt;\n      inner_join(school, y = _, by = \"id\")\n\n    if (length(input$school_type)) {\n      schools &lt;- schools |&gt; filter(control %in% input$school_type)\n    }\n\n    schools\n  })\n\n  output$plot_school_size &lt;- renderPlot({\n    ggplot(schools()) +\n      aes(x = n_undergrads) +\n      geom_histogram(bins = 10) +\n      theme_minimal(18)\n  })\n}\n\nshinyApp(ui, server)\n\n\n\ninput_dark_mode()\nStyling for dark mode\n\nwhat are css variables?\nBootstrap CSS vars\nYour own CSS variables",
     "crumbs": [
       "Workshop",
-      "New inputs"
+      "Dark mode"
     ]
   },
   {
-    "objectID": "workshop-07-break.html",
-    "href": "workshop-07-break.html",
+    "objectID": "workshop-06.html",
+    "href": "workshop-06.html",
+    "title": "Advanced Carding",
+    "section": "",
+    "text": "Advanced carding (6)\nYour turn: breakout exercise (4)",
+    "crumbs": [
+      "Workshop",
+      "Advanced Carding"
+    ]
+  },
+  {
+    "objectID": "workshop-06.html#outline",
+    "href": "workshop-06.html#outline",
+    "title": "Advanced Carding",
+    "section": "",
+    "text": "Advanced carding (6)\nYour turn: breakout exercise (4)",
+    "crumbs": [
+      "Workshop",
+      "Advanced Carding"
+    ]
+  },
+  {
+    "objectID": "workshop-06.html#advanced-card-features",
+    "href": "workshop-06.html#advanced-card-features",
+    "title": "Advanced Carding",
+    "section": "Advanced card features",
+    "text": "Advanced card features\n\nCard with a sidebar layout\nFor a card with a sidebar, you can nest a layout_sidebar() directly inside a card(). bslib does the rest of the work for you.\n\n#| standalone: true\n#| components: [editor, viewer]\n#| viewerHeight: 500px\n## file: ui.R\nlibrary(shiny)\nlibrary(bslib)\nlibrary(plotly)\nlibrary(collegeScorecard)\n\nschool_degrees &lt;- levels(school$deg_predominant)\nschool_degrees &lt;- setdiff(school_degrees, \"Graduate\")\n\ninput_deg_predmoninant &lt;-\n  selectInput(\n    \"deg_predominant\",\n    \"Predominant Degree Type\",\n    choices = school_degrees,\n    selected = \"Bachelor\"\n  )\n\n\npage_fillable(\n  input_deg_predmoninant,\n  plotlyOutput(\"plot_rate_admissions\")\n)\n\n\n## file: server.R\nfunction(input, output, session) {\n  r_scorecard &lt;- reactive({\n    school_filter &lt;- school\n\n    school_filter &lt;- school_filter[\n      school_filter$deg_predominant == input$deg_predominant,\n    ]\n\n    scorecard[scorecard$id %in% school_filter$id, ]\n  })\n\n  plotly_cleaner &lt;- function(x) {\n    x |&gt;\n      config(displayModeBar = FALSE) |&gt;\n      layout(margin = list(l = 0, r = 0, b = 0))\n  }\n\n  filter_recent_complete_year &lt;- function(scorecard, column) {\n    academic_year &lt;- scorecard[!is.na(scorecard[[column]]), ]$academic_year\n    scorecard[scorecard$academic_year == max(academic_year), ]\n  }\n\n  output$plot_rate_admissions &lt;- renderPlotly({\n    r_scorecard() |&gt;\n      filter_recent_complete_year(\"rate_admissions\") |&gt;\n      (\\(x) x[!is.na(x$rate_admissions), ])() |&gt;\n      plot_ly(x = ~rate_admissions, type = \"histogram\") |&gt;\n      layout(xaxis = list(title = \"Rate\")) |&gt;\n      plotly_cleaner()\n  })\n}\n\n\n\n\nNavset cards\nNavset cards are similar to page_navbar() or the navset_*() function variants. They all follow the same pattern of navset_card_{type}:\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_fillable(\n  navset_card_tab(\n    nav_panel(\n        \"First tab name\",\n        \"... first tab content\"\n    ),\n    nav_panel(\n        \"Second tab name\",\n        \"... second tab content\"\n    )\n  )\n)\n\nshinyApp(ui, \\(...) { })\n\n\n\nNavset cards with sidebars\nWith navset cards, you have two sidebar choices:\n\nFor local sidebars in one of the nav panels, nest layout_sidebar() inside the nav_panel().\nFor global sidebars, use the sidebar argument.\n\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_fillable(\n  navset_card_tab(\n    nav_panel(\n        \"First tab name\",\n        \"... first tab content\"\n    ),\n    nav_panel(\n        \"Second tab name\",\n        \"... second tab content\"\n    )\n  )\n)\n\nshinyApp(ui, \\(...) { })",
+    "crumbs": [
+      "Workshop",
+      "Advanced Carding"
+    ]
+  },
+  {
+    "objectID": "workshop-06.html#your-turn",
+    "href": "workshop-06.html#your-turn",
+    "title": "Advanced Carding",
+    "section": "🧑‍💻 Your Turn",
+    "text": "🧑‍💻 Your Turn\n\n exercises/06_app.R\n\nThe app in exercises/06_app.R contains three variations of the same plot of yearly costs vs median earnings. (You might recognize this plot from the second exercise.)\nUse a navset card to improve the organization and usability of the plots.",
+    "crumbs": [
+      "Workshop",
+      "Advanced Carding"
+    ]
+  },
+  {
+    "objectID": "workshop-03-break.html",
+    "href": "workshop-03-break.html",
     "title": "☕ Break",
     "section": "",
     "text": "−\n    +\n \n 05:00",
@@ -110,58 +154,46 @@
     ]
   },
   {
-    "objectID": "workshop.html",
-    "href": "workshop.html",
-    "title": "Overview",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Next Generation Shiny Apps with {bslib}",
     "section": "",
-    "text": "mindmap\n  root((bslib))\n    shiny + bslib\n        page functions\n        BS 5+\n        theme\n        new snippet\n    page layouts\n        page_sidebar\n        page_navbar\n        page_navbar with a sidebar\n    cards\n        card, card_header, card_body, card_footer\n        navset_card\n        value_box\n        full_screen\n        sparkline\n    layout\n        layout_column_width\n        layout_columns\n        layout_sidebar\n        accordions\n        tooltips & popovers\n    fillability\n        fillable containers\n        fill items\n        page_fillable\n    dark mode\n            input_dark_mode\n            theming with dark mode in mind\n    extra inputs\n            input_task_button\n            input_switch",
-    "crumbs": [
-      "Workshop",
-      "Overview"
-    ]
+    "text": "Online workshop at R/Medicine 2024  Tuesday, June 11, 2024 11:00am to 2:00pm"
   },
   {
-    "objectID": "workshop.html#schedule",
-    "href": "workshop.html#schedule",
-    "title": "Overview",
-    "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nduration\n\n\n\n\n\n\nWelcome and Getting Started\n\n\nWelcome to the workshop and hello, bslib! \n\n\n25min\n\n\n\n\nNew layouts\n\n\nLearn how to lay out UI elements with bslib. \n\n\n30min\n\n\n\n\n☕ Break\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nAdvanced layouts\n\n\nFlexible and responsive column-first layouts\n\n\n20min\n\n\n\n\nFilling Layouts\n\n\nFillabilly who?\n\n\n25min\n\n\n\n\nAdvanced Carding\n\n\nIt’s cards all the way down.\n\n\n10min\n\n\n\n\n☕ Break\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nDetails on demand\n\n\nUI that’s out of sight but within reach\n\n\n25min\n\n\n\n\nNew inputs\n\n\nTwo new bslib inputs\n\n\n10min\n\n\n\n\nDark mode\n\n\nPeople use your apps at night, too.\n\n\n10min\n\n\n\n\nWrap up\n\n\nWrap up, resources, questions.\n\n\n \n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Workshop",
-      "Overview"
-    ]
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Next Generation Shiny Apps with {bslib}",
+    "section": "Introduction",
+    "text": "Introduction\nLearn to build Shiny apps using modern user interfaces (UI) and layouts with bslib, the next generation of Shiny UI. We’ll cover stylish and convenient dashboard layouts and components as we showcase the ways in which bslib can replace shinydashboard."
   },
   {
-    "objectID": "workshop-01.html",
-    "href": "workshop-01.html",
-    "title": "Welcome and Getting Started",
+    "objectID": "index.html#setup",
+    "href": "index.html#setup",
+    "title": "Next Generation Shiny Apps with {bslib}",
+    "section": "Setup",
+    "text": "Setup\n\n📘 Website (you are here!)\n🧑‍💻 Join Posit Cloud Space\n📦 Repository\n\n\nUsing Posit Cloud\nI’ve prepared a Posit Cloud workspace for workshop participants with a project for you to use during our time together. The project contains all of the files and packages pre-installed and ready to go. All you need to do is log in and start coding!\nIf you already have a Posit Cloud account, first join the rmedicine-2024-bslib space on Posit Cloud. Otherwise sign up for a free account and then join the space. You can create an account with your email or login with Google, GitHub or Clever.\nOnce you’re part of the rmedicine-2024-bslib space, select the rmedicine-2024-bslib assignment to create and launch a new project just for you.\n\n\n\nUsing Your Own Computer\nIf you prefer to use your own computer, you can clone the repository and install the necessary packages. I used R 4.4 but any recent version of R (&gt;= 4.1) should work.\nYou can use the usethis package to quickly clone the repository:\nusethis::create_from_github(\n  \"gadenbuie/rmedicine-2024-bslib\",\n  # Decide where to put the project here:\n  destdir = \"~/Desktop/rmedicine-2024-bslib\"\n)\nThis will download the repository and open the project in RStudio. Inside the project, use the renv package to install the necessary packages:\nrenv::restore()\nFor very speedy installation, I recommend telling renv to use pak to install packages:\nSys.setenv(RENV_CONFIG_PAK_ENABLED = \"true\")\nrenv::restore()"
+  },
+  {
+    "objectID": "workshop-11.html",
+    "href": "workshop-11.html",
+    "title": "Wrap up",
     "section": "",
-    "text": "View slides in full screen",
+    "text": "🙏 Thanks for attending! 🙋 Any questions?",
     "crumbs": [
       "Workshop",
-      "Welcome and Getting Started"
+      "Wrap up"
     ]
   },
   {
-    "objectID": "workshop-01.html#your-turn",
-    "href": "workshop-01.html#your-turn",
-    "title": "Welcome and Getting Started",
-    "section": "🧑‍💻 Your Turn",
-    "text": "🧑‍💻 Your Turn\n\n exercises/01_app.R\n\nAre we all set up? Open the app in exercises/01_app.R. Run the app to make sure it works. Can everyone in your breakout session run the app? Help each other make sure you’re set up.\nTake a Shiny app and make it bslib-ier Replace fluidPage() with page_fluid(). What other page types are available? Try out some Bootswatch themes. For bonus points, try setting a theme-related Sass variable.\nUse the app to learn about the variables in school.",
+    "objectID": "workshop-11.html#resources",
+    "href": "workshop-11.html#resources",
+    "title": "Wrap up",
+    "section": "Resources",
+    "text": "Resources\n\nbslib\nBoostrap docs\nmore to come…",
     "crumbs": [
       "Workshop",
-      "Welcome and Getting Started"
-    ]
-  },
-  {
-    "objectID": "workshop-10.html",
-    "href": "workshop-10.html",
-    "title": "Dark mode",
-    "section": "",
-    "text": "input_dark_mode()\nStyling for dark mode\n\nwhat are css variables?\nBootstrap CSS vars\nYour own CSS variables",
-    "crumbs": [
-      "Workshop",
-      "Dark mode"
+      "Wrap up"
     ]
   },
   {
@@ -220,51 +252,52 @@
     ]
   },
   {
-    "objectID": "workshop-11.html",
-    "href": "workshop-11.html",
-    "title": "Wrap up",
+    "objectID": "workshop-01.html",
+    "href": "workshop-01.html",
+    "title": "Welcome and Getting Started",
     "section": "",
-    "text": "🙏 Thanks for attending! 🙋 Any questions?",
+    "text": "View slides in full screen",
     "crumbs": [
       "Workshop",
-      "Wrap up"
+      "Welcome and Getting Started"
     ]
   },
   {
-    "objectID": "workshop-11.html#resources",
-    "href": "workshop-11.html#resources",
-    "title": "Wrap up",
-    "section": "Resources",
-    "text": "Resources\n\nbslib\nBoostrap docs\nmore to come…",
+    "objectID": "workshop-01.html#your-turn",
+    "href": "workshop-01.html#your-turn",
+    "title": "Welcome and Getting Started",
+    "section": "🧑‍💻 Your Turn",
+    "text": "🧑‍💻 Your Turn\n\n exercises/01_app.R\n\nAre we all set up? Open the app in exercises/01_app.R. Run the app to make sure it works. Can everyone in your breakout session run the app? Help each other make sure you’re set up.\nTake a Shiny app and make it bslib-ier Replace fluidPage() with page_fluid(). What other page types are available? Try out some Bootswatch themes. For bonus points, try setting a theme-related Sass variable.\nUse the app to learn about the variables in school.",
     "crumbs": [
       "Workshop",
-      "Wrap up"
+      "Welcome and Getting Started"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Next Generation Shiny Apps with {bslib}",
+    "objectID": "workshop.html",
+    "href": "workshop.html",
+    "title": "Overview",
     "section": "",
-    "text": "Online workshop at R/Medicine 2024  Tuesday, June 11, 2024 11:00am to 2:00pm"
+    "text": "mindmap\n  root((bslib))\n    shiny + bslib\n        page functions\n        BS 5+\n        theme\n        new snippet\n    page layouts\n        page_sidebar\n        page_navbar\n        page_navbar with a sidebar\n    cards\n        card, card_header, card_body, card_footer\n        navset_card\n        value_box\n        full_screen\n        sparkline\n    layout\n        layout_column_width\n        layout_columns\n        layout_sidebar\n        accordions\n        tooltips & popovers\n    fillability\n        fillable containers\n        fill items\n        page_fillable\n    dark mode\n            input_dark_mode\n            theming with dark mode in mind\n    extra inputs\n            input_task_button\n            input_switch",
+    "crumbs": [
+      "Workshop",
+      "Overview"
+    ]
   },
   {
-    "objectID": "index.html#introduction",
-    "href": "index.html#introduction",
-    "title": "Next Generation Shiny Apps with {bslib}",
-    "section": "Introduction",
-    "text": "Introduction\nLearn to build Shiny apps using modern user interfaces (UI) and layouts with bslib, the next generation of Shiny UI. We’ll cover stylish and convenient dashboard layouts and components as we showcase the ways in which bslib can replace shinydashboard."
+    "objectID": "workshop.html#schedule",
+    "href": "workshop.html#schedule",
+    "title": "Overview",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nduration\n\n\n\n\n\n\nWelcome and Getting Started\n\n\nWelcome to the workshop and hello, bslib! \n\n\n25min\n\n\n\n\nNew layouts\n\n\nLearn how to lay out UI elements with bslib. \n\n\n30min\n\n\n\n\n☕ Break\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nAdvanced layouts\n\n\nFlexible and responsive column-first layouts\n\n\n20min\n\n\n\n\nFilling Layouts\n\n\nFillabilly who?\n\n\n25min\n\n\n\n\nAdvanced Carding\n\n\nIt’s cards all the way down.\n\n\n10min\n\n\n\n\n☕ Break\n\n\nGet up and move around! We’ll be right back. \n\n\n5min\n\n\n\n\nDetails on demand\n\n\nUI that’s out of sight but within reach\n\n\n25min\n\n\n\n\nNew inputs\n\n\nTwo new bslib inputs\n\n\n10min\n\n\n\n\nDark mode\n\n\nPeople use your apps at night, too.\n\n\n10min\n\n\n\n\nWrap up\n\n\nWrap up, resources, questions.\n\n\n \n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Workshop",
+      "Overview"
+    ]
   },
   {
-    "objectID": "index.html#setup",
-    "href": "index.html#setup",
-    "title": "Next Generation Shiny Apps with {bslib}",
-    "section": "Setup",
-    "text": "Setup\n\n📘 Website (you are here!)\n🧑‍💻 Join Posit Cloud Space\n📦 Repository\n\n\nUsing Posit Cloud\nI’ve prepared a Posit Cloud workspace for workshop participants with a project for you to use during our time together. The project contains all of the files and packages pre-installed and ready to go. All you need to do is log in and start coding!\nIf you already have a Posit Cloud account, first join the rmedicine-2024-bslib space on Posit Cloud. Otherwise sign up for a free account and then join the space. You can create an account with your email or login with Google, GitHub or Clever.\nOnce you’re part of the rmedicine-2024-bslib space, select the rmedicine-2024-bslib assignment to create and launch a new project just for you.\n\n\n\nUsing Your Own Computer\nIf you prefer to use your own computer, you can clone the repository and install the necessary packages. I used R 4.4 but any recent version of R (&gt;= 4.1) should work.\nYou can use the usethis package to quickly clone the repository:\nusethis::create_from_github(\n  \"gadenbuie/rmedicine-2024-bslib\",\n  # Decide where to put the project here:\n  destdir = \"~/Desktop/rmedicine-2024-bslib\"\n)\nThis will download the repository and open the project in RStudio. Inside the project, use the renv package to install the necessary packages:\nrenv::restore()\nFor very speedy installation, I recommend telling renv to use pak to install packages:\nSys.setenv(RENV_CONFIG_PAK_ENABLED = \"true\")\nrenv::restore()"
-  },
-  {
-    "objectID": "workshop-03-break.html",
-    "href": "workshop-03-break.html",
+    "objectID": "workshop-07-break.html",
+    "href": "workshop-07-break.html",
     "title": "☕ Break",
     "section": "",
     "text": "−\n    +\n \n 05:00",
@@ -274,47 +307,36 @@
     ]
   },
   {
-    "objectID": "workshop-06.html",
-    "href": "workshop-06.html",
-    "title": "Advanced Carding",
+    "objectID": "workshop-09.html",
+    "href": "workshop-09.html",
+    "title": "New inputs",
     "section": "",
-    "text": "Advanced carding (6)\nYour turn: breakout exercise (4)",
+    "text": "Binary on-off options are common in web apps these days, and input_switch() provides a simple way to add them to your Shiny app. They are more-or-less a drop-in replacement for checkboxInput().\n\nLet’s use input_switch() to recreate the example above from the College Scorecard website.\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\nlibrary(dplyr)\nlibrary(leaflet)\nlibrary(collegeScorecard)\n\nui &lt;- page_fillable(\n  h2(\"Input Switch Example\"),\n  layout_column_wrap(\n    width = 1 / 2,\n    fill = FALSE,\n    div(\n      checkboxInput(\"most_get_in\", \"Most People Get In\", TRUE),\n      checkboxInput(\"most_graduate\", \"Most People Graduate\", TRUE),\n      checkboxInput(\"require_test\", \"Requires Test Scores\", TRUE),\n    ),\n    div(\n      checkboxInput(\"want_certificate\", \"I Want a Certificate\", FALSE),\n      checkboxInput(\"want_associates\", \"I Want an Associate's Degree\", FALSE),\n      checkboxInput(\"want_bachelors\", \"I Want a Bachelor's Degree\", FALSE)\n    )\n  ),\n  card(\n    card_body(\n      padding = 0,\n      leafletOutput(\"map\")\n    )\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  schools &lt;- reactive({\n    sc_filter &lt;-\n      scorecard |&gt;\n      slice_max(academic_year, by = id, n = 1)\n\n    if (input$most_get_in) {\n      sc_filter &lt;- sc_filter |&gt; filter(rate_admissions &gt; 0.5)\n    }\n\n    if (input$most_graduate) {\n      sc_filter &lt;- sc_filter |&gt; filter(rate_completion &gt; 0.5)\n    }\n\n    school_filter &lt;- school |&gt;\n      filter(\n        between(latitude, 24.4, 49.4),\n        between(longitude, -125.0, -67.0),\n      )\n\n    if (input$require_test) {\n      school_filter &lt;- school_filter |&gt; filter(adm_req_test %in% c(\"Required\", \"Recommended\"))\n    }\n    deg_want &lt;- c(\n      if (input$want_certificate) \"Certificate\",\n      if (input$want_associates) \"Associate\",\n      if (input$want_bachelors) \"Bachelor\"\n    )\n    if (length(deg_want)) {\n      school_filter &lt;- school_filter |&gt; filter(deg_predominant %in% deg_want)\n    }\n\n    if (nrow(school_filter) &gt; 500) {\n      school_filter &lt;- school_filter |&gt; slice_sample(n = 500)\n    }\n\n    school_filter\n  })\n\n  output$map &lt;- renderLeaflet({\n    leaflet() |&gt;\n      addTiles() |&gt;\n      addMarkers(\n        data = schools(),\n        lat = ~latitude,\n        lng = ~longitude,\n        popup = ~name\n      )\n  })\n}\n\nshinyApp(ui, server)",
     "crumbs": [
       "Workshop",
-      "Advanced Carding"
+      "New inputs"
     ]
   },
   {
-    "objectID": "workshop-06.html#outline",
-    "href": "workshop-06.html#outline",
-    "title": "Advanced Carding",
+    "objectID": "workshop-09.html#switch",
+    "href": "workshop-09.html#switch",
+    "title": "New inputs",
     "section": "",
-    "text": "Advanced carding (6)\nYour turn: breakout exercise (4)",
+    "text": "Binary on-off options are common in web apps these days, and input_switch() provides a simple way to add them to your Shiny app. They are more-or-less a drop-in replacement for checkboxInput().\n\nLet’s use input_switch() to recreate the example above from the College Scorecard website.\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\nlibrary(dplyr)\nlibrary(leaflet)\nlibrary(collegeScorecard)\n\nui &lt;- page_fillable(\n  h2(\"Input Switch Example\"),\n  layout_column_wrap(\n    width = 1 / 2,\n    fill = FALSE,\n    div(\n      checkboxInput(\"most_get_in\", \"Most People Get In\", TRUE),\n      checkboxInput(\"most_graduate\", \"Most People Graduate\", TRUE),\n      checkboxInput(\"require_test\", \"Requires Test Scores\", TRUE),\n    ),\n    div(\n      checkboxInput(\"want_certificate\", \"I Want a Certificate\", FALSE),\n      checkboxInput(\"want_associates\", \"I Want an Associate's Degree\", FALSE),\n      checkboxInput(\"want_bachelors\", \"I Want a Bachelor's Degree\", FALSE)\n    )\n  ),\n  card(\n    card_body(\n      padding = 0,\n      leafletOutput(\"map\")\n    )\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  schools &lt;- reactive({\n    sc_filter &lt;-\n      scorecard |&gt;\n      slice_max(academic_year, by = id, n = 1)\n\n    if (input$most_get_in) {\n      sc_filter &lt;- sc_filter |&gt; filter(rate_admissions &gt; 0.5)\n    }\n\n    if (input$most_graduate) {\n      sc_filter &lt;- sc_filter |&gt; filter(rate_completion &gt; 0.5)\n    }\n\n    school_filter &lt;- school |&gt;\n      filter(\n        between(latitude, 24.4, 49.4),\n        between(longitude, -125.0, -67.0),\n      )\n\n    if (input$require_test) {\n      school_filter &lt;- school_filter |&gt; filter(adm_req_test %in% c(\"Required\", \"Recommended\"))\n    }\n    deg_want &lt;- c(\n      if (input$want_certificate) \"Certificate\",\n      if (input$want_associates) \"Associate\",\n      if (input$want_bachelors) \"Bachelor\"\n    )\n    if (length(deg_want)) {\n      school_filter &lt;- school_filter |&gt; filter(deg_predominant %in% deg_want)\n    }\n\n    if (nrow(school_filter) &gt; 500) {\n      school_filter &lt;- school_filter |&gt; slice_sample(n = 500)\n    }\n\n    school_filter\n  })\n\n  output$map &lt;- renderLeaflet({\n    leaflet() |&gt;\n      addTiles() |&gt;\n      addMarkers(\n        data = schools(),\n        lat = ~latitude,\n        lng = ~longitude,\n        popup = ~name\n      )\n  })\n}\n\nshinyApp(ui, server)",
     "crumbs": [
       "Workshop",
-      "Advanced Carding"
+      "New inputs"
     ]
   },
   {
-    "objectID": "workshop-06.html#advanced-card-features",
-    "href": "workshop-06.html#advanced-card-features",
-    "title": "Advanced Carding",
-    "section": "Advanced card features",
-    "text": "Advanced card features\n\nCard with a sidebar layout\nFor a card with a sidebar, you can nest a layout_sidebar() directly inside a card(). bslib does the rest of the work for you.\n\n#| standalone: true\n#| components: [editor, viewer]\n#| viewerHeight: 500px\n## file: ui.R\nlibrary(shiny)\nlibrary(bslib)\nlibrary(plotly)\nlibrary(collegeScorecard)\n\nschool_degrees &lt;- levels(school$deg_predominant)\nschool_degrees &lt;- setdiff(school_degrees, \"Graduate\")\n\ninput_deg_predmoninant &lt;-\n  selectInput(\n    \"deg_predominant\",\n    \"Predominant Degree Type\",\n    choices = school_degrees,\n    selected = \"Bachelor\"\n  )\n\n\npage_fillable(\n  input_deg_predmoninant,\n  plotlyOutput(\"plot_rate_admissions\")\n)\n\n\n## file: server.R\nfunction(input, output, session) {\n  r_scorecard &lt;- reactive({\n    school_filter &lt;- school\n\n    school_filter &lt;- school_filter[\n      school_filter$deg_predominant == input$deg_predominant,\n    ]\n\n    scorecard[scorecard$id %in% school_filter$id, ]\n  })\n\n  plotly_cleaner &lt;- function(x) {\n    x |&gt;\n      config(displayModeBar = FALSE) |&gt;\n      layout(margin = list(l = 0, r = 0, b = 0))\n  }\n\n  filter_recent_complete_year &lt;- function(scorecard, column) {\n    academic_year &lt;- scorecard[!is.na(scorecard[[column]]), ]$academic_year\n    scorecard[scorecard$academic_year == max(academic_year), ]\n  }\n\n  output$plot_rate_admissions &lt;- renderPlotly({\n    r_scorecard() |&gt;\n      filter_recent_complete_year(\"rate_admissions\") |&gt;\n      (\\(x) x[!is.na(x$rate_admissions), ])() |&gt;\n      plot_ly(x = ~rate_admissions, type = \"histogram\") |&gt;\n      layout(xaxis = list(title = \"Rate\")) |&gt;\n      plotly_cleaner()\n  })\n}\n\n\n\n\nNavset cards\nNavset cards are similar to page_navbar() or the navset_*() function variants. They all follow the same pattern of navset_card_{type}:\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_fillable(\n  navset_card_tab(\n    nav_panel(\n        \"First tab name\",\n        \"... first tab content\"\n    ),\n    nav_panel(\n        \"Second tab name\",\n        \"... second tab content\"\n    )\n  )\n)\n\nshinyApp(ui, \\(...) { })\n\n\n\nNavset cards with sidebars\nWith navset cards, you have two sidebar choices:\n\nFor local sidebars in one of the nav panels, nest layout_sidebar() inside the nav_panel().\nFor global sidebars, use the sidebar argument.\n\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_fillable(\n  navset_card_tab(\n    nav_panel(\n        \"First tab name\",\n        \"... first tab content\"\n    ),\n    nav_panel(\n        \"Second tab name\",\n        \"... second tab content\"\n    )\n  )\n)\n\nshinyApp(ui, \\(...) { })",
+    "objectID": "workshop-09.html#task-button",
+    "href": "workshop-09.html#task-button",
+    "title": "New inputs",
+    "section": "Task Button",
+    "text": "Task Button\nShiny 1.8.1 introduced an exciting new feature: truly non-blocking operations with ExtendedTask. We don’t have time to explore ExtendedTask in detail. If you’re interested, I highly recommend Joe Cheng’s talk Managing long-running operations in Shiny.\nThe idea behind ExtendedTask is to use a limited amount of asynchronous programming to allow one task to extend beyond a single reactive lifecycle.\nExtended tasks pair well with a new function we added to bslib: input_task_button(). This input doesn’t require an extended task, but it does work well with it. You can drop input_task_button() into your app where you previously used actionButton() when you know that the button triggers a long-running operation.\nLet’s update the app from above to use input_task_button().\n\n#| standalone: true\n#| components: [editor, viewer]\nlibrary(shiny)\nlibrary(bslib)\nlibrary(dplyr)\nlibrary(leaflet)\nlibrary(collegeScorecard)\n\nui &lt;- page_fillable(\n  h2(\"Input Task Button Example\"),\n  layout_column_wrap(\n    width = 1 / 2,\n    fill = FALSE,\n    fillable = FALSE,\n    heights_equal = \"row\",\n    div(\n      input_switch(\"most_get_in\", \"Most People Get In\", TRUE),\n      input_switch(\"most_graduate\", \"Most People Graduate\", TRUE),\n      input_switch(\"require_test\", \"Requires Test Scores\", TRUE),\n    ),\n    div(\n      input_switch(\"want_certificate\", \"I Want a Certificate\", FALSE),\n      input_switch(\"want_associates\", \"I Want an Associate's Degree\", FALSE),\n      input_switch(\"want_bachelors\", \"I Want a Bachelor's Degree\", FALSE)\n    ),\n    actionButton(\"search\", \"Search\")\n  ),\n  card(\n    card_body(\n      padding = 0,\n      leafletOutput(\"map\")\n    )\n  )\n)\n\nserver &lt;- function(input, output, session) {\n  schools &lt;- eventReactive(input$search, {\n    sc_filter &lt;-\n      scorecard |&gt;\n      slice_max(academic_year, by = id, n = 1)\n\n    if (input$most_get_in) {\n      sc_filter &lt;- sc_filter |&gt; filter(rate_admissions &gt; 0.5)\n    }\n\n    if (input$most_graduate) {\n      sc_filter &lt;- sc_filter |&gt; filter(rate_completion &gt; 0.5)\n    }\n\n    school_filter &lt;- school |&gt;\n      filter(\n        between(latitude, 24.4, 49.4),\n        between(longitude, -125.0, -67.0),\n      )\n\n    if (input$require_test) {\n      school_filter &lt;- school_filter |&gt; filter(adm_req_test %in% c(\"Required\", \"Recommended\"))\n    }\n    deg_want &lt;- c(\n      if (input$want_certificate) \"Certificate\",\n      if (input$want_associates) \"Associate\",\n      if (input$want_bachelors) \"Bachelor\"\n    )\n    if (length(deg_want)) {\n      school_filter &lt;- school_filter |&gt; filter(deg_predominant %in% deg_want)\n    }\n\n    if (nrow(school_filter) &gt; 500) {\n      school_filter &lt;- school_filter |&gt; slice_sample(n = 500)\n    }\n\n    school_filter\n  })\n\n  output$map &lt;- renderLeaflet({\n    leaflet() |&gt;\n      addTiles() |&gt;\n      addMarkers(\n        data = schools(),\n        lat = ~latitude,\n        lng = ~longitude,\n        popup = ~name\n      )\n  })\n}\n\nshinyApp(ui, server)",
     "crumbs": [
       "Workshop",
-      "Advanced Carding"
-    ]
-  },
-  {
-    "objectID": "workshop-06.html#your-turn",
-    "href": "workshop-06.html#your-turn",
-    "title": "Advanced Carding",
-    "section": "🧑‍💻 Your Turn",
-    "text": "🧑‍💻 Your Turn\n\n exercises/06_app.R\n\nThe app in exercises/06_app.R contains three variations of the same plot of yearly costs vs median earnings. (You might recognize this plot from the second exercise.)\nUse a navset card to improve the organization and usability of the plots.",
-    "crumbs": [
-      "Workshop",
-      "Advanced Carding"
+      "New inputs"
     ]
   },
   {

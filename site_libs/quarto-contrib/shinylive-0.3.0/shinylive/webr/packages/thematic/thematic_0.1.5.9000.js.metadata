@@ -1,0 +1,170 @@
+{
+  "files": [
+    {
+      "filename": "/DESCRIPTION",
+      "start": 0,
+      "end": 2483
+    },
+    {
+      "filename": "/INDEX",
+      "start": 2483,
+      "end": 3103
+    },
+    {
+      "filename": "/LICENSE",
+      "start": 3103,
+      "end": 3147
+    },
+    {
+      "filename": "/Meta/Rd.rds",
+      "start": 3147,
+      "end": 3933
+    },
+    {
+      "filename": "/Meta/features.rds",
+      "start": 3933,
+      "end": 4065
+    },
+    {
+      "filename": "/Meta/hsearch.rds",
+      "start": 4065,
+      "end": 4858
+    },
+    {
+      "filename": "/Meta/links.rds",
+      "start": 4858,
+      "end": 5239
+    },
+    {
+      "filename": "/Meta/nsInfo.rds",
+      "start": 5239,
+      "end": 5944
+    },
+    {
+      "filename": "/Meta/package.rds",
+      "start": 5944,
+      "end": 7865
+    },
+    {
+      "filename": "/NAMESPACE",
+      "start": 7865,
+      "end": 9396
+    },
+    {
+      "filename": "/NEWS.md",
+      "start": 9396,
+      "end": 10753
+    },
+    {
+      "filename": "/R/sysdata.rdb",
+      "start": 10753,
+      "end": 359233
+    },
+    {
+      "filename": "/R/sysdata.rdx",
+      "start": 359233,
+      "end": 359396
+    },
+    {
+      "filename": "/R/thematic",
+      "start": 359396,
+      "end": 360454
+    },
+    {
+      "filename": "/R/thematic.rdb",
+      "start": 360454,
+      "end": 401643
+    },
+    {
+      "filename": "/R/thematic.rdx",
+      "start": 401643,
+      "end": 403565
+    },
+    {
+      "filename": "/examples/ggthemes/app.R",
+      "start": 403565,
+      "end": 404516
+    },
+    {
+      "filename": "/help/AnIndex",
+      "start": 404516,
+      "end": 405244
+    },
+    {
+      "filename": "/help/aliases.rds",
+      "start": 405244,
+      "end": 405564
+    },
+    {
+      "filename": "/help/figures/README-ggrepel-1.png",
+      "start": 405564,
+      "end": 483796
+    },
+    {
+      "filename": "/help/figures/README-ggrepel2-1.png",
+      "start": 483796,
+      "end": 561657
+    },
+    {
+      "filename": "/help/figures/README-ggrepel3-1.png",
+      "start": 561657,
+      "end": 640194
+    },
+    {
+      "filename": "/help/figures/README-unnamed-chunk-5-1.png",
+      "start": 640194,
+      "end": 761396
+    },
+    {
+      "filename": "/help/figures/README-unnamed-chunk-6-1.png",
+      "start": 761396,
+      "end": 881546
+    },
+    {
+      "filename": "/help/figures/auto-after.png",
+      "start": 881546,
+      "end": 1387625
+    },
+    {
+      "filename": "/help/figures/auto-before.png",
+      "start": 1387625,
+      "end": 1781912
+    },
+    {
+      "filename": "/help/figures/logo.png",
+      "start": 1781912,
+      "end": 1809517
+    },
+    {
+      "filename": "/help/figures/thematic-test-drive.svg",
+      "start": 1809517,
+      "end": 1857356
+    },
+    {
+      "filename": "/help/paths.rds",
+      "start": 1857356,
+      "end": 1857615
+    },
+    {
+      "filename": "/help/thematic.rdb",
+      "start": 1857615,
+      "end": 1885580
+    },
+    {
+      "filename": "/help/thematic.rdx",
+      "start": 1885580,
+      "end": 1886009
+    },
+    {
+      "filename": "/html/00Index.html",
+      "start": 1886009,
+      "end": 1890044
+    },
+    {
+      "filename": "/html/R.css",
+      "start": 1890044,
+      "end": 1891888
+    }
+  ],
+  "remote_package_size": 1891888
+}
