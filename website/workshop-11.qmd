@@ -1,7 +1,6 @@
 ---
 title: Wrap up
 description: Wrap up, resources, questions.
-duration: 15min
 ---
 
 Thanks for attending!

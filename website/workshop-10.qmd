@@ -1,7 +1,7 @@
 ---
 title: Dark mode
 description: People use your apps at night, too.
-duration: 15min
+duration: 10min
 ---
 
 - `input_dark_mode()`

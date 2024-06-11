@@ -1,8 +1,112 @@
 ---
 title: Details on demand
 description: UI that's out of sight but within reach
-duration: 15min
+duration: 25min
 ---
+
+[bsicons]: https://cran.r-project.org/package=bsicons
+[fontawesome]: https://rstudio.github.io/fontawesome/
+
+```{r}
+#| include: false
+library(shiny)
+library(bslib)
+```
+
+## Outline
+
+* [Popovers](#popovers) and [Tooltips](#tooltips) (10)
+* [Your turn: breakout exercise](#your-turn) (5)
+* [Accordions](#accordions) (10)
+
+## Popovers
+
+Popovers are like small modals that appear when you click on an element, like an icon.
+Because they're persistent, they're great for a bit of extra information or a small number of additional controls, like plot settings.
+
+Popovers pair well with buttons or icons, like those from [bsicons] or [fontawesome].
+Just be certain to use recent versions of either package and to include a `title` attribute for accessibility.
+
+```{r}
+popover(
+  bsicons::bs_icon("gear", title = "Settings"),
+  "... content that appears in the popover",
+)
+
+popover(
+  shiny::actionButton("settings", "Settings"),
+  "... content that appears in the popover",
+)
+```
+
+The `card_header()` or `card_footer()` is a great place to put popovers, and you can use Bootstrap's [hstack feature](https://getbootstrap.com/docs/5.3/helpers/stacks/#horizontal) and [flex utility classes](https://getbootstrap.com/docs/5.3/utilities/flex/#justify-content) to help position the trigger element.
+
+```{r}
+card(
+  card_header(
+    class = "hstack justify-content-between",
+    "Cost vs. Earnings",
+    popover(
+        bsicons::bs_icon("gear", title = "Settings"),
+        "Choose the grouping variable"
+    )
+  ),
+  "Imagine a plot here."
+)
+```
+
+## Tooltips
+
+Tooltips are ephemeral bits of additional context.
+They work well when paired with an icon in the label of an input.
+
+```{r}
+textInput(
+  inputId = "school_search",
+  label = tagList(
+    "Search for School",
+    tooltip(
+      bsicons::bs_icon("info-circle", title = "About search"),
+      "Regular expressions are not supported, sorry."
+    )
+  )
+)
+```
+
+`card_header()` and `card_footer()` are also great places to place tooltips.
+Again the `.hstack` Bootstrap class is helpful for organizing a row of icons.
+
+```{r}
+card(
+  card_header(
+    class = "hstack justify-content-between",
+    "Cost vs. Earnings",
+    div(
+      class = "hstack gap-2",
+      popover(
+          bsicons::bs_icon("gear", title = "Settings"),
+          "Choose the grouping variable"
+      ),
+      tooltip(
+        bsicons::bs_icon("info-circle", title = "Info"),
+        "You should probably know this by now, but..."
+      )
+    )
+  ),
+  "Imagine a plot here."
+)
+```
+
+## 🧑‍💻 Your Turn
+
+Looking back at our use of a navset card in the last exercise, we might be able to improve the design and user experience with a popover.
+
+In `exercises/07_app.R`, I've reset the app to use a single plot output with a radio button input.
+Use a `popover()` to hide the radio buttons in a menu in the card header.
+
+💡 Looking for icon inspiration? Check out [Bootstrap icons](https://icons.getbootstrap.com/).
+
+## Accordions
 
 - popover
     - lead in from navset card --> popover
