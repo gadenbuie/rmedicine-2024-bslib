@@ -50,6 +50,8 @@ website:
 format:
   html:
     theme: [zephyr, styles.scss]
+    css:
+      - auto-dark-mode.css
     toc: true
     include-before-body:
       - text: <script>document.querySelector('.navbar').dataset.bsTheme = 'light';</script>
