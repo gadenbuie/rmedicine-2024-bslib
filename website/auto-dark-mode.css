@@ -17,7 +17,7 @@
   }
 
   /* Do not invert media (revert the invert). */
-  img, video, iframe, svg {
+  img, video, iframe, svg:not(.bi, .fa) {
     filter: invert(100%) hue-rotate(180deg);
   }
 
