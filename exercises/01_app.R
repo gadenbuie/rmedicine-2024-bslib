@@ -2,10 +2,10 @@ library(shiny)
 library(bslib)
 library(tidyverse)
 
-# Data --------------------------------------------------------------------
-school <- collegeScorecard::college_load_tidy_school()
-scorecard <- collegeScorecard::college_load_tidy_scorecard()
+library(collegeScorecard)
+# Provides: `scorecard` and `school`
 
+# Data --------------------------------------------------------------------
 scorecard_recent <-
   scorecard |>
   filter(academic_year == max(academic_year)) |>
