@@ -76,6 +76,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<meta name="shinylive:serviceworker_dir" content=".">
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/load-shinylive-sw.js" type="module"></script>
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/run-python-blocks.js" type="module"></script>
+<link href="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/shinylive.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -261,7 +266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 <script>document.querySelector('.navbar').dataset.bsTheme = 'light';</script>
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -444,16 +449,220 @@ Cost vs. Earnings
 <p>In <code>exercises/07_app.R</code>, I’ve reset the app to use a single plot output with a radio button input. Use a <code>popover()</code> to hide the radio buttons in a menu in the card header.</p>
 <p>💡 Looking for icon inspiration? Check out <a href="https://icons.getbootstrap.com/">Bootstrap icons</a>.</p>
 </section>
-<section id="accordions" class="level2">
+<section id="accordions" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="accordions">Accordions</h2>
+<p>Accordions are collapsible sections of content. They follow a similar pattern to navsets: an outer <code>accordion()</code> container holds a collection of one or more <code>accordion_panel()</code> elements.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">accordion</span>(</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">accordion_panel</span>(</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Panel 1"</span>,</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Content for panel 1"</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">accordion_panel</span>(</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Panel 2"</span>,</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Content for panel 2"</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="bslib-accordion-2117" class="accordion" data-require-bs-version="5" data-require-bs-caller="accordion()">
+<div class="accordion-item" data-value="Panel 1">
+<div class="accordion-header">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bslib-accordion-panel-8823" aria-controls="bslib-accordion-panel-8823" aria-expanded="true">
+<div class="accordion-icon"></div>
+<div class="accordion-title">Panel 1</div>
+</button>
+</div>
+<div id="bslib-accordion-panel-8823" class="accordion-collapse collapse show">
+<div class="accordion-body">Content for panel 1</div>
+</div>
+</div>
+<div class="accordion-item" data-value="Panel 2">
+<div class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bslib-accordion-panel-1690" aria-expanded="false" aria-controls="bslib-accordion-panel-1690">
+<div class="accordion-icon"></div>
+<div class="accordion-title">Panel 2</div>
+</button>
+</div>
+<div id="bslib-accordion-panel-1690" class="accordion-collapse collapse">
+<div class="accordion-body">Content for panel 2</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Accordions are great for organizing a lot of content in a small space. They fit well in a sidebar!</p>
+<p>Here are a few additional customizations you can try:</p>
 <ul>
-<li>popover
+<li>In <code>accordion()</code>, you can use the…
 <ul>
-<li>lead in from navset card –&gt; popover</li>
+<li><code>open</code> argument to decide which panels are open by default.</li>
+<li><code>multiple</code> argument to decide if multiple panels can be open at once.</li>
 </ul></li>
-<li>tool tip</li>
-<li>accordion</li>
+<li>In <code>accordion_panel()</code>, you can use the…
+<ul>
+<li><code>icon</code> argument to add an icon to the panel header.</li>
+</ul></li>
 </ul>
+<p>In the next exercise, use the <a href="https://collegescorecard.ed.gov/">College Scorecard search page</a> as inspiration to better organize the sidebar inputs using an accordion.</p>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+## file: app.R
+library(shiny)
+library(bslib)
+
+source("app-accordion-support.R", local = TRUE)
+
+# UI ----------------------------------------------------------------------
+
+ui &lt;- page_sidebar(
+  title = "Accordion Example",
+  sidebar = sidebar(
+    input_school_type,
+    input_deg_predmoninant,
+    input_n_undergrads,
+    input_cost_avg
+  ),
+  layout_columns(
+    card(
+      card_header("Admissions Rate"),
+      plotlyOutput("plot_rate_admissions")
+    ),
+    card(
+      card_header("Completion Rate"),
+      plotlyOutput("plot_rate_completion")
+    )
+  )
+)
+
+shinyApp(ui, server)
+
+
+## file: app-accordion-support.R
+library(dplyr)
+library(plotly)
+library(collegeScorecard)
+
+# Data --------------------------------------------------------------------
+scorecard_recent &lt;-
+  scorecard |&gt;
+  filter(academic_year == max(academic_year)) |&gt;
+  select(id, n_undergrads, cost_avg, rate_admissions, rate_completion)
+
+school &lt;- left_join(school, scorecard_recent, by = "id")
+
+school_types &lt;- levels(school$control)
+school_degrees &lt;- levels(school$deg_predominant) |&gt; setdiff("Graduate")
+school_locales &lt;- levels(school$locale_type)
+
+# Inputs ------------------------------------------------------------------
+range_slider &lt;- function(data, column, label, by = 15000, step = by) {
+  val_range &lt;- range(data[[column]], na.rm = TRUE)
+  val_range[1] &lt;- floor(val_range[1] / by) * by
+  val_range[2] &lt;- ceiling(val_range[2] / by) * by
+
+  sliderInput(
+    inputId = column,
+    label = label,
+    value = val_range,
+    min = val_range[1],
+    max = val_range[2],
+    step = step,
+    ticks = FALSE
+  )
+}
+
+input_n_undergrads &lt;-
+  range_slider(
+    school,
+    "n_undergrads",
+    "Number of Undergrad Students",
+    by = 15000,
+    step = 5000
+  )
+
+input_cost_avg &lt;-
+  range_slider(
+    school,
+    "cost_avg",
+    "Average Yearly Cost",
+    by = 2500
+  )
+
+input_school_type &lt;-
+  checkboxGroupInput(
+    "school_type",
+    "Type of School",
+    choices = school_types,
+    selected = school_types,
+    inline = FALSE
+  )
+
+input_deg_predmoninant &lt;-
+  selectInput(
+    "deg_predominant",
+    "Predominant Degree Type",
+    choices = school_degrees,
+    selected = "Bachelor"
+  )
+
+
+# Server ------------------------------------------------------------------
+
+server &lt;- function(input, output, session) {
+  r_scorecard &lt;- reactive({
+    school_filter &lt;-
+      school |&gt;
+      filter(
+        between(n_undergrads, input$n_undergrads[1], input$n_undergrads[2]),
+        between(cost_avg, input$cost_avg[1], input$cost_avg[2])
+      )
+
+    if (length(input$school_type)) {
+      school_filter &lt;-
+        school_filter |&gt;
+        filter(control %in% input$school_type)
+    }
+
+    school_filter &lt;-
+      school_filter |&gt;
+      filter(deg_predominant == input$deg_predominant)
+
+    scorecard |&gt;
+      semi_join(school_filter, by = "id")
+  })
+
+  plotly_cleaner &lt;- function(x) {
+    x |&gt;
+      config(displayModeBar = FALSE) |&gt;
+      layout(margin = list(l = 0, r = 0, b = 0))
+  }
+
+  filter_recent_complete_year &lt;- function(scorecard, column) {
+    academic_year &lt;- scorecard[!is.na(scorecard[[column]]), ]$academic_year
+    scorecard |&gt; filter(academic_year == !!max(academic_year))
+  }
+
+  output$plot_rate_admissions &lt;- renderPlotly({
+    r_scorecard() |&gt;
+      filter_recent_complete_year("rate_admissions") |&gt;
+      filter(!is.na(rate_admissions)) |&gt;
+      plot_ly(x = ~rate_admissions, type = "histogram") |&gt;
+      layout(xaxis = list(title = "Rate")) |&gt;
+      plotly_cleaner()
+  })
+
+  output$plot_rate_completion &lt;- renderPlotly({
+    r_scorecard() |&gt;
+      filter_recent_complete_year("rate_completion") |&gt;
+      filter(rate_completion &gt; 0) |&gt;
+      plot_ly(x = ~rate_completion, type = "histogram") |&gt;
+      layout(xaxis = list(title = "Rate")) |&gt;
+      plotly_cleaner()
+  })
+}
+</code></pre>
+</div>
 
 
 </section>

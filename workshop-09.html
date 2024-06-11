@@ -42,6 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<meta name="shinylive:serviceworker_dir" content=".">
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/load-shinylive-sw.js" type="module"></script>
+<script src="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/run-python-blocks.js" type="module"></script>
+<link href="site_libs/quarto-contrib/shinylive-0.3.0/shinylive/shinylive.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -208,11 +216,18 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#switch" id="toc-switch" class="nav-link active" data-scroll-target="#switch">Switch</a></li>
+  <li><a href="#task-button" id="toc-task-button" class="nav-link" data-scroll-target="#task-button">Task Button</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 <script>document.querySelector('.navbar').dataset.bsTheme = 'light';</script>
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -239,12 +254,198 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<ul>
-<li><code>input_switch()</code></li>
-<li><code>input_task_button()</code></li>
-</ul>
+<section id="switch" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="switch">Switch</h2>
+<p>Binary on-off options are common in web apps these days, and <code>input_switch()</code> provides a simple way to add them to your Shiny app. They are more-or-less a drop-in replacement for <code>checkboxInput()</code>.</p>
+<p><a href="assets/show-me-options.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="assets/show-me-options.png" class="img-fluid"></a></p>
+<p>Let’s use <code>input_switch()</code> to recreate the example above from the <a href="https://collegescorecard.ed.gov/">College Scorecard</a> website.</p>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+library(shiny)
+library(bslib)
+library(dplyr)
+library(leaflet)
+library(collegeScorecard)
+
+ui &lt;- page_fillable(
+  h2("Input Switch Example"),
+  layout_column_wrap(
+    width = 1 / 2,
+    fill = FALSE,
+    div(
+      checkboxInput("most_get_in", "Most People Get In", TRUE),
+      checkboxInput("most_graduate", "Most People Graduate", TRUE),
+      checkboxInput("require_test", "Requires Test Scores", TRUE),
+    ),
+    div(
+      checkboxInput("want_certificate", "I Want a Certificate", FALSE),
+      checkboxInput("want_associates", "I Want an Associate's Degree", FALSE),
+      checkboxInput("want_bachelors", "I Want a Bachelor's Degree", FALSE)
+    )
+  ),
+  card(
+    card_body(
+      padding = 0,
+      leafletOutput("map")
+    )
+  )
+)
+
+server &lt;- function(input, output, session) {
+  schools &lt;- reactive({
+    sc_filter &lt;-
+      scorecard |&gt;
+      slice_max(academic_year, by = id, n = 1)
+
+    if (input$most_get_in) {
+      sc_filter &lt;- sc_filter |&gt; filter(rate_admissions &gt; 0.5)
+    }
+
+    if (input$most_graduate) {
+      sc_filter &lt;- sc_filter |&gt; filter(rate_completion &gt; 0.5)
+    }
+
+    school_filter &lt;- school |&gt;
+      filter(
+        between(latitude, 24.4, 49.4),
+        between(longitude, -125.0, -67.0),
+      )
+
+    if (input$require_test) {
+      school_filter &lt;- school_filter |&gt; filter(adm_req_test %in% c("Required", "Recommended"))
+    }
+    deg_want &lt;- c(
+      if (input$want_certificate) "Certificate",
+      if (input$want_associates) "Associate",
+      if (input$want_bachelors) "Bachelor"
+    )
+    if (length(deg_want)) {
+      school_filter &lt;- school_filter |&gt; filter(deg_predominant %in% deg_want)
+    }
+
+    if (nrow(school_filter) &gt; 500) {
+      school_filter &lt;- school_filter |&gt; slice_sample(n = 500)
+    }
+
+    school_filter
+  })
+
+  output$map &lt;- renderLeaflet({
+    leaflet() |&gt;
+      addTiles() |&gt;
+      addMarkers(
+        data = schools(),
+        lat = ~latitude,
+        lng = ~longitude,
+        popup = ~name
+      )
+  })
+}
+
+shinyApp(ui, server)
+</code></pre>
+</div>
+</section>
+<section id="task-button" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="task-button">Task Button</h2>
+<p>Shiny 1.8.1 introduced an exciting new feature: <a href="https://shiny.posit.co/blog/posts/shiny-r-1.8.1/">truly non-blocking operations with <code>ExtendedTask</code></a>. We don’t have time to explore <code>ExtendedTask</code> in detail. If you’re interested, I highly recommend Joe Cheng’s talk <a href="https://youtu.be/GhX0PcEm3CY?si=JKpIXi43_xYXBZEx"><em>Managing long-running operations in Shiny</em></a>.</p>
+<p>The idea behind <code>ExtendedTask</code> is to use a limited amount of asynchronous programming to allow one task to <em>extend</em> beyond a single reactive lifecycle.</p>
+<p>Extended tasks pair well with a new function we added to bslib: <code>input_task_button()</code>. This input <em>doesn’t require an extended task</em>, but it does work well with it. You can drop <code>input_task_button()</code> into your app where you previously used <code>actionButton()</code> when you know that the button triggers a long-running operation.</p>
+<p>Let’s update the app from above to use <code>input_task_button()</code>.</p>
+<div class="column-screen-inset-right">
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| components: [editor, viewer]
+library(shiny)
+library(bslib)
+library(dplyr)
+library(leaflet)
+library(collegeScorecard)
+
+ui &lt;- page_fillable(
+  h2("Input Task Button Example"),
+  layout_column_wrap(
+    width = 1 / 2,
+    fill = FALSE,
+    fillable = FALSE,
+    heights_equal = "row",
+    div(
+      input_switch("most_get_in", "Most People Get In", TRUE),
+      input_switch("most_graduate", "Most People Graduate", TRUE),
+      input_switch("require_test", "Requires Test Scores", TRUE),
+    ),
+    div(
+      input_switch("want_certificate", "I Want a Certificate", FALSE),
+      input_switch("want_associates", "I Want an Associate's Degree", FALSE),
+      input_switch("want_bachelors", "I Want a Bachelor's Degree", FALSE)
+    ),
+      actionButton("search", "Search")
+  ),
+  card(
+    card_body(
+      padding = 0,
+      leafletOutput("map")
+    )
+  )
+)
+
+server &lt;- function(input, output, session) {
+  schools &lt;- eventReactive(input$search, {
+    sc_filter &lt;-
+      scorecard |&gt;
+      slice_max(academic_year, by = id, n = 1)
+
+    if (input$most_get_in) {
+      sc_filter &lt;- sc_filter |&gt; filter(rate_admissions &gt; 0.5)
+    }
+
+    if (input$most_graduate) {
+      sc_filter &lt;- sc_filter |&gt; filter(rate_completion &gt; 0.5)
+    }
+
+    school_filter &lt;- school |&gt;
+      filter(
+        between(latitude, 24.4, 49.4),
+        between(longitude, -125.0, -67.0),
+      )
+
+    if (input$require_test) {
+      school_filter &lt;- school_filter |&gt; filter(adm_req_test %in% c("Required", "Recommended"))
+    }
+    deg_want &lt;- c(
+      if (input$want_certificate) "Certificate",
+      if (input$want_associates) "Associate",
+      if (input$want_bachelors) "Bachelor"
+    )
+    if (length(deg_want)) {
+      school_filter &lt;- school_filter |&gt; filter(deg_predominant %in% deg_want)
+    }
+
+    if (nrow(school_filter) &gt; 500) {
+      school_filter &lt;- school_filter |&gt; slice_sample(n = 500)
+    }
+
+    school_filter
+  })
+
+  output$map &lt;- renderLeaflet({
+    leaflet() |&gt;
+      addTiles() |&gt;
+      addMarkers(
+        data = schools(),
+        lat = ~latitude,
+        lng = ~longitude,
+        popup = ~name
+      )
+  })
+}
+
+shinyApp(ui, server)
+</code></pre>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -693,6 +894,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"loop":false,"openEffect":"zoom","selector":".lightbox","descPosition":"bottom","closeEffect":"zoom"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
