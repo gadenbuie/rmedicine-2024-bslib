@@ -51,6 +51,7 @@ format:
     css:
       - auto-dark-mode.css
     toc: true
+    lightbox: true
     include-before-body:
       - text: <script>document.querySelector('.navbar').dataset.bsTheme = 'light';</script>
 

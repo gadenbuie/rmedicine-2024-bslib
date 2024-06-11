@@ -4,5 +4,41 @@ description: Two new bslib inputs
 duration: 10min
 ---
 
-- `input_switch()`
-- `input_task_button()`
+## Switch
+
+Binary on-off options are common in web apps these days, and `input_switch()` provides a simple way to add them to your Shiny app.
+They are more-or-less a drop-in replacement for `checkboxInput()`.
+
+![](assets/show-me-options.png)
+
+Let's use `input_switch()` to recreate the example above from the [College Scorecard](https://collegescorecard.ed.gov/) website.
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+{{< include "../examples/app-input-switch.R" >}}
+```
+:::
+
+## Task Button
+
+Shiny 1.8.1 introduced an exciting new feature: [truly non-blocking operations with `ExtendedTask`](https://shiny.posit.co/blog/posts/shiny-r-1.8.1/).
+We don't have time to explore `ExtendedTask` in detail.
+If you're interested, I highly recommend Joe Cheng's talk [_Managing long-running operations in Shiny_](https://youtu.be/GhX0PcEm3CY?si=JKpIXi43_xYXBZEx).
+
+The idea behind `ExtendedTask` is to use a limited amount of asynchronous programming to allow one task to _extend_ beyond a single reactive lifecycle.
+
+Extended tasks pair well with a new function we added to bslib: `input_task_button()`.
+This input _doesn't require an extended task_, but it does work well with it.
+You can drop `input_task_button()` into your app where you previously used `actionButton()` when you know that the button triggers a long-running operation.
+
+Let's update the app from above to use `input_task_button()`.
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+{{< include "../examples/app-input-task-button.R" >}}
+```
+:::
