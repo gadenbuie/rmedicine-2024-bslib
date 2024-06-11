@@ -1,15 +1,53 @@
-library(shiny)
-library(bslib)
 library(dplyr)
 library(plotly)
 library(collegeScorecard)
 
 # Data --------------------------------------------------------------------
+scorecard_recent <-
+  scorecard |>
+  filter(academic_year == max(academic_year)) |>
+  select(id, n_undergrads, cost_avg, rate_admissions, rate_completion)
+
+school <- left_join(school, scorecard_recent, by = "id")
+
 school_types <- levels(school$control)
 school_degrees <- levels(school$deg_predominant) |> setdiff("Graduate")
 school_locales <- levels(school$locale_type)
 
 # Inputs ------------------------------------------------------------------
+range_slider <- function(data, column, label, by = 15000, step = by) {
+  val_range <- range(data[[column]], na.rm = TRUE)
+  val_range[1] <- floor(val_range[1] / by) * by
+  val_range[2] <- ceiling(val_range[2] / by) * by
+
+  sliderInput(
+    inputId = column,
+    label = label,
+    value = val_range,
+    min = val_range[1],
+    max = val_range[2],
+    step = step,
+    ticks = FALSE
+  )
+}
+
+input_n_undergrads <-
+  range_slider(
+    school,
+    "n_undergrads",
+    "Number of Undergrad Students",
+    by = 15000,
+    step = 5000
+  )
+
+input_cost_avg <-
+  range_slider(
+    school,
+    "cost_avg",
+    "Average Yearly Cost",
+    by = 2500
+  )
+
 input_school_type <-
   checkboxGroupInput(
     "school_type",
@@ -27,43 +65,18 @@ input_deg_predmoninant <-
     selected = "Bachelor"
   )
 
-input_group_by <-
-  radioButtons(
-    "group_by",
-    "Group By",
-    choices = c(
-      "Campus Setting" = "locale_type",
-      "Highest Degree" = "deg_highest",
-      "Testing Requirements" = "adm_req_test"
-    )
-  )
-
-# UI ----------------------------------------------------------------------
-
-ui <- fluidPage(
-  # theme = bs_theme(),
-  titlePanel("02 - First bslib Layout"),
-  sidebarLayout(
-    sidebarPanel(
-      input_school_type,
-      input_deg_predmoninant,
-      hr(),
-      input_group_by
-    ),
-    mainPanel(
-      plotlyOutput("plot_rate_admissions"),
-      plotlyOutput("plot_rate_completion"),
-      plotlyOutput("plot_cost_earnings")
-    )
-  )
-)
-
 
 # Server ------------------------------------------------------------------
 
 server <- function(input, output, session) {
   r_scorecard <- reactive({
-    school_filter <- school
+    school_filter <-
+      school |>
+      filter(
+        between(n_undergrads, input$n_undergrads[1], input$n_undergrads[2]),
+        between(cost_avg, input$cost_avg[1], input$cost_avg[2])
+      )
+
     if (length(input$school_type)) {
       school_filter <-
         school_filter |>
@@ -106,30 +119,4 @@ server <- function(input, output, session) {
       layout(xaxis = list(title = "Rate")) |>
       plotly_cleaner()
   })
-
-  output$plot_cost_earnings <- renderPlotly({
-    r_scorecard() |>
-      filter_recent_complete_year("amnt_earnings_med_10y") |>
-      left_join(school, by = "id") |>
-      plot_ly(
-        x = ~cost_avg,
-        y = ~amnt_earnings_med_10y,
-        color = ~get(input$group_by),
-        hoverinfo = "text",
-        text = ~paste0(
-          "School: ", name, "<br>",
-          "Undergrads: ", scales::number(n_undergrads, big.mark=","), "<br>",
-          "Average Cost: ", scales::dollar(cost_avg), "<br>",
-          "Median Earnigns: ", scales::dollar(amnt_earnings_med_10y), "<br>",
-          "Admissions Rate: ", scales::percent(rate_admissions), "<br>",
-          "Completion Rate: ", scales::percent(rate_completion)
-        )
-      ) |>
-      layout(
-        xaxis = list(title = "Average Cost"),
-        yaxis = list(title = "Median Earnings")
-      )
-  })
 }
-
-shinyApp(ui, server)

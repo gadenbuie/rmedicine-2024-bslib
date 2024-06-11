@@ -1,6 +1,6 @@
 library(shiny)
 library(bslib)
-library(tidyverse)
+library(dplyr)
 
 library(collegeScorecard)
 # Provides: `scorecard` and `school`

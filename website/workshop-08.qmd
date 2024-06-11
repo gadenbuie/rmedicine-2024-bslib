@@ -112,7 +112,44 @@ Use a `popover()` to hide the radio buttons in a menu in the card header.
 
 ## Accordions
 
-- popover
-    - lead in from navset card --> popover
-- tool tip
-- accordion
+Accordions are collapsible sections of content.
+They follow a similar pattern to navsets: an outer `accordion()` container holds a collection of one or more `accordion_panel()` elements.
+
+```{r}
+accordion(
+  accordion_panel(
+    "Panel 1",
+    "Content for panel 1"
+  ),
+  accordion_panel(
+    "Panel 2",
+    "Content for panel 2"
+  )
+)
+```
+
+Accordions are great for organizing a lot of content in a small space.
+They fit well in a sidebar!
+
+Here are a few additional customizations you can try:
+
+* In `accordion()`, you can use the...
+  * `open` argument to decide which panels are open by default.
+  * `multiple` argument to decide if multiple panels can be open at once.
+
+* In `accordion_panel()`, you can use the...
+  * `icon` argument to add an icon to the panel header.
+
+In the next exercise, use the [College Scorecard search page](https://collegescorecard.ed.gov/) as inspiration to better organize the sidebar inputs using an accordion.
+
+::: {.column-screen-inset-right}
+```{shinylive-r}
+#| standalone: true
+#| components: [editor, viewer]
+## file: app.R
+{{< include "../examples/app-accordion.R" >}}
+
+## file: app-accordion-support.R
+{{< include "../examples/app-accordion-support.R" >}}
+```
+:::
