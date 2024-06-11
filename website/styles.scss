@@ -87,6 +87,10 @@ h1, .h1, h2, .h2 {
   border-top: 1px solid rgba(var(--bs-body-color-rgb), 0.1);
 }
 
+.cell {
+  margin-bottom: 1rem;
+}
+
 .breadcrumb {
   border: none;
   box-shadow: none;
