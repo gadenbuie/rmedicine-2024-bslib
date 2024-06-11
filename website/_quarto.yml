@@ -4,8 +4,6 @@ project:
     port: 7567
   render:
     - "./*.qmd"
-  post-render:
-    - cp -r ../data _site/data
   resources:
     - slides
 
