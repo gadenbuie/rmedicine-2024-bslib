@@ -27,7 +27,7 @@ server <- function(input, output, session) {
 
   cards <- reactive({
     req(top_n_schools())
-    set.seed(42 ** 3.8)
+    set.seed(42**3.8)
 
     ## Create a value box for each of the top-N most costly schools
     # value_box(
@@ -36,7 +36,6 @@ server <- function(input, output, session) {
     #   theme = sample(colors, 1)
     # )
   })
-
 }
 
 shinyApp(ui, server)

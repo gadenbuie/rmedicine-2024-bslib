@@ -29,7 +29,7 @@ server <- function(input, output, session) {
 
   cards <- reactive({
     req(top_n_schools())
-    set.seed(42 ** 3.8)
+    set.seed(42**3.8)
 
     pmap(top_n_schools(), function(name, cost_avg, city, state, ...) {
       fake_description <- lorem::ipsum(1, 1, 5)
@@ -45,7 +45,6 @@ server <- function(input, output, session) {
       )
     })
   })
-
 }
 
 shinyApp(ui, server)

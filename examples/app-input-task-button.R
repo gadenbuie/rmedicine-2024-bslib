@@ -21,7 +21,7 @@ ui <- page_fillable(
       input_switch("want_associates", "I Want an Associate's Degree", FALSE),
       input_switch("want_bachelors", "I Want a Bachelor's Degree", FALSE)
     ),
-      actionButton("search", "Search")
+    actionButton("search", "Search")
   ),
   card(
     card_body(
