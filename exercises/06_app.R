@@ -1,6 +1,6 @@
 library(shiny)
 library(bslib)
-library(tidyverse)
+library(dplyr)
 library(plotly)
 library(collegeScorecard)
 
