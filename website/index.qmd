@@ -54,11 +54,60 @@ Tuesday, June 11, 2024<br>
 
 Learn to build Shiny apps using modern user interfaces (UI) and layouts with bslib, the next generation of Shiny UI.
 We’ll cover stylish and convenient dashboard layouts and components as we showcase the ways in which bslib can replace shinydashboard.
-We’ll also learn about exciting new ways to deploy Shiny apps with shinylive as static sites that run entirely in the user’s browser and don’t require setting up or maintaining a Shiny server.
-
-## Schedule
-
-
 
 ## Setup
 
+::: lead
+📘 [Website] (you are here!)
+
+🧑‍💻 [Join Posit Cloud Space][posit-cloud-join]
+
+📦 [Repository]
+:::
+
+### Using Posit Cloud
+
+I've prepared a Posit Cloud workspace for workshop participants with a project for you to use during our time together.
+The project contains all of the files and packages pre-installed and ready to go.
+All you need to do is log in and start coding!
+
+If you already have a Posit Cloud account, first [join the rmedicine-2024-bslib space on Posit Cloud][posit-cloud-join].
+Otherwise [sign up for a free account](https://cloud.posit.org/signup) and then join the space.
+You can create an account with your email or login with Google, GitHub or Clever.
+
+Once you're part of the [rmedicine-2024-bslib space][posit-cloud-join], select the `rmedicine-2024-bslib` assignment to create and launch a new project just for you.
+
+![](assets/posit-cloud-project.png){.shadow-lg .img-fluid alt=""}
+
+[website]: https://pkg.garrickadenbuie.com/rmedicine-2024-bslib
+[repository]: https://github.com/rmedicine-2024-bslib
+[posit-cloud-join]: https://posit.cloud/spaces/522996/join?access_code=B1zT1aIAcKTzlSb1ejep9W4gC14a96a29Ie9wx5g
+
+### Using Your Own Computer
+
+If you prefer to use your own computer, you can clone the repository and install the necessary packages.
+I used [R 4.4](https://r-project.org) but any recent version of R (>= 4.1) should work.
+
+You can use the [usethis](https://usethis.r-lib.org) package to quickly clone the repository:
+
+```r
+usethis::create_from_github(
+  "gadenbuie/rmedicine-2024-bslib",
+  # Decide where to put the project here:
+  destdir = "~/Desktop/rmedicine-2024-bslib"
+)
+```
+
+This will download the repository and open the project in RStudio.
+Inside the project, use the `renv` package to install the necessary packages:
+
+```r
+renv::restore()
+```
+
+For very speedy installation, I recommend telling renv to use [pak](https://pak.r-lib.org/) to install packages:
+
+```r
+Sys.setenv(RENV_CONFIG_PAK_ENABLED = "true")
+renv::restore()
+```
