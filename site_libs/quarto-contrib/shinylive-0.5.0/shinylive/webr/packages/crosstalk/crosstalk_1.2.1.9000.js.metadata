@@ -1,0 +1,210 @@
+{
+  "files": [
+    {
+      "filename": "/DESCRIPTION",
+      "start": 0,
+      "end": 3079
+    },
+    {
+      "filename": "/INDEX",
+      "start": 3079,
+      "end": 3608
+    },
+    {
+      "filename": "/LICENSE",
+      "start": 3608,
+      "end": 3652
+    },
+    {
+      "filename": "/Meta/Rd.rds",
+      "start": 3652,
+      "end": 4289
+    },
+    {
+      "filename": "/Meta/features.rds",
+      "start": 4289,
+      "end": 4421
+    },
+    {
+      "filename": "/Meta/hsearch.rds",
+      "start": 4421,
+      "end": 5076
+    },
+    {
+      "filename": "/Meta/links.rds",
+      "start": 5076,
+      "end": 5406
+    },
+    {
+      "filename": "/Meta/nsInfo.rds",
+      "start": 5406,
+      "end": 5811
+    },
+    {
+      "filename": "/Meta/package.rds",
+      "start": 5811,
+      "end": 7451
+    },
+    {
+      "filename": "/NAMESPACE",
+      "start": 7451,
+      "end": 7948
+    },
+    {
+      "filename": "/NEWS.md",
+      "start": 7948,
+      "end": 9423
+    },
+    {
+      "filename": "/R/crosstalk",
+      "start": 9423,
+      "end": 10481
+    },
+    {
+      "filename": "/R/crosstalk.rdb",
+      "start": 10481,
+      "end": 37494
+    },
+    {
+      "filename": "/R/crosstalk.rdx",
+      "start": 37494,
+      "end": 38420
+    },
+    {
+      "filename": "/help/AnIndex",
+      "start": 38420,
+      "end": 38865
+    },
+    {
+      "filename": "/help/aliases.rds",
+      "start": 38865,
+      "end": 39123
+    },
+    {
+      "filename": "/help/crosstalk.rdb",
+      "start": 39123,
+      "end": 73690
+    },
+    {
+      "filename": "/help/crosstalk.rdx",
+      "start": 73690,
+      "end": 74108
+    },
+    {
+      "filename": "/help/paths.rds",
+      "start": 74108,
+      "end": 74369
+    },
+    {
+      "filename": "/html/00Index.html",
+      "start": 74369,
+      "end": 76979
+    },
+    {
+      "filename": "/html/R.css",
+      "start": 76979,
+      "end": 78823
+    },
+    {
+      "filename": "/lib/bootstrap/bootstrap-grid.min.css",
+      "start": 78823,
+      "end": 86921
+    },
+    {
+      "filename": "/lib/ionrangeslider/css/ion.rangeSlider.css",
+      "start": 86921,
+      "end": 91461
+    },
+    {
+      "filename": "/lib/ionrangeslider/js/ion.rangeSlider.js",
+      "start": 91461,
+      "end": 176417
+    },
+    {
+      "filename": "/lib/ionrangeslider/js/ion.rangeSlider.min.js",
+      "start": 176417,
+      "end": 218032
+    },
+    {
+      "filename": "/lib/ionrangeslider/scss/_base.scss",
+      "start": 218032,
+      "end": 220858
+    },
+    {
+      "filename": "/lib/ionrangeslider/scss/_mixins.scss",
+      "start": 220858,
+      "end": 221147
+    },
+    {
+      "filename": "/lib/ionrangeslider/scss/shiny.scss",
+      "start": 221147,
+      "end": 225544
+    },
+    {
+      "filename": "/lib/jquery/jquery-AUTHORS.txt",
+      "start": 225544,
+      "end": 238913
+    },
+    {
+      "filename": "/lib/jquery/jquery.js",
+      "start": 238913,
+      "end": 526543
+    },
+    {
+      "filename": "/lib/jquery/jquery.min.js",
+      "start": 526543,
+      "end": 616019
+    },
+    {
+      "filename": "/lib/jquery/jquery.min.map",
+      "start": 616019,
+      "end": 754005
+    },
+    {
+      "filename": "/lib/selectize/css/selectize.bootstrap3.css",
+      "start": 754005,
+      "end": 764771
+    },
+    {
+      "filename": "/lib/selectize/js/selectize.min.js",
+      "start": 764771,
+      "end": 809910
+    },
+    {
+      "filename": "/lib/strftime/strftime-min.js",
+      "start": 809910,
+      "end": 815630
+    },
+    {
+      "filename": "/www/css/crosstalk.min.css",
+      "start": 815630,
+      "end": 816936
+    },
+    {
+      "filename": "/www/js/crosstalk.js",
+      "start": 816936,
+      "end": 865966
+    },
+    {
+      "filename": "/www/js/crosstalk.js.map",
+      "start": 865966,
+      "end": 920819
+    },
+    {
+      "filename": "/www/js/crosstalk.min.js",
+      "start": 920819,
+      "end": 939744
+    },
+    {
+      "filename": "/www/js/crosstalk.min.js.map",
+      "start": 939744,
+      "end": 990082
+    },
+    {
+      "filename": "/www/scss/crosstalk.scss",
+      "start": 990082,
+      "end": 991898
+    }
+  ],
+  "remote_package_size": 991898
+}

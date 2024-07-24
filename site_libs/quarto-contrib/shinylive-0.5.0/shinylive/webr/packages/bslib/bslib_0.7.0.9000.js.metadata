@@ -1,0 +1,4115 @@
+{
+  "files": [
+    {
+      "filename": "/DESCRIPTION",
+      "start": 0,
+      "end": 4153
+    },
+    {
+      "filename": "/INDEX",
+      "start": 4153,
+      "end": 6431
+    },
+    {
+      "filename": "/LICENSE",
+      "start": 6431,
+      "end": 6484
+    },
+    {
+      "filename": "/Meta/Rd.rds",
+      "start": 6484,
+      "end": 9103
+    },
+    {
+      "filename": "/Meta/features.rds",
+      "start": 9103,
+      "end": 9235
+    },
+    {
+      "filename": "/Meta/hsearch.rds",
+      "start": 9235,
+      "end": 11805
+    },
+    {
+      "filename": "/Meta/links.rds",
+      "start": 11805,
+      "end": 13312
+    },
+    {
+      "filename": "/Meta/nsInfo.rds",
+      "start": 13312,
+      "end": 14822
+    },
+    {
+      "filename": "/Meta/package.rds",
+      "start": 14822,
+      "end": 17314
+    },
+    {
+      "filename": "/NAMESPACE",
+      "start": 17314,
+      "end": 21731
+    },
+    {
+      "filename": "/NEWS.md",
+      "start": 21731,
+      "end": 54981
+    },
+    {
+      "filename": "/R/bslib",
+      "start": 54981,
+      "end": 56039
+    },
+    {
+      "filename": "/R/bslib.rdb",
+      "start": 56039,
+      "end": 177075
+    },
+    {
+      "filename": "/R/bslib.rdx",
+      "start": 177075,
+      "end": 182034
+    },
+    {
+      "filename": "/R/sysdata.rdb",
+      "start": 182034,
+      "end": 551624
+    },
+    {
+      "filename": "/R/sysdata.rdx",
+      "start": 551624,
+      "end": 551785
+    },
+    {
+      "filename": "/bs3compat/_declarations.scss",
+      "start": 551785,
+      "end": 553540
+    },
+    {
+      "filename": "/bs3compat/_defaults.scss",
+      "start": 553540,
+      "end": 553690
+    },
+    {
+      "filename": "/bs3compat/_dropdown_compat.scss",
+      "start": 553690,
+      "end": 554462
+    },
+    {
+      "filename": "/bs3compat/_dt_compat.scss",
+      "start": 554462,
+      "end": 554913
+    },
+    {
+      "filename": "/bs3compat/_glyphicons.scss",
+      "start": 554913,
+      "end": 575640
+    },
+    {
+      "filename": "/bs3compat/_headers.scss",
+      "start": 575640,
+      "end": 577036
+    },
+    {
+      "filename": "/bs3compat/_help_text.scss",
+      "start": 577036,
+      "end": 577107
+    },
+    {
+      "filename": "/bs3compat/_nav_compat.scss",
+      "start": 577107,
+      "end": 577996
+    },
+    {
+      "filename": "/bs3compat/_navbar_compat.scss",
+      "start": 577996,
+      "end": 582194
+    },
+    {
+      "filename": "/bs3compat/_progress_compat.scss",
+      "start": 582194,
+      "end": 582333
+    },
+    {
+      "filename": "/bs3compat/_rules.scss",
+      "start": 582333,
+      "end": 582582
+    },
+    {
+      "filename": "/bs3compat/_shiny_input.scss",
+      "start": 582582,
+      "end": 584595
+    },
+    {
+      "filename": "/bs3compat/_shiny_misc.scss",
+      "start": 584595,
+      "end": 584946
+    },
+    {
+      "filename": "/bs3compat/_wells.scss",
+      "start": 584946,
+      "end": 585629
+    },
+    {
+      "filename": "/bs3compat/fonts/glyphicons-halflings-regular.eot",
+      "start": 585629,
+      "end": 605756
+    },
+    {
+      "filename": "/bs3compat/fonts/glyphicons-halflings-regular.svg",
+      "start": 605756,
+      "end": 714494
+    },
+    {
+      "filename": "/bs3compat/fonts/glyphicons-halflings-regular.ttf",
+      "start": 714494,
+      "end": 759898
+    },
+    {
+      "filename": "/bs3compat/fonts/glyphicons-halflings-regular.woff",
+      "start": 759898,
+      "end": 783322
+    },
+    {
+      "filename": "/bs3compat/fonts/glyphicons-halflings-regular.woff2",
+      "start": 783322,
+      "end": 801350
+    },
+    {
+      "filename": "/bs3compat/js/bs3compat.js",
+      "start": 801350,
+      "end": 803262
+    },
+    {
+      "filename": "/bs3compat/js/tabs.js",
+      "start": 803262,
+      "end": 807328
+    },
+    {
+      "filename": "/bs3compat/js/transition.js",
+      "start": 807328,
+      "end": 809167
+    },
+    {
+      "filename": "/bslib-scss/bslib.scss",
+      "start": 809167,
+      "end": 809232
+    },
+    {
+      "filename": "/bslib-scss/color-utilities.scss",
+      "start": 809232,
+      "end": 811504
+    },
+    {
+      "filename": "/bslib-scss/functions.scss",
+      "start": 811504,
+      "end": 812139
+    },
+    {
+      "filename": "/bslib-scss/spacer.scss",
+      "start": 812139,
+      "end": 813308
+    },
+    {
+      "filename": "/bslib-scss/tab-fill.scss",
+      "start": 813308,
+      "end": 813874
+    },
+    {
+      "filename": "/builtin/bs5/shiny/_mixins.scss",
+      "start": 813874,
+      "end": 814172
+    },
+    {
+      "filename": "/builtin/bs5/shiny/_rules.scss",
+      "start": 814172,
+      "end": 824972
+    },
+    {
+      "filename": "/builtin/bs5/shiny/_variables.scss",
+      "start": 824972,
+      "end": 829546
+    },
+    {
+      "filename": "/builtin/bs5/shiny/font.css",
+      "start": 829546,
+      "end": 904294
+    },
+    {
+      "filename": "/builtin/bs5/shiny/ionrangeslider/_rules.scss",
+      "start": 904294,
+      "end": 905754
+    },
+    {
+      "filename": "/builtin/bs5/shiny/ionrangeslider/_variables.scss",
+      "start": 905754,
+      "end": 906631
+    },
+    {
+      "filename": "/builtin/bs5/shiny/tables/_rules.scss",
+      "start": 906631,
+      "end": 909045
+    },
+    {
+      "filename": "/components/dist/components.css",
+      "start": 909045,
+      "end": 934113
+    },
+    {
+      "filename": "/components/dist/components.js",
+      "start": 934113,
+      "end": 985805
+    },
+    {
+      "filename": "/components/dist/components.js.map",
+      "start": 985805,
+      "end": 1065702
+    },
+    {
+      "filename": "/components/dist/components.min.js",
+      "start": 1065702,
+      "end": 1084067
+    },
+    {
+      "filename": "/components/dist/components.min.js.map",
+      "start": 1084067,
+      "end": 1162385
+    },
+    {
+      "filename": "/components/dist/web-components.js",
+      "start": 1162385,
+      "end": 1240040
+    },
+    {
+      "filename": "/components/dist/web-components.js.map",
+      "start": 1240040,
+      "end": 1528071
+    },
+    {
+      "filename": "/components/dist/web-components.min.js",
+      "start": 1528071,
+      "end": 1572278
+    },
+    {
+      "filename": "/components/dist/web-components.min.js.map",
+      "start": 1572278,
+      "end": 1858123
+    },
+    {
+      "filename": "/components/dist/webComponents/webComponents.min.js",
+      "start": 1858123,
+      "end": 1889553
+    },
+    {
+      "filename": "/components/scss/accordion.scss",
+      "start": 1889553,
+      "end": 1890219
+    },
+    {
+      "filename": "/components/scss/card.scss",
+      "start": 1890219,
+      "end": 1893937
+    },
+    {
+      "filename": "/components/scss/grid.scss",
+      "start": 1893937,
+      "end": 1895709
+    },
+    {
+      "filename": "/components/scss/mixins/_mixins.scss",
+      "start": 1895709,
+      "end": 1896708
+    },
+    {
+      "filename": "/components/scss/nav_spacer.scss",
+      "start": 1896708,
+      "end": 1897804
+    },
+    {
+      "filename": "/components/scss/page_fillable.scss",
+      "start": 1897804,
+      "end": 1898618
+    },
+    {
+      "filename": "/components/scss/page_navbar.scss",
+      "start": 1898618,
+      "end": 1899825
+    },
+    {
+      "filename": "/components/scss/page_sidebar.scss",
+      "start": 1899825,
+      "end": 1901853
+    },
+    {
+      "filename": "/components/scss/sidebar.scss",
+      "start": 1901853,
+      "end": 1916911
+    },
+    {
+      "filename": "/components/scss/value_box.scss",
+      "start": 1916911,
+      "end": 1922505
+    },
+    {
+      "filename": "/components/tag-require.js",
+      "start": 1922505,
+      "end": 1923086
+    },
+    {
+      "filename": "/css-precompiled/3/bootstrap.min.css",
+      "start": 1923086,
+      "end": 2047796
+    },
+    {
+      "filename": "/css-precompiled/4/bootstrap.min.css",
+      "start": 2047796,
+      "end": 2268231
+    },
+    {
+      "filename": "/css-precompiled/5/bootstrap.min.css",
+      "start": 2268231,
+      "end": 2583395
+    },
+    {
+      "filename": "/css-precompiled/5/bootstrap.scss",
+      "start": 2583395,
+      "end": 2586015
+    },
+    {
+      "filename": "/custom/person.scss",
+      "start": 2586015,
+      "end": 2586546
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/R/code_modal.R",
+      "start": 2586546,
+      "end": 2587418
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/R/colors.R",
+      "start": 2587418,
+      "end": 2587973
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/R/mod-global-controls.R",
+      "start": 2587973,
+      "end": 2591440
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/R/mod-selextra.R",
+      "start": 2591440,
+      "end": 2594131
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/R/mod-value-box-ui.R",
+      "start": 2594131,
+      "end": 2601102
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/R/random_plot.R",
+      "start": 2601102,
+      "end": 2603147
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/R/random_values.R",
+      "start": 2603147,
+      "end": 2605578
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/R/shuffleButton.R",
+      "start": 2605578,
+      "end": 2605963
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/about-value-boxes.md",
+      "start": 2605963,
+      "end": 2606380
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/app.R",
+      "start": 2606380,
+      "end": 2613093
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/deploy.R",
+      "start": 2613093,
+      "end": 2613314
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/www/build-a-box.js",
+      "start": 2613314,
+      "end": 2615868
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/www/build-a-box.scss",
+      "start": 2615868,
+      "end": 2617370
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/www/code-modal.js",
+      "start": 2617370,
+      "end": 2619385
+    },
+    {
+      "filename": "/examples-shiny/build-a-box/www/shiny.png",
+      "start": 2619385,
+      "end": 2632627
+    },
+    {
+      "filename": "/examples-shiny/card/app.R",
+      "start": 2632627,
+      "end": 2636907
+    },
+    {
+      "filename": "/examples-shiny/card/deploy.R",
+      "start": 2636907,
+      "end": 2637058
+    },
+    {
+      "filename": "/examples-shiny/card/www/shiny-hex.svg",
+      "start": 2637058,
+      "end": 2644811
+    },
+    {
+      "filename": "/examples-shiny/flights/app.R",
+      "start": 2644811,
+      "end": 2660753
+    },
+    {
+      "filename": "/examples-shiny/flights/deploy.R",
+      "start": 2660753,
+      "end": 2660910
+    },
+    {
+      "filename": "/examples-shiny/flights/www/logo.png",
+      "start": 2660910,
+      "end": 2729983
+    },
+    {
+      "filename": "/examples-shiny/value_box/app.R",
+      "start": 2729983,
+      "end": 2732251
+    },
+    {
+      "filename": "/examples-shiny/value_box/deploy.R",
+      "start": 2732251,
+      "end": 2732412
+    },
+    {
+      "filename": "/fonts/07d40e985ad7c747025dabb9f22142c4.woff2",
+      "start": 2732412,
+      "end": 2748868
+    },
+    {
+      "filename": "/fonts/1Ptug8zYS_SKggPNyC0ITw.woff2",
+      "start": 2748868,
+      "end": 2797204
+    },
+    {
+      "filename": "/fonts/1Ptug8zYS_SKggPNyCAIT5lu.woff2",
+      "start": 2797204,
+      "end": 2824192
+    },
+    {
+      "filename": "/fonts/1Ptug8zYS_SKggPNyCIIT5lu.woff2",
+      "start": 2824192,
+      "end": 2835576
+    },
+    {
+      "filename": "/fonts/1Ptug8zYS_SKggPNyCMIT5lu.woff2",
+      "start": 2835576,
+      "end": 2866436
+    },
+    {
+      "filename": "/fonts/1Ptug8zYS_SKggPNyCkIT5lu.woff2",
+      "start": 2866436,
+      "end": 2892232
+    },
+    {
+      "filename": "/fonts/1f5e011d6aae0d98fc0518e1a303e99a.woff2",
+      "start": 2892232,
+      "end": 2902564
+    },
+    {
+      "filename": "/fonts/4iCs6KVjbNBYlgoKcQ72j00.woff2",
+      "start": 2902564,
+      "end": 2949360
+    },
+    {
+      "filename": "/fonts/4iCs6KVjbNBYlgoKcg72j00.woff2",
+      "start": 2949360,
+      "end": 2973808
+    },
+    {
+      "filename": "/fonts/4iCs6KVjbNBYlgoKcw72j00.woff2",
+      "start": 2973808,
+      "end": 2988396
+    },
+    {
+      "filename": "/fonts/4iCs6KVjbNBYlgoKew72j00.woff2",
+      "start": 2988396,
+      "end": 3009256
+    },
+    {
+      "filename": "/fonts/4iCs6KVjbNBYlgoKfA72j00.woff2",
+      "start": 3009256,
+      "end": 3024372
+    },
+    {
+      "filename": "/fonts/4iCs6KVjbNBYlgoKfw72.woff2",
+      "start": 3024372,
+      "end": 3059224
+    },
+    {
+      "filename": "/fonts/4iCv6KVjbNBYlgoCxCvjs2yNL4U.woff2",
+      "start": 3059224,
+      "end": 3072160
+    },
+    {
+      "filename": "/fonts/4iCv6KVjbNBYlgoCxCvjsGyN.woff2",
+      "start": 3072160,
+      "end": 3101912
+    },
+    {
+      "filename": "/fonts/4iCv6KVjbNBYlgoCxCvjtGyNL4U.woff2",
+      "start": 3101912,
+      "end": 3120112
+    },
+    {
+      "filename": "/fonts/4iCv6KVjbNBYlgoCxCvjvGyNL4U.woff2",
+      "start": 3120112,
+      "end": 3133396
+    },
+    {
+      "filename": "/fonts/4iCv6KVjbNBYlgoCxCvjvWyNL4U.woff2",
+      "start": 3133396,
+      "end": 3154272
+    },
+    {
+      "filename": "/fonts/4iCv6KVjbNBYlgoCxCvjvmyNL4U.woff2",
+      "start": 3154272,
+      "end": 3192112
+    },
+    {
+      "filename": "/fonts/626330658504e338ee86aec8e957426b.woff2",
+      "start": 3192112,
+      "end": 3213728
+    },
+    {
+      "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7jsDJT9g.woff2",
+      "start": 3213728,
+      "end": 3214764
+    },
+    {
+      "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7ksDJT9g.woff2",
+      "start": 3214764,
+      "end": 3215976
+    },
+    {
+      "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDI.woff2",
+      "start": 3215976,
+      "end": 3230136
+    },
+    {
+      "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7osDJT9g.woff2",
+      "start": 3230136,
+      "end": 3235872
+    },
+    {
+      "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7psDJT9g.woff2",
+      "start": 3235872,
+      "end": 3255484
+    },
+    {
+      "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7qsDJT9g.woff2",
+      "start": 3255484,
+      "end": 3256512
+    },
+    {
+      "filename": "/fonts/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7rsDJT9g.woff2",
+      "start": 3256512,
+      "end": 3257420
+    },
+    {
+      "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2",
+      "start": 3257420,
+      "end": 3263256
+    },
+    {
+      "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2",
+      "start": 3263256,
+      "end": 3269260
+    },
+    {
+      "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2",
+      "start": 3269260,
+      "end": 3274284
+    },
+    {
+      "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2",
+      "start": 3274284,
+      "end": 3294900
+    },
+    {
+      "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2",
+      "start": 3294900,
+      "end": 3301936
+    },
+    {
+      "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2",
+      "start": 3301936,
+      "end": 3316828
+    },
+    {
+      "filename": "/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2",
+      "start": 3316828,
+      "end": 3324800
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxduz8A.woff2",
+      "start": 3324800,
+      "end": 3332768
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlBduz8A.woff2",
+      "start": 3332768,
+      "end": 3339680
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2",
+      "start": 3339680,
+      "end": 3354504
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmBduz8A.woff2",
+      "start": 3354504,
+      "end": 3360332
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmRduz8A.woff2",
+      "start": 3360332,
+      "end": 3380760
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmhduz8A.woff2",
+      "start": 3380760,
+      "end": 3385776
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmxduz8A.woff2",
+      "start": 3385776,
+      "end": 3391720
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2",
+      "start": 3391720,
+      "end": 3399580
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2",
+      "start": 3399580,
+      "end": 3406484
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2",
+      "start": 3406484,
+      "end": 3421196
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2",
+      "start": 3421196,
+      "end": 3426924
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2",
+      "start": 3426924,
+      "end": 3447316
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2",
+      "start": 3447316,
+      "end": 3452288
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2",
+      "start": 3452288,
+      "end": 3458236
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxduz8A.woff2",
+      "start": 3458236,
+      "end": 3466148
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlBduz8A.woff2",
+      "start": 3466148,
+      "end": 3473116
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2",
+      "start": 3473116,
+      "end": 3487896
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmBduz8A.woff2",
+      "start": 3487896,
+      "end": 3493712
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmRduz8A.woff2",
+      "start": 3493712,
+      "end": 3514100
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhduz8A.woff2",
+      "start": 3514100,
+      "end": 3519028
+    },
+    {
+      "filename": "/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmxduz8A.woff2",
+      "start": 3519028,
+      "end": 3525024
+    },
+    {
+      "filename": "/fonts/CSR54z1Qlv-GDxkbKVQ_dFsvWNReuQ.woff2",
+      "start": 3525024,
+      "end": 3538460
+    },
+    {
+      "filename": "/fonts/CSR54z1Qlv-GDxkbKVQ_dFsvWNpeudwk.woff2",
+      "start": 3538460,
+      "end": 3550688
+    },
+    {
+      "filename": "/fonts/CSR64z1Qlv-GDxkbKVQ_fO4KTet_.woff2",
+      "start": 3550688,
+      "end": 3570668
+    },
+    {
+      "filename": "/fonts/CSR64z1Qlv-GDxkbKVQ_fOAKTQ.woff2",
+      "start": 3570668,
+      "end": 3584028
+    },
+    {
+      "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvQlMIXxw.woff2",
+      "start": 3584028,
+      "end": 3586340
+    },
+    {
+      "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvUlMI.woff2",
+      "start": 3586340,
+      "end": 3608132
+    },
+    {
+      "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvXlMIXxw.woff2",
+      "start": 3608132,
+      "end": 3609964
+    },
+    {
+      "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvYlMIXxw.woff2",
+      "start": 3609964,
+      "end": 3611600
+    },
+    {
+      "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvZlMIXxw.woff2",
+      "start": 3611600,
+      "end": 3613464
+    },
+    {
+      "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvalMIXxw.woff2",
+      "start": 3613464,
+      "end": 3642744
+    },
+    {
+      "filename": "/fonts/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvblMIXxw.woff2",
+      "start": 3642744,
+      "end": 3650444
+    },
+    {
+      "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlM-vWjMY.woff2",
+      "start": 3650444,
+      "end": 3679352
+    },
+    {
+      "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMOvWjMY.woff2",
+      "start": 3679352,
+      "end": 3687840
+    },
+    {
+      "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMevWjMY.woff2",
+      "start": 3687840,
+      "end": 3690772
+    },
+    {
+      "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMuvWjMY.woff2",
+      "start": 3690772,
+      "end": 3698464
+    },
+    {
+      "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlOevWjMY.woff2",
+      "start": 3698464,
+      "end": 3712336
+    },
+    {
+      "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2",
+      "start": 3712336,
+      "end": 3733864
+    },
+    {
+      "filename": "/fonts/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPuvWjMY.woff2",
+      "start": 3733864,
+      "end": 3744176
+    },
+    {
+      "filename": "/fonts/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2",
+      "start": 3744176,
+      "end": 3765464
+    },
+    {
+      "filename": "/fonts/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2",
+      "start": 3765464,
+      "end": 3788980
+    },
+    {
+      "filename": "/fonts/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2",
+      "start": 3788980,
+      "end": 3798492
+    },
+    {
+      "filename": "/fonts/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+      "start": 3798492,
+      "end": 3826304
+    },
+    {
+      "filename": "/fonts/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2",
+      "start": 3826304,
+      "end": 3859396
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2",
+      "start": 3859396,
+      "end": 3869236
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fBBc4.woff2",
+      "start": 3869236,
+      "end": 3885156
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2",
+      "start": 3885156,
+      "end": 3892172
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2",
+      "start": 3892172,
+      "end": 3893672
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2",
+      "start": 3893672,
+      "end": 3908640
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2",
+      "start": 3908640,
+      "end": 3920440
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2",
+      "start": 3920440,
+      "end": 3926044
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2",
+      "start": 3926044,
+      "end": 3935620
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fBBc4.woff2",
+      "start": 3935620,
+      "end": 3951360
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2",
+      "start": 3951360,
+      "end": 3958480
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2",
+      "start": 3958480,
+      "end": 3959960
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2",
+      "start": 3959960,
+      "end": 3974960
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2",
+      "start": 3974960,
+      "end": 3986756
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2",
+      "start": 3986756,
+      "end": 3992224
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2",
+      "start": 3992224,
+      "end": 4001868
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfBBc4.woff2",
+      "start": 4001868,
+      "end": 4017728
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2",
+      "start": 4017728,
+      "end": 4024664
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2",
+      "start": 4024664,
+      "end": 4026096
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2",
+      "start": 4026096,
+      "end": 4040780
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2",
+      "start": 4040780,
+      "end": 4052604
+    },
+    {
+      "filename": "/fonts/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2",
+      "start": 4052604,
+      "end": 4058152
+    },
+    {
+      "filename": "/fonts/KFOmCnqEu92Fr1Mu4WxKOzY.woff2",
+      "start": 4058152,
+      "end": 4065264
+    },
+    {
+      "filename": "/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2",
+      "start": 4065264,
+      "end": 4081008
+    },
+    {
+      "filename": "/fonts/KFOmCnqEu92Fr1Mu5mxKOzY.woff2",
+      "start": 4081008,
+      "end": 4090636
+    },
+    {
+      "filename": "/fonts/KFOmCnqEu92Fr1Mu72xKOzY.woff2",
+      "start": 4090636,
+      "end": 4105980
+    },
+    {
+      "filename": "/fonts/KFOmCnqEu92Fr1Mu7GxKOzY.woff2",
+      "start": 4105980,
+      "end": 4117852
+    },
+    {
+      "filename": "/fonts/KFOmCnqEu92Fr1Mu7WxKOzY.woff2",
+      "start": 4117852,
+      "end": 4123412
+    },
+    {
+      "filename": "/fonts/KFOmCnqEu92Fr1Mu7mxKOzY.woff2",
+      "start": 4123412,
+      "end": 4124896
+    },
+    {
+      "filename": "/fonts/QGYpz_kZZAGCONcK2A4bGOj8mNhN.woff2",
+      "start": 4124896,
+      "end": 4203804
+    },
+    {
+      "filename": "/fonts/S6u8w4BMUTPHjxsAUi-qJCY.woff2",
+      "start": 4203804,
+      "end": 4209404
+    },
+    {
+      "filename": "/fonts/S6u8w4BMUTPHjxsAXC-q.woff2",
+      "start": 4209404,
+      "end": 4233812
+    },
+    {
+      "filename": "/fonts/S6u9w4BMUTPHh6UVSwaPGR_p.woff2",
+      "start": 4233812,
+      "end": 4239180
+    },
+    {
+      "filename": "/fonts/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "start": 4239180,
+      "end": 4262220
+    },
+    {
+      "filename": "/fonts/S6u9w4BMUTPHh7USSwaPGR_p.woff2",
+      "start": 4262220,
+      "end": 4267844
+    },
+    {
+      "filename": "/fonts/S6u9w4BMUTPHh7USSwiPGQ.woff2",
+      "start": 4267844,
+      "end": 4291080
+    },
+    {
+      "filename": "/fonts/S6uyw4BMUTPHjx4wXg.woff2",
+      "start": 4291080,
+      "end": 4314660
+    },
+    {
+      "filename": "/fonts/S6uyw4BMUTPHjxAwXjeu.woff2",
+      "start": 4314660,
+      "end": 4320132
+    },
+    {
+      "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7SUc.woff2",
+      "start": 4320132,
+      "end": 4337732
+    },
+    {
+      "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2",
+      "start": 4337732,
+      "end": 4384436
+    },
+    {
+      "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7SUc.woff2",
+      "start": 4384436,
+      "end": 4406916
+    },
+    {
+      "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2",
+      "start": 4406916,
+      "end": 4486856
+    },
+    {
+      "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7SUc.woff2",
+      "start": 4486856,
+      "end": 4514140
+    },
+    {
+      "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7SUc.woff2",
+      "start": 4514140,
+      "end": 4526872
+    },
+    {
+      "filename": "/fonts/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7SUc.woff2",
+      "start": 4526872,
+      "end": 4537412
+    },
+    {
+      "filename": "/fonts/XRXV3I6Li01BKofIMeaBXso.woff2",
+      "start": 4537412,
+      "end": 4558120
+    },
+    {
+      "filename": "/fonts/XRXV3I6Li01BKofINeaB.woff2",
+      "start": 4558120,
+      "end": 4597244
+    },
+    {
+      "filename": "/fonts/XRXV3I6Li01BKofIO-aBXso.woff2",
+      "start": 4597244,
+      "end": 4631852
+    },
+    {
+      "filename": "/fonts/XRXV3I6Li01BKofIOOaBXso.woff2",
+      "start": 4631852,
+      "end": 4660720
+    },
+    {
+      "filename": "/fonts/XRXV3I6Li01BKofIOuaBXso.woff2",
+      "start": 4660720,
+      "end": 4673680
+    },
+    {
+      "filename": "/fonts/c2f002b3a87d3f9bfeebb23d32cfd9f8.woff2",
+      "start": 4673680,
+      "end": 4700896
+    },
+    {
+      "filename": "/fonts/ee91700cdbf7ce16c054c2bb8946c736.woff2",
+      "start": 4700896,
+      "end": 4731948
+    },
+    {
+      "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqW106F15M.woff2",
+      "start": 4731948,
+      "end": 4757916
+    },
+    {
+      "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06F15M.woff2",
+      "start": 4757916,
+      "end": 4795612
+    },
+    {
+      "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2",
+      "start": 4795612,
+      "end": 4850500
+    },
+    {
+      "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2",
+      "start": 4850500,
+      "end": 4855380
+    },
+    {
+      "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6F15M.woff2",
+      "start": 4855380,
+      "end": 4872516
+    },
+    {
+      "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06F15M.woff2",
+      "start": 4872516,
+      "end": 4889580
+    },
+    {
+      "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2",
+      "start": 4889580,
+      "end": 4939876
+    },
+    {
+      "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2",
+      "start": 4939876,
+      "end": 4962656
+    },
+    {
+      "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2",
+      "start": 4962656,
+      "end": 4994860
+    },
+    {
+      "filename": "/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWxU6F15M.woff2",
+      "start": 4994860,
+      "end": 5045344
+    },
+    {
+      "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "start": 5045344,
+      "end": 5093580
+    },
+    {
+      "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2",
+      "start": 5093580,
+      "end": 5110096
+    },
+    {
+      "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2",
+      "start": 5110096,
+      "end": 5126648
+    },
+    {
+      "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2",
+      "start": 5126648,
+      "end": 5161976
+    },
+    {
+      "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2",
+      "start": 5161976,
+      "end": 5211412
+    },
+    {
+      "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2",
+      "start": 5211412,
+      "end": 5215936
+    },
+    {
+      "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2",
+      "start": 5215936,
+      "end": 5242672
+    },
+    {
+      "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2",
+      "start": 5242672,
+      "end": 5263944
+    },
+    {
+      "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2",
+      "start": 5263944,
+      "end": 5288928
+    },
+    {
+      "filename": "/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2",
+      "start": 5288928,
+      "end": 5336064
+    },
+    {
+      "filename": "/fonts/q5uGsou0JOdh94bfuQltOxU.woff2",
+      "start": 5336064,
+      "end": 5355312
+    },
+    {
+      "filename": "/fonts/q5uGsou0JOdh94bfvQlt.woff2",
+      "start": 5355312,
+      "end": 5380688
+    },
+    {
+      "filename": "/help/AnIndex",
+      "start": 5380688,
+      "end": 5384746
+    },
+    {
+      "filename": "/help/aliases.rds",
+      "start": 5384746,
+      "end": 5386085
+    },
+    {
+      "filename": "/help/bslib.rdb",
+      "start": 5386085,
+      "end": 5621519
+    },
+    {
+      "filename": "/help/bslib.rdx",
+      "start": 5621519,
+      "end": 5622793
+    },
+    {
+      "filename": "/help/figures/lifecycle-archived.svg",
+      "start": 5622793,
+      "end": 5624097
+    },
+    {
+      "filename": "/help/figures/lifecycle-defunct.svg",
+      "start": 5624097,
+      "end": 5625397
+    },
+    {
+      "filename": "/help/figures/lifecycle-deprecated.svg",
+      "start": 5625397,
+      "end": 5626709
+    },
+    {
+      "filename": "/help/figures/lifecycle-experimental.svg",
+      "start": 5626709,
+      "end": 5628029
+    },
+    {
+      "filename": "/help/figures/lifecycle-maturing.svg",
+      "start": 5628029,
+      "end": 5629333
+    },
+    {
+      "filename": "/help/figures/lifecycle-questioning.svg",
+      "start": 5629333,
+      "end": 5630649
+    },
+    {
+      "filename": "/help/figures/lifecycle-soft-deprecated.svg",
+      "start": 5630649,
+      "end": 5631983
+    },
+    {
+      "filename": "/help/figures/lifecycle-stable.svg",
+      "start": 5631983,
+      "end": 5633321
+    },
+    {
+      "filename": "/help/figures/lifecycle-superseded.svg",
+      "start": 5633321,
+      "end": 5634633
+    },
+    {
+      "filename": "/help/figures/navset-card-pill.png",
+      "start": 5634633,
+      "end": 5644556
+    },
+    {
+      "filename": "/help/figures/navset-card-underline.png",
+      "start": 5644556,
+      "end": 5654068
+    },
+    {
+      "filename": "/help/figures/navset-pill-list.png",
+      "start": 5654068,
+      "end": 5663813
+    },
+    {
+      "filename": "/help/figures/navset-pill.png",
+      "start": 5663813,
+      "end": 5673088
+    },
+    {
+      "filename": "/help/figures/navset-tab-basic.png",
+      "start": 5673088,
+      "end": 5677933
+    },
+    {
+      "filename": "/help/figures/navset-tab-card.png",
+      "start": 5677933,
+      "end": 5687699
+    },
+    {
+      "filename": "/help/figures/navset-tab.png",
+      "start": 5687699,
+      "end": 5696840
+    },
+    {
+      "filename": "/help/figures/navset-underline.png",
+      "start": 5696840,
+      "end": 5705325
+    },
+    {
+      "filename": "/help/figures/navset_card_pill.png",
+      "start": 5705325,
+      "end": 5718252
+    },
+    {
+      "filename": "/help/figures/page-navbar.png",
+      "start": 5718252,
+      "end": 5728322
+    },
+    {
+      "filename": "/help/figures/value-box-background-color.png",
+      "start": 5728322,
+      "end": 5734728
+    },
+    {
+      "filename": "/help/figures/value-box-background-theme.png",
+      "start": 5734728,
+      "end": 5741180
+    },
+    {
+      "filename": "/help/figures/value-box-custom.png",
+      "start": 5741180,
+      "end": 5747644
+    },
+    {
+      "filename": "/help/figures/value-box-gradient-1.png",
+      "start": 5747644,
+      "end": 5777479
+    },
+    {
+      "filename": "/help/figures/value-box-named-color.png",
+      "start": 5777479,
+      "end": 5783158
+    },
+    {
+      "filename": "/help/figures/value-box-named-theme.png",
+      "start": 5783158,
+      "end": 5789514
+    },
+    {
+      "filename": "/help/figures/value-box-showcase-bottom.png",
+      "start": 5789514,
+      "end": 5807229
+    },
+    {
+      "filename": "/help/figures/value-box-showcase-left-center.png",
+      "start": 5807229,
+      "end": 5818509
+    },
+    {
+      "filename": "/help/figures/value-box-showcase-top-right.png",
+      "start": 5818509,
+      "end": 5829683
+    },
+    {
+      "filename": "/help/figures/value-box-text-color.png",
+      "start": 5829683,
+      "end": 5836000
+    },
+    {
+      "filename": "/help/figures/value-box-text-theme.png",
+      "start": 5836000,
+      "end": 5842368
+    },
+    {
+      "filename": "/help/figures/value-box-theme-class.png",
+      "start": 5842368,
+      "end": 5848760
+    },
+    {
+      "filename": "/help/paths.rds",
+      "start": 5848760,
+      "end": 5849361
+    },
+    {
+      "filename": "/html/00Index.html",
+      "start": 5849361,
+      "end": 5865408
+    },
+    {
+      "filename": "/html/R.css",
+      "start": 5865408,
+      "end": 5867252
+    },
+    {
+      "filename": "/lib/bs-a11y-p/LICENSE.md",
+      "start": 5867252,
+      "end": 5868726
+    },
+    {
+      "filename": "/lib/bs-a11y-p/package.json",
+      "start": 5868726,
+      "end": 5869498
+    },
+    {
+      "filename": "/lib/bs-a11y-p/plugins/css/bootstrap-accessibility.css",
+      "start": 5869498,
+      "end": 5870824
+    },
+    {
+      "filename": "/lib/bs-a11y-p/plugins/js/bootstrap-accessibility.js",
+      "start": 5870824,
+      "end": 5897955
+    },
+    {
+      "filename": "/lib/bs-a11y-p/plugins/js/bootstrap-accessibility.min.js",
+      "start": 5897955,
+      "end": 5910742
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/js/carousel.js",
+      "start": 5910742,
+      "end": 5922265
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/js/collapse.js",
+      "start": 5922265,
+      "end": 5926439
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/js/dropdown.js",
+      "start": 5926439,
+      "end": 5928339
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/js/functions.js",
+      "start": 5928339,
+      "end": 5932203
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/js/modal.js",
+      "start": 5932203,
+      "end": 5933347
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/js/tab.js",
+      "start": 5933347,
+      "end": 5936147
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/less/bootstrap-accessibility.less",
+      "start": 5936147,
+      "end": 5936460
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/less/partials/alerts.less",
+      "start": 5936460,
+      "end": 5936754
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/less/partials/buttons.less",
+      "start": 5936754,
+      "end": 5936783
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/less/partials/carousel.less",
+      "start": 5936783,
+      "end": 5937881
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/less/partials/close.less",
+      "start": 5937881,
+      "end": 5937937
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/less/partials/divs.less",
+      "start": 5937937,
+      "end": 5937972
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/less/partials/links.less",
+      "start": 5937972,
+      "end": 5937998
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/less/partials/mixins.less",
+      "start": 5937998,
+      "end": 5938081
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/less/partials/navigation.less",
+      "start": 5938081,
+      "end": 5938138
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/less/partials/variables.less",
+      "start": 5938138,
+      "end": 5938644
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/meteor/package.js",
+      "start": 5938644,
+      "end": 5939096
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/sass/bootstrap-accessibility.scss",
+      "start": 5939096,
+      "end": 5939410
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/sass/partials/_alerts.scss",
+      "start": 5939410,
+      "end": 5939705
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/sass/partials/_buttons.scss",
+      "start": 5939705,
+      "end": 5939819
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/sass/partials/_carousel.scss",
+      "start": 5939819,
+      "end": 5940922
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/sass/partials/_close.scss",
+      "start": 5940922,
+      "end": 5941050
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/sass/partials/_divs.scss",
+      "start": 5941050,
+      "end": 5941166
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/sass/partials/_links.scss",
+      "start": 5941166,
+      "end": 5941278
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/sass/partials/_mixins.scss",
+      "start": 5941278,
+      "end": 5941468
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/sass/partials/_navigation.scss",
+      "start": 5941468,
+      "end": 5941624
+    },
+    {
+      "filename": "/lib/bs-a11y-p/src/sass/partials/_variables.scss",
+      "start": 5941624,
+      "end": 5942379
+    },
+    {
+      "filename": "/lib/bs-colorpicker/LICENSE",
+      "start": 5942379,
+      "end": 5943448
+    },
+    {
+      "filename": "/lib/bs-colorpicker/README.md",
+      "start": 5943448,
+      "end": 5948837
+    },
+    {
+      "filename": "/lib/bs-colorpicker/css/bootstrap-colorpicker.css",
+      "start": 5948837,
+      "end": 5960438
+    },
+    {
+      "filename": "/lib/bs-colorpicker/css/bootstrap-colorpicker.css.map",
+      "start": 5960438,
+      "end": 5979541
+    },
+    {
+      "filename": "/lib/bs-colorpicker/css/bootstrap-colorpicker.min.css",
+      "start": 5979541,
+      "end": 5989036
+    },
+    {
+      "filename": "/lib/bs-colorpicker/css/bootstrap-colorpicker.min.css.map",
+      "start": 5989036,
+      "end": 6016172
+    },
+    {
+      "filename": "/lib/bs-colorpicker/js/bootstrap-colorpicker.js",
+      "start": 6016172,
+      "end": 6181866
+    },
+    {
+      "filename": "/lib/bs-colorpicker/js/bootstrap-colorpicker.js.map",
+      "start": 6181866,
+      "end": 6379172
+    },
+    {
+      "filename": "/lib/bs-colorpicker/js/bootstrap-colorpicker.min.js.map",
+      "start": 6379172,
+      "end": 6586097
+    },
+    {
+      "filename": "/lib/bs-colorpicker/package.json",
+      "start": 6586097,
+      "end": 6587561
+    },
+    {
+      "filename": "/lib/bs3/CHANGELOG.md",
+      "start": 6587561,
+      "end": 6595464
+    },
+    {
+      "filename": "/lib/bs3/LICENSE",
+      "start": 6595464,
+      "end": 6596594
+    },
+    {
+      "filename": "/lib/bs3/README.md",
+      "start": 6596594,
+      "end": 6608940
+    },
+    {
+      "filename": "/lib/bs3/assets/fonts/bootstrap/glyphicons-halflings-regular.eot",
+      "start": 6608940,
+      "end": 6629067
+    },
+    {
+      "filename": "/lib/bs3/assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
+      "start": 6629067,
+      "end": 6737805
+    },
+    {
+      "filename": "/lib/bs3/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
+      "start": 6737805,
+      "end": 6783209
+    },
+    {
+      "filename": "/lib/bs3/assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
+      "start": 6783209,
+      "end": 6806633
+    },
+    {
+      "filename": "/lib/bs3/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2",
+      "start": 6806633,
+      "end": 6824661
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap-sprockets.js",
+      "start": 6824661,
+      "end": 6825042
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap.js",
+      "start": 6825042,
+      "end": 6900526
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap.min.js",
+      "start": 6900526,
+      "end": 6940206
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap/affix.js",
+      "start": 6940206,
+      "end": 6945167
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap/alert.js",
+      "start": 6945167,
+      "end": 6947503
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap/button.js",
+      "start": 6947503,
+      "end": 6951337
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap/carousel.js",
+      "start": 6951337,
+      "end": 6958629
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap/collapse.js",
+      "start": 6958629,
+      "end": 6964660
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap/dropdown.js",
+      "start": 6964660,
+      "end": 6969442
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap/modal.js",
+      "start": 6969442,
+      "end": 6980056
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap/popover.js",
+      "start": 6980056,
+      "end": 6983501
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap/scrollspy.js",
+      "start": 6983501,
+      "end": 6988218
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap/tab.js",
+      "start": 6988218,
+      "end": 6992138
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap/tooltip.js",
+      "start": 6992138,
+      "end": 7013275
+    },
+    {
+      "filename": "/lib/bs3/assets/javascripts/bootstrap/transition.js",
+      "start": 7013275,
+      "end": 7015114
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/_bootstrap-compass.scss",
+      "start": 7015114,
+      "end": 7015292
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/_bootstrap-mincer.scss",
+      "start": 7015292,
+      "end": 7016049
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/_bootstrap-sprockets.scss",
+      "start": 7016049,
+      "end": 7016217
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/_bootstrap.scss",
+      "start": 7016217,
+      "end": 7017705
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_alerts.scss",
+      "start": 7017705,
+      "end": 7019251
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_badges.scss",
+      "start": 7019251,
+      "end": 7020479
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_breadcrumbs.scss",
+      "start": 7020479,
+      "end": 7021179
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_button-groups.scss",
+      "start": 7021179,
+      "end": 7026943
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_buttons.scss",
+      "start": 7026943,
+      "end": 7030762
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_carousel.scss",
+      "start": 7030762,
+      "end": 7036500
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_close.scss",
+      "start": 7036500,
+      "end": 7037335
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_code.scss",
+      "start": 7037335,
+      "end": 7038738
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_component-animations.scss",
+      "start": 7038738,
+      "end": 7039558
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_dropdowns.scss",
+      "start": 7039558,
+      "end": 7044405
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_forms.scss",
+      "start": 7044405,
+      "end": 7060462
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_glyphicons.scss",
+      "start": 7060462,
+      "end": 7080907
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_grid.scss",
+      "start": 7080907,
+      "end": 7082476
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_input-groups.scss",
+      "start": 7082476,
+      "end": 7086786
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_jumbotron.scss",
+      "start": 7086786,
+      "end": 7087930
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_labels.scss",
+      "start": 7087930,
+      "end": 7089085
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_list-group.scss",
+      "start": 7089085,
+      "end": 7092236
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_media.scss",
+      "start": 7092236,
+      "end": 7093136
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_mixins.scss",
+      "start": 7093136,
+      "end": 7094122
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_modals.scss",
+      "start": 7094122,
+      "end": 7097697
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_navbar.scss",
+      "start": 7097697,
+      "end": 7112349
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_navs.scss",
+      "start": 7112349,
+      "end": 7117299
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_normalize.scss",
+      "start": 7117299,
+      "end": 7125006
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_pager.scss",
+      "start": 7125006,
+      "end": 7125861
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_pagination.scss",
+      "start": 7125861,
+      "end": 7127934
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_panels.scss",
+      "start": 7127934,
+      "end": 7134322
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_popovers.scss",
+      "start": 7134322,
+      "end": 7137798
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_print.scss",
+      "start": 7137798,
+      "end": 7139480
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_progress-bars.scss",
+      "start": 7139480,
+      "end": 7141478
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_responsive-embed.scss",
+      "start": 7141478,
+      "end": 7142024
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_responsive-utilities.scss",
+      "start": 7142024,
+      "end": 7146445
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_scaffolding.scss",
+      "start": 7146445,
+      "end": 7149491
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_tables.scss",
+      "start": 7149491,
+      "end": 7154153
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_theme.scss",
+      "start": 7154153,
+      "end": 7162773
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_thumbnails.scss",
+      "start": 7162773,
+      "end": 7163665
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_tooltip.scss",
+      "start": 7163665,
+      "end": 7166688
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_type.scss",
+      "start": 7166688,
+      "end": 7172786
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_utilities.scss",
+      "start": 7172786,
+      "end": 7173551
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_variables.scss",
+      "start": 7173551,
+      "end": 7205835
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/_wells.scss",
+      "start": 7205835,
+      "end": 7206376
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_alerts.scss",
+      "start": 7206376,
+      "end": 7206640
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_background-variant.scss",
+      "start": 7206640,
+      "end": 7206873
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_border-radius.scss",
+      "start": 7206873,
+      "end": 7207357
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_buttons.scss",
+      "start": 7207357,
+      "end": 7208732
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_center-block.scss",
+      "start": 7208732,
+      "end": 7208858
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_clearfix.scss",
+      "start": 7208858,
+      "end": 7209469
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_forms.scss",
+      "start": 7209469,
+      "end": 7212249
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_gradients.scss",
+      "start": 7212249,
+      "end": 7216630
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_grid-framework.scss",
+      "start": 7216630,
+      "end": 7218989
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_grid.scss",
+      "start": 7218989,
+      "end": 7222199
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_hide-text.scss",
+      "start": 7222199,
+      "end": 7222789
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_image.scss",
+      "start": 7222789,
+      "end": 7223896
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_labels.scss",
+      "start": 7223896,
+      "end": 7224063
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_list-group.scss",
+      "start": 7224063,
+      "end": 7224735
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_nav-divider.scss",
+      "start": 7224735,
+      "end": 7224973
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_nav-vertical-align.scss",
+      "start": 7224973,
+      "end": 7225343
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_opacity.scss",
+      "start": 7225343,
+      "end": 7225491
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_pagination.scss",
+      "start": 7225491,
+      "end": 7225998
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_panels.scss",
+      "start": 7225998,
+      "end": 7226541
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_progress-bar.scss",
+      "start": 7226541,
+      "end": 7226741
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_reset-filter.scss",
+      "start": 7226741,
+      "end": 7226987
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_reset-text.scss",
+      "start": 7226987,
+      "end": 7227460
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_resize.scss",
+      "start": 7227460,
+      "end": 7227662
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss",
+      "start": 7227662,
+      "end": 7228079
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_size.scss",
+      "start": 7228079,
+      "end": 7228226
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_tab-focus.scss",
+      "start": 7228226,
+      "end": 7228564
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_table-row.scss",
+      "start": 7228564,
+      "end": 7229279
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss",
+      "start": 7229279,
+      "end": 7229489
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_text-overflow.scss",
+      "start": 7229489,
+      "end": 7229657
+    },
+    {
+      "filename": "/lib/bs3/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss",
+      "start": 7229657,
+      "end": 7236302
+    },
+    {
+      "filename": "/lib/bs3/eyeglass-exports.js",
+      "start": 7236302,
+      "end": 7236449
+    },
+    {
+      "filename": "/lib/bs3/package.json",
+      "start": 7236449,
+      "end": 7237291
+    },
+    {
+      "filename": "/lib/bs4/LICENSE",
+      "start": 7237291,
+      "end": 7238422
+    },
+    {
+      "filename": "/lib/bs4/README.md",
+      "start": 7238422,
+      "end": 7250359
+    },
+    {
+      "filename": "/lib/bs4/dist/js/bootstrap.bundle.min.js",
+      "start": 7250359,
+      "end": 7334773
+    },
+    {
+      "filename": "/lib/bs4/dist/js/bootstrap.bundle.min.js.map",
+      "start": 7334773,
+      "end": 7651117
+    },
+    {
+      "filename": "/lib/bs4/package.json",
+      "start": 7651117,
+      "end": 7657571
+    },
+    {
+      "filename": "/lib/bs4/scss/_alert.scss",
+      "start": 7657571,
+      "end": 7658735
+    },
+    {
+      "filename": "/lib/bs4/scss/_badge.scss",
+      "start": 7658735,
+      "end": 7659856
+    },
+    {
+      "filename": "/lib/bs4/scss/_breadcrumb.scss",
+      "start": 7659856,
+      "end": 7661234
+    },
+    {
+      "filename": "/lib/bs4/scss/_button-group.scss",
+      "start": 7661234,
+      "end": 7665083
+    },
+    {
+      "filename": "/lib/bs4/scss/_buttons.scss",
+      "start": 7665083,
+      "end": 7668704
+    },
+    {
+      "filename": "/lib/bs4/scss/_card.scss",
+      "start": 7668704,
+      "end": 7674984
+    },
+    {
+      "filename": "/lib/bs4/scss/_carousel.scss",
+      "start": 7674984,
+      "end": 7680305
+    },
+    {
+      "filename": "/lib/bs4/scss/_close.scss",
+      "start": 7680305,
+      "end": 7681245
+    },
+    {
+      "filename": "/lib/bs4/scss/_code.scss",
+      "start": 7681245,
+      "end": 7682530
+    },
+    {
+      "filename": "/lib/bs4/scss/_custom-forms.scss",
+      "start": 7682530,
+      "end": 7698815
+    },
+    {
+      "filename": "/lib/bs4/scss/_deprecated.scss",
+      "start": 7698815,
+      "end": 7699819
+    },
+    {
+      "filename": "/lib/bs4/scss/_dropdown.scss",
+      "start": 7699819,
+      "end": 7704519
+    },
+    {
+      "filename": "/lib/bs4/scss/_forms.scss",
+      "start": 7704519,
+      "end": 7714780
+    },
+    {
+      "filename": "/lib/bs4/scss/_functions.scss",
+      "start": 7714780,
+      "end": 7718647
+    },
+    {
+      "filename": "/lib/bs4/scss/_grid.scss",
+      "start": 7718647,
+      "end": 7720392
+    },
+    {
+      "filename": "/lib/bs4/scss/_images.scss",
+      "start": 7720392,
+      "end": 7721549
+    },
+    {
+      "filename": "/lib/bs4/scss/_input-group.scss",
+      "start": 7721549,
+      "end": 7728152
+    },
+    {
+      "filename": "/lib/bs4/scss/_jumbotron.scss",
+      "start": 7728152,
+      "end": 7728557
+    },
+    {
+      "filename": "/lib/bs4/scss/_list-group.scss",
+      "start": 7728557,
+      "end": 7732785
+    },
+    {
+      "filename": "/lib/bs4/scss/_media.scss",
+      "start": 7732785,
+      "end": 7732947
+    },
+    {
+      "filename": "/lib/bs4/scss/_mixins.scss",
+      "start": 7732947,
+      "end": 7733997
+    },
+    {
+      "filename": "/lib/bs4/scss/_modal.scss",
+      "start": 7733997,
+      "end": 7741423
+    },
+    {
+      "filename": "/lib/bs4/scss/_nav.scss",
+      "start": 7741423,
+      "end": 7743974
+    },
+    {
+      "filename": "/lib/bs4/scss/_navbar.scss",
+      "start": 7743974,
+      "end": 7752518
+    },
+    {
+      "filename": "/lib/bs4/scss/_pagination.scss",
+      "start": 7752518,
+      "end": 7754630
+    },
+    {
+      "filename": "/lib/bs4/scss/_popover.scss",
+      "start": 7754630,
+      "end": 7759335
+    },
+    {
+      "filename": "/lib/bs4/scss/_print.scss",
+      "start": 7759335,
+      "end": 7762368
+    },
+    {
+      "filename": "/lib/bs4/scss/_progress.scss",
+      "start": 7762368,
+      "end": 7763658
+    },
+    {
+      "filename": "/lib/bs4/scss/_reboot.scss",
+      "start": 7763658,
+      "end": 7775954
+    },
+    {
+      "filename": "/lib/bs4/scss/_root.scss",
+      "start": 7775954,
+      "end": 7776526
+    },
+    {
+      "filename": "/lib/bs4/scss/_spinners.scss",
+      "start": 7776526,
+      "end": 7777937
+    },
+    {
+      "filename": "/lib/bs4/scss/_tables.scss",
+      "start": 7777937,
+      "end": 7781481
+    },
+    {
+      "filename": "/lib/bs4/scss/_toasts.scss",
+      "start": 7781481,
+      "end": 7782709
+    },
+    {
+      "filename": "/lib/bs4/scss/_tooltip.scss",
+      "start": 7782709,
+      "end": 7785221
+    },
+    {
+      "filename": "/lib/bs4/scss/_transitions.scss",
+      "start": 7785221,
+      "end": 7785482
+    },
+    {
+      "filename": "/lib/bs4/scss/_type.scss",
+      "start": 7785482,
+      "end": 7787704
+    },
+    {
+      "filename": "/lib/bs4/scss/_utilities.scss",
+      "start": 7787704,
+      "end": 7788240
+    },
+    {
+      "filename": "/lib/bs4/scss/_variables.scss",
+      "start": 7788240,
+      "end": 7840223
+    },
+    {
+      "filename": "/lib/bs4/scss/bootstrap-grid.scss",
+      "start": 7840223,
+      "end": 7840821
+    },
+    {
+      "filename": "/lib/bs4/scss/bootstrap-reboot.scss",
+      "start": 7840821,
+      "end": 7841230
+    },
+    {
+      "filename": "/lib/bs4/scss/bootstrap.scss",
+      "start": 7841230,
+      "end": 7842148
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_alert.scss",
+      "start": 7842148,
+      "end": 7842390
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_background-variant.scss",
+      "start": 7842390,
+      "end": 7843155
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_badge.scss",
+      "start": 7843155,
+      "end": 7843485
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_border-radius.scss",
+      "start": 7843485,
+      "end": 7845313
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_box-shadow.scss",
+      "start": 7845313,
+      "end": 7845845
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_breakpoints.scss",
+      "start": 7845845,
+      "end": 7850327
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_buttons.scss",
+      "start": 7850327,
+      "end": 7853940
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_caret.scss",
+      "start": 7853940,
+      "end": 7855362
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_clearfix.scss",
+      "start": 7855362,
+      "end": 7855455
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_deprecate.scss",
+      "start": 7855455,
+      "end": 7856068
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_float.scss",
+      "start": 7856068,
+      "end": 7856460
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_forms.scss",
+      "start": 7856460,
+      "end": 7861789
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_gradients.scss",
+      "start": 7861789,
+      "end": 7863839
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_grid-framework.scss",
+      "start": 7863839,
+      "end": 7865987
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_grid.scss",
+      "start": 7865987,
+      "end": 7868197
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_hover.scss",
+      "start": 7868197,
+      "end": 7868954
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_image.scss",
+      "start": 7868954,
+      "end": 7870109
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_list-group.scss",
+      "start": 7870109,
+      "end": 7870542
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_lists.scss",
+      "start": 7870542,
+      "end": 7870712
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_nav-divider.scss",
+      "start": 7870712,
+      "end": 7871081
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_pagination.scss",
+      "start": 7871081,
+      "end": 7871543
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_reset-text.scss",
+      "start": 7871543,
+      "end": 7872024
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_resize.scss",
+      "start": 7872024,
+      "end": 7872226
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_screen-reader.scss",
+      "start": 7872226,
+      "end": 7873052
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_size.scss",
+      "start": 7873052,
+      "end": 7873200
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_table-row.scss",
+      "start": 7873200,
+      "end": 7873994
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_text-emphasis.scss",
+      "start": 7873994,
+      "end": 7874468
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_text-hide.scss",
+      "start": 7874468,
+      "end": 7874794
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_text-truncate.scss",
+      "start": 7874794,
+      "end": 7874962
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_transition.scss",
+      "start": 7874962,
+      "end": 7875643
+    },
+    {
+      "filename": "/lib/bs4/scss/mixins/_visibility.scss",
+      "start": 7875643,
+      "end": 7875832
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_align.scss",
+      "start": 7875832,
+      "end": 7876252
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_background.scss",
+      "start": 7876252,
+      "end": 7876694
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_borders.scss",
+      "start": 7876694,
+      "end": 7878465
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_clearfix.scss",
+      "start": 7878465,
+      "end": 7878502
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_display.scss",
+      "start": 7878502,
+      "end": 7879021
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_embed.scss",
+      "start": 7879021,
+      "end": 7879867
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_flex.scss",
+      "start": 7879867,
+      "end": 7882636
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_float.scss",
+      "start": 7882636,
+      "end": 7883012
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_interactions.scss",
+      "start": 7883012,
+      "end": 7883154
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_overflow.scss",
+      "start": 7883154,
+      "end": 7883287
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_position.scss",
+      "start": 7883287,
+      "end": 7883771
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_screenreaders.scss",
+      "start": 7883771,
+      "end": 7883886
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_shadows.scss",
+      "start": 7883886,
+      "end": 7884135
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_sizing.scss",
+      "start": 7884135,
+      "end": 7884633
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_spacing.scss",
+      "start": 7884633,
+      "end": 7886734
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_stretched-link.scss",
+      "start": 7886734,
+      "end": 7887165
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_text.scss",
+      "start": 7887165,
+      "end": 7889271
+    },
+    {
+      "filename": "/lib/bs4/scss/utilities/_visibility.scss",
+      "start": 7889271,
+      "end": 7889445
+    },
+    {
+      "filename": "/lib/bs4/scss/vendor/_rfs.scss",
+      "start": 7889445,
+      "end": 7895918
+    },
+    {
+      "filename": "/lib/bs5/LICENSE",
+      "start": 7895918,
+      "end": 7897011
+    },
+    {
+      "filename": "/lib/bs5/README.md",
+      "start": 7897011,
+      "end": 7910797
+    },
+    {
+      "filename": "/lib/bs5/dist/js/bootstrap.bundle.min.js",
+      "start": 7910797,
+      "end": 7991465
+    },
+    {
+      "filename": "/lib/bs5/dist/js/bootstrap.bundle.min.js.map",
+      "start": 7991465,
+      "end": 8323292
+    },
+    {
+      "filename": "/lib/bs5/package.json",
+      "start": 8323292,
+      "end": 8331202
+    },
+    {
+      "filename": "/lib/bs5/scss/_accordion.scss",
+      "start": 8331202,
+      "end": 8336352
+    },
+    {
+      "filename": "/lib/bs5/scss/_alert.scss",
+      "start": 8336352,
+      "end": 8338425
+    },
+    {
+      "filename": "/lib/bs5/scss/_badge.scss",
+      "start": 8338425,
+      "end": 8339543
+    },
+    {
+      "filename": "/lib/bs5/scss/_breadcrumb.scss",
+      "start": 8339543,
+      "end": 8341346
+    },
+    {
+      "filename": "/lib/bs5/scss/_button-group.scss",
+      "start": 8341346,
+      "end": 8344770
+    },
+    {
+      "filename": "/lib/bs5/scss/_buttons.scss",
+      "start": 8344770,
+      "end": 8352600
+    },
+    {
+      "filename": "/lib/bs5/scss/_card.scss",
+      "start": 8352600,
+      "end": 8360068
+    },
+    {
+      "filename": "/lib/bs5/scss/_carousel.scss",
+      "start": 8360068,
+      "end": 8366474
+    },
+    {
+      "filename": "/lib/bs5/scss/_close.scss",
+      "start": 8366474,
+      "end": 8368604
+    },
+    {
+      "filename": "/lib/bs5/scss/_containers.scss",
+      "start": 8368604,
+      "end": 8369805
+    },
+    {
+      "filename": "/lib/bs5/scss/_dropdown.scss",
+      "start": 8369805,
+      "end": 8378478
+    },
+    {
+      "filename": "/lib/bs5/scss/_forms.scss",
+      "start": 8378478,
+      "end": 8379288
+    },
+    {
+      "filename": "/lib/bs5/scss/_functions.scss",
+      "start": 8379288,
+      "end": 8389842
+    },
+    {
+      "filename": "/lib/bs5/scss/_grid.scss",
+      "start": 8389842,
+      "end": 8390525
+    },
+    {
+      "filename": "/lib/bs5/scss/_helpers.scss",
+      "start": 8390525,
+      "end": 8390878
+    },
+    {
+      "filename": "/lib/bs5/scss/_images.scss",
+      "start": 8390878,
+      "end": 8392036
+    },
+    {
+      "filename": "/lib/bs5/scss/_list-group.scss",
+      "start": 8392036,
+      "end": 8399246
+    },
+    {
+      "filename": "/lib/bs5/scss/_maps.scss",
+      "start": 8399246,
+      "end": 8405251
+    },
+    {
+      "filename": "/lib/bs5/scss/_mixins.scss",
+      "start": 8405251,
+      "end": 8406126
+    },
+    {
+      "filename": "/lib/bs5/scss/_modal.scss",
+      "start": 8406126,
+      "end": 8414474
+    },
+    {
+      "filename": "/lib/bs5/scss/_nav.scss",
+      "start": 8414474,
+      "end": 8420398
+    },
+    {
+      "filename": "/lib/bs5/scss/_navbar.scss",
+      "start": 8420398,
+      "end": 8431024
+    },
+    {
+      "filename": "/lib/bs5/scss/_offcanvas.scss",
+      "start": 8431024,
+      "end": 8436003
+    },
+    {
+      "filename": "/lib/bs5/scss/_pagination.scss",
+      "start": 8436003,
+      "end": 8440555
+    },
+    {
+      "filename": "/lib/bs5/scss/_placeholders.scss",
+      "start": 8440555,
+      "end": 8441605
+    },
+    {
+      "filename": "/lib/bs5/scss/_popover.scss",
+      "start": 8441605,
+      "end": 8448512
+    },
+    {
+      "filename": "/lib/bs5/scss/_progress.scss",
+      "start": 8448512,
+      "end": 8450647
+    },
+    {
+      "filename": "/lib/bs5/scss/_reboot.scss",
+      "start": 8450647,
+      "end": 8464109
+    },
+    {
+      "filename": "/lib/bs5/scss/_root.scss",
+      "start": 8464109,
+      "end": 8470884
+    },
+    {
+      "filename": "/lib/bs5/scss/_spinners.scss",
+      "start": 8470884,
+      "end": 8473313
+    },
+    {
+      "filename": "/lib/bs5/scss/_tables.scss",
+      "start": 8473313,
+      "end": 8478258
+    },
+    {
+      "filename": "/lib/bs5/scss/_toasts.scss",
+      "start": 8478258,
+      "end": 8480912
+    },
+    {
+      "filename": "/lib/bs5/scss/_tooltip.scss",
+      "start": 8480912,
+      "end": 8485193
+    },
+    {
+      "filename": "/lib/bs5/scss/_transitions.scss",
+      "start": 8485193,
+      "end": 8485618
+    },
+    {
+      "filename": "/lib/bs5/scss/_type.scss",
+      "start": 8485618,
+      "end": 8487038
+    },
+    {
+      "filename": "/lib/bs5/scss/_utilities.scss",
+      "start": 8487038,
+      "end": 8506225
+    },
+    {
+      "filename": "/lib/bs5/scss/_variables-dark.scss",
+      "start": 8506225,
+      "end": 8511161
+    },
+    {
+      "filename": "/lib/bs5/scss/_variables.scss",
+      "start": 8511161,
+      "end": 8589055
+    },
+    {
+      "filename": "/lib/bs5/scss/bootstrap-grid.scss",
+      "start": 8589055,
+      "end": 8590238
+    },
+    {
+      "filename": "/lib/bs5/scss/bootstrap-reboot.scss",
+      "start": 8590238,
+      "end": 8590427
+    },
+    {
+      "filename": "/lib/bs5/scss/bootstrap-utilities.scss",
+      "start": 8590427,
+      "end": 8590733
+    },
+    {
+      "filename": "/lib/bs5/scss/bootstrap.scss",
+      "start": 8590733,
+      "end": 8591671
+    },
+    {
+      "filename": "/lib/bs5/scss/forms/_floating-labels.scss",
+      "start": 8591671,
+      "end": 8594359
+    },
+    {
+      "filename": "/lib/bs5/scss/forms/_form-check.scss",
+      "start": 8594359,
+      "end": 8599404
+    },
+    {
+      "filename": "/lib/bs5/scss/forms/_form-control.scss",
+      "start": 8599404,
+      "end": 8606270
+    },
+    {
+      "filename": "/lib/bs5/scss/forms/_form-range.scss",
+      "start": 8606270,
+      "end": 8609382
+    },
+    {
+      "filename": "/lib/bs5/scss/forms/_form-select.scss",
+      "start": 8609382,
+      "end": 8611970
+    },
+    {
+      "filename": "/lib/bs5/scss/forms/_form-text.scss",
+      "start": 8611970,
+      "end": 8612189
+    },
+    {
+      "filename": "/lib/bs5/scss/forms/_input-group.scss",
+      "start": 8612189,
+      "end": 8616288
+    },
+    {
+      "filename": "/lib/bs5/scss/forms/_labels.scss",
+      "start": 8616288,
+      "end": 8617469
+    },
+    {
+      "filename": "/lib/bs5/scss/forms/_validation.scss",
+      "start": 8617469,
+      "end": 8617947
+    },
+    {
+      "filename": "/lib/bs5/scss/helpers/_clearfix.scss",
+      "start": 8617947,
+      "end": 8617984
+    },
+    {
+      "filename": "/lib/bs5/scss/helpers/_color-bg.scss",
+      "start": 8617984,
+      "end": 8618387
+    },
+    {
+      "filename": "/lib/bs5/scss/helpers/_colored-links.scss",
+      "start": 8618387,
+      "end": 8620142
+    },
+    {
+      "filename": "/lib/bs5/scss/helpers/_focus-ring.scss",
+      "start": 8620142,
+      "end": 8620527
+    },
+    {
+      "filename": "/lib/bs5/scss/helpers/_icon-link.scss",
+      "start": 8620527,
+      "end": 8621335
+    },
+    {
+      "filename": "/lib/bs5/scss/helpers/_position.scss",
+      "start": 8621335,
+      "end": 8621956
+    },
+    {
+      "filename": "/lib/bs5/scss/helpers/_ratio.scss",
+      "start": 8621956,
+      "end": 8622355
+    },
+    {
+      "filename": "/lib/bs5/scss/helpers/_stacks.scss",
+      "start": 8622355,
+      "end": 8622834
+    },
+    {
+      "filename": "/lib/bs5/scss/helpers/_stretched-link.scss",
+      "start": 8622834,
+      "end": 8623057
+    },
+    {
+      "filename": "/lib/bs5/scss/helpers/_text-truncation.scss",
+      "start": 8623057,
+      "end": 8623130
+    },
+    {
+      "filename": "/lib/bs5/scss/helpers/_visually-hidden.scss",
+      "start": 8623130,
+      "end": 8623266
+    },
+    {
+      "filename": "/lib/bs5/scss/helpers/_vr.scss",
+      "start": 8623266,
+      "end": 8623457
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_alert.scss",
+      "start": 8623457,
+      "end": 8623982
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_backdrop.scss",
+      "start": 8623982,
+      "end": 8624310
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_banner.scss",
+      "start": 8624310,
+      "end": 8624533
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_border-radius.scss",
+      "start": 8624533,
+      "end": 8626564
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_box-shadow.scss",
+      "start": 8626564,
+      "end": 8626962
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_breakpoints.scss",
+      "start": 8626962,
+      "end": 8631542
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_buttons.scss",
+      "start": 8631542,
+      "end": 8634797
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_caret.scss",
+      "start": 8634797,
+      "end": 8636384
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_clearfix.scss",
+      "start": 8636384,
+      "end": 8636531
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_color-mode.scss",
+      "start": 8636531,
+      "end": 8636978
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_color-scheme.scss",
+      "start": 8636978,
+      "end": 8637145
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_container.scss",
+      "start": 8637145,
+      "end": 8637555
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_deprecate.scss",
+      "start": 8637555,
+      "end": 8638168
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_forms.scss",
+      "start": 8638168,
+      "end": 8642332
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_gradients.scss",
+      "start": 8642332,
+      "end": 8644288
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_grid.scss",
+      "start": 8644288,
+      "end": 8649296
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_image.scss",
+      "start": 8649296,
+      "end": 8649691
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_list-group.scss",
+      "start": 8649691,
+      "end": 8650272
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_lists.scss",
+      "start": 8650272,
+      "end": 8650440
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_pagination.scss",
+      "start": 8650440,
+      "end": 8650827
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_reset-text.scss",
+      "start": 8650827,
+      "end": 8651322
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_resize.scss",
+      "start": 8651322,
+      "end": 8651524
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_table-variants.scss",
+      "start": 8651524,
+      "end": 8652625
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_text-truncate.scss",
+      "start": 8652625,
+      "end": 8652793
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_transition.scss",
+      "start": 8652793,
+      "end": 8653454
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_utilities.scss",
+      "start": 8653454,
+      "end": 8656838
+    },
+    {
+      "filename": "/lib/bs5/scss/mixins/_visually-hidden.scss",
+      "start": 8656838,
+      "end": 8657948
+    },
+    {
+      "filename": "/lib/bs5/scss/utilities/_api.scss",
+      "start": 8657948,
+      "end": 8659868
+    },
+    {
+      "filename": "/lib/bs5/scss/vendor/_rfs.scss",
+      "start": 8659868,
+      "end": 8669880
+    },
+    {
+      "filename": "/lib/bsw3/LICENSE",
+      "start": 8669880,
+      "end": 8670958
+    },
+    {
+      "filename": "/lib/bsw3/README.md",
+      "start": 8670958,
+      "end": 8673991
+    },
+    {
+      "filename": "/lib/bsw3/cerulean/_bootswatch.scss",
+      "start": 8673991,
+      "end": 8676564
+    },
+    {
+      "filename": "/lib/bsw3/cerulean/_variables.scss",
+      "start": 8676564,
+      "end": 8707618
+    },
+    {
+      "filename": "/lib/bsw3/cosmo/_bootswatch.scss",
+      "start": 8707618,
+      "end": 8711709
+    },
+    {
+      "filename": "/lib/bsw3/cosmo/_variables.scss",
+      "start": 8711709,
+      "end": 8742850
+    },
+    {
+      "filename": "/lib/bsw3/cosmo/font.css",
+      "start": 8742850,
+      "end": 8749140
+    },
+    {
+      "filename": "/lib/bsw3/cyborg/_bootswatch.scss",
+      "start": 8749140,
+      "end": 8753065
+    },
+    {
+      "filename": "/lib/bsw3/cyborg/_variables.scss",
+      "start": 8753065,
+      "end": 8784028
+    },
+    {
+      "filename": "/lib/bsw3/cyborg/font.css",
+      "start": 8784028,
+      "end": 8787918
+    },
+    {
+      "filename": "/lib/bsw3/darkly/_bootswatch.scss",
+      "start": 8787918,
+      "end": 8793377
+    },
+    {
+      "filename": "/lib/bsw3/darkly/_variables.scss",
+      "start": 8793377,
+      "end": 8824490
+    },
+    {
+      "filename": "/lib/bsw3/darkly/font.css",
+      "start": 8824490,
+      "end": 8826468
+    },
+    {
+      "filename": "/lib/bsw3/flatly/_bootswatch.scss",
+      "start": 8826468,
+      "end": 8831600
+    },
+    {
+      "filename": "/lib/bsw3/flatly/_variables.scss",
+      "start": 8831600,
+      "end": 8862711
+    },
+    {
+      "filename": "/lib/bsw3/flatly/font.css",
+      "start": 8862711,
+      "end": 8864689
+    },
+    {
+      "filename": "/lib/bsw3/journal/_bootswatch.scss",
+      "start": 8864689,
+      "end": 8867387
+    },
+    {
+      "filename": "/lib/bsw3/journal/_variables.scss",
+      "start": 8867387,
+      "end": 8898453
+    },
+    {
+      "filename": "/lib/bsw3/journal/font.css",
+      "start": 8898453,
+      "end": 8899827
+    },
+    {
+      "filename": "/lib/bsw3/lumen/_bootswatch.scss",
+      "start": 8899827,
+      "end": 8908744
+    },
+    {
+      "filename": "/lib/bsw3/lumen/_variables.scss",
+      "start": 8908744,
+      "end": 8940015
+    },
+    {
+      "filename": "/lib/bsw3/lumen/font.css",
+      "start": 8940015,
+      "end": 8948404
+    },
+    {
+      "filename": "/lib/bsw3/package.json",
+      "start": 8948404,
+      "end": 8948755
+    },
+    {
+      "filename": "/lib/bsw3/paper/_bootswatch.scss",
+      "start": 8948755,
+      "end": 8960826
+    },
+    {
+      "filename": "/lib/bsw3/paper/_variables.scss",
+      "start": 8960826,
+      "end": 8991580
+    },
+    {
+      "filename": "/lib/bsw3/paper/font.css",
+      "start": 8991580,
+      "end": 8999388
+    },
+    {
+      "filename": "/lib/bsw3/readable/_bootswatch.scss",
+      "start": 8999388,
+      "end": 9002762
+    },
+    {
+      "filename": "/lib/bsw3/readable/_variables.scss",
+      "start": 9002762,
+      "end": 9033531
+    },
+    {
+      "filename": "/lib/bsw3/readable/font.css",
+      "start": 9033531,
+      "end": 9036531
+    },
+    {
+      "filename": "/lib/bsw3/sandstone/_bootswatch.scss",
+      "start": 9036531,
+      "end": 9039479
+    },
+    {
+      "filename": "/lib/bsw3/sandstone/_variables.scss",
+      "start": 9039479,
+      "end": 9070430
+    },
+    {
+      "filename": "/lib/bsw3/sandstone/font.css",
+      "start": 9070430,
+      "end": 9076279
+    },
+    {
+      "filename": "/lib/bsw3/simplex/_bootswatch.scss",
+      "start": 9076279,
+      "end": 9079343
+    },
+    {
+      "filename": "/lib/bsw3/simplex/_variables.scss",
+      "start": 9079343,
+      "end": 9110293
+    },
+    {
+      "filename": "/lib/bsw3/simplex/font.css",
+      "start": 9110293,
+      "end": 9120787
+    },
+    {
+      "filename": "/lib/bsw3/slate/_bootswatch.scss",
+      "start": 9120787,
+      "end": 9128690
+    },
+    {
+      "filename": "/lib/bsw3/slate/_variables.scss",
+      "start": 9128690,
+      "end": 9160252
+    },
+    {
+      "filename": "/lib/bsw3/spacelab/_bootswatch.scss",
+      "start": 9160252,
+      "end": 9163249
+    },
+    {
+      "filename": "/lib/bsw3/spacelab/_variables.scss",
+      "start": 9163249,
+      "end": 9194333
+    },
+    {
+      "filename": "/lib/bsw3/spacelab/font.css",
+      "start": 9194333,
+      "end": 9215379
+    },
+    {
+      "filename": "/lib/bsw3/superhero/_bootswatch.scss",
+      "start": 9215379,
+      "end": 9220742
+    },
+    {
+      "filename": "/lib/bsw3/superhero/_variables.scss",
+      "start": 9220742,
+      "end": 9251846
+    },
+    {
+      "filename": "/lib/bsw3/superhero/font.css",
+      "start": 9251846,
+      "end": 9253827
+    },
+    {
+      "filename": "/lib/bsw3/united/_bootswatch.scss",
+      "start": 9253827,
+      "end": 9255110
+    },
+    {
+      "filename": "/lib/bsw3/united/_variables.scss",
+      "start": 9255110,
+      "end": 9286207
+    },
+    {
+      "filename": "/lib/bsw3/united/font.css",
+      "start": 9286207,
+      "end": 9289423
+    },
+    {
+      "filename": "/lib/bsw3/yeti/_bootswatch.scss",
+      "start": 9289423,
+      "end": 9296769
+    },
+    {
+      "filename": "/lib/bsw3/yeti/_variables.scss",
+      "start": 9296769,
+      "end": 9327703
+    },
+    {
+      "filename": "/lib/bsw3/yeti/font.css",
+      "start": 9327703,
+      "end": 9359272
+    },
+    {
+      "filename": "/lib/bsw4/LICENSE",
+      "start": 9359272,
+      "end": 9360350
+    },
+    {
+      "filename": "/lib/bsw4/README.md",
+      "start": 9360350,
+      "end": 9365839
+    },
+    {
+      "filename": "/lib/bsw4/dist/cerulean/_bootswatch.scss",
+      "start": 9365839,
+      "end": 9367707
+    },
+    {
+      "filename": "/lib/bsw4/dist/cerulean/_variables.scss",
+      "start": 9367707,
+      "end": 9369015
+    },
+    {
+      "filename": "/lib/bsw4/dist/cosmo/_bootswatch.scss",
+      "start": 9369015,
+      "end": 9369594
+    },
+    {
+      "filename": "/lib/bsw4/dist/cosmo/_variables.scss",
+      "start": 9369594,
+      "end": 9371272
+    },
+    {
+      "filename": "/lib/bsw4/dist/cosmo/font.css",
+      "start": 9371272,
+      "end": 9378024
+    },
+    {
+      "filename": "/lib/bsw4/dist/cyborg/_bootswatch.scss",
+      "start": 9378024,
+      "end": 9383137
+    },
+    {
+      "filename": "/lib/bsw4/dist/cyborg/_variables.scss",
+      "start": 9383137,
+      "end": 9388541
+    },
+    {
+      "filename": "/lib/bsw4/dist/cyborg/font.css",
+      "start": 9388541,
+      "end": 9392739
+    },
+    {
+      "filename": "/lib/bsw4/dist/darkly/_bootswatch.scss",
+      "start": 9392739,
+      "end": 9396748
+    },
+    {
+      "filename": "/lib/bsw4/dist/darkly/_variables.scss",
+      "start": 9396748,
+      "end": 9402054
+    },
+    {
+      "filename": "/lib/bsw4/dist/darkly/font.css",
+      "start": 9402054,
+      "end": 9404164
+    },
+    {
+      "filename": "/lib/bsw4/dist/flatly/_bootswatch.scss",
+      "start": 9404164,
+      "end": 9408122
+    },
+    {
+      "filename": "/lib/bsw4/dist/flatly/_variables.scss",
+      "start": 9408122,
+      "end": 9411551
+    },
+    {
+      "filename": "/lib/bsw4/dist/flatly/font.css",
+      "start": 9411551,
+      "end": 9413661
+    },
+    {
+      "filename": "/lib/bsw4/dist/journal/_bootswatch.scss",
+      "start": 9413661,
+      "end": 9414862
+    },
+    {
+      "filename": "/lib/bsw4/dist/journal/_variables.scss",
+      "start": 9414862,
+      "end": 9416354
+    },
+    {
+      "filename": "/lib/bsw4/dist/journal/font.css",
+      "start": 9416354,
+      "end": 9417816
+    },
+    {
+      "filename": "/lib/bsw4/dist/litera/_bootswatch.scss",
+      "start": 9417816,
+      "end": 9421646
+    },
+    {
+      "filename": "/lib/bsw4/dist/litera/_variables.scss",
+      "start": 9421646,
+      "end": 9424260
+    },
+    {
+      "filename": "/lib/bsw4/dist/lumen/_bootswatch.scss",
+      "start": 9424260,
+      "end": 9432502
+    },
+    {
+      "filename": "/lib/bsw4/dist/lumen/_variables.scss",
+      "start": 9432502,
+      "end": 9434856
+    },
+    {
+      "filename": "/lib/bsw4/dist/lumen/font.css",
+      "start": 9434856,
+      "end": 9443861
+    },
+    {
+      "filename": "/lib/bsw4/dist/lux/_bootswatch.scss",
+      "start": 9443861,
+      "end": 9446892
+    },
+    {
+      "filename": "/lib/bsw4/dist/lux/_variables.scss",
+      "start": 9446892,
+      "end": 9449889
+    },
+    {
+      "filename": "/lib/bsw4/dist/lux/font.css",
+      "start": 9449889,
+      "end": 9453453
+    },
+    {
+      "filename": "/lib/bsw4/dist/materia/_bootswatch.scss",
+      "start": 9453453,
+      "end": 9468543
+    },
+    {
+      "filename": "/lib/bsw4/dist/materia/_variables.scss",
+      "start": 9468543,
+      "end": 9472482
+    },
+    {
+      "filename": "/lib/bsw4/dist/materia/font.css",
+      "start": 9472482,
+      "end": 9480906
+    },
+    {
+      "filename": "/lib/bsw4/dist/minty/_bootswatch.scss",
+      "start": 9480906,
+      "end": 9485363
+    },
+    {
+      "filename": "/lib/bsw4/dist/minty/_variables.scss",
+      "start": 9485363,
+      "end": 9488277
+    },
+    {
+      "filename": "/lib/bsw4/dist/minty/font.css",
+      "start": 9488277,
+      "end": 9493212
+    },
+    {
+      "filename": "/lib/bsw4/dist/pulse/_bootswatch.scss",
+      "start": 9493212,
+      "end": 9495695
+    },
+    {
+      "filename": "/lib/bsw4/dist/pulse/_variables.scss",
+      "start": 9495695,
+      "end": 9498176
+    },
+    {
+      "filename": "/lib/bsw4/dist/sandstone/_bootswatch.scss",
+      "start": 9498176,
+      "end": 9501657
+    },
+    {
+      "filename": "/lib/bsw4/dist/sandstone/_variables.scss",
+      "start": 9501657,
+      "end": 9505577
+    },
+    {
+      "filename": "/lib/bsw4/dist/sandstone/font.css",
+      "start": 9505577,
+      "end": 9511888
+    },
+    {
+      "filename": "/lib/bsw4/dist/simplex/_bootswatch.scss",
+      "start": 9511888,
+      "end": 9514313
+    },
+    {
+      "filename": "/lib/bsw4/dist/simplex/_variables.scss",
+      "start": 9514313,
+      "end": 9517145
+    },
+    {
+      "filename": "/lib/bsw4/dist/simplex/font.css",
+      "start": 9517145,
+      "end": 9528079
+    },
+    {
+      "filename": "/lib/bsw4/dist/sketchy/_bootswatch.scss",
+      "start": 9528079,
+      "end": 9536707
+    },
+    {
+      "filename": "/lib/bsw4/dist/sketchy/_variables.scss",
+      "start": 9536707,
+      "end": 9541240
+    },
+    {
+      "filename": "/lib/bsw4/dist/sketchy/font.css",
+      "start": 9541240,
+      "end": 9542260
+    },
+    {
+      "filename": "/lib/bsw4/dist/slate/_bootswatch.scss",
+      "start": 9542260,
+      "end": 9552442
+    },
+    {
+      "filename": "/lib/bsw4/dist/slate/_variables.scss",
+      "start": 9552442,
+      "end": 9558129
+    },
+    {
+      "filename": "/lib/bsw4/dist/solar/_bootswatch.scss",
+      "start": 9558129,
+      "end": 9558273
+    },
+    {
+      "filename": "/lib/bsw4/dist/solar/_variables.scss",
+      "start": 9558273,
+      "end": 9558991
+    },
+    {
+      "filename": "/lib/bsw4/dist/solar/font.css",
+      "start": 9558991,
+      "end": 9565743
+    },
+    {
+      "filename": "/lib/bsw4/dist/spacelab/_bootswatch.scss",
+      "start": 9565743,
+      "end": 9567684
+    },
+    {
+      "filename": "/lib/bsw4/dist/spacelab/_variables.scss",
+      "start": 9567684,
+      "end": 9569316
+    },
+    {
+      "filename": "/lib/bsw4/dist/spacelab/font.css",
+      "start": 9569316,
+      "end": 9591242
+    },
+    {
+      "filename": "/lib/bsw4/dist/superhero/_bootswatch.scss",
+      "start": 9591242,
+      "end": 9595863
+    },
+    {
+      "filename": "/lib/bsw4/dist/superhero/_variables.scss",
+      "start": 9595863,
+      "end": 9601008
+    },
+    {
+      "filename": "/lib/bsw4/dist/superhero/font.css",
+      "start": 9601008,
+      "end": 9603121
+    },
+    {
+      "filename": "/lib/bsw4/dist/united/_bootswatch.scss",
+      "start": 9603121,
+      "end": 9603366
+    },
+    {
+      "filename": "/lib/bsw4/dist/united/_variables.scss",
+      "start": 9603366,
+      "end": 9604715
+    },
+    {
+      "filename": "/lib/bsw4/dist/united/font.css",
+      "start": 9604715,
+      "end": 9608195
+    },
+    {
+      "filename": "/lib/bsw4/dist/yeti/_bootswatch.scss",
+      "start": 9608195,
+      "end": 9617423
+    },
+    {
+      "filename": "/lib/bsw4/dist/yeti/_variables.scss",
+      "start": 9617423,
+      "end": 9620351
+    },
+    {
+      "filename": "/lib/bsw4/dist/yeti/font.css",
+      "start": 9620351,
+      "end": 9653240
+    },
+    {
+      "filename": "/lib/bsw4/package.json",
+      "start": 9653240,
+      "end": 9653851
+    },
+    {
+      "filename": "/lib/bsw5/LICENSE",
+      "start": 9653851,
+      "end": 9654929
+    },
+    {
+      "filename": "/lib/bsw5/README.md",
+      "start": 9654929,
+      "end": 9660511
+    },
+    {
+      "filename": "/lib/bsw5/dist/cerulean/_bootswatch.scss",
+      "start": 9660511,
+      "end": 9661515
+    },
+    {
+      "filename": "/lib/bsw5/dist/cerulean/_variables.scss",
+      "start": 9661515,
+      "end": 9662892
+    },
+    {
+      "filename": "/lib/bsw5/dist/cosmo/_bootswatch.scss",
+      "start": 9662892,
+      "end": 9663361
+    },
+    {
+      "filename": "/lib/bsw5/dist/cosmo/_variables.scss",
+      "start": 9663361,
+      "end": 9664997
+    },
+    {
+      "filename": "/lib/bsw5/dist/cosmo/font.css",
+      "start": 9664997,
+      "end": 9671749
+    },
+    {
+      "filename": "/lib/bsw5/dist/cyborg/_bootswatch.scss",
+      "start": 9671749,
+      "end": 9673882
+    },
+    {
+      "filename": "/lib/bsw5/dist/cyborg/_variables.scss",
+      "start": 9673882,
+      "end": 9680172
+    },
+    {
+      "filename": "/lib/bsw5/dist/cyborg/font.css",
+      "start": 9680172,
+      "end": 9684370
+    },
+    {
+      "filename": "/lib/bsw5/dist/darkly/_bootswatch.scss",
+      "start": 9684370,
+      "end": 9685803
+    },
+    {
+      "filename": "/lib/bsw5/dist/darkly/_variables.scss",
+      "start": 9685803,
+      "end": 9692264
+    },
+    {
+      "filename": "/lib/bsw5/dist/darkly/font.css",
+      "start": 9692264,
+      "end": 9694374
+    },
+    {
+      "filename": "/lib/bsw5/dist/flatly/_bootswatch.scss",
+      "start": 9694374,
+      "end": 9695996
+    },
+    {
+      "filename": "/lib/bsw5/dist/flatly/_variables.scss",
+      "start": 9695996,
+      "end": 9699762
+    },
+    {
+      "filename": "/lib/bsw5/dist/flatly/font.css",
+      "start": 9699762,
+      "end": 9701872
+    },
+    {
+      "filename": "/lib/bsw5/dist/journal/_bootswatch.scss",
+      "start": 9701872,
+      "end": 9702548
+    },
+    {
+      "filename": "/lib/bsw5/dist/journal/_variables.scss",
+      "start": 9702548,
+      "end": 9703938
+    },
+    {
+      "filename": "/lib/bsw5/dist/journal/font.css",
+      "start": 9703938,
+      "end": 9705400
+    },
+    {
+      "filename": "/lib/bsw5/dist/litera/_bootswatch.scss",
+      "start": 9705400,
+      "end": 9706549
+    },
+    {
+      "filename": "/lib/bsw5/dist/litera/_variables.scss",
+      "start": 9706549,
+      "end": 9709029
+    },
+    {
+      "filename": "/lib/bsw5/dist/lumen/_bootswatch.scss",
+      "start": 9709029,
+      "end": 9714441
+    },
+    {
+      "filename": "/lib/bsw5/dist/lumen/_variables.scss",
+      "start": 9714441,
+      "end": 9717137
+    },
+    {
+      "filename": "/lib/bsw5/dist/lumen/font.css",
+      "start": 9717137,
+      "end": 9726142
+    },
+    {
+      "filename": "/lib/bsw5/dist/lux/_bootswatch.scss",
+      "start": 9726142,
+      "end": 9728290
+    },
+    {
+      "filename": "/lib/bsw5/dist/lux/_variables.scss",
+      "start": 9728290,
+      "end": 9731347
+    },
+    {
+      "filename": "/lib/bsw5/dist/lux/font.css",
+      "start": 9731347,
+      "end": 9734911
+    },
+    {
+      "filename": "/lib/bsw5/dist/materia/_bootswatch.scss",
+      "start": 9734911,
+      "end": 9747207
+    },
+    {
+      "filename": "/lib/bsw5/dist/materia/_variables.scss",
+      "start": 9747207,
+      "end": 9750640
+    },
+    {
+      "filename": "/lib/bsw5/dist/materia/font.css",
+      "start": 9750640,
+      "end": 9759064
+    },
+    {
+      "filename": "/lib/bsw5/dist/minty/_bootswatch.scss",
+      "start": 9759064,
+      "end": 9759984
+    },
+    {
+      "filename": "/lib/bsw5/dist/minty/_variables.scss",
+      "start": 9759984,
+      "end": 9762923
+    },
+    {
+      "filename": "/lib/bsw5/dist/minty/font.css",
+      "start": 9762923,
+      "end": 9767858
+    },
+    {
+      "filename": "/lib/bsw5/dist/morph/_bootswatch.scss",
+      "start": 9767858,
+      "end": 9777655
+    },
+    {
+      "filename": "/lib/bsw5/dist/morph/_variables.scss",
+      "start": 9777655,
+      "end": 9784881
+    },
+    {
+      "filename": "/lib/bsw5/dist/morph/font.css",
+      "start": 9784881,
+      "end": 9789678
+    },
+    {
+      "filename": "/lib/bsw5/dist/pulse/_bootswatch.scss",
+      "start": 9789678,
+      "end": 9791673
+    },
+    {
+      "filename": "/lib/bsw5/dist/pulse/_variables.scss",
+      "start": 9791673,
+      "end": 9793845
+    },
+    {
+      "filename": "/lib/bsw5/dist/quartz/_bootswatch.scss",
+      "start": 9793845,
+      "end": 9799208
+    },
+    {
+      "filename": "/lib/bsw5/dist/quartz/_variables.scss",
+      "start": 9799208,
+      "end": 9805579
+    },
+    {
+      "filename": "/lib/bsw5/dist/sandstone/_bootswatch.scss",
+      "start": 9805579,
+      "end": 9808730
+    },
+    {
+      "filename": "/lib/bsw5/dist/sandstone/_variables.scss",
+      "start": 9808730,
+      "end": 9812994
+    },
+    {
+      "filename": "/lib/bsw5/dist/sandstone/font.css",
+      "start": 9812994,
+      "end": 9819305
+    },
+    {
+      "filename": "/lib/bsw5/dist/simplex/_bootswatch.scss",
+      "start": 9819305,
+      "end": 9821354
+    },
+    {
+      "filename": "/lib/bsw5/dist/simplex/_variables.scss",
+      "start": 9821354,
+      "end": 9824109
+    },
+    {
+      "filename": "/lib/bsw5/dist/simplex/font.css",
+      "start": 9824109,
+      "end": 9835043
+    },
+    {
+      "filename": "/lib/bsw5/dist/sketchy/_bootswatch.scss",
+      "start": 9835043,
+      "end": 9843214
+    },
+    {
+      "filename": "/lib/bsw5/dist/sketchy/_variables.scss",
+      "start": 9843214,
+      "end": 9847670
+    },
+    {
+      "filename": "/lib/bsw5/dist/sketchy/font.css",
+      "start": 9847670,
+      "end": 9848690
+    },
+    {
+      "filename": "/lib/bsw5/dist/slate/_bootswatch.scss",
+      "start": 9848690,
+      "end": 9854533
+    },
+    {
+      "filename": "/lib/bsw5/dist/slate/_variables.scss",
+      "start": 9854533,
+      "end": 9861380
+    },
+    {
+      "filename": "/lib/bsw5/dist/solar/_bootswatch.scss",
+      "start": 9861380,
+      "end": 9862540
+    },
+    {
+      "filename": "/lib/bsw5/dist/solar/_variables.scss",
+      "start": 9862540,
+      "end": 9869134
+    },
+    {
+      "filename": "/lib/bsw5/dist/solar/font.css",
+      "start": 9869134,
+      "end": 9875886
+    },
+    {
+      "filename": "/lib/bsw5/dist/spacelab/_bootswatch.scss",
+      "start": 9875886,
+      "end": 9877332
+    },
+    {
+      "filename": "/lib/bsw5/dist/spacelab/_variables.scss",
+      "start": 9877332,
+      "end": 9878852
+    },
+    {
+      "filename": "/lib/bsw5/dist/spacelab/font.css",
+      "start": 9878852,
+      "end": 9900778
+    },
+    {
+      "filename": "/lib/bsw5/dist/superhero/_bootswatch.scss",
+      "start": 9900778,
+      "end": 9902954
+    },
+    {
+      "filename": "/lib/bsw5/dist/superhero/_variables.scss",
+      "start": 9902954,
+      "end": 9909777
+    },
+    {
+      "filename": "/lib/bsw5/dist/superhero/font.css",
+      "start": 9909777,
+      "end": 9911890
+    },
+    {
+      "filename": "/lib/bsw5/dist/united/_bootswatch.scss",
+      "start": 9911890,
+      "end": 9912162
+    },
+    {
+      "filename": "/lib/bsw5/dist/united/_variables.scss",
+      "start": 9912162,
+      "end": 9913576
+    },
+    {
+      "filename": "/lib/bsw5/dist/united/font.css",
+      "start": 9913576,
+      "end": 9917056
+    },
+    {
+      "filename": "/lib/bsw5/dist/vapor/_bootswatch.scss",
+      "start": 9917056,
+      "end": 9922574
+    },
+    {
+      "filename": "/lib/bsw5/dist/vapor/_variables.scss",
+      "start": 9922574,
+      "end": 9927338
+    },
+    {
+      "filename": "/lib/bsw5/dist/vapor/font.css",
+      "start": 9927338,
+      "end": 9928744
+    },
+    {
+      "filename": "/lib/bsw5/dist/yeti/_bootswatch.scss",
+      "start": 9928744,
+      "end": 9934449
+    },
+    {
+      "filename": "/lib/bsw5/dist/yeti/_variables.scss",
+      "start": 9934449,
+      "end": 9937167
+    },
+    {
+      "filename": "/lib/bsw5/dist/yeti/font.css",
+      "start": 9937167,
+      "end": 9970056
+    },
+    {
+      "filename": "/lib/bsw5/dist/zephyr/_bootswatch.scss",
+      "start": 9970056,
+      "end": 9972897
+    },
+    {
+      "filename": "/lib/bsw5/dist/zephyr/_variables.scss",
+      "start": 9972897,
+      "end": 9977156
+    },
+    {
+      "filename": "/lib/bsw5/dist/zephyr/font.css",
+      "start": 9977156,
+      "end": 9983726
+    },
+    {
+      "filename": "/lib/bsw5/package.json",
+      "start": 9983726,
+      "end": 9984377
+    },
+    {
+      "filename": "/package.json",
+      "start": 9984377,
+      "end": 9984861
+    },
+    {
+      "filename": "/rmarkdown/templates/legacy/skeleton/skeleton.Rmd",
+      "start": 9984861,
+      "end": 9986598
+    },
+    {
+      "filename": "/rmarkdown/templates/legacy/template.yaml",
+      "start": 9986598,
+      "end": 9986697
+    },
+    {
+      "filename": "/rmarkdown/templates/new/skeleton/skeleton.Rmd",
+      "start": 9986697,
+      "end": 9988838
+    },
+    {
+      "filename": "/rmarkdown/templates/new/template.yaml",
+      "start": 9988838,
+      "end": 9988926
+    },
+    {
+      "filename": "/rmarkdown/templates/real-time/skeleton/skeleton.Rmd",
+      "start": 9988926,
+      "end": 9991192
+    },
+    {
+      "filename": "/rmarkdown/templates/real-time/template.yaml",
+      "start": 9991192,
+      "end": 9991293
+    },
+    {
+      "filename": "/sass-utils/color-contrast.scss",
+      "start": 9991293,
+      "end": 9996699
+    },
+    {
+      "filename": "/themer-demo/R/tips.R",
+      "start": 9996699,
+      "end": 10001673
+    },
+    {
+      "filename": "/themer-demo/app.R",
+      "start": 10001673,
+      "end": 10015573
+    },
+    {
+      "filename": "/themer-demo/deploy.R",
+      "start": 10015573,
+      "end": 10015730
+    },
+    {
+      "filename": "/themer-demo/deploy/app.R",
+      "start": 10015730,
+      "end": 10016146
+    },
+    {
+      "filename": "/themer-demo/global.R",
+      "start": 10016146,
+      "end": 10021867
+    },
+    {
+      "filename": "/themer/options.json",
+      "start": 10021867,
+      "end": 10025621
+    },
+    {
+      "filename": "/themer/themer.js",
+      "start": 10025621,
+      "end": 10041387
+    },
+    {
+      "filename": "/themer/themer.scss",
+      "start": 10041387,
+      "end": 10041771
+    }
+  ],
+  "remote_package_size": 10041771
+}
