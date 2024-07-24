@@ -13,6 +13,7 @@ duration: 20min
 ```{shinylive-r}
 #| standalone: true
 #| components: [editor, viewer]
+#| editorHeight: 600
 ## file: app.R
 {{< include "../examples/app-sparkline.R" >}}
 ```
@@ -29,6 +30,7 @@ duration: 20min
 ```{shinylive-r}
 #| standalone: true
 #| components: [editor, viewer]
+#| editorHeight: 600
 ## file: app.R
 {{< include "../examples/app-layout-columns_begin.R" >}}
 ```

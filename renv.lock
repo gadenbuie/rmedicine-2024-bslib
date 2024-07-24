@@ -541,7 +541,7 @@
       "Package": "farver",
       "Version": "2.1.2",
       "Source": "Repository",
-      "Repository": "PPM",
+      "Repository": "RSPM",
       "Hash": "680887028577f3fa2a81e410ed0d6e42"
     },
     "fastmap": {
@@ -1660,7 +1660,7 @@
       "Package": "shiny",
       "Version": "1.8.1.9001",
       "Source": "Repository",
-      "Repository": "https://rstudio.r-universe.dev",
+      "Repository": "rstudio",
       "Requirements": [
         "R",
         "R6",
@@ -1705,13 +1705,9 @@
     "shinylive": {
       "Package": "shinylive",
       "Version": "0.1.1.9000",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "posit-dev",
-      "RemoteRepo": "r-shinylive",
-      "RemoteRef": "feat/export-choose-asset-version",
-      "RemoteSha": "2835f2fa5573ce579b70f639b6d24d7c2435e46c",
+      "Source": "Local",
+      "RemoteType": "local",
+      "RemoteUrl": "/Users/garrick/work/posit-dev/r-shinylive",
       "Requirements": [
         "archive",
         "brio",
@@ -1727,7 +1723,7 @@
         "rlang",
         "tools"
       ],
-      "Hash": "f1534f5456e80d52952f4ae07ae6c29a"
+      "Hash": "9b984a9c4ecd60c51dd21789aaa87955"
     },
     "sourcetools": {
       "Package": "sourcetools",

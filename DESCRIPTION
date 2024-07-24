@@ -21,7 +21,7 @@ Imports:
     plotly,
     rmarkdown,
     shiny (>= 1.8.1.9001),
-    shinylive (>= 0.1.1.9000),
+    shinylive,
     thematic,
     tidyverse
 Encoding: UTF-8

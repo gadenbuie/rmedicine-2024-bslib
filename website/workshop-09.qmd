@@ -17,6 +17,7 @@ Let's use `input_switch()` to recreate the example above from the [College Score
 ```{shinylive-r}
 #| standalone: true
 #| components: [editor, viewer]
+#| editorHeight: 500
 {{< include "../examples/app-input-switch.R" >}}
 ```
 :::
@@ -39,6 +40,7 @@ Let's update the app from above to use `input_task_button()`.
 ```{shinylive-r}
 #| standalone: true
 #| components: [editor, viewer]
+#| editorHeight: 500
 {{< include "../examples/app-input-task-button.R" >}}
 ```
 :::

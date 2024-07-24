@@ -40,6 +40,7 @@ shinyApp(ui = ui, server = server)
 ```{shinylive-r}
 #| standalone: true
 #| components: [editor, viewer]
+#| editorHeight: 500
 ## file: app.R
 {{< include "../examples/app-input-dark-mode.R" >}}
 ```
