@@ -563,15 +563,15 @@
     },
     "fontawesome": {
       "Package": "fontawesome",
-      "Version": "0.5.2",
+      "Version": "0.5.2.9000",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "rstudio",
       "Requirements": [
         "R",
         "htmltools",
         "rlang"
       ],
-      "Hash": "c2efdd5f0bcd1ea861c2d4e2a883a67d"
+      "Hash": "a9deb9cb99698731434ee1254c3408df"
     },
     "forcats": {
       "Package": "forcats",
@@ -1704,13 +1704,13 @@
     },
     "shinylive": {
       "Package": "shinylive",
-      "Version": "0.1.1.9000",
-      "Source": "Local",
-      "RemoteType": "local",
-      "RemoteUrl": "/Users/garrick/work/posit-dev/r-shinylive",
+      "Version": "0.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
       "Requirements": [
         "archive",
         "brio",
+        "cli",
         "fs",
         "gh",
         "glue",
@@ -1721,9 +1721,11 @@
         "rappdirs",
         "renv",
         "rlang",
-        "tools"
+        "tools",
+        "whisker",
+        "withr"
       ],
-      "Hash": "9b984a9c4ecd60c51dd21789aaa87955"
+      "Hash": "224c8c0502bb0ead1fd1b4b32ea04a90"
     },
     "sourcetools": {
       "Package": "sourcetools",
@@ -1957,13 +1959,13 @@
     },
     "tinytex": {
       "Package": "tinytex",
-      "Version": "0.51.1",
+      "Version": "0.52",
       "Source": "Repository",
-      "Repository": "https://rstudio.r-universe.dev",
+      "Repository": "CRAN",
       "Requirements": [
         "xfun"
       ],
-      "Hash": "ced5a62d27be2433ff37f33bea3b0327"
+      "Hash": "cfbad971a71f0e27cec22e544a08bc3b"
     },
     "tzdb": {
       "Package": "tzdb",
@@ -2045,6 +2047,13 @@
         "withr"
       ],
       "Hash": "390f9315bc0025be03012054103d227c"
+    },
+    "whisker": {
+      "Package": "whisker",
+      "Version": "0.4.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c6abfa47a46d281a7d5159d0a8891e88"
     },
     "withr": {
       "Package": "withr",
