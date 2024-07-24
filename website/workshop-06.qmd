@@ -96,6 +96,12 @@ shinyApp(ui, \(...) { })
 <i class="bi bi-folder-symlink-fill"></i> `exercises/06_app.R`
 :::
 
+::: {.callout-note title="Exercise Code" collapse="true"}
+```{.r filename="exercises/06_app.R"}
+{{< include ../exercises/06_app.R >}}
+```
+:::
+
 The app in `exercises/06_app.R` contains three variations of the same plot of yearly costs vs median earnings.
 (You might recognize this plot from the second exercise.)
 

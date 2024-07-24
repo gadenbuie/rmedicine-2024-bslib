@@ -23,6 +23,12 @@ editor: { render-on-save: true }
 <i class="bi bi-folder-symlink-fill"></i> `exercises/01_app.R`
 :::
 
+::: {.callout-note title="Exercise Code" collapse="true"}
+```{.r filename="exercises/01_app.R"}
+{{< include ../exercises/01_app.R >}}
+```
+:::
+
 **Are we all set up?**
 Open the app in `exercises/01_app.R`.
 Run the app to make sure it works.

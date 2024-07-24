@@ -42,5 +42,11 @@ duration: 20min
 <i class="bi bi-folder-symlink-fill"></i> `exercises/04_app.R`
 :::
 
+::: {.callout-note title="Exercise Code" collapse="true"}
+```{.r filename="exercises/04_app.R"}
+{{< include ../exercises/04_app.R >}}
+```
+:::
+
 The app in `exercises/04_app.R` includes three value boxes, one plot and one map, but they're unorganized.
 Use one `layout_columns()` and one `layout_column_wrap()` to better lay out the dashboard.

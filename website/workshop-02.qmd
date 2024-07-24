@@ -42,6 +42,12 @@ shinyApp(ui, server)
 <i class="bi bi-folder-symlink-fill"></i> `exercises/02_app.R`
 :::
 
+::: {.callout-note title="Exercise Code" collapse="true"}
+```{.r filename="exercises/02_app.R"}
+{{< include ../exercises/02_app.R >}}
+```
+:::
+
 We're in the process of refactoring an older Shiny app to use new features from bslib.
 I've started refactoring `exercises/02_app.R` by pulling out the inputs so it's easier to see the layout.
 
@@ -75,6 +81,12 @@ shinyApp(ui, server)
 
 ::: lead
 <i class="bi bi-folder-symlink-fill"></i> `exercises/03_app.R`
+:::
+
+::: {.callout-note title="Exercise Code" collapse="true"}
+```{.r filename="exercises/03_app.R"}
+{{< include ../exercises/03_app.R >}}
+```
 :::
 
 The app in `exercises/03_app.R` contains the start of a dashboard where the user can pick a specific school and see a quick summary of information about the school.
